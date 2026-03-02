@@ -1,0 +1,49 @@
+# dependencies
+website/node_modules/
+.pnp
+.pnp.*
+
+# next.js
+website/.next/
+website/out/
+
+# production
+website/build/
+
+# misc
+.DS_Store
+*.pem
+Thumbs.db
+desktop.ini
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files
+.env*
+
+# vercel
+.vercel
+
+# Copied assets in public (source of truth is Media/ and Projects/)
+website/public/projects/
+website/public/videos/
+website/public/images/
+website/public/favicon*
+website/public/apple-touch-icon.png
+website/public/android-chrome-*
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# editor
+.vscode/settings.json
+.idea/
+
+# OS
+[Dd]esktop.ini
+ehthumbs.db
