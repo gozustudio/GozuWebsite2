@@ -194,19 +194,23 @@ export default function WebMCPTools() {
         },
       },
       execute: async (input: Record<string, unknown>) => {
-        const res = await fetch("/api/quote", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ ...input, partial: false, honeypot: "" }),
-        });
-        if (!res.ok) {
-          return { success: false, message: "Quote submission failed. Please try again or contact info@gozustudio.com." };
+        try {
+          const res = await fetch("/api/quote", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ ...input, partial: false, honeypot: "" }),
+          });
+          if (!res.ok) {
+            return { success: false, message: "Quote submission failed. Please try again or contact info@gozustudio.com." };
+          }
+          return {
+            success: true,
+            message:
+              "Your quote request has been submitted successfully. Gozu Studio will review your project details and respond within 48 hours with a personalised estimate.",
+          };
+        } catch {
+          return { success: false, message: "Network error. Please check your connection and try again, or contact info@gozustudio.com." };
         }
-        return {
-          success: true,
-          message:
-            "Your quote request has been submitted successfully. Gozu Studio will review your project details and respond within 48 hours with a personalised estimate.",
-        };
       },
     });
 
