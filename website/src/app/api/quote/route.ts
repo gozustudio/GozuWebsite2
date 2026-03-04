@@ -31,18 +31,7 @@ async function findRowByEmail(
 }
 
 function buildRow(data: Record<string, unknown>, partial: boolean): unknown[] {
-  const now = new Date();
-  const timestamp = now
-    .toLocaleString("en-GB", {
-      day: "2-digit",
-      month: "2-digit",
-      year: "numeric",
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-      hour12: false,
-    })
-    .replace(",", "");
+  const timestamp = new Date().toISOString();
 
   return [
     partial ? "Partial" : "",

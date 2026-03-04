@@ -359,12 +359,12 @@ function Step3({
           <Label>Residential Property Type *</Label>
           <div className="mt-3 flex flex-wrap gap-3">
             <OptionCard
-              label="Single Family"
+              label="Single Family Property"
               selected={data.residentialSubtype === "Single Family Property"}
               onClick={() => update({ residentialSubtype: "Single Family Property" })}
             />
             <OptionCard
-              label="Multiple Family"
+              label="Multiple Family Property"
               selected={data.residentialSubtype === "Multiple Family Property"}
               onClick={() => update({ residentialSubtype: "Multiple Family Property" })}
             />
