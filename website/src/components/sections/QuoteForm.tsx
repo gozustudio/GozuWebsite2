@@ -6,7 +6,9 @@ import { COUNTRIES } from "@/lib/countries";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
-type FormData = {
+// Fix 1: Renamed from FormData to QuoteFormData to avoid shadowing the browser
+// native FormData global.
+type QuoteFormData = {
   email: string;
   firstName: string;
   lastName: string;
@@ -34,7 +36,10 @@ type FormData = {
   package: string;
 };
 
-const INITIAL: FormData = {
+// Fix 10: STEP_LABELS moved to module scope (was inside render).
+const STEP_LABELS = ["Contact", "Address", "Project", "Package"];
+
+const INITIAL: QuoteFormData = {
   email: "", firstName: "", lastName: "",
   countryCode: "", countryName: "", state: "", city: "",
   postcode: "", streetName: "", streetNumber: "", apartment: "",
@@ -77,24 +82,30 @@ function StepIndicator({ current }: { current: number }) {
   );
 }
 
-function Label({ children }: { children: React.ReactNode }) {
+// Fix 4: Label renders <label> instead of <p> and accepts optional htmlFor.
+function Label({ children, htmlFor }: { children: React.ReactNode; htmlFor?: string }) {
   return (
-    <p className="mb-2 text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)]">
+    <label
+      htmlFor={htmlFor}
+      className="mb-2 block text-[11px] uppercase tracking-[0.15em] text-[var(--color-label)]"
+    >
       {children}
-    </p>
+    </label>
   );
 }
 
+// Fix 8: Added optional min prop to TextInput.
 function TextInput({
-  id, name, type = "text", value, onChange, placeholder, required,
+  id, name, type = "text", value, onChange, placeholder, required, min,
 }: {
   id: string; name: string; type?: string; value: string;
   onChange: (v: string) => void; placeholder?: string; required?: boolean;
+  min?: string;
 }) {
   return (
     <input
       id={id} name={name} type={type} value={value} required={required}
-      placeholder={placeholder}
+      placeholder={placeholder} min={min}
       onChange={(e) => onChange(e.target.value)}
       className="w-full border-b border-[var(--color-border)]/20 bg-transparent py-3 text-[var(--color-body)] outline-none transition-colors placeholder:text-[var(--color-label)]/50 focus:border-[var(--color-main)]"
     />
@@ -121,6 +132,7 @@ function OptionCard({
   );
 }
 
+// Fix 5: Added keyboard navigation, activeIndex state, and ARIA attributes.
 function CountryCombobox({
   value, countryName, onChange,
 }: {
@@ -129,6 +141,7 @@ function CountryCombobox({
 }) {
   const [query, setQuery] = useState(countryName);
   const [open, setOpen] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(-1);
   const ref = useRef<HTMLDivElement>(null);
 
   const filtered =
@@ -152,30 +165,70 @@ function CountryCombobox({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [countryName]);
 
+  // Reset activeIndex whenever the filtered list changes.
+  useEffect(() => {
+    setActiveIndex(-1);
+  }, [query]);
+
+  function handleKeyDown(e: React.KeyboardEvent<HTMLInputElement>) {
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      if (!open) {
+        setOpen(true);
+      } else {
+        setActiveIndex((i) => Math.min(i + 1, filtered.length - 1));
+      }
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      setActiveIndex((i) => Math.max(i - 1, 0));
+    } else if (e.key === "Enter") {
+      e.preventDefault();
+      if (open && activeIndex >= 0 && filtered[activeIndex]) {
+        const c = filtered[activeIndex];
+        onChange(c.code, c.name);
+        setQuery(c.name);
+        setOpen(false);
+      }
+    } else if (e.key === "Escape") {
+      setOpen(false);
+    }
+  }
+
   return (
     <div ref={ref} className="relative">
       <input
         type="text"
+        role="combobox"
+        aria-expanded={open}
+        aria-autocomplete="list"
         value={query}
         onChange={(e) => {
           setQuery(e.target.value);
           setOpen(true);
         }}
         onFocus={() => setOpen(true)}
+        onKeyDown={handleKeyDown}
         placeholder="Search country…"
         className="w-full border-b border-[var(--color-border)]/20 bg-transparent py-3 text-[var(--color-body)] outline-none transition-colors placeholder:text-[var(--color-label)]/50 focus:border-[var(--color-main)]"
       />
       {open && filtered.length > 0 && (
-        <ul className="absolute left-0 right-0 top-full z-20 max-h-48 overflow-auto border border-[var(--color-border)]/20 bg-[var(--color-container)] shadow-lg">
-          {filtered.map((c) => (
+        <ul
+          role="listbox"
+          className="absolute left-0 right-0 top-full z-20 max-h-48 overflow-auto border border-[var(--color-border)]/20 bg-[var(--color-container)] shadow-lg"
+        >
+          {filtered.map((c, idx) => (
             <li
               key={c.code}
+              role="option"
+              aria-selected={value === c.code}
               onMouseDown={() => {
                 onChange(c.code, c.name);
                 setQuery(c.name);
                 setOpen(false);
               }}
-              className="cursor-pointer px-4 py-2.5 text-sm text-[var(--color-body)] hover:bg-[var(--color-bg)]"
+              className={`cursor-pointer px-4 py-2.5 text-sm text-[var(--color-body)] hover:bg-[var(--color-bg)] ${
+                idx === activeIndex ? "bg-[var(--color-bg)]" : ""
+              }`}
             >
               {c.name}
             </li>
@@ -188,7 +241,7 @@ function CountryCombobox({
 
 // ─── Step validation ──────────────────────────────────────────────────────────
 
-function isStepValid(step: number, d: FormData): boolean {
+function isStepValid(step: number, d: QuoteFormData): boolean {
   switch (step) {
     case 0:
       return !!d.email && !!d.firstName && !!d.lastName;
@@ -200,7 +253,8 @@ function isStepValid(step: number, d: FormData): boolean {
         (d.interior || d.exterior || d.landscape) &&
         !!d.constructionType &&
         !!d.demolition &&
-        !!d.area &&
+        // Fix 8: Validate area as a positive number instead of truthy string.
+        parseFloat(d.area) > 0 &&
         !!d.projectSite &&
         !!d.completion
       );
@@ -216,13 +270,14 @@ function isStepValid(step: number, d: FormData): boolean {
 function Step1({
   data, update,
 }: {
-  data: FormData;
-  update: (p: Partial<FormData>) => void;
+  data: QuoteFormData;
+  update: (p: Partial<QuoteFormData>) => void;
 }) {
   return (
     <div className="space-y-8">
       <div>
-        <Label>Email *</Label>
+        {/* Fix 4: htmlFor added to Label call sites where there is a single associated input. */}
+        <Label htmlFor="email">Email *</Label>
         <TextInput
           id="email" name="email" type="email" value={data.email}
           onChange={(v) => update({ email: v })}
@@ -231,7 +286,7 @@ function Step1({
       </div>
       <div className="grid gap-6 md:grid-cols-2">
         <div>
-          <Label>First Name *</Label>
+          <Label htmlFor="firstName">First Name *</Label>
           <TextInput
             id="firstName" name="firstName" value={data.firstName}
             onChange={(v) => update({ firstName: v })}
@@ -239,7 +294,7 @@ function Step1({
           />
         </div>
         <div>
-          <Label>Last Name *</Label>
+          <Label htmlFor="lastName">Last Name *</Label>
           <TextInput
             id="lastName" name="lastName" value={data.lastName}
             onChange={(v) => update({ lastName: v })}
@@ -254,12 +309,13 @@ function Step1({
 function Step2({
   data, update,
 }: {
-  data: FormData;
-  update: (p: Partial<FormData>) => void;
+  data: QuoteFormData;
+  update: (p: Partial<QuoteFormData>) => void;
 }) {
   return (
     <div className="space-y-8">
       <div>
+        {/* Country uses a combobox, no single id to associate — htmlFor omitted. */}
         <Label>Country *</Label>
         <CountryCombobox
           value={data.countryCode}
@@ -269,14 +325,14 @@ function Step2({
       </div>
       <div className="grid gap-6 md:grid-cols-2">
         <div>
-          <Label>State / County</Label>
+          <Label htmlFor="state">State / County</Label>
           <TextInput
             id="state" name="state" value={data.state}
             onChange={(v) => update({ state: v })} placeholder="State or county"
           />
         </div>
         <div>
-          <Label>City *</Label>
+          <Label htmlFor="city">City *</Label>
           <TextInput
             id="city" name="city" value={data.city}
             onChange={(v) => update({ city: v })} placeholder="City" required
@@ -285,14 +341,14 @@ function Step2({
       </div>
       <div className="grid gap-6 md:grid-cols-2">
         <div>
-          <Label>Postcode</Label>
+          <Label htmlFor="postcode">Postcode</Label>
           <TextInput
             id="postcode" name="postcode" value={data.postcode}
             onChange={(v) => update({ postcode: v })} placeholder="Postcode"
           />
         </div>
         <div>
-          <Label>Street Name</Label>
+          <Label htmlFor="streetName">Street Name</Label>
           <TextInput
             id="streetName" name="streetName" value={data.streetName}
             onChange={(v) => update({ streetName: v })} placeholder="Street name"
@@ -301,14 +357,14 @@ function Step2({
       </div>
       <div className="grid gap-6 md:grid-cols-2">
         <div>
-          <Label>Street Number</Label>
+          <Label htmlFor="streetNumber">Street Number</Label>
           <TextInput
             id="streetNumber" name="streetNumber" value={data.streetNumber}
             onChange={(v) => update({ streetNumber: v })} placeholder="No."
           />
         </div>
         <div>
-          <Label>Apartment / Unit</Label>
+          <Label htmlFor="apartment">Apartment / Unit</Label>
           <TextInput
             id="apartment" name="apartment" value={data.apartment}
             onChange={(v) => update({ apartment: v })} placeholder="Apt / unit"
@@ -322,12 +378,13 @@ function Step2({
 function Step3({
   data, update,
 }: {
-  data: FormData;
-  update: (p: Partial<FormData>) => void;
+  data: QuoteFormData;
+  update: (p: Partial<QuoteFormData>) => void;
 }) {
   return (
     <div className="space-y-10">
       <div>
+        {/* Option card groups have no single associated input — htmlFor omitted. */}
         <Label>Property Type * (select all that apply)</Label>
         <div className="mt-3 flex flex-wrap gap-3">
           <OptionCard
@@ -335,7 +392,9 @@ function Step3({
             onClick={() =>
               update({
                 residential: !data.residential,
-                residentialSubtype: data.residential ? "" : data.residentialSubtype,
+                // Fix 2: Always clear subtype when toggling residential
+                // regardless of direction.
+                residentialSubtype: "",
               })
             }
           />
@@ -421,12 +480,14 @@ function Step3({
       </div>
 
       <div>
-        <Label>Project Area *</Label>
+        {/* Fix 4 + Fix 8: htmlFor links label to input; min="1" enforces positive value. */}
+        <Label htmlFor="area">Project Area *</Label>
         <div className="mt-3 flex items-end gap-4">
           <div className="flex-1">
             <TextInput
               id="area" name="area" type="number" value={data.area}
               onChange={(v) => update({ area: v })} placeholder="e.g. 120"
+              min="1"
             />
           </div>
           <div className="flex gap-2 pb-3">
@@ -464,20 +525,21 @@ function Step3({
       <div>
         <Label>Preferred Completion *</Label>
         <div className="mt-3 flex flex-wrap gap-3">
+          {/* Fix 9: Stored values now use en-dashes matching display labels. */}
           <OptionCard
             label="As soon as possible"
             selected={data.completion === "As soon as possible"}
             onClick={() => update({ completion: "As soon as possible" })}
           />
           <OptionCard
-            label="5–6 months"
-            selected={data.completion === "5-6 months"}
-            onClick={() => update({ completion: "5-6 months" })}
+            label="5\u20136 months"
+            selected={data.completion === "5\u20136 months"}
+            onClick={() => update({ completion: "5\u20136 months" })}
           />
           <OptionCard
-            label="6–12 months"
-            selected={data.completion === "6-12 months"}
-            onClick={() => update({ completion: "6-12 months" })}
+            label="6\u201312 months"
+            selected={data.completion === "6\u201312 months"}
+            onClick={() => update({ completion: "6\u201312 months" })}
           />
         </div>
       </div>
@@ -518,8 +580,8 @@ const PACKAGES = [
 function Step4({
   data, update,
 }: {
-  data: FormData;
-  update: (p: Partial<FormData>) => void;
+  data: QuoteFormData;
+  update: (p: Partial<QuoteFormData>) => void;
 }) {
   return (
     <div className="space-y-4">
@@ -575,17 +637,19 @@ function Step4({
 export default function QuoteForm() {
   const [step, setStep] = useState(0);
   const [direction, setDirection] = useState(1);
-  const [data, setData] = useState<FormData>(INITIAL);
+  const [data, setData] = useState<QuoteFormData>(INITIAL);
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
+  // Fix 3: Separate honeypot state, not part of QuoteFormData.
+  const [honeypot, setHoneypot] = useState("");
   const partialSentRef = useRef(false);
 
   useEffect(() => {
     try {
       const saved = localStorage.getItem(LS_KEY);
       if (saved) {
-        const parsed = JSON.parse(saved) as { step: number; data: FormData };
+        const parsed = JSON.parse(saved) as { step: number; data: QuoteFormData };
         setData(parsed.data);
         setStep(parsed.step);
       }
@@ -597,28 +661,24 @@ export default function QuoteForm() {
     localStorage.setItem(LS_KEY, JSON.stringify({ step, data }));
   }, [step, data, submitted]);
 
-  function update(patch: Partial<FormData>) {
+  function update(patch: Partial<QuoteFormData>) {
     setData((prev) => ({ ...prev, ...patch }));
   }
 
-  async function sendPartial(formData: FormData) {
-    if (partialSentRef.current) return;
-    partialSentRef.current = true;
+  // Fix 7: Consolidated sendPartial + sendProgressUpdate into sendToApi.
+  // When isFirstSave is true the partialSentRef guard is applied so only the
+  // first forward-step from step 0 fires once per session.
+  async function sendToApi(formData: QuoteFormData, isFirstSave: boolean) {
+    if (isFirstSave) {
+      if (partialSentRef.current) return;
+      partialSentRef.current = true;
+    }
     try {
       await fetch("/api/quote", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, partial: true }),
-      });
-    } catch {}
-  }
-
-  async function sendProgressUpdate(formData: FormData) {
-    try {
-      await fetch("/api/quote", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, partial: true }),
+        // Fix 3: honeypot included in every POST body.
+        body: JSON.stringify({ ...formData, partial: true, honeypot }),
       });
     } catch {}
   }
@@ -626,15 +686,18 @@ export default function QuoteForm() {
   async function handleNext() {
     setDirection(1);
     if (step === 0) {
-      sendPartial(data);
+      sendToApi(data, true);
     } else if (step > 0 && step < 3) {
-      sendProgressUpdate(data);
+      sendToApi(data, false);
     }
     setStep((s) => s + 1);
   }
 
   function handleBack() {
     setDirection(-1);
+    // Fix 6: Reset partialSentRef so if the user edits their email and advances
+    // again a new partial save fires with the updated data.
+    if (step === 1) partialSentRef.current = false;
     setStep((s) => s - 1);
   }
 
@@ -645,7 +708,8 @@ export default function QuoteForm() {
       const res = await fetch("/api/quote", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...data, partial: false }),
+        // Fix 3: honeypot included in final POST body.
+        body: JSON.stringify({ ...data, partial: false, honeypot }),
       });
       if (!res.ok) throw new Error("submission failed");
       localStorage.removeItem(LS_KEY);
@@ -679,8 +743,6 @@ export default function QuoteForm() {
     );
   }
 
-  const STEP_LABELS = ["Contact", "Address", "Project", "Package"];
-
   return (
     <div className="rounded-sm bg-[var(--color-container)] p-8 lg:p-12">
       <StepIndicator current={step} />
@@ -688,6 +750,17 @@ export default function QuoteForm() {
       <p className="mb-8 text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)]">
         Step {step + 1} of {TOTAL_STEPS} — {STEP_LABELS[step]}
       </p>
+
+      {/* Fix 3: Hidden honeypot field. Real users never see or fill this. */}
+      <input
+        type="text"
+        name="website"
+        value={honeypot}
+        onChange={(e) => setHoneypot(e.target.value)}
+        tabIndex={-1}
+        aria-hidden="true"
+        style={{ display: "none" }}
+      />
 
       <AnimatePresence mode="wait" custom={direction}>
         <motion.div

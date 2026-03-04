@@ -70,6 +70,12 @@ export async function POST(req: NextRequest) {
       partial?: boolean;
     };
 
+    // Fix 3: Honeypot bot protection — real users never fill this field.
+    // Silently return ok so bots don't know they were blocked.
+    if (data.honeypot) {
+      return NextResponse.json({ ok: true });
+    }
+
     if (!data.email || typeof data.email !== "string") {
       return NextResponse.json({ error: "email required" }, { status: 400 });
     }
