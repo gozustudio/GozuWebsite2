@@ -45,7 +45,7 @@ export default function WebMCPTools() {
       description:
         "Submit a project quote request to Gozu Studio. This is a 4-step wizard form that collects contact details, project address, project specifications, and a service package selection. " +
         "Step 1 — Contact: email, firstName, lastName. " +
-        "Step 2 — Address: countryCode (ISO 3166-1 alpha-2), countryName, state (optional), city, postcode (optional), streetName (optional), streetNumber (optional), apartment (optional). " +
+        "Step 2 — Address: countryCode (CO-prefixed internal code, e.g. CO085 for United Kingdom), countryName, state (optional), city, postcode (optional), streetName (optional), streetNumber (optional), apartment (optional). " +
         "Step 3 — Project Details: residential (bool), offices (bool), commercial (bool) — at least one must be true; " +
         "residentialSubtype — required when residential is true, one of: 'Single Family Property' | 'Multiple Family Property'; " +
         "interior (bool), exterior (bool), landscape (bool) — at least one must be true; " +
@@ -87,11 +87,11 @@ export default function WebMCPTools() {
           // Step 2 — Address
           countryCode: {
             type: "string",
-            description: "ISO 3166-1 alpha-2 country code (e.g. 'GB', 'LT', 'DE')",
+            description: "Internal country code from the Gozu countries list (CO-prefixed, e.g. 'CO085' for United Kingdom). Look up the correct code from the countryName using the form's country combobox.",
           },
           countryName: {
             type: "string",
-            description: "Full country name matching the countryCode (e.g. 'United Kingdom')",
+            description: "Full country name (e.g. 'United Kingdom', 'Lithuania')",
           },
           state: {
             type: "string",

@@ -250,10 +250,10 @@ function isStepValid(step: number, d: QuoteFormData): boolean {
     case 2:
       return (
         (d.residential || d.offices || d.commercial) &&
+        (!d.residential || !!d.residentialSubtype) &&
         (d.interior || d.exterior || d.landscape) &&
         !!d.constructionType &&
         !!d.demolition &&
-        // Fix 8: Validate area as a positive number instead of truthy string.
         parseFloat(d.area) > 0 &&
         !!d.projectSite &&
         !!d.completion
