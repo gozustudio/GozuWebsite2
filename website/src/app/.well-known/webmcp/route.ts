@@ -9,7 +9,7 @@ export async function GET() {
       name: "Gozu Studio",
       version: "2026.03",
       description:
-        "Luxury architecture and interior design studio based in London, UK. Browse projects, learn about services, and request quotes for residential and commercial design projects across Europe.",
+        "Luxury architecture and interior design studio. Browse projects, learn about services, and request quotes for residential and commercial design projects across Europe.",
       pages: [
         {
           url: "/",

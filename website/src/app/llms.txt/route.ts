@@ -12,7 +12,7 @@ export async function GET() {
 
   const content = `# Gozu Studio
 
-> Gozu Studio is a luxury architecture and interior design practice based in London, UK, founded by Goda Zukaite. We create refined residential and commercial spaces across Europe.
+> Gozu Studio is a luxury architecture and interior design practice founded by Goda Zukaite. We create refined residential and commercial spaces across Europe.
 
 ## Main Pages
 
@@ -30,9 +30,9 @@ ${projectLinks}
 ## Contact Information
 
 - Email: info@gozustudio.com
-- Phone: (+44) 07765 577275
+- WhatsApp: https://wa.me/4407765577275
+- Telegram: https://t.me/+4407765577275
 - Instagram: https://www.instagram.com/gozustudio/
-- Locations: London (UK), Vilnius (Lithuania)
 
 ## Services Offered
 

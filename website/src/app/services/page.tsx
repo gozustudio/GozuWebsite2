@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Architecture, interior design, and renovation services by Gozu Studio. Luxury residential and commercial projects across London and Europe.",
+    "Architecture, interior design, and renovation services by Gozu Studio. Luxury residential and commercial projects across Europe.",
 };
 
 const SERVICES = [

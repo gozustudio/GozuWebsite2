@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Explore our portfolio of luxury residential and commercial architecture projects across London, Vilnius, and Europe.",
+    "Explore our portfolio of luxury residential and commercial architecture projects across Europe.",
 };
 
 export default function ProjectsPage() {

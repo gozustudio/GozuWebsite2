@@ -43,7 +43,7 @@ export default function WebMCPTools() {
     mc.registerTool({
       name: "get_gozu_studio_info",
       description:
-        "Get information about Gozu Studio including contact details, services, locations, and the founder.",
+        "Get information about Gozu Studio including contact details, services, and the founder.",
       inputSchema: {
         type: "object",
         properties: {},
@@ -54,17 +54,17 @@ export default function WebMCPTools() {
           name: "Gozu Studio",
           founder: "Goda Zukaite",
           description:
-            "Luxury architecture and interior design studio based in London, UK with operations in Vilnius, Lithuania.",
+            "Luxury architecture and interior design studio. Creating refined residential and commercial spaces across Europe.",
           services: [
             "Residential Architecture",
             "Interior Design",
             "Renovation & Restoration",
             "Commercial Interiors",
           ],
-          locations: ["London, United Kingdom", "Vilnius, Lithuania"],
           contact: {
             email: "info@gozustudio.com",
-            phone: "(+44) 07765 577275",
+            whatsapp: "https://wa.me/4407765577275",
+            telegram: "https://t.me/+4407765577275",
             website: "https://www.gozustudio.com",
             instagram: "https://www.instagram.com/gozustudio/",
           },

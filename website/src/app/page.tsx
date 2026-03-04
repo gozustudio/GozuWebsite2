@@ -27,8 +27,8 @@ export default function Home() {
           </FadeIn>
           <FadeIn delay={0.15}>
             <p className="text-lg leading-relaxed text-[var(--color-text-secondary)] lg:mt-16">
-              Gozu Studio is a London-based luxury architecture and interior
-              design practice founded by {SITE.founder}. We create spaces that
+              Gozu Studio is a luxury architecture and interior design
+              practice founded by {SITE.founder}. We create spaces that
               balance refined aesthetics with functional living — from bespoke
               residences to considered commercial environments across Europe.
             </p>

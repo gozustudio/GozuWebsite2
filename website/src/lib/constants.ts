@@ -3,12 +3,10 @@ export const SITE = {
   domain: "gozustudio.com",
   url: "https://www.gozustudio.com",
   email: "info@gozustudio.com",
-  phone: "(+44) 07765 577275",
   instagram: "https://www.instagram.com/gozustudio/",
   founder: "Goda Zukaite",
   description:
-    "Luxury architecture and interior design studio based in London, UK. Specialising in residential and commercial projects across Europe.",
-  locations: ["London, United Kingdom", "Vilnius, Lithuania"],
+    "Luxury architecture and interior design studio. Specialising in residential and commercial projects across Europe.",
 } as const;
 
 export const NAV_LINKS = [

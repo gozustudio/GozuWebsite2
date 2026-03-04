@@ -27,16 +27,16 @@ export const metadata: Metadata = {
   },
   description: SITE.description,
   keywords: [
-    "residential architect London",
-    "interior design services London",
-    "luxury interior design London",
-    "modern residential architect London",
-    "architecture and interior design London",
-    "luxury residential architect London",
-    "residential architect Vilnius",
-    "interior design Vilnius",
+    "luxury architecture Europe",
+    "interior design services Europe",
+    "luxury interior design",
+    "residential architect",
+    "architecture and interior design",
+    "luxury residential architect",
     "sustainable architecture",
     "minimalist interior design",
+    "bespoke interior design",
+    "luxury home design",
   ],
   authors: [{ name: SITE.name }],
   creator: SITE.name,
@@ -96,22 +96,9 @@ export default function RootLayout({
     contactPoint: {
       "@type": "ContactPoint",
       email: SITE.email,
-      telephone: SITE.phone,
       contactType: "customer service",
     },
     sameAs: [SITE.instagram],
-    address: [
-      {
-        "@type": "PostalAddress",
-        addressLocality: "London",
-        addressCountry: "GB",
-      },
-      {
-        "@type": "PostalAddress",
-        addressLocality: "Vilnius",
-        addressCountry: "LT",
-      },
-    ],
   };
 
   const websiteJsonLd = {

@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Gozu Studio is a luxury architecture and interior design practice founded by Goda Zukaite, based in London with operations in Vilnius.",
+    "Gozu Studio is a luxury architecture and interior design practice founded by Goda Zukaite, creating refined spaces across Europe.",
 };
 
 export default function AboutPage() {
@@ -34,9 +34,9 @@ export default function AboutPage() {
               <p className="text-xl leading-relaxed text-[var(--color-text-secondary)] lg:text-2xl">
                 Gozu Studio is a multidisciplinary architecture and interior
                 design practice creating refined, considered spaces for
-                discerning clients. Founded by {SITE.founder}, our work bridges
-                the creative traditions of Northern Europe with the cosmopolitan
-                sensibility of London.
+                discerning clients across Europe. Founded by {SITE.founder},
+                our work bridges diverse cultural traditions with a distinctive
+                European sensibility.
               </p>
             </FadeIn>
             <FadeIn delay={0.15}>
@@ -47,10 +47,9 @@ export default function AboutPage() {
                 spaces that feel both inevitable and surprising.
               </p>
               <p className="mt-6 text-lg leading-relaxed text-[var(--color-text-secondary)]">
-                With studios in London and Vilnius, we serve clients across the
-                United Kingdom, Lithuania, and throughout Europe. Our portfolio
-                spans luxury residences, commercial interiors, and
-                heritage renovations.
+                We serve clients throughout Europe, working remotely and
+                on-site to bring each project to life. Our portfolio spans
+                luxury residences, commercial interiors, and heritage renovations.
               </p>
             </FadeIn>
           </div>
@@ -81,12 +80,12 @@ export default function AboutPage() {
               <div className="space-y-8 border-t border-white/10 pt-8 lg:mt-16">
                 {[
                   { label: "Education", value: "Architecture & Design" },
-                  { label: "Based in", value: "London, United Kingdom" },
                   { label: "Practice", value: "Gozu Studio" },
                   {
                     label: "Expertise",
                     value: "Residential, Interior Design, Renovation",
                   },
+                  { label: "Region", value: "Europe" },
                 ].map((item) => (
                   <div key={item.label}>
                     <p className="text-[11px] font-medium uppercase tracking-[3px] text-white/40">

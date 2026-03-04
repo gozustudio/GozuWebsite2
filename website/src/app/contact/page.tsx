@@ -7,30 +7,17 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Gozu Studio. Architecture and interior design consultations in London, Vilnius, and across Europe.",
+    "Get in touch with Gozu Studio. Architecture and interior design consultations across Europe.",
 };
 
 export default function ContactPage() {
   const localBusinessJsonLd = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "Organization",
     name: SITE.name,
     description: SITE.description,
     url: SITE.url,
     email: SITE.email,
-    telephone: SITE.phone,
-    address: [
-      {
-        "@type": "PostalAddress",
-        addressLocality: "London",
-        addressCountry: "GB",
-      },
-      {
-        "@type": "PostalAddress",
-        addressLocality: "Vilnius",
-        addressCountry: "LT",
-      },
-    ],
   };
 
   return (
@@ -79,25 +66,22 @@ export default function ContactPage() {
 
                 <div>
                   <h2 className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)]">
-                    Phone / WhatsApp / Telegram
+                    Message Us
                   </h2>
-                  <a
-                    href={`tel:${SITE.phone.replace(/[^\d+]/g, "")}`}
-                    className="mt-2 block font-serif text-2xl text-[var(--color-body)] transition-colors duration-300 hover:text-[var(--color-main)]"
-                  >
-                    {SITE.phone}
-                  </a>
-                </div>
-
-                <div>
-                  <h2 className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)]">
-                    Locations
-                  </h2>
-                  {SITE.locations.map((loc) => (
-                    <p key={loc} className="mt-2 text-lg text-[var(--color-text)]">
-                      {loc}
-                    </p>
-                  ))}
+                  <div className="mt-4 flex flex-col gap-3">
+                    {SOCIAL_LINKS.filter((s) => s.name === "WhatsApp" || s.name === "Telegram").map((s) => (
+                      <a
+                        key={s.name}
+                        href={s.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-3 border border-[var(--color-border)]/20 px-5 py-3 text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-body)] transition-all duration-300 hover:border-[var(--color-main)] hover:text-[var(--color-main)]"
+                      >
+                        <Image src={s.icon} alt={s.name} width={16} height={16} className="opacity-60" />
+                        {s.name}
+                      </a>
+                    ))}
+                  </div>
                 </div>
 
                 <div>
