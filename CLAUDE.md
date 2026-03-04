@@ -4,12 +4,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**Gozu Studio** — luxury architecture & interior design brand headquartered in London, UK with operations in Lithuania. This repository contains both the Next.js website source code (`website/`) and the content assets (`Media/`, `Projects/`, `Settings/`).
+**Gozu Studio** — luxury architecture & interior design brand operating remotely across Europe. This repository contains both the Next.js website source code (`website/`) and the content assets (`Media/`, `Projects/`, `Settings/`).
 
 - **Domain**: gozustudio.com
 - **Founder**: Goda Zukaite
 - **Primary goal**: High-end client lead generation, portfolio prestige
-- **Markets**: UK, Lithuania, all Europe, worldwide
+- **Markets**: All Europe, worldwide (remote-first — no location shown on site by design)
 - **Repository**: github.com/gozustudio/GozuWebsite2 (account: `gozustudio`)
 
 ## Tech Stack
@@ -40,6 +40,7 @@ npm run lint                   # run ESLint
 cp -r Media/Images/Logo/Favicon/* website/public/
 cp -r Media/Images/Logo/SVG/* website/public/images/
 cp Media/Videos/LandingVideo.mp4 website/public/videos/
+cp Media/Images/LandingImage.jpg website/public/images/
 for proj in Main 2 3 4 5 6 7 8; do
   mkdir -p "website/public/projects/$proj/images" "website/public/projects/$proj/videos"
   cp Projects/$proj/Images/*.jpg "website/public/projects/$proj/images/"
@@ -173,7 +174,7 @@ WebMCP (W3C Community Group Draft, Chrome 146+) is a core requirement:
 
 ## SEO
 
-- Schema.org JSON-LD on every page: Organization, WebSite, CreativeWork (projects), LocalBusiness (contact)
+- Schema.org JSON-LD on every page: Organization, WebSite, CreativeWork (projects), Organization (contact — was LocalBusiness, changed to remove address)
 - `/llms.txt` — dynamically generated from project data
 - `/sitemap.xml` — all static + dynamic project routes
 - `/robots.txt` — allows all crawlers, blocks `/api/`
@@ -184,16 +185,19 @@ WebMCP (W3C Community Group Draft, Chrome 146+) is a core requirement:
 ## Contact Info
 
 - Email: info@gozustudio.com
-- Phone/WhatsApp/Telegram: (+44) 07765 577275
+- WhatsApp: https://wa.me/4407765577275 (preferred — phone number NOT displayed on site)
+- Telegram: https://t.me/+4407765577275 (preferred — phone number NOT displayed on site)
 - Instagram: https://www.instagram.com/gozustudio/
-- Locations: London (UK), Vilnius (Lithuania)
+- Location: NOT displayed anywhere on site (remote-first positioning for pan-European clients)
 
 ## Git Workflow
 
-- Default branch: `main`
+- Default branch: `master` (not `main`)
 - Commit messages: imperative mood, short summary
-- Do not force-push to `main`
+- Do not force-push to `master`
 - `website/public/` asset copies are gitignored
+- Git identity: Francisco / fransanda@hotmail.com.ar (GitHub: `fransanda`, collaborator on `gozustudio` org)
+- Auth: PAT embedded in remote URL — `https://fransanda:TOKEN@github.com/gozustudio/GozuWebsite2.git`
 
 ## Development Notes
 
@@ -203,7 +207,11 @@ WebMCP (W3C Community Group Draft, Chrome 146+) is a core requirement:
 - Ask before adding new dependencies
 - Colors must always derive from ColourPalette.txt
 - Project content must always derive from ProjectInfo.txt files
-- Logo SVG paths are inlined in Header, Footer, and HeroVideo components
+- Logo SVG paths are inlined in Header, Footer, and HeroVideo — canonical source is `Media/Images/Logo/SVG/logo.svg`
+- Header non-scrolled state: gradient `from-[var(--color-bg)]/80 via-[var(--color-bg)]/30 to-transparent`, always dark text
+- Footer copyright year uses `suppressHydrationWarning` to prevent SSR/client mismatch
+- When replacing assets in `Media/`, also copy to `website/public/` manually for dev server to reflect the change
+- Hero video poster image: `Media/Images/LandingImage.jpg` → `website/public/images/LandingImage.jpg`
 
 ## Pending Work
 
