@@ -197,7 +197,7 @@ WebMCP (W3C Community Group Draft, Chrome 146+) is a core requirement:
 - Next.js API routes (`/api/*`) must validate the request source or require a secret — never expose raw data endpoints publicly without auth
 - Google Apps Script functions must NOT be deployed as public web apps (`access: ANYONE_ANONYMOUS` is forbidden); use `ANYONE` with Google sign-in, or `DOMAIN` restricted, or trigger-only (no web deployment)
 - Google Cloud service account keys must never be committed or exposed
-- Any new GCP service (Cloud Functions, Cloud Run, etc.) must require authentication
+- **GCP Cloud Functions and Cloud Run: always deploy with `--no-allow-unauthenticated`** — never omit this flag, never use `--allow-unauthenticated`
 - Vercel serverless functions inherit Next.js route auth requirements above
 - When in doubt: default to private, require explicit justification to open access
 
