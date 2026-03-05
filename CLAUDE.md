@@ -190,6 +190,27 @@ WebMCP (W3C Community Group Draft, Chrome 146+) is a core requirement:
 - Instagram: https://www.instagram.com/gozustudio/
 - Location: NOT displayed anywhere on site (remote-first positioning for pan-European clients)
 
+## Security Policy
+
+**All backend functions, API routes, scripts, and cloud services must be private and require authentication. Public/unauthenticated access is not allowed.**
+
+- Next.js API routes (`/api/*`) must validate the request source or require a secret — never expose raw data endpoints publicly without auth
+- Google Apps Script functions must NOT be deployed as public web apps (`access: ANYONE_ANONYMOUS` is forbidden); use `ANYONE` with Google sign-in, or `DOMAIN` restricted, or trigger-only (no web deployment)
+- Google Cloud service account keys must never be committed or exposed
+- Any new GCP service (Cloud Functions, Cloud Run, etc.) must require authentication
+- Vercel serverless functions inherit Next.js route auth requirements above
+- When in doubt: default to private, require explicit justification to open access
+
+## Google Account
+
+- **Always use `info@gozustudio.com`** for all Google services (Drive, Sheets, GCP, gcloud)
+- gcloud configuration: `gozustudio` (separate from personal `default` config which is `fransanda@gmail.com`)
+- GCP project: `gozu-studio-website` (under `info@gozustudio.com`)
+- Service account: `gozu-website@gozu-studio-website.iam.gserviceaccount.com`
+- Key file: `gozu-service-account.json` (repo root, gitignored)
+- Run gcloud commands with `--configuration=gozustudio` flag
+- clasp (Apps Script CLI): installed globally, authenticated as `info@gozustudio.com` (`%APPDATA%/.clasprc.json`); Apps Script API must be ON at https://script.google.com/home/usersettings
+
 ## Git Workflow
 
 - Default branch: `master` (not `main`)
@@ -218,7 +239,8 @@ WebMCP (W3C Community Group Draft, Chrome 146+) is a core requirement:
 - **Asset copy script**: Automate `Media/`→`public/` and `Projects/`→`public/` copying (pre-build)
 - **i18n wiring**: next-intl installed but not configured; needs 10-language routing + build-time AI translation
 - **Real project data**: All 8 ProjectInfo.txt files contain identical placeholder data ("KAZ House")
-- **Vercel deployment**: Connect repo, configure build command (`cd website && npm run build`)
-- **Form backend**: Contact and Quote forms show success UI but don't send emails yet
+- **Vercel deployment**: Project created (`gozu-website`), env vars set — connect GitHub repo at vercel.com/gozustudio/gozu-website/settings/git, set root directory to `website`
+- **Contact form backend**: Contact form shows success UI but doesn't send emails yet
 - **GSC/GA4 MCP auth**: Service account credentials needed for analytics MCP tools
 - **Page-level WebMCP metadata**: `<script type="application/json" id="webmcp">` not yet added to individual pages
+- **Quote form post-launch**: Update `UpdateProspectsDatabase` GAS script to skip `Prospects="Partial"` rows (if needed — verify after first real submission)

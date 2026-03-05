@@ -25,6 +25,9 @@ yarn-error.log*
 # env files
 .env*
 
+# Google service account key (never commit)
+gozu-service-account.json
+
 # vercel
 .vercel
 
