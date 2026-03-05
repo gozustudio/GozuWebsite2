@@ -2,23 +2,31 @@ import fs from "fs";
 import path from "path";
 import FadeIn from "@/components/ui/FadeIn";
 import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "Gozu Studio privacy statement and data protection policy.",
 };
 
-export default function PrivacyPage() {
+export default async function PrivacyPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("privacy");
+
   const privacyPath = path.resolve(
     process.cwd(),
-    "..",
-    "Settings",
-    "PrivacyNotice.txt"
+    "content/settings/privacy.json"
   );
   let privacyContent = "Privacy policy content not available.";
 
   try {
-    privacyContent = fs.readFileSync(privacyPath, "utf-8");
+    const json = JSON.parse(fs.readFileSync(privacyPath, "utf-8"));
+    privacyContent = json.content ?? privacyContent;
   } catch {
     // File not found — use fallback
   }
@@ -33,7 +41,7 @@ export default function PrivacyPage() {
       <div className="mx-auto max-w-[800px]">
         <FadeIn>
           <h1 className="font-serif text-5xl text-[var(--color-body)] md:text-6xl">
-            Privacy Policy
+            {t("title")}
           </h1>
         </FadeIn>
 

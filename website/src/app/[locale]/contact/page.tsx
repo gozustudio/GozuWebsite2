@@ -3,6 +3,7 @@ import FadeIn from "@/components/ui/FadeIn";
 import { SITE, SOCIAL_LINKS } from "@/lib/constants";
 import ContactForm from "@/components/sections/ContactForm";
 import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -10,7 +11,15 @@ export const metadata: Metadata = {
     "Get in touch with Gozu Studio. Architecture and interior design consultations across Europe.",
 };
 
-export default function ContactPage() {
+export default async function ContactPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("contact");
+
   const localBusinessJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -26,20 +35,35 @@ export default function ContactPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
       />
+      <script
+        type="application/json"
+        id="webmcp"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            tools: [
+              {
+                name: "contact_gozu_studio",
+                type: "declarative",
+                description: "Send a contact message to Gozu Studio. Fields: name, email, subject, message.",
+                formSelector: "#contactForm",
+              },
+            ],
+          }),
+        }}
+      />
 
       {/* Hero */}
       <section className="px-6 pb-16 pt-32 lg:px-12 lg:pt-40">
         <div className="mx-auto max-w-[1400px]">
           <FadeIn>
             <p className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)]">
-              Contact
+              {t("label")}
             </p>
             <h1 className="mt-4 font-serif text-5xl text-[var(--color-body)] md:text-7xl">
-              Get in Touch
+              {t("title")}
             </h1>
             <p className="mt-6 max-w-xl text-lg text-[var(--color-text-secondary)]">
-              We would love to hear about your project. Reach out and let&apos;s
-              start a conversation.
+              {t("subtitle")}
             </p>
           </FadeIn>
         </div>
@@ -54,7 +78,7 @@ export default function ContactPage() {
               <div className="space-y-12">
                 <div>
                   <h2 className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)]">
-                    Email
+                    {t("emailLabel")}
                   </h2>
                   <a
                     href={`mailto:${SITE.email}`}
@@ -66,7 +90,7 @@ export default function ContactPage() {
 
                 <div>
                   <h2 className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)]">
-                    Message Us
+                    {t("messageUsLabel")}
                   </h2>
                   <div className="mt-4 flex flex-col gap-3">
                     {SOCIAL_LINKS.filter((s) => s.name === "WhatsApp" || s.name === "Telegram").map((s) => (
@@ -86,7 +110,7 @@ export default function ContactPage() {
 
                 <div>
                   <h2 className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)]">
-                    Social
+                    {t("socialLabel")}
                   </h2>
                   <div className="mt-4 flex gap-4">
                     {SOCIAL_LINKS.filter((s) => s.href !== "#").map((social) => (

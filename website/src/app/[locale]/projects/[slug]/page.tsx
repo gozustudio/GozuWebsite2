@@ -1,15 +1,20 @@
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { loadProjects, getProject, getProjectSlugs } from "@/lib/projects";
 import FadeIn from "@/components/ui/FadeIn";
 import type { Metadata } from "next";
+import { routing } from "@/i18n/routing";
+import { setRequestLocale } from "next-intl/server";
 
 interface Props {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }
 
-export async function generateStaticParams() {
-  return getProjectSlugs().map((slug) => ({ slug }));
+export function generateStaticParams() {
+  const slugs = getProjectSlugs();
+  return routing.locales.flatMap((locale) =>
+    slugs.map((slug) => ({ locale, slug }))
+  );
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -29,7 +34,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ProjectPage({ params }: Props) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
+  setRequestLocale(locale);
   const project = getProject(slug);
 
   if (!project) {
@@ -105,7 +111,7 @@ export default async function ProjectPage({ params }: Props) {
               {[
                 { label: "Year", value: project.year },
                 { label: "Location", value: project.location },
-                { label: "Type", value: project.type },
+                { label: "Type", value: project.type.join(", ") },
               ].map((item) => (
                 <div key={item.label}>
                   <p className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)]">

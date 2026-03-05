@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "projects": "Projektai",
+    "about": "Apie",
+    "services": "Paslaugos",
+    "contact": "Kontaktai",
+    "getQuote": "Gauti pasiūlymą",
+    "requestQuote": "Užsakyti pasiūlymą"
+  },
+  "home": {
+    "aboutLabel": "Apie studiją",
+    "learnMore": "Sužinoti daugiau",
+    "portfolioLabel": "Portfelis",
+    "selectedWorks": "Išskirti darbai",
+    "viewAllProjects": "Visi projektai",
+    "whatWeDo": "Ką mes darome",
+    "ourServices": "Mūsų paslaugos",
+    "architectureTitle": "Architektūra",
+    "architectureDesc": "Nuo koncepcijos iki realizacijos — individuali gyvenamoji ir komercinė architektūra, atliepanti kontekstą, šviesą ir gyvenimą.",
+    "interiorTitle": "Interjero dizainas",
+    "interiorDesc": "Apgalvoti interjerai, derinantys medžiagas, proporcijas ir amatą. Kiekviena detalė tarnauja visumai.",
+    "renovationTitle": "Renovacija",
+    "renovationDesc": "Apgalvotas esamų erdvių pertvarkymas — išsaugant charakterį ir įvedant šiuolaikinį aiškumą.",
+    "exploreServices": "Paslaugos"
+  },
+  "about": {
+    "label": "Apie",
+    "title": "Studija",
+    "founderLabel": "Įkūrėja",
+    "approachLabel": "Mūsų požiūris",
+    "approachTitle": "Kaip mes dirbame",
+    "cta": "Sukurkime kažką kartu.",
+    "ctaButton": "Susisiekite"
+  },
+  "services": {
+    "label": "Ką mes darome",
+    "title": "Mūsų paslaugos",
+    "processLabel": "Procesas",
+    "processTitle": "Nuo vizijos iki realybės",
+    "cta": "Pasiruošę pradėti savo projektą?",
+    "ctaButton": "Užsakyti pasiūlymą"
+  },
+  "projects": {
+    "label": "Portfelis",
+    "title": "Mūsų projektai",
+    "subtitle": "Kuratorinė gyvenamosios ir komercinės architektūros, interjero dizaino ir renovacijos projektų atranka."
+  },
+  "contact": {
+    "label": "Kontaktai",
+    "title": "Susisiekite",
+    "subtitle": "Norėtume išgirsti apie jūsų projektą. Kreipkitės ir pradėkime pokalbį.",
+    "emailLabel": "El. paštas",
+    "messageUsLabel": "Parašykite mums",
+    "socialLabel": "Socialiniai tinklai",
+    "formName": "Vardas",
+    "formNamePlaceholder": "Jūsų vardas",
+    "formEmail": "El. paštas",
+    "formEmailPlaceholder": "jusu@email.com",
+    "formSubject": "Tema",
+    "formMessage": "Žinutė",
+    "formMessagePlaceholder": "Papasakokite apie savo projektą...",
+    "formSubmit": "Siųsti žinutę",
+    "formSuccess": "Dėkojame, kad kreipėtės.",
+    "formSuccessDetail": "Susisieksime per 24 valandas.",
+    "subjectArchitecture": "Architektūros projektas",
+    "subjectInterior": "Interjero dizainas",
+    "subjectRenovation": "Renovacija",
+    "subjectConsultation": "Bendra konsultacija",
+    "subjectOther": "Kita"
+  },
+  "quote": {
+    "label": "Pradžia",
+    "title": "Užsakyti pasiūlymą",
+    "subtitle": "Atsakykite į kelis klausimus apie savo projektą ir mes pateiksime individualų įvertinimą. Jokių įsipareigojimų."
+  },
+  "privacy": {
+    "title": "Privatumo politika"
+  },
+  "footer": {
+    "cta": "Turite projektą mintyse?",
+    "ctaSub": "Sukurkime kartu kažką nepaprasto.",
+    "ctaButton": "Užsakyti pasiūlymą",
+    "navigateLabel": "Navigacija",
+    "contactLabel": "Kontaktai",
+    "followLabel": "Sekite mus",
+    "brandLine1": "Prabangus architektūros ir interjero dizainas.",
+    "brandLine2": "Projektai visoje Europoje.",
+    "copyright": "© {year} Gozu Studio. Visos teisės saugomos.",
+    "privacyLink": "Privatumo politika"
+  }
+}

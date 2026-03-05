@@ -1,8 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { loadProjects } from "@/lib/projects";
 import FadeIn from "@/components/ui/FadeIn";
 import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -10,24 +11,47 @@ export const metadata: Metadata = {
     "Explore our portfolio of luxury residential and commercial architecture projects across Europe.",
 };
 
-export default function ProjectsPage() {
+export default async function ProjectsPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("projects");
   const projects = loadProjects();
 
   return (
     <>
+      <script
+        type="application/json"
+        id="webmcp"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            tools: [
+              {
+                name: "search_gozu_projects",
+                type: "imperative",
+                description: "Search and filter Gozu Studio's architecture and interior design portfolio.",
+                readOnly: true,
+              },
+            ],
+          }),
+        }}
+      />
+
       {/* Hero */}
       <section className="px-6 pb-16 pt-32 lg:px-12 lg:pt-40">
         <div className="mx-auto max-w-[1400px]">
           <FadeIn>
             <p className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)]">
-              Portfolio
+              {t("label")}
             </p>
             <h1 className="mt-4 font-serif text-5xl text-[var(--color-body)] md:text-7xl">
-              Our Projects
+              {t("title")}
             </h1>
             <p className="mt-6 max-w-xl text-lg text-[var(--color-text-secondary)]">
-              A curated selection of residential and commercial architecture,
-              interior design, and renovation projects.
+              {t("subtitle")}
             </p>
           </FadeIn>
         </div>
@@ -69,7 +93,7 @@ export default function ProjectsPage() {
                         {project.title}
                       </h2>
                       <p className="mt-1 text-sm text-[var(--color-text-secondary)]">
-                        {project.location} &middot; {project.type}
+                        {project.location} &middot; {project.type.join(", ")}
                       </p>
                     </div>
                     <span className="text-sm text-[var(--color-label)]">

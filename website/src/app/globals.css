@@ -1,19 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  /* Colors from Settings/ColourPalette.txt — source of truth */
-  --color-main: #d4bc90;
-  --color-highlight: #e2a55e;
-  --color-bg: #f8f4ed;
-  --color-text: #333;
-  --color-text-secondary: #888;
-  --color-label: #999;
-  --color-container: #fff;
-  --color-border: #757575;
-  --color-body: #212529;
-  --color-success: #90ee90;
-  --color-error: #ed645a;
-  --color-autofill-shadow: transparent;
+  /* Colors injected at build time from content/settings/colors.json via layout.tsx */
 
   /* Derived shades */
   --color-main-light: color-mix(in oklch, var(--color-main), white 30%);

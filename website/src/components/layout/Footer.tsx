@@ -1,23 +1,27 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import { SITE, NAV_LINKS, SOCIAL_LINKS } from "@/lib/constants";
+import { getTranslations } from "next-intl/server";
 
-export default function Footer() {
+export default async function Footer() {
+  const t = await getTranslations("footer");
+  const tNav = await getTranslations("nav");
+
   return (
     <footer className="border-t border-[var(--color-border)]/20 bg-[var(--color-body)]">
       {/* Pre-footer CTA */}
       <div className="mx-auto max-w-[1400px] px-6 py-20 text-center lg:px-12">
         <h2 className="font-serif text-3xl text-white/90 md:text-5xl">
-          Have a project in mind?
+          {t("cta")}
         </h2>
         <p className="mt-4 text-sm tracking-wide text-white/50">
-          Let&apos;s create something extraordinary together.
+          {t("ctaSub")}
         </p>
         <Link
           href="/quote"
           className="mt-8 inline-block border border-[var(--color-main)] px-10 py-3 text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-main)] transition-all duration-300 hover:bg-[var(--color-main)] hover:text-white"
         >
-          Request a Quote
+          {t("ctaButton")}
         </Link>
       </div>
 
@@ -45,15 +49,15 @@ export default function Footer() {
               <path fill="currentColor" d="M73.37,43.29c1.16,0,2.13.42,2.89,1.26.7.77,1.04,1.68,1.04,2.73s-.37,1.98-1.1,2.77c-.73.79-1.68,1.18-2.83,1.18s-2.11-.39-2.84-1.18c-.73-.79-1.1-1.71-1.1-2.77s.35-1.95,1.04-2.72c.76-.85,1.73-1.27,2.9-1.27ZM73.37,44.24c-.81,0-1.5.3-2.08.9-.58.6-.87,1.32-.87,2.16,0,.55.13,1.05.4,1.53.27.47.62.84,1.07,1.09.45.26.94.39,1.48.39s1.03-.13,1.48-.39c.45-.26.81-.62,1.07-1.09.26-.47.4-.98.4-1.53,0-.85-.29-1.57-.87-2.16s-1.28-.9-2.08-.9Z"/>
             </svg>
             <p className="mt-4 text-sm leading-relaxed text-white/40">
-              Luxury architecture &amp; interior design.<br />
-              Projects across Europe.
+              {t("brandLine1")}<br />
+              {t("brandLine2")}
             </p>
           </div>
 
           {/* Navigation */}
           <div>
             <h3 className="mb-4 text-[11px] font-medium uppercase tracking-[3px] text-white/60">
-              Navigate
+              {t("navigateLabel")}
             </h3>
             <ul className="space-y-3">
               {NAV_LINKS.map((link) => (
@@ -62,7 +66,7 @@ export default function Footer() {
                     href={link.href}
                     className="text-sm text-white/40 transition-colors duration-300 hover:text-[var(--color-main)]"
                   >
-                    {link.label}
+                    {tNav(link.labelKey)}
                   </Link>
                 </li>
               ))}
@@ -71,7 +75,7 @@ export default function Footer() {
                   href="/quote"
                   className="text-sm text-white/40 transition-colors duration-300 hover:text-[var(--color-main)]"
                 >
-                  Request a Quote
+                  {tNav("requestQuote")}
                 </Link>
               </li>
             </ul>
@@ -80,7 +84,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h3 className="mb-4 text-[11px] font-medium uppercase tracking-[3px] text-white/60">
-              Contact
+              {t("contactLabel")}
             </h3>
             <ul className="space-y-3 text-sm text-white/40">
               <li>
@@ -97,7 +101,7 @@ export default function Footer() {
           {/* Social */}
           <div>
             <h3 className="mb-4 text-[11px] font-medium uppercase tracking-[3px] text-white/60">
-              Follow
+              {t("followLabel")}
             </h3>
             <div className="flex gap-4">
               {SOCIAL_LINKS.filter((s) => s.href !== "#").map((social) => (
@@ -126,12 +130,12 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/5">
         <div className="mx-auto flex max-w-[1400px] flex-col items-center justify-between gap-4 px-6 py-6 text-[11px] text-white/30 sm:flex-row lg:px-12">
-          <p suppressHydrationWarning>&copy; {new Date().getFullYear()} Gozu Studio. All rights reserved.</p>
+          <p suppressHydrationWarning>{t("copyright", { year: new Date().getFullYear() })}</p>
           <Link
             href="/privacy"
             className="transition-colors duration-300 hover:text-white/60"
           >
-            Privacy Policy
+            {t("privacyLink")}
           </Link>
         </div>
       </div>

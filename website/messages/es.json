@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "projects": "Proyectos",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "contact": "Contacto",
+    "getQuote": "Solicitar presupuesto",
+    "requestQuote": "Solicitar presupuesto"
+  },
+  "home": {
+    "aboutLabel": "Sobre el estudio",
+    "learnMore": "Más información",
+    "portfolioLabel": "Portafolio",
+    "selectedWorks": "Obras seleccionadas",
+    "viewAllProjects": "Ver todos los proyectos",
+    "whatWeDo": "Lo que hacemos",
+    "ourServices": "Nuestros servicios",
+    "architectureTitle": "Arquitectura",
+    "architectureDesc": "Del concepto a la realización — arquitectura residencial y comercial a medida que responde al contexto, la luz y la vida.",
+    "interiorTitle": "Diseño de interiores",
+    "interiorDesc": "Interiores cuidados que armonizan material, proporción y artesanía. Cada detalle sirve al conjunto.",
+    "renovationTitle": "Renovación",
+    "renovationDesc": "Transformación reflexiva de espacios existentes — preservando el carácter mientras se introduce claridad contemporánea.",
+    "exploreServices": "Explorar servicios"
+  },
+  "about": {
+    "label": "Nosotros",
+    "title": "El estudio",
+    "founderLabel": "Fundadora",
+    "approachLabel": "Nuestro enfoque",
+    "approachTitle": "Cómo trabajamos",
+    "cta": "Creemos algo juntos.",
+    "ctaButton": "Contáctenos"
+  },
+  "services": {
+    "label": "Lo que hacemos",
+    "title": "Nuestros servicios",
+    "processLabel": "Proceso",
+    "processTitle": "De la visión a la realidad",
+    "cta": "¿Listo para comenzar su proyecto?",
+    "ctaButton": "Solicitar presupuesto"
+  },
+  "projects": {
+    "label": "Portafolio",
+    "title": "Nuestros proyectos",
+    "subtitle": "Una selección curada de proyectos de arquitectura residencial y comercial, diseño de interiores y renovación."
+  },
+  "contact": {
+    "label": "Contacto",
+    "title": "Contáctenos",
+    "subtitle": "Nos encantaría conocer su proyecto. Escríbanos y comencemos una conversación.",
+    "emailLabel": "Correo electrónico",
+    "messageUsLabel": "Escríbanos",
+    "socialLabel": "Redes sociales",
+    "formName": "Nombre",
+    "formNamePlaceholder": "Su nombre",
+    "formEmail": "Correo electrónico",
+    "formEmailPlaceholder": "su@email.com",
+    "formSubject": "Asunto",
+    "formMessage": "Mensaje",
+    "formMessagePlaceholder": "Cuéntenos sobre su proyecto...",
+    "formSubmit": "Enviar mensaje",
+    "formSuccess": "Gracias por contactarnos.",
+    "formSuccessDetail": "Le responderemos en un plazo de 24 horas.",
+    "subjectArchitecture": "Proyecto de arquitectura",
+    "subjectInterior": "Diseño de interiores",
+    "subjectRenovation": "Renovación",
+    "subjectConsultation": "Consulta general",
+    "subjectOther": "Otro"
+  },
+  "quote": {
+    "label": "Comenzar",
+    "title": "Solicitar presupuesto",
+    "subtitle": "Responda algunas preguntas sobre su proyecto y le proporcionaremos un presupuesto personalizado. Sin compromiso."
+  },
+  "privacy": {
+    "title": "Política de privacidad"
+  },
+  "footer": {
+    "cta": "¿Tiene un proyecto en mente?",
+    "ctaSub": "Creemos juntos algo extraordinario.",
+    "ctaButton": "Solicitar presupuesto",
+    "navigateLabel": "Navegar",
+    "contactLabel": "Contacto",
+    "followLabel": "Síguenos",
+    "brandLine1": "Arquitectura e interiorismo de lujo.",
+    "brandLine2": "Proyectos en toda Europa.",
+    "copyright": "© {year} Gozu Studio. Todos los derechos reservados.",
+    "privacyLink": "Política de privacidad"
+  }
+}

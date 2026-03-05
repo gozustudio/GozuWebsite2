@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "projects": "Projecten",
+    "about": "Over ons",
+    "services": "Diensten",
+    "contact": "Contact",
+    "getQuote": "Offerte aanvragen",
+    "requestQuote": "Offerte aanvragen"
+  },
+  "home": {
+    "aboutLabel": "Over de studio",
+    "learnMore": "Meer informatie",
+    "portfolioLabel": "Portfolio",
+    "selectedWorks": "Geselecteerde werken",
+    "viewAllProjects": "Alle projecten bekijken",
+    "whatWeDo": "Wat wij doen",
+    "ourServices": "Onze diensten",
+    "architectureTitle": "Architectuur",
+    "architectureDesc": "Van concept tot realisatie — op maat gemaakte woon- en commerciële architectuur die inspeelt op context, licht en leven.",
+    "interiorTitle": "Interieurontwerp",
+    "interiorDesc": "Doordachte interieurs die materiaal, proportie en vakmanschap harmoniseren. Elk detail dient het geheel.",
+    "renovationTitle": "Renovatie",
+    "renovationDesc": "Doordachte transformatie van bestaande ruimtes — met behoud van karakter en introductie van hedendaagse helderheid.",
+    "exploreServices": "Diensten ontdekken"
+  },
+  "about": {
+    "label": "Over ons",
+    "title": "De studio",
+    "founderLabel": "Oprichter",
+    "approachLabel": "Onze aanpak",
+    "approachTitle": "Hoe wij werken",
+    "cta": "Laten we samen iets creëren.",
+    "ctaButton": "Neem contact op"
+  },
+  "services": {
+    "label": "Wat wij doen",
+    "title": "Onze diensten",
+    "processLabel": "Proces",
+    "processTitle": "Van visie tot werkelijkheid",
+    "cta": "Klaar om uw project te starten?",
+    "ctaButton": "Offerte aanvragen"
+  },
+  "projects": {
+    "label": "Portfolio",
+    "title": "Onze projecten",
+    "subtitle": "Een gecureerde selectie van woon- en commerciële architectuur, interieurontwerp en renovatieprojecten."
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Neem contact op",
+    "subtitle": "We horen graag over uw project. Neem contact op en laten we een gesprek beginnen.",
+    "emailLabel": "E-mail",
+    "messageUsLabel": "Stuur ons een bericht",
+    "socialLabel": "Sociaal",
+    "formName": "Naam",
+    "formNamePlaceholder": "Uw naam",
+    "formEmail": "E-mail",
+    "formEmailPlaceholder": "uw@email.com",
+    "formSubject": "Onderwerp",
+    "formMessage": "Bericht",
+    "formMessagePlaceholder": "Vertel ons over uw project...",
+    "formSubmit": "Bericht versturen",
+    "formSuccess": "Bedankt voor uw bericht.",
+    "formSuccessDetail": "We nemen binnen 24 uur contact met u op.",
+    "subjectArchitecture": "Architectuurproject",
+    "subjectInterior": "Interieurontwerp",
+    "subjectRenovation": "Renovatie",
+    "subjectConsultation": "Algemene consultatie",
+    "subjectOther": "Anders"
+  },
+  "quote": {
+    "label": "Aan de slag",
+    "title": "Offerte aanvragen",
+    "subtitle": "Beantwoord een paar vragen over uw project en wij geven u een persoonlijke schatting. Geen verplichting."
+  },
+  "privacy": {
+    "title": "Privacybeleid"
+  },
+  "footer": {
+    "cta": "Heeft u een project in gedachten?",
+    "ctaSub": "Laten we samen iets buitengewoons creëren.",
+    "ctaButton": "Offerte aanvragen",
+    "navigateLabel": "Navigeren",
+    "contactLabel": "Contact",
+    "followLabel": "Volg ons",
+    "brandLine1": "Luxe architectuur en interieurontwerp.",
+    "brandLine2": "Projecten in heel Europa.",
+    "copyright": "© {year} Gozu Studio. Alle rechten voorbehouden.",
+    "privacyLink": "Privacybeleid"
+  }
+}

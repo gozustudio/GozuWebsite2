@@ -1,7 +1,10 @@
-import Link from "next/link";
+import fs from "fs";
+import path from "path";
+import { Link } from "@/i18n/navigation";
 import FadeIn from "@/components/ui/FadeIn";
 import { SITE } from "@/lib/constants";
 import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
 export const metadata: Metadata = {
   title: "About",
@@ -9,7 +12,28 @@ export const metadata: Metadata = {
     "Gozu Studio is a luxury architecture and interior design practice founded by Goda Zukaite, creating refined spaces across Europe.",
 };
 
-export default function AboutPage() {
+function loadAboutPage() {
+  const file = path.resolve(process.cwd(), "content/pages/about.json");
+  return JSON.parse(fs.readFileSync(file, "utf-8")) as {
+    introParagraph1: string;
+    introParagraph2: string;
+    introParagraph3: string;
+    founderBio: string;
+    founderFacts: { label: string; value: string }[];
+    approachSteps: { step: string; title: string; desc: string }[];
+  };
+}
+
+export default async function AboutPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("about");
+  const about = loadAboutPage();
+
   return (
     <>
       {/* Hero */}
@@ -17,10 +41,10 @@ export default function AboutPage() {
         <div className="mx-auto max-w-[1400px]">
           <FadeIn>
             <p className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)]">
-              About
+              {t("label")}
             </p>
             <h1 className="mt-4 font-serif text-5xl text-[var(--color-body)] md:text-7xl">
-              The Studio
+              {t("title")}
             </h1>
           </FadeIn>
         </div>
@@ -32,24 +56,15 @@ export default function AboutPage() {
           <div className="grid gap-16 lg:grid-cols-2">
             <FadeIn>
               <p className="text-xl leading-relaxed text-[var(--color-text-secondary)] lg:text-2xl">
-                Gozu Studio is a multidisciplinary architecture and interior
-                design practice creating refined, considered spaces for
-                discerning clients across Europe. Founded by {SITE.founder},
-                our work bridges diverse cultural traditions with a distinctive
-                European sensibility.
+                {about.introParagraph1}
               </p>
             </FadeIn>
             <FadeIn delay={0.15}>
               <p className="text-lg leading-relaxed text-[var(--color-text-secondary)]">
-                We believe that architecture should be an act of listening — to
-                the site, to the client, to the way light moves through a room.
-                Our projects begin with deep understanding and evolve into
-                spaces that feel both inevitable and surprising.
+                {about.introParagraph2}
               </p>
               <p className="mt-6 text-lg leading-relaxed text-[var(--color-text-secondary)]">
-                We serve clients throughout Europe, working remotely and
-                on-site to bring each project to life. Our portfolio spans
-                luxury residences, commercial interiors, and heritage renovations.
+                {about.introParagraph3}
               </p>
             </FadeIn>
           </div>
@@ -62,31 +77,18 @@ export default function AboutPage() {
           <div className="grid gap-16 lg:grid-cols-2">
             <FadeIn>
               <p className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-main)]">
-                Founder
+                {t("founderLabel")}
               </p>
               <h2 className="mt-4 font-serif text-4xl text-white/90 md:text-5xl">
                 {SITE.founder}
               </h2>
               <p className="mt-8 text-lg leading-relaxed text-white/50">
-                Goda Zukaite founded Gozu Studio with a vision to create
-                architecture that balances sophistication with warmth. With a
-                background spanning both Baltic and British design traditions,
-                she brings a distinctive perspective to every project — one
-                that values restraint, materiality, and the quiet power of
-                thoughtful space.
+                {about.founderBio}
               </p>
             </FadeIn>
             <FadeIn delay={0.15}>
               <div className="space-y-8 border-t border-white/10 pt-8 lg:mt-16">
-                {[
-                  { label: "Education", value: "Architecture & Design" },
-                  { label: "Practice", value: "Gozu Studio" },
-                  {
-                    label: "Expertise",
-                    value: "Residential, Interior Design, Renovation",
-                  },
-                  { label: "Region", value: "Europe" },
-                ].map((item) => (
+                {about.founderFacts.map((item) => (
                   <div key={item.label}>
                     <p className="text-[11px] font-medium uppercase tracking-[3px] text-white/40">
                       {item.label}
@@ -105,31 +107,15 @@ export default function AboutPage() {
         <div className="mx-auto max-w-[1400px]">
           <FadeIn>
             <p className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)]">
-              Our Approach
+              {t("approachLabel")}
             </p>
             <h2 className="mt-4 font-serif text-4xl text-[var(--color-body)] md:text-5xl">
-              How We Work
+              {t("approachTitle")}
             </h2>
           </FadeIn>
 
           <div className="mt-16 grid gap-12 md:grid-cols-3">
-            {[
-              {
-                step: "01",
-                title: "Listen",
-                desc: "Every project starts with deep conversation. We learn how you live, what you value, and what the site tells us.",
-              },
-              {
-                step: "02",
-                title: "Design",
-                desc: "We develop concepts that respond to context, light, and proportion — iterating until every detail serves the whole.",
-              },
-              {
-                step: "03",
-                title: "Deliver",
-                desc: "From planning permissions to final finishes, we guide the project to completion with precision and care.",
-              },
-            ].map((item, i) => (
+            {about.approachSteps.map((item, i) => (
               <FadeIn key={item.step} delay={i * 0.1}>
                 <div className="border-t border-[var(--color-border)]/20 pt-8">
                   <span className="font-serif text-3xl text-[var(--color-main)]">
@@ -152,13 +138,13 @@ export default function AboutPage() {
       <section className="border-t border-[var(--color-border)]/20 px-6 py-20 text-center lg:px-12">
         <FadeIn>
           <h2 className="font-serif text-3xl text-[var(--color-body)] md:text-4xl">
-            Let&apos;s create something together.
+            {t("cta")}
           </h2>
           <Link
             href="/contact"
             className="mt-8 inline-block border border-[var(--color-main)] px-10 py-3 text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-body)] transition-all duration-300 hover:bg-[var(--color-main)] hover:text-white"
           >
-            Get in Touch
+            {t("ctaButton")}
           </Link>
         </FadeIn>
       </section>

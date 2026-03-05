@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "projects": "Prosjekter",
+    "about": "Om oss",
+    "services": "Tjenester",
+    "contact": "Kontakt",
+    "getQuote": "Be om tilbud",
+    "requestQuote": "Be om tilbud"
+  },
+  "home": {
+    "aboutLabel": "Om studioet",
+    "learnMore": "Les mer",
+    "portfolioLabel": "Portefølje",
+    "selectedWorks": "Utvalgte arbeider",
+    "viewAllProjects": "Se alle prosjekter",
+    "whatWeDo": "Hva vi gjør",
+    "ourServices": "Våre tjenester",
+    "architectureTitle": "Arkitektur",
+    "architectureDesc": "Fra konsept til ferdigstillelse — skreddersydd bolig- og næringsarkitektur som svarer til kontekst, lys og liv.",
+    "interiorTitle": "Interiørdesign",
+    "interiorDesc": "Gjennomtenkte interiører som harmoniserer materiale, proporsjon og håndverk. Hver detalj tjener helheten.",
+    "renovationTitle": "Renovering",
+    "renovationDesc": "Gjennomtenkt transformasjon av eksisterende rom — bevarer karakter mens det introduseres samtidsklarhet.",
+    "exploreServices": "Utforsk tjenester"
+  },
+  "about": {
+    "label": "Om oss",
+    "title": "Studioet",
+    "founderLabel": "Grunnlegger",
+    "approachLabel": "Vår tilnærming",
+    "approachTitle": "Hvordan vi jobber",
+    "cta": "La oss skape noe sammen.",
+    "ctaButton": "Kontakt oss"
+  },
+  "services": {
+    "label": "Hva vi gjør",
+    "title": "Våre tjenester",
+    "processLabel": "Prosess",
+    "processTitle": "Fra visjon til virkelighet",
+    "cta": "Klar til å starte prosjektet ditt?",
+    "ctaButton": "Be om tilbud"
+  },
+  "projects": {
+    "label": "Portefølje",
+    "title": "Våre prosjekter",
+    "subtitle": "Et kuratert utvalg av bolig- og næringsarkitektur, interiørdesign og renoveringsprosjekter."
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Kontakt oss",
+    "subtitle": "Vi vil gjerne høre om prosjektet ditt. Ta kontakt og la oss starte en samtale.",
+    "emailLabel": "E-post",
+    "messageUsLabel": "Send oss en melding",
+    "socialLabel": "Sosiale medier",
+    "formName": "Navn",
+    "formNamePlaceholder": "Ditt navn",
+    "formEmail": "E-post",
+    "formEmailPlaceholder": "din@email.com",
+    "formSubject": "Emne",
+    "formMessage": "Melding",
+    "formMessagePlaceholder": "Fortell oss om prosjektet ditt...",
+    "formSubmit": "Send melding",
+    "formSuccess": "Takk for at du tok kontakt.",
+    "formSuccessDetail": "Vi kontakter deg innen 24 timer.",
+    "subjectArchitecture": "Arkitekturprosjekt",
+    "subjectInterior": "Interiørdesign",
+    "subjectRenovation": "Renovering",
+    "subjectConsultation": "Generell konsultasjon",
+    "subjectOther": "Annet"
+  },
+  "quote": {
+    "label": "Kom i gang",
+    "title": "Be om tilbud",
+    "subtitle": "Svar på noen spørsmål om prosjektet ditt, så gir vi deg et personlig estimat. Ingen forpliktelse."
+  },
+  "privacy": {
+    "title": "Personvernerklæring"
+  },
+  "footer": {
+    "cta": "Har du et prosjekt i tankene?",
+    "ctaSub": "La oss skape noe ekstraordinært sammen.",
+    "ctaButton": "Be om tilbud",
+    "navigateLabel": "Naviger",
+    "contactLabel": "Kontakt",
+    "followLabel": "Følg oss",
+    "brandLine1": "Luksus arkitektur og interiørdesign.",
+    "brandLine2": "Prosjekter i hele Europa.",
+    "copyright": "© {year} Gozu Studio. Alle rettigheter forbeholdt.",
+    "privacyLink": "Personvernerklæring"
+  }
+}

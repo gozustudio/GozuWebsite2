@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "getQuote": "Get a Quote",
+    "requestQuote": "Request a Quote"
+  },
+  "home": {
+    "aboutLabel": "About the Studio",
+    "learnMore": "Learn More",
+    "portfolioLabel": "Portfolio",
+    "selectedWorks": "Selected Works",
+    "viewAllProjects": "View All Projects",
+    "whatWeDo": "What We Do",
+    "ourServices": "Our Services",
+    "architectureTitle": "Architecture",
+    "architectureDesc": "From concept to completion — bespoke residential and commercial architecture that responds to context, light, and living.",
+    "interiorTitle": "Interior Design",
+    "interiorDesc": "Considered interiors that harmonise material, proportion, and craft. Every detail serves the whole.",
+    "renovationTitle": "Renovation",
+    "renovationDesc": "Thoughtful transformation of existing spaces — preserving character while introducing contemporary clarity.",
+    "exploreServices": "Explore Services"
+  },
+  "about": {
+    "label": "About",
+    "title": "The Studio",
+    "founderLabel": "Founder",
+    "approachLabel": "Our Approach",
+    "approachTitle": "How We Work",
+    "cta": "Let's create something together.",
+    "ctaButton": "Get in Touch"
+  },
+  "services": {
+    "label": "What We Do",
+    "title": "Our Services",
+    "processLabel": "Process",
+    "processTitle": "From Vision to Reality",
+    "cta": "Ready to start your project?",
+    "ctaButton": "Request a Quote"
+  },
+  "projects": {
+    "label": "Portfolio",
+    "title": "Our Projects",
+    "subtitle": "A curated selection of residential and commercial architecture, interior design, and renovation projects."
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Get in Touch",
+    "subtitle": "We would love to hear about your project. Reach out and let's start a conversation.",
+    "emailLabel": "Email",
+    "messageUsLabel": "Message Us",
+    "socialLabel": "Social",
+    "formName": "Name",
+    "formNamePlaceholder": "Your name",
+    "formEmail": "Email",
+    "formEmailPlaceholder": "your@email.com",
+    "formSubject": "Subject",
+    "formMessage": "Message",
+    "formMessagePlaceholder": "Tell us about your project...",
+    "formSubmit": "Send Message",
+    "formSuccess": "Thank you for reaching out.",
+    "formSuccessDetail": "We'll be in touch within 24 hours.",
+    "subjectArchitecture": "Architecture Project",
+    "subjectInterior": "Interior Design",
+    "subjectRenovation": "Renovation",
+    "subjectConsultation": "General Consultation",
+    "subjectOther": "Other"
+  },
+  "quote": {
+    "label": "Get Started",
+    "title": "Request a Quote",
+    "subtitle": "Answer a few questions about your project and we'll provide a personalised estimate. No commitment required."
+  },
+  "privacy": {
+    "title": "Privacy Policy"
+  },
+  "footer": {
+    "cta": "Have a project in mind?",
+    "ctaSub": "Let's create something extraordinary together.",
+    "ctaButton": "Request a Quote",
+    "navigateLabel": "Navigate",
+    "contactLabel": "Contact",
+    "followLabel": "Follow",
+    "brandLine1": "Luxury architecture & interior design.",
+    "brandLine2": "Projects across Europe.",
+    "copyright": "© {year} Gozu Studio. All rights reserved.",
+    "privacyLink": "Privacy Policy"
+  }
+}

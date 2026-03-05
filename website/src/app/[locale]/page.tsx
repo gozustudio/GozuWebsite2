@@ -1,16 +1,56 @@
+import fs from "fs";
+import path from "path";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { loadProjects } from "@/lib/projects";
-import { SITE } from "@/lib/constants";
 import HeroVideo from "@/components/sections/HeroVideo";
 import FadeIn from "@/components/ui/FadeIn";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
-export default function Home() {
-  const projects = loadProjects();
-  const featured = projects.slice(0, 6);
+function loadHomePage() {
+  const file = path.resolve(process.cwd(), "content/pages/home.json");
+  return JSON.parse(fs.readFileSync(file, "utf-8")) as {
+    heroTagline: string;
+    introText: string;
+  };
+}
+
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("home");
+  const homePage = loadHomePage();
+  const featured = loadProjects().filter((p) => p.featured);
 
   return (
     <>
+      <script
+        type="application/json"
+        id="webmcp"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            tools: [
+              {
+                name: "get_gozu_studio_info",
+                type: "imperative",
+                description: "Get information about Gozu Studio including contact details, services, and the founder.",
+                readOnly: true,
+              },
+              {
+                name: "search_gozu_projects",
+                type: "imperative",
+                description: "Search Gozu Studio's architecture and interior design portfolio.",
+                readOnly: true,
+              },
+            ],
+          }),
+        }}
+      />
+
       {/* Cinematic Hero */}
       <HeroVideo />
 
@@ -19,24 +59,21 @@ export default function Home() {
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
           <FadeIn>
             <p className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)]">
-              About the Studio
+              {t("aboutLabel")}
             </p>
             <h2 className="mt-4 font-serif text-4xl leading-tight text-[var(--color-body)] md:text-5xl lg:text-6xl">
-              Architecture that tells your story
+              {homePage.heroTagline}
             </h2>
           </FadeIn>
           <FadeIn delay={0.15}>
             <p className="text-lg leading-relaxed text-[var(--color-text-secondary)] lg:mt-16">
-              Gozu Studio is a luxury architecture and interior design
-              practice founded by {SITE.founder}. We create spaces that
-              balance refined aesthetics with functional living — from bespoke
-              residences to considered commercial environments across Europe.
+              {homePage.introText}
             </p>
             <Link
               href="/about"
               className="mt-8 inline-block text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-body)] transition-colors duration-300 hover:text-[var(--color-main)]"
             >
-              Learn More &rarr;
+              {t("learnMore")} &rarr;
             </Link>
           </FadeIn>
         </div>
@@ -48,17 +85,17 @@ export default function Home() {
           <div className="mb-16 flex items-end justify-between">
             <div>
               <p className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)]">
-                Portfolio
+                {t("portfolioLabel")}
               </p>
               <h2 className="mt-4 font-serif text-4xl text-[var(--color-body)] md:text-5xl">
-                Selected Works
+                {t("selectedWorks")}
               </h2>
             </div>
             <Link
               href="/projects"
               className="hidden text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-body)] transition-colors duration-300 hover:text-[var(--color-main)] md:block"
             >
-              View All Projects &rarr;
+              {t("viewAllProjects")} &rarr;
             </Link>
           </div>
         </FadeIn>
@@ -112,7 +149,7 @@ export default function Home() {
             href="/projects"
             className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-body)] transition-colors duration-300 hover:text-[var(--color-main)]"
           >
-            View All Projects &rarr;
+            {t("viewAllProjects")} &rarr;
           </Link>
         </div>
       </section>
@@ -122,26 +159,26 @@ export default function Home() {
         <div className="mx-auto max-w-[1400px] px-6 py-24 lg:px-12 lg:py-32">
           <FadeIn>
             <p className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-main)]">
-              What We Do
+              {t("whatWeDo")}
             </p>
             <h2 className="mt-4 font-serif text-4xl text-white/90 md:text-5xl">
-              Our Services
+              {t("ourServices")}
             </h2>
           </FadeIn>
 
           <div className="mt-16 grid gap-12 md:grid-cols-3">
             {[
               {
-                title: "Architecture",
-                desc: "From concept to completion — bespoke residential and commercial architecture that responds to context, light, and living.",
+                title: t("architectureTitle"),
+                desc: t("architectureDesc"),
               },
               {
-                title: "Interior Design",
-                desc: "Considered interiors that harmonise material, proportion, and craft. Every detail serves the whole.",
+                title: t("interiorTitle"),
+                desc: t("interiorDesc"),
               },
               {
-                title: "Renovation",
-                desc: "Thoughtful transformation of existing spaces — preserving character while introducing contemporary clarity.",
+                title: t("renovationTitle"),
+                desc: t("renovationDesc"),
               },
             ].map((service, i) => (
               <FadeIn key={service.title} delay={i * 0.1}>
@@ -163,7 +200,7 @@ export default function Home() {
                 href="/services"
                 className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-main)] transition-colors duration-300 hover:text-[var(--color-highlight)]"
               >
-                Explore Services &rarr;
+                {t("exploreServices")} &rarr;
               </Link>
             </div>
           </FadeIn>

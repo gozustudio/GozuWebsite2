@@ -10,10 +10,10 @@ export const SITE = {
 } as const;
 
 export const NAV_LINKS = [
-  { href: "/projects", label: "Projects" },
-  { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
-  { href: "/contact", label: "Contact" },
+  { href: "/projects", labelKey: "projects" },
+  { href: "/about", labelKey: "about" },
+  { href: "/services", labelKey: "services" },
+  { href: "/contact", labelKey: "contact" },
 ] as const;
 
 export const SOCIAL_LINKS = [

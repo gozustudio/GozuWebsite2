@@ -1,12 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import { NAV_LINKS } from "@/lib/constants";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const t = useTranslations("nav");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -68,14 +70,14 @@ export default function Header() {
                 href={link.href}
                 className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-body)] transition-colors duration-300 hover:text-[var(--color-main)]"
               >
-                {link.label}
+                {t(link.labelKey)}
               </Link>
             ))}
             <Link
               href="/quote"
               className="border border-[var(--color-main)] bg-transparent px-5 py-2 text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-body)] transition-all duration-300 hover:bg-[var(--color-main)] hover:text-white"
             >
-              Get a Quote
+              {t("getQuote")}
             </Link>
           </div>
 
@@ -114,7 +116,7 @@ export default function Header() {
               onClick={() => setMenuOpen(false)}
               className="font-serif text-4xl text-[var(--color-body)] transition-colors duration-300 hover:text-[var(--color-main)]"
             >
-              {link.label}
+              {t(link.labelKey)}
             </Link>
           ))}
           <Link
@@ -122,7 +124,7 @@ export default function Header() {
             onClick={() => setMenuOpen(false)}
             className="mt-4 border border-[var(--color-main)] px-8 py-3 text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-body)] transition-all duration-300 hover:bg-[var(--color-main)] hover:text-white"
           >
-            Get a Quote
+            {t("getQuote")}
           </Link>
         </div>
       </div>

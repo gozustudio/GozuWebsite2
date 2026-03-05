@@ -9,18 +9,31 @@ export default function ContactForm() {
     e.preventDefault();
 
     const nativeEvent = e.nativeEvent as WebMCPSubmitEvent;
+    const fd = new FormData(e.currentTarget);
 
     if (nativeEvent.agentInvoked) {
-      const fd = new FormData(e.currentTarget);
       const ref = "REF-" + Math.random().toString(36).substring(2, 8).toUpperCase();
       nativeEvent.respondWith?.(
         `Contact form submitted successfully. Reference: ${ref}. Name: ${fd.get("name")}, Email: ${fd.get("email")}.`
       );
-      setSubmitted(true);
-      return;
     }
 
-    // Human submission — placeholder for backend integration
+    try {
+      await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: fd.get("name"),
+          email: fd.get("email"),
+          subject: fd.get("subject"),
+          message: fd.get("message"),
+          honeypot: fd.get("honeypot") ?? "",
+        }),
+      });
+    } catch {
+      // Silently handle — don't leak backend state to user
+    }
+
     setSubmitted(true);
   };
 
@@ -122,6 +135,8 @@ export default function ContactForm() {
           placeholder="Tell us about your project..."
         />
       </div>
+
+      <input type="text" name="honeypot" className="hidden" tabIndex={-1} autoComplete="off" aria-hidden="true" />
 
       <button
         type="submit"

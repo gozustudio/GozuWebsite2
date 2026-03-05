@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "projects": "Projets",
+    "about": "À propos",
+    "services": "Services",
+    "contact": "Contact",
+    "getQuote": "Demander un devis",
+    "requestQuote": "Demander un devis"
+  },
+  "home": {
+    "aboutLabel": "À propos du studio",
+    "learnMore": "En savoir plus",
+    "portfolioLabel": "Portfolio",
+    "selectedWorks": "Œuvres sélectionnées",
+    "viewAllProjects": "Voir tous les projets",
+    "whatWeDo": "Ce que nous faisons",
+    "ourServices": "Nos services",
+    "architectureTitle": "Architecture",
+    "architectureDesc": "Du concept à la réalisation — une architecture résidentielle et commerciale sur mesure qui répond au contexte, à la lumière et à la vie.",
+    "interiorTitle": "Architecture d'intérieur",
+    "interiorDesc": "Des intérieurs réfléchis qui harmonisent matériaux, proportions et savoir-faire. Chaque détail sert l'ensemble.",
+    "renovationTitle": "Rénovation",
+    "renovationDesc": "Transformation réfléchie des espaces existants — préservation du caractère tout en introduisant une clarté contemporaine.",
+    "exploreServices": "Découvrir nos services"
+  },
+  "about": {
+    "label": "À propos",
+    "title": "Le studio",
+    "founderLabel": "Fondatrice",
+    "approachLabel": "Notre approche",
+    "approachTitle": "Comment nous travaillons",
+    "cta": "Créons quelque chose ensemble.",
+    "ctaButton": "Contactez-nous"
+  },
+  "services": {
+    "label": "Ce que nous faisons",
+    "title": "Nos services",
+    "processLabel": "Processus",
+    "processTitle": "De la vision à la réalité",
+    "cta": "Prêt à démarrer votre projet ?",
+    "ctaButton": "Demander un devis"
+  },
+  "projects": {
+    "label": "Portfolio",
+    "title": "Nos projets",
+    "subtitle": "Une sélection soignée de projets d'architecture résidentielle et commerciale, d'architecture d'intérieur et de rénovation."
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Contactez-nous",
+    "subtitle": "Nous serions ravis d'entendre parler de votre projet. Contactez-nous et commençons une conversation.",
+    "emailLabel": "E-mail",
+    "messageUsLabel": "Écrivez-nous",
+    "socialLabel": "Réseaux sociaux",
+    "formName": "Nom",
+    "formNamePlaceholder": "Votre nom",
+    "formEmail": "E-mail",
+    "formEmailPlaceholder": "votre@email.com",
+    "formSubject": "Objet",
+    "formMessage": "Message",
+    "formMessagePlaceholder": "Parlez-nous de votre projet...",
+    "formSubmit": "Envoyer le message",
+    "formSuccess": "Merci de nous avoir contactés.",
+    "formSuccessDetail": "Nous vous répondrons dans les 24 heures.",
+    "subjectArchitecture": "Projet d'architecture",
+    "subjectInterior": "Architecture d'intérieur",
+    "subjectRenovation": "Rénovation",
+    "subjectConsultation": "Consultation générale",
+    "subjectOther": "Autre"
+  },
+  "quote": {
+    "label": "Commencer",
+    "title": "Demander un devis",
+    "subtitle": "Répondez à quelques questions sur votre projet et nous vous fournirons une estimation personnalisée. Sans engagement."
+  },
+  "privacy": {
+    "title": "Politique de confidentialité"
+  },
+  "footer": {
+    "cta": "Un projet en tête ?",
+    "ctaSub": "Créons ensemble quelque chose d'extraordinaire.",
+    "ctaButton": "Demander un devis",
+    "navigateLabel": "Naviguer",
+    "contactLabel": "Contact",
+    "followLabel": "Suivez-nous",
+    "brandLine1": "Architecture et design d'intérieur de luxe.",
+    "brandLine2": "Projets à travers l'Europe.",
+    "copyright": "© {year} Gozu Studio. Tous droits réservés.",
+    "privacyLink": "Politique de confidentialité"
+  }
+}

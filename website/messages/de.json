@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "projects": "Projekte",
+    "about": "Über uns",
+    "services": "Leistungen",
+    "contact": "Kontakt",
+    "getQuote": "Angebot einholen",
+    "requestQuote": "Angebot anfordern"
+  },
+  "home": {
+    "aboutLabel": "Über das Studio",
+    "learnMore": "Mehr erfahren",
+    "portfolioLabel": "Portfolio",
+    "selectedWorks": "Ausgewählte Arbeiten",
+    "viewAllProjects": "Alle Projekte ansehen",
+    "whatWeDo": "Was wir tun",
+    "ourServices": "Unsere Leistungen",
+    "architectureTitle": "Architektur",
+    "architectureDesc": "Vom Konzept bis zur Fertigstellung — maßgeschneiderte Wohn- und Gewerbe­architektur, die auf Kontext, Licht und Leben eingeht.",
+    "interiorTitle": "Innenarchitektur",
+    "interiorDesc": "Durchdachte Innenräume, die Material, Proportion und Handwerk harmonisieren. Jedes Detail dient dem Ganzen.",
+    "renovationTitle": "Renovierung",
+    "renovationDesc": "Durchdachte Umgestaltung bestehender Räume — Bewahrung des Charakters bei gleichzeitiger Einführung zeitgenössischer Klarheit.",
+    "exploreServices": "Leistungen entdecken"
+  },
+  "about": {
+    "label": "Über uns",
+    "title": "Das Studio",
+    "founderLabel": "Gründerin",
+    "approachLabel": "Unser Ansatz",
+    "approachTitle": "Wie wir arbeiten",
+    "cta": "Lassen Sie uns gemeinsam etwas schaffen.",
+    "ctaButton": "Kontakt aufnehmen"
+  },
+  "services": {
+    "label": "Was wir tun",
+    "title": "Unsere Leistungen",
+    "processLabel": "Prozess",
+    "processTitle": "Von der Vision zur Realität",
+    "cta": "Bereit, Ihr Projekt zu starten?",
+    "ctaButton": "Angebot anfordern"
+  },
+  "projects": {
+    "label": "Portfolio",
+    "title": "Unsere Projekte",
+    "subtitle": "Eine kuratierte Auswahl an Wohn- und Gewerbearchitektur, Innenarchitektur und Renovierungsprojekten."
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Wir freuen uns, von Ihrem Projekt zu hören. Nehmen Sie Kontakt auf und lassen Sie uns ein Gespräch beginnen.",
+    "emailLabel": "E-Mail",
+    "messageUsLabel": "Schreiben Sie uns",
+    "socialLabel": "Soziale Medien",
+    "formName": "Name",
+    "formNamePlaceholder": "Ihr Name",
+    "formEmail": "E-Mail",
+    "formEmailPlaceholder": "ihre@email.com",
+    "formSubject": "Betreff",
+    "formMessage": "Nachricht",
+    "formMessagePlaceholder": "Erzählen Sie uns von Ihrem Projekt...",
+    "formSubmit": "Nachricht senden",
+    "formSuccess": "Vielen Dank für Ihre Anfrage.",
+    "formSuccessDetail": "Wir melden uns innerhalb von 24 Stunden.",
+    "subjectArchitecture": "Architekturprojekt",
+    "subjectInterior": "Innenarchitektur",
+    "subjectRenovation": "Renovierung",
+    "subjectConsultation": "Allgemeine Beratung",
+    "subjectOther": "Sonstiges"
+  },
+  "quote": {
+    "label": "Loslegen",
+    "title": "Angebot anfordern",
+    "subtitle": "Beantworten Sie ein paar Fragen zu Ihrem Projekt und wir erstellen Ihnen ein individuelles Angebot. Unverbindlich."
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung"
+  },
+  "footer": {
+    "cta": "Haben Sie ein Projekt im Sinn?",
+    "ctaSub": "Lassen Sie uns gemeinsam etwas Außergewöhnliches schaffen.",
+    "ctaButton": "Angebot anfordern",
+    "navigateLabel": "Navigation",
+    "contactLabel": "Kontakt",
+    "followLabel": "Folgen Sie uns",
+    "brandLine1": "Luxuriöse Architektur und Innenarchitektur.",
+    "brandLine2": "Projekte in ganz Europa.",
+    "copyright": "© {year} Gozu Studio. Alle Rechte vorbehalten.",
+    "privacyLink": "Datenschutzerklärung"
+  }
+}

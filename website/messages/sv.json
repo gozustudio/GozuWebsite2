@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "projects": "Projekt",
+    "about": "Om oss",
+    "services": "Tjänster",
+    "contact": "Kontakt",
+    "getQuote": "Begär offert",
+    "requestQuote": "Begär offert"
+  },
+  "home": {
+    "aboutLabel": "Om studion",
+    "learnMore": "Läs mer",
+    "portfolioLabel": "Portfölj",
+    "selectedWorks": "Utvalda verk",
+    "viewAllProjects": "Visa alla projekt",
+    "whatWeDo": "Vad vi gör",
+    "ourServices": "Våra tjänster",
+    "architectureTitle": "Arkitektur",
+    "architectureDesc": "Från koncept till färdigställande — skräddarsydd bostads- och kommersiell arkitektur som svarar på kontext, ljus och liv.",
+    "interiorTitle": "Inredningsdesign",
+    "interiorDesc": "Genomtänkta interiörer som harmoniserar material, proportion och hantverk. Varje detalj tjänar helheten.",
+    "renovationTitle": "Renovering",
+    "renovationDesc": "Genomtänkt omvandling av befintliga utrymmen — bevarande av karaktär med samtida klarhet.",
+    "exploreServices": "Utforska tjänster"
+  },
+  "about": {
+    "label": "Om oss",
+    "title": "Studion",
+    "founderLabel": "Grundare",
+    "approachLabel": "Vårt tillvägagångssätt",
+    "approachTitle": "Hur vi arbetar",
+    "cta": "Låt oss skapa något tillsammans.",
+    "ctaButton": "Kontakta oss"
+  },
+  "services": {
+    "label": "Vad vi gör",
+    "title": "Våra tjänster",
+    "processLabel": "Process",
+    "processTitle": "Från vision till verklighet",
+    "cta": "Redo att starta ditt projekt?",
+    "ctaButton": "Begär offert"
+  },
+  "projects": {
+    "label": "Portfölj",
+    "title": "Våra projekt",
+    "subtitle": "Ett kurerat urval av bostads- och kommersiell arkitektur, inredningsdesign och renoveringsprojekt."
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Kontakta oss",
+    "subtitle": "Vi vill gärna höra om ditt projekt. Hör av dig så startar vi en konversation.",
+    "emailLabel": "E-post",
+    "messageUsLabel": "Skriv till oss",
+    "socialLabel": "Sociala medier",
+    "formName": "Namn",
+    "formNamePlaceholder": "Ditt namn",
+    "formEmail": "E-post",
+    "formEmailPlaceholder": "din@email.com",
+    "formSubject": "Ämne",
+    "formMessage": "Meddelande",
+    "formMessagePlaceholder": "Berätta om ditt projekt...",
+    "formSubmit": "Skicka meddelande",
+    "formSuccess": "Tack för att du kontaktade oss.",
+    "formSuccessDetail": "Vi återkommer inom 24 timmar.",
+    "subjectArchitecture": "Arkitekturprojekt",
+    "subjectInterior": "Inredningsdesign",
+    "subjectRenovation": "Renovering",
+    "subjectConsultation": "Allmän konsultation",
+    "subjectOther": "Övrigt"
+  },
+  "quote": {
+    "label": "Kom igång",
+    "title": "Begär offert",
+    "subtitle": "Svara på några frågor om ditt projekt så ger vi dig en personlig uppskattning. Ingen förpliktelse."
+  },
+  "privacy": {
+    "title": "Integritetspolicy"
+  },
+  "footer": {
+    "cta": "Har du ett projekt i åtanke?",
+    "ctaSub": "Låt oss skapa något extraordinärt tillsammans.",
+    "ctaButton": "Begär offert",
+    "navigateLabel": "Navigera",
+    "contactLabel": "Kontakt",
+    "followLabel": "Följ oss",
+    "brandLine1": "Lyxig arkitektur och inredningsdesign.",
+    "brandLine2": "Projekt i hela Europa.",
+    "copyright": "© {year} Gozu Studio. Alla rättigheter förbehållna.",
+    "privacyLink": "Integritetspolicy"
+  }
+}

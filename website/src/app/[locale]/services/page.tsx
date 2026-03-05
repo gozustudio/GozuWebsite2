@@ -1,6 +1,9 @@
-import Link from "next/link";
+import fs from "fs";
+import path from "path";
+import { Link } from "@/i18n/navigation";
 import FadeIn from "@/components/ui/FadeIn";
 import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -8,54 +11,25 @@ export const metadata: Metadata = {
     "Architecture, interior design, and renovation services by Gozu Studio. Luxury residential and commercial projects across Europe.",
 };
 
-const SERVICES = [
-  {
-    title: "Residential Architecture",
-    description:
-      "Bespoke homes designed around how you live. From new-build houses to luxury apartments, we create residential architecture that combines aesthetic refinement with practical intelligence. Every project is a unique response to site, client, and context.",
-    features: [
-      "New-build residential design",
-      "Planning & building regulations",
-      "Sustainable design integration",
-      "Project management",
-    ],
-  },
-  {
-    title: "Interior Design",
-    description:
-      "Considered interiors that transform how spaces feel. We work with material, light, and proportion to create environments that are both beautiful and deeply functional. From concept to completion, every detail is intentional.",
-    features: [
-      "Full interior design service",
-      "Material & finish selection",
-      "Bespoke furniture design",
-      "Lighting design",
-    ],
-  },
-  {
-    title: "Renovation & Restoration",
-    description:
-      "Thoughtful transformation of existing buildings. We specialise in giving new life to period properties and heritage structures, preserving their character while introducing contemporary clarity and comfort.",
-    features: [
-      "Period property renovation",
-      "Heritage building restoration",
-      "Extension design",
-      "Structural modifications",
-    ],
-  },
-  {
-    title: "Commercial Interiors",
-    description:
-      "Workspaces and commercial environments that elevate brands. We design offices, retail spaces, and hospitality interiors that align physical space with business identity and culture.",
-    features: [
-      "Office & workspace design",
-      "Retail interiors",
-      "Hospitality design",
-      "Brand-aligned environments",
-    ],
-  },
-];
+function loadServicesPage() {
+  const file = path.resolve(process.cwd(), "content/pages/services.json");
+  return JSON.parse(fs.readFileSync(file, "utf-8")) as {
+    heroText: string;
+    services: { title: string; description: string; features: string[] }[];
+    processSteps: { step: string; title: string; desc: string }[];
+  };
+}
 
-export default function ServicesPage() {
+export default async function ServicesPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("services");
+  const page = loadServicesPage();
+
   return (
     <>
       {/* Hero */}
@@ -63,15 +37,13 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-[1400px]">
           <FadeIn>
             <p className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)]">
-              What We Do
+              {t("label")}
             </p>
             <h1 className="mt-4 font-serif text-5xl text-[var(--color-body)] md:text-7xl">
-              Our Services
+              {t("title")}
             </h1>
             <p className="mt-6 max-w-xl text-lg text-[var(--color-text-secondary)]">
-              From initial concept to final detail, we provide comprehensive
-              architecture and design services tailored to each client and
-              project.
+              {page.heroText}
             </p>
           </FadeIn>
         </div>
@@ -81,7 +53,7 @@ export default function ServicesPage() {
       <section className="px-6 pb-24 lg:px-12 lg:pb-32">
         <div className="mx-auto max-w-[1400px]">
           <div className="space-y-20">
-            {SERVICES.map((service, i) => (
+            {page.services.map((service, i) => (
               <FadeIn key={service.title} delay={i * 0.08}>
                 <div className="grid gap-12 border-t border-[var(--color-border)]/20 pt-12 lg:grid-cols-2 lg:gap-20">
                   <div>
@@ -120,20 +92,15 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-[1400px] px-6 py-24 lg:px-12 lg:py-32">
           <FadeIn>
             <p className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-main)]">
-              Process
+              {t("processLabel")}
             </p>
             <h2 className="mt-4 font-serif text-4xl text-white/90 md:text-5xl">
-              From Vision to Reality
+              {t("processTitle")}
             </h2>
           </FadeIn>
 
           <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {[
-              { step: "01", title: "Consultation", desc: "We discuss your vision, requirements, and budget." },
-              { step: "02", title: "Concept", desc: "Initial design concepts, mood boards, and spatial planning." },
-              { step: "03", title: "Development", desc: "Detailed drawings, material selection, and contractor coordination." },
-              { step: "04", title: "Completion", desc: "On-site oversight through to handover and final styling." },
-            ].map((item, i) => (
+            {page.processSteps.map((item, i) => (
               <FadeIn key={item.step} delay={i * 0.1}>
                 <div className="border-t border-white/10 pt-8">
                   <span className="font-serif text-2xl text-[var(--color-main)]">
@@ -154,13 +121,13 @@ export default function ServicesPage() {
       <section className="px-6 py-20 text-center lg:px-12">
         <FadeIn>
           <h2 className="font-serif text-3xl text-[var(--color-body)] md:text-4xl">
-            Ready to start your project?
+            {t("cta")}
           </h2>
           <Link
             href="/quote"
             className="mt-8 inline-block border border-[var(--color-main)] px-10 py-3 text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-body)] transition-all duration-300 hover:bg-[var(--color-main)] hover:text-white"
           >
-            Request a Quote
+            {t("ctaButton")}
           </Link>
         </FadeIn>
       </section>
