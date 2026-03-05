@@ -1,8 +1,17 @@
 import { NextRequest, NextResponse } from "next/server";
+import { Resend } from "resend";
 import { google } from "googleapis";
 
 const SPREADSHEET_ID = process.env.GOOGLE_SPREADSHEET_ID!;
 const SHEET = "Main";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+const COMPLETION_MAP: Record<string, number> = {
+  "As soon as possible": 0,
+  "5–6 months": 1,
+  "6–12 months": 2,
+};
 
 function getSheets() {
   const auth = new google.auth.JWT({
@@ -58,7 +67,7 @@ function buildRow(data: Record<string, unknown>, partial: boolean): unknown[] {
     data.area ?? "",
     data.unit ?? "",
     data.projectSite ?? "",
-    data.completion ?? "",
+    COMPLETION_MAP[data.completion as string] ?? data.completion ?? "",
     data.package ?? "",
   ];
 }
@@ -85,6 +94,7 @@ export async function POST(req: NextRequest) {
     const existingRowIndex = await findRowByEmail(sheets, data.email as string);
 
     if (existingRowIndex !== null) {
+      console.log(`[/api/quote] Updating existing row ${existingRowIndex} for ${data.email}`);
       await sheets.spreadsheets.values.update({
         spreadsheetId: SPREADSHEET_ID,
         range: `${SHEET}!A${existingRowIndex}:Z${existingRowIndex}`,
@@ -92,6 +102,7 @@ export async function POST(req: NextRequest) {
         requestBody: { values: [row] },
       });
     } else {
+      console.log(`[/api/quote] Appending new row for ${data.email}`);
       await sheets.spreadsheets.values.append({
         spreadsheetId: SPREADSHEET_ID,
         range: `${SHEET}!A:Z`,
@@ -99,6 +110,40 @@ export async function POST(req: NextRequest) {
         insertDataOption: "INSERT_ROWS",
         requestBody: { values: [row] },
       });
+    }
+
+    // Send email notification on final submission only
+    if (!partial) {
+      console.log(`[/api/quote] Sending email notification for ${data.email}`);
+      const projectTypes = [
+        data.residential ? "Residential" : "",
+        data.offices ? "Offices" : "",
+        data.commercial ? "Commercial" : "",
+      ].filter(Boolean).join(", ") || "Not specified";
+
+      const emailResult = await resend.emails.send({
+        from: "Gozu Studio Website <website@gozustudio.com>",
+        to: "info@gozustudio.com",
+        subject: `New Quote Request — ${data.firstName ?? ""} ${data.lastName ?? ""}`.trim(),
+        text: [
+          `New quote request submission`,
+          ``,
+          `Name: ${data.firstName ?? ""} ${data.lastName ?? ""}`,
+          `Email: ${data.email ?? ""}`,
+          `Location: ${data.city ?? ""}, ${data.state ?? ""}, ${data.postcode ?? ""}`,
+          `Address: ${data.streetName ?? ""} ${data.streetNumber ?? ""}${data.apartment ? `, Apt ${data.apartment}` : ""}`,
+          ``,
+          `Project Type: ${projectTypes}`,
+          `Construction: ${data.constructionType ?? "Not specified"}`,
+          `Area: ${data.area ?? "?"} ${data.unit ?? ""}`,
+          `Completion: ${data.completion ?? "Not specified"}`,
+          `Package: ${data.package ?? "Not specified"}`,
+          ``,
+          `---`,
+          `Sent from gozustudio.com quote form at ${new Date().toISOString()}`,
+        ].join("\n"),
+      });
+      console.log(`[/api/quote] Email result:`, emailResult);
     }
 
     return NextResponse.json({ ok: true });

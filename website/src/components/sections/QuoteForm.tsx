@@ -532,14 +532,14 @@ function Step3({
             onClick={() => update({ completion: "As soon as possible" })}
           />
           <OptionCard
-            label="5\u20136 months"
-            selected={data.completion === "5\u20136 months"}
-            onClick={() => update({ completion: "5\u20136 months" })}
+            label="5–6 months"
+            selected={data.completion === "5–6 months"}
+            onClick={() => update({ completion: "5–6 months" })}
           />
           <OptionCard
-            label="6\u201312 months"
-            selected={data.completion === "6\u201312 months"}
-            onClick={() => update({ completion: "6\u201312 months" })}
+            label="6–12 months"
+            selected={data.completion === "6–12 months"}
+            onClick={() => update({ completion: "6–12 months" })}
           />
         </div>
       </div>
@@ -547,51 +547,39 @@ function Step3({
   );
 }
 
-const PACKAGES = [
-  {
-    id: "Standard",
-    tagline: "All the basic technical plans",
-    services: [
-      "Interior Concept", "Partition Plan", "Furniture Plan",
-      "Lighting Plan", "Electrical Outlet Plan", "Electrical Switch Plan",
-      "Plumbing Plan", "Ceiling Plan", "Floor Plan",
-      "Ventilation Plan", "Tile Layout Sections",
-    ],
-  },
-  {
-    id: "Advance",
-    tagline: "More advanced with aesthetics specialist advice",
-    services: [
-      "Technical Drawing Package", "3D Model", "Kitchen Sketches",
-      "Furniture Sketches", "Material Selection", "Lighting Selection",
-      "Remote Consultations",
-    ],
-  },
-  {
-    id: "Premium",
-    tagline: "Complete with realistic visualizations",
-    services: [
-      "Ordered Furniture Selection", "Interior Details Selection",
-      "5 Photorealistic Visualizations",
-    ],
-  },
-];
+type PackageData = {
+  code: number;
+  name: string;
+  tagline: string;
+  items: string[];
+};
 
 function Step4({
-  data, update,
+  data, update, packages,
 }: {
   data: QuoteFormData;
   update: (p: Partial<QuoteFormData>) => void;
+  packages: PackageData[];
 }) {
+  // Interior selected → packages 1,2,3; otherwise → packages 4,5
+  const available = data.interior
+    ? packages.filter((p) => p.code <= 3)
+    : packages.filter((p) => p.code >= 4);
+
   return (
     <div className="space-y-4">
-      {PACKAGES.map((pkg, i) => (
+      {available.length === 0 && (
+        <p className="text-sm text-[var(--color-text-secondary)]">
+          Loading packages…
+        </p>
+      )}
+      {available.map((pkg) => (
         <button
-          key={pkg.id}
+          key={pkg.code}
           type="button"
-          onClick={() => update({ package: pkg.id })}
+          onClick={() => update({ package: String(pkg.code) })}
           className={`w-full border p-6 text-left transition-all duration-200 ${
-            data.package === pkg.id
+            data.package === String(pkg.code)
               ? "border-[var(--color-main)] bg-[var(--color-bg)]"
               : "border-[var(--color-border)]/20 hover:border-[var(--color-main)]/40"
           }`}
@@ -599,10 +587,10 @@ function Step4({
           <div className="flex items-start justify-between gap-4">
             <div>
               <p className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)]">
-                Package {i + 1}
+                Package {pkg.code}
               </p>
               <p className="mt-1 font-serif text-xl text-[var(--color-body)]">
-                {pkg.id}
+                {pkg.name}
               </p>
               <p className="mt-1 text-sm text-[var(--color-text-secondary)]">
                 {pkg.tagline}
@@ -610,14 +598,14 @@ function Step4({
             </div>
             <div
               className={`mt-1 h-4 w-4 shrink-0 rounded-full border-2 transition-all ${
-                data.package === pkg.id
+                data.package === String(pkg.code)
                   ? "border-[var(--color-main)] bg-[var(--color-main)]"
                   : "border-[var(--color-border)]/40"
               }`}
             />
           </div>
           <ul className="mt-4 flex flex-wrap gap-2">
-            {pkg.services.map((s) => (
+            {pkg.items.map((s) => (
               <li
                 key={s}
                 className="border border-[var(--color-border)]/15 px-2 py-1 text-[10px] uppercase tracking-[1px] text-[var(--color-label)]"
@@ -643,6 +631,7 @@ export default function QuoteForm() {
   const [error, setError] = useState("");
   // Fix 3: Separate honeypot state, not part of QuoteFormData.
   const [honeypot, setHoneypot] = useState("");
+  const [packages, setPackages] = useState<PackageData[]>([]);
   const partialSentRef = useRef(false);
 
   useEffect(() => {
@@ -657,12 +646,26 @@ export default function QuoteForm() {
   }, []);
 
   useEffect(() => {
+    fetch("/api/packages")
+      .then((r) => r.json())
+      .then((pkgs: PackageData[]) => setPackages(pkgs))
+      .catch(() => {});
+  }, []);
+
+  useEffect(() => {
     if (submitted) return;
     localStorage.setItem(LS_KEY, JSON.stringify({ step, data }));
   }, [step, data, submitted]);
 
   function update(patch: Partial<QuoteFormData>) {
-    setData((prev) => ({ ...prev, ...patch }));
+    setData((prev) => {
+      const next = { ...prev, ...patch };
+      // Reset package selection when interior scope changes
+      if ("interior" in patch && patch.interior !== prev.interior) {
+        next.package = "";
+      }
+      return next;
+    });
   }
 
   // Fix 7: Consolidated sendPartial + sendProgressUpdate into sendToApi.
@@ -775,7 +778,7 @@ export default function QuoteForm() {
           {step === 0 && <Step1 data={data} update={update} />}
           {step === 1 && <Step2 data={data} update={update} />}
           {step === 2 && <Step3 data={data} update={update} />}
-          {step === 3 && <Step4 data={data} update={update} />}
+          {step === 3 && <Step4 data={data} update={update} packages={packages} />}
         </motion.div>
       </AnimatePresence>
 

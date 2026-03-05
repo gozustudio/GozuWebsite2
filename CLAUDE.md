@@ -84,7 +84,8 @@ GozuWebsite2/
 │   │   │   │   ├── quote/          #     Quote request (WebMCP form)
 │   │   │   │   └── privacy/        #     Privacy policy
 │   │   │   ├── api/contact/        #   Contact form → Sheets + Resend email
-│   │   │   ├── api/quote/          #   Quote form → Sheets
+│   │   │   ├── api/quote/          #   Quote form → Sheets + Resend email
+│   │   │   ├── api/packages/       #   Package definitions from Google Sheets
 │   │   │   ├── api/projects/       #   Projects JSON API
 │   │   │   ├── .well-known/webmcp/ #   WebMCP site manifest
 │   │   │   ├── llms.txt/           #   AI discoverability (dynamic route)
@@ -251,6 +252,7 @@ WebMCP (W3C Community Group Draft, Chrome 146+) is a core requirement:
 - GCP project: `gozu-studio-website` (under `info@gozustudio.com`)
 - Service account: `gozu-website@gozu-studio-website.iam.gserviceaccount.com`
 - Key file: `gozu-service-account.json` (repo root, gitignored)
+- Spreadsheets: `GOOGLE_SPREADSHEET_ID` (Database - Form Responses), `GOOGLE_INPUT_FIELDS_SPREADSHEET_ID` (Input Fields - Onboarding Form)
 - Run gcloud commands with `--configuration=gozustudio` flag
 - clasp (Apps Script CLI): installed globally, authenticated as `info@gozustudio.com` (`%APPDATA%/.clasprc.json`); Apps Script API must be ON at https://script.google.com/home/usersettings
 
@@ -285,9 +287,27 @@ WebMCP (W3C Community Group Draft, Chrome 146+) is a core requirement:
 - **Email**: Sends notification via Resend from `website@gozustudio.com` to `info@gozustudio.com`
 - **Env vars**: `RESEND_API_KEY` (in `.env.local` and Vercel), plus existing Google Sheets vars
 
+## Quote Form Backend
+
+- **API route**: `/api/quote` — validates fields, honeypot bot check, dedup by email
+- **Google Sheets**: Writes to "Main" sheet in `Database - Form Responses` spreadsheet (26 columns A–Z)
+- **Dedup**: `findRowByEmail` searches column C — updates existing row if found, appends new row if not
+- **Partial saves**: Steps 1–3 send `partial: true` (Prospects="Partial"); final submit sends `partial: false` (Prospects="")
+- **Email**: Sends notification via Resend on final submission only
+- **Completion mapping**: "As soon as possible"→0, "5–6 months"→1, "6–12 months"→2
+- **Package codes**: Stored as numeric 1–5 (not names)
+
+## Package System
+
+- **API route**: `/api/packages` — reads from "Input Fields - Onboarding Form" spreadsheet (range BA2:BR6)
+- **Spreadsheet ID**: `GOOGLE_INPUT_FIELDS_SPREADSHEET_ID` env var (separate from `GOOGLE_SPREADSHEET_ID`)
+- **5 packages**: 1 Standard (interior), 2 Advance (interior), 3 Premium (interior), 4 Standard (no interior), 5 Advance (no interior)
+- **Conditional display**: Interior selected → packages 1/2/3; Interior NOT selected → packages 4/5
+- **Items**: Up to 15 items per package (columns BD–BR), sourced dynamically from spreadsheet
+- **Service account** needs Viewer access to both spreadsheets
+
 ## Pending Work
 
-- **Real project data**: Update `website/content/projects/*.json` with actual project info (currently all placeholder "KAZ House" data) — template at `docs/project-data-template.md`, waiting on Goda
-- **Google Sheet "Contact" tab**: Create "Contact" sheet in the existing spreadsheet with headers: Timestamp | Name | Email | Subject | Message
+- **Real project data**: Update `website/content/projects/*.json` with actual project info (currently all placeholder "KAZ House" data) — Goda can edit via Tina admin UI
 - **Quote form post-launch**: Update `UpdateProspectsDatabase` GAS script to skip `Prospects="Partial"` rows (if needed — verify after first real submission)
 - **Translation refinement**: AI-generated translations in `website/messages/` may need native-speaker review
