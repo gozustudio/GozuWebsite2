@@ -1,0 +1,17 @@
+{
+  "introParagraph1": "Gozu Studio is a multidisciplinary architecture and interior design practice creating refined, considered spaces for discerning clients across Europe. Founded by Goda Zukaite, our work bridges diverse cultural traditions with a distinctive European sensibility.",
+  "introParagraph2": "We believe that architecture should be an act of listening — to the site, to the client, to the way light moves through a room. Our projects begin with deep understanding and evolve into spaces that feel both inevitable and surprising.",
+  "introParagraph3": "We serve clients throughout Europe, working remotely and on-site to bring each project to life. Our portfolio spans luxury residences, commercial interiors, and heritage renovations.",
+  "founderBio": "Goda Zukaite founded Gozu Studio with a vision to create architecture that balances sophistication with warmth. With a background spanning both Baltic and British design traditions, she brings a distinctive perspective to every project — one that values restraint, materiality, and the quiet power of thoughtful space.",
+  "founderFacts": [
+    { "label": "Education", "value": "Architecture & Design" },
+    { "label": "Practice", "value": "Gozu Studio" },
+    { "label": "Expertise", "value": "Residential, Interior Design, Renovation" },
+    { "label": "Region", "value": "Europe" }
+  ],
+  "approachSteps": [
+    { "step": "01", "title": "Listen", "desc": "Every project starts with deep conversation. We learn how you live, what you value, and what the site tells us." },
+    { "step": "02", "title": "Design", "desc": "We develop concepts that respond to context, light, and proportion — iterating until every detail serves the whole." },
+    { "step": "03", "title": "Deliver", "desc": "From planning permissions to final finishes, we guide the project to completion with precision and care." }
+  ]
+}

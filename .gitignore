@@ -24,6 +24,7 @@ yarn-error.log*
 
 # env files
 .env*
+!.env.example
 
 # Google service account key (never commit)
 gozu-service-account.json
@@ -50,3 +51,7 @@ next-env.d.ts
 # OS
 [Dd]esktop.ini
 ehthumbs.db
+
+# Tina CMS generated files
+website/tina/__generated__/
+website/public/admin/

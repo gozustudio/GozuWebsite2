@@ -1,0 +1,14 @@
+{
+  "main": "#d4bc90",
+  "highlight": "#e2a55e",
+  "background": "#f8f4ed",
+  "text": "#333333",
+  "textSecondary": "#888888",
+  "label": "#999999",
+  "container": "#ffffff",
+  "border": "#757575",
+  "body": "#212529",
+  "success": "#90ee90",
+  "error": "#ed645a",
+  "autofillBoxShadow": "transparent"
+}

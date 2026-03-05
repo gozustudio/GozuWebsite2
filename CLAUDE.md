@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**Gozu Studio** — luxury architecture & interior design brand operating remotely across Europe. This repository contains both the Next.js website source code (`website/`) and the content assets (`Media/`, `Projects/`, `Settings/`).
+**Gozu Studio** — luxury architecture & interior design brand operating remotely across Europe. This repository contains both the Next.js website source code (`website/`) and the content assets (`Media/`, `Projects/`).
 
 - **Domain**: gozustudio.com
 - **Founder**: Goda Zukaite
@@ -17,6 +17,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Framework**: Next.js 16.1.6 (App Router) with TypeScript 5, React 19.2
 - **Styling**: Tailwind CSS 4 with `@theme inline` for custom properties
 - **Animations**: Framer Motion 12
+- **CMS**: Tina CMS (`tinacms` + `@tinacms/cli`) — admin UI at `/admin`, content in `website/content/`
 - **Internationalization**: next-intl 4.8 (planned, not yet wired — 10 languages: EN, LT, ES, SV, NO, DA, NL, DE, FR, IT)
 - **Image processing**: Sharp 0.34
 - **Analytics**: GA4 (Measurement ID: `G-7BJ23T92B7`, Property: `526398179`)
@@ -28,26 +29,29 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ```bash
 cd website
 npm install                    # install dependencies
-npm run dev                    # start dev server (localhost:3000)
-npm run build                  # production build
+npm run dev                    # start Tina + Next.js dev server (localhost:3000, admin at localhost:4001/admin)
+npm run build                  # production build (requires NEXT_PUBLIC_TINA_CLIENT_ID + TINA_TOKEN)
 npm run start                  # serve production build
 npm run lint                   # run ESLint
 ```
 
-**Important**: Before `dev` or `build`, project assets must be copied to `website/public/`:
+**Local build without Tina Cloud credentials** (for TypeScript verification):
+```bash
+cd website
+npx tinacms build --local --skip-cloud-checks && npx next build
+```
+
+**Important**: Before `dev` or `build`, brand/media assets must be copied to `website/public/`:
 ```bash
 # From repo root:
 cp -r Media/Images/Logo/Favicon/* website/public/
 cp -r Media/Images/Logo/SVG/* website/public/images/
 cp Media/Videos/LandingVideo.mp4 website/public/videos/
 cp Media/Images/LandingImage.jpg website/public/images/
-for proj in Main 2 3 4 5 6 7 8; do
-  mkdir -p "website/public/projects/$proj/images" "website/public/projects/$proj/videos"
-  cp Projects/$proj/Images/*.jpg "website/public/projects/$proj/images/"
-  cp Projects/$proj/Videos/*.mp4 "website/public/projects/$proj/videos/"
-done
 ```
-These copied files are gitignored — the source of truth is always the root `Media/`, `Projects/`, `Settings/` folders.
+These copied files are gitignored — the source of truth is always `Media/`.
+
+**Project media** is committed directly to `website/public/uploads/projects/` — no copy step needed.
 
 ## Repository Structure
 
@@ -57,31 +61,33 @@ GozuWebsite2/
 │   ├── Images/Logo/Favicon/        # Favicon set (ico, svg, png sizes)
 │   ├── Images/Logo/SVG/            # Logos (5 variants), social icons (5)
 │   └── Videos/LandingVideo.mp4     # Hero video
-├── Projects/                       # Portfolio data (source of truth)
+├── Projects/                       # Original project media
 │   ├── Main/, 2/, 3/, ..., 8/      # Each project folder contains:
-│   │   ├── ProjectInfo.txt         #   Title, Year, Location, Type, Short Description
 │   │   ├── Images/                 #   Main.jpg + numbered (2.jpg, 3.jpg, ...)
 │   │   └── Videos/                 #   Main.mp4 + numbered (2.mp4, ...)
-├── Settings/                       # Configuration (source of truth)
-│   ├── ColourPalette.txt           #   CSS color variables
-│   └── PrivacyNotice.txt           #   Legal privacy statement
 ├── website/                        # Next.js application
+│   ├── content/                    # CMS content (source of truth for text/metadata)
+│   │   ├── projects/               #   main.json, 2.json, ..., 8.json
+│   │   ├── pages/                  #   home.json, about.json, services.json
+│   │   └── settings/               #   colors.json, privacy.json
+│   ├── tina/
+│   │   └── config.ts               # Tina CMS schema definition
 │   ├── src/
 │   │   ├── app/                    # App Router pages & routes
-│   │   │   ├── page.tsx            #   Home (cinematic hero + featured projects)
+│   │   │   ├── page.tsx            #   Home (reads home.json + featured projects)
 │   │   │   ├── projects/page.tsx   #   Projects index (portfolio grid)
 │   │   │   ├── projects/[slug]/    #   Project detail (gallery + metadata)
-│   │   │   ├── about/              #   Studio, founder, approach
-│   │   │   ├── services/           #   4 service categories + process
+│   │   │   ├── about/              #   Studio, founder, approach (reads about.json)
+│   │   │   ├── services/           #   4 service categories + process (reads services.json)
 │   │   │   ├── contact/            #   Contact info + WebMCP form
 │   │   │   ├── quote/              #   Quote request (WebMCP form)
-│   │   │   ├── privacy/            #   Reads from PrivacyNotice.txt
+│   │   │   ├── privacy/            #   Reads from content/settings/privacy.json
 │   │   │   ├── .well-known/webmcp/ #   WebMCP site manifest (API route)
 │   │   │   ├── api/projects/       #   Projects JSON API
 │   │   │   ├── llms.txt/           #   AI discoverability (dynamic route)
 │   │   │   ├── robots.ts           #   Robots.txt generator
 │   │   │   ├── sitemap.ts          #   Sitemap.xml generator
-│   │   │   ├── layout.tsx          #   Root layout (fonts, GA4, schema.org)
+│   │   │   ├── layout.tsx          #   Root layout (fonts, GA4, schema.org, color injection)
 │   │   │   └── globals.css         #   CSS variables, base styles, Tailwind
 │   │   ├── components/
 │   │   │   ├── layout/             #   Header.tsx, Footer.tsx
@@ -89,12 +95,13 @@ GozuWebsite2/
 │   │   │   ├── ui/                 #   FadeIn (scroll animation)
 │   │   │   └── webmcp/             #   WebMCPTools (imperative tool registration)
 │   │   ├── lib/
-│   │   │   ├── colors.ts           #   Reads ColourPalette.txt → CSS vars
-│   │   │   ├── projects.ts         #   Reads ProjectInfo.txt → typed data
+│   │   │   ├── colors.ts           #   Reads content/settings/colors.json → CSS vars
+│   │   │   ├── projects.ts         #   Reads content/projects/*.json → typed data
 │   │   │   └── constants.ts        #   Site info, nav links, social links
 │   │   └── types/
 │   │       └── webmcp.d.ts         #   TypeScript types for WebMCP APIs
-│   └── public/                     #   Static assets (gitignored copies)
+│   └── public/
+│       └── uploads/projects/       #   Project images/videos (committed to Git, served by Vercel CDN)
 ├── CLAUDE.md
 └── .gitignore
 ```
@@ -102,26 +109,46 @@ GozuWebsite2/
 ## Source of Truth Principle
 
 Content files are the single source of truth. The website reads from them at build time:
-- **`Settings/ColourPalette.txt`** → CSS custom properties in `globals.css`
-- **`Projects/*/ProjectInfo.txt`** → Project page content via `lib/projects.ts`
-- **`Settings/PrivacyNotice.txt`** → Privacy page content
-- **Project images/videos** → Replacing a file with same name/extension auto-updates the site
+- **`website/content/projects/*.json`** → Project page content via `lib/projects.ts`
+- **`website/content/settings/colors.json`** → CSS custom properties injected in `layout.tsx`
+- **`website/content/settings/privacy.json`** → Privacy page content
+- **`website/content/pages/*.json`** → Page copy (home, about, services)
+- **`website/public/uploads/projects/*/`** → Project images and videos (committed to Git)
+- **`Media/`** → Brand assets (logo, hero video) — must be copied to `website/public/` for dev
 
-### ProjectInfo.txt Format
-```
-Title: "Project Name";
-Year: "2020";
-Location: "City, Country";
-Type: "Category1, Category2";
-Short Description: "...";
+### Content JSON format (projects)
+```json
+{
+  "title": "Project Name",
+  "year": "2024",
+  "location": "City, Country",
+  "type": ["Residential", "Interior"],
+  "shortDescription": "...",
+  "images": ["/uploads/projects/main/Main.jpg"],
+  "videos": ["/uploads/projects/main/Main.mp4"],
+  "featured": true,
+  "order": 1
+}
 ```
 
-### ColourPalette.txt Format
+### Content JSON format (colors)
+```json
+{
+  "main": "#d4bc90",
+  "highlight": "#e2a55e",
+  "background": "#f8f4ed",
+  ...
+}
 ```
-Main Colour: #d4bc90;
-Highlight Colour: #e2a55e;
-...
-```
+
+## Tina CMS
+
+- **Admin UI**: `http://localhost:4001/admin` (dev) / `gozustudio.com/admin` (production)
+- **Local mode**: `npm run dev` starts Tina alongside Next.js — edits save directly to JSON files
+- **Production mode**: Requires Tina Cloud account (`info@gozustudio.com` at tina.io), connected to `gozustudio/GozuWebsite2` repo
+- **Env vars for production**: `NEXT_PUBLIC_TINA_CLIENT_ID` and `TINA_TOKEN` (in Vercel)
+- **Media uploads**: Tina media manager uploads to `website/public/uploads/` (committed to Git)
+- **Generated files**: `website/tina/__generated__/` and `website/public/admin/` are gitignored
 
 ## Color System
 
@@ -139,7 +166,7 @@ Highlight Colour: #e2a55e;
 | Success | `--color-success` | `#90ee90` |
 | Error | `--color-error` | `#ed645a` |
 
-Derived shades use `color-mix(in oklch, ...)` — the TXT remains the canonical source.
+Colors are sourced from `content/settings/colors.json` and injected as CSS variables in `layout.tsx` via `lib/colors.ts`. Derived shades use `color-mix(in oklch, ...)`.
 
 ## Typography
 
@@ -216,7 +243,7 @@ WebMCP (W3C Community Group Draft, Chrome 146+) is a core requirement:
 - Default branch: `master` (not `main`)
 - Commit messages: imperative mood, short summary
 - Do not force-push to `master`
-- `website/public/` asset copies are gitignored
+- `website/public/` brand asset copies are gitignored (but `website/public/uploads/` is NOT gitignored)
 - Git identity: Francisco / fransanda@hotmail.com.ar (GitHub: `fransanda`, collaborator on `gozustudio` org)
 - Auth: PAT embedded in remote URL — `https://fransanda:TOKEN@github.com/gozustudio/GozuWebsite2.git`
 
@@ -226,20 +253,22 @@ WebMCP (W3C Community Group Draft, Chrome 146+) is a core requirement:
 - Keep solutions minimal — avoid over-engineering
 - Do not auto-commit — wait for explicit user instruction
 - Ask before adding new dependencies
-- Colors must always derive from ColourPalette.txt
-- Project content must always derive from ProjectInfo.txt files
+- Colors are sourced from `content/settings/colors.json` — edit there, not in globals.css
+- Project content is sourced from `content/projects/*.json` — edit there, not hardcoded in pages
 - Logo SVG paths are inlined in Header, Footer, and HeroVideo — canonical source is `Media/Images/Logo/SVG/logo.svg`
 - Header non-scrolled state: gradient `from-[var(--color-bg)]/80 via-[var(--color-bg)]/30 to-transparent`, always dark text
 - Footer copyright year uses `suppressHydrationWarning` to prevent SSR/client mismatch
-- When replacing assets in `Media/`, also copy to `website/public/` manually for dev server to reflect the change
+- When replacing brand assets in `Media/`, also copy to `website/public/` manually for dev server to reflect the change
 - Hero video poster image: `Media/Images/LandingImage.jpg` → `website/public/images/LandingImage.jpg`
+- Project media lives in `website/public/uploads/projects/` (committed to Git) — no copy step needed
 
 ## Pending Work
 
-- **Asset copy script**: Automate `Media/`→`public/` and `Projects/`→`public/` copying (pre-build)
+- **Asset copy script**: Automate `Media/`→`public/` copying (brand assets only — project media is already in uploads/)
 - **i18n wiring**: next-intl installed but not configured; needs 10-language routing + build-time AI translation
-- **Real project data**: All 8 ProjectInfo.txt files contain identical placeholder data ("KAZ House")
-- **Vercel deployment**: Project created (`gozu-website`), env vars set — connect GitHub repo at vercel.com/gozustudio/gozu-website/settings/git, set root directory to `website`
+- **Real project data**: Update `website/content/projects/*.json` with actual project info (currently all placeholder "KAZ House" data)
+- **Vercel deployment**: Project created (`gozu-website`), env vars set — connect GitHub repo at vercel.com/gozustudio/gozu-website/settings/git, set root directory to `website`; add `NEXT_PUBLIC_TINA_CLIENT_ID` and `TINA_TOKEN` after setting up Tina Cloud
+- **Tina Cloud setup**: Goda creates account at tina.io with `info@gozustudio.com`, connects `gozustudio/GozuWebsite2` repo, copies Client ID and Content Token to Vercel env vars
 - **Contact form backend**: Contact form shows success UI but doesn't send emails yet
 - **GSC/GA4 MCP auth**: Service account credentials needed for analytics MCP tools
 - **Page-level WebMCP metadata**: `<script type="application/json" id="webmcp">` not yet added to individual pages

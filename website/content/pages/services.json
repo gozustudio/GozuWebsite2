@@ -1,0 +1,31 @@
+{
+  "heroText": "From initial concept to final detail, we provide comprehensive architecture and design services tailored to each client and project.",
+  "services": [
+    {
+      "title": "Residential Architecture",
+      "description": "Bespoke homes designed around how you live. From new-build houses to luxury apartments, we create residential architecture that combines aesthetic refinement with practical intelligence. Every project is a unique response to site, client, and context.",
+      "features": ["New-build residential design", "Planning & building regulations", "Sustainable design integration", "Project management"]
+    },
+    {
+      "title": "Interior Design",
+      "description": "Considered interiors that transform how spaces feel. We work with material, light, and proportion to create environments that are both beautiful and deeply functional. From concept to completion, every detail is intentional.",
+      "features": ["Full interior design service", "Material & finish selection", "Bespoke furniture design", "Lighting design"]
+    },
+    {
+      "title": "Renovation & Restoration",
+      "description": "Thoughtful transformation of existing buildings. We specialise in giving new life to period properties and heritage structures, preserving their character while introducing contemporary clarity and comfort.",
+      "features": ["Period property renovation", "Heritage building restoration", "Extension design", "Structural modifications"]
+    },
+    {
+      "title": "Commercial Interiors",
+      "description": "Workspaces and commercial environments that elevate brands. We design offices, retail spaces, and hospitality interiors that align physical space with business identity and culture.",
+      "features": ["Office & workspace design", "Retail interiors", "Hospitality design", "Brand-aligned environments"]
+    }
+  ],
+  "processSteps": [
+    { "step": "01", "title": "Consultation", "desc": "We discuss your vision, requirements, and budget." },
+    { "step": "02", "title": "Concept", "desc": "Initial design concepts, mood boards, and spatial planning." },
+    { "step": "03", "title": "Development", "desc": "Detailed drawings, material selection, and contractor coordination." },
+    { "step": "04", "title": "Completion", "desc": "On-site oversight through to handover and final styling." }
+  ]
+}
