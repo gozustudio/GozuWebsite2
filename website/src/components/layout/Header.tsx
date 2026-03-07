@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { NAV_LINKS } from "@/lib/constants";
+import LanguageSelector from "./LanguageSelector";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -79,6 +80,7 @@ export default function Header() {
             >
               {t("getQuote")}
             </Link>
+            <LanguageSelector />
           </div>
 
           {/* Mobile Menu Button */}
@@ -126,6 +128,7 @@ export default function Header() {
           >
             {t("getQuote")}
           </Link>
+          <LanguageSelector mobile />
         </div>
       </div>
     </>

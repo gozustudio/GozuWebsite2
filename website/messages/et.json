@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "projects": "Projektid",
+    "about": "Meist",
+    "services": "Teenused",
+    "contact": "Kontakt",
+    "getQuote": "Küsi pakkumist",
+    "requestQuote": "Taotle pakkumist"
+  },
+  "home": {
+    "aboutLabel": "Stuudiost",
+    "learnMore": "Loe lähemalt",
+    "portfolioLabel": "Portfoolio",
+    "selectedWorks": "Valitud tööd",
+    "viewAllProjects": "Vaata kõiki projekte",
+    "whatWeDo": "Mida me teeme",
+    "ourServices": "Meie teenused",
+    "architectureTitle": "Arhitektuur",
+    "architectureDesc": "Kontseptsioonist teostuseni — eritellimusel elamu- ja äriarhitektuur, mis arvestab konteksti, valgust ja eluviisi.",
+    "interiorTitle": "Sisekujundus",
+    "interiorDesc": "Läbimõeldud interjöörid, kus materjal, proportsioon ja meisterlikkus on harmoonias. Iga detail teenib tervikut.",
+    "renovationTitle": "Renoveerimine",
+    "renovationDesc": "Hoolikas olemasolevate ruumide ümberkujundamine — säilitades iseloomu ja tuues kaasaegset selgust.",
+    "exploreServices": "Tutvu teenustega"
+  },
+  "about": {
+    "label": "Meist",
+    "title": "Stuudio",
+    "founderLabel": "Asutaja",
+    "approachLabel": "Meie lähenemine",
+    "approachTitle": "Kuidas me töötame",
+    "cta": "Loome koos midagi erakordset.",
+    "ctaButton": "Võta ühendust"
+  },
+  "services": {
+    "label": "Mida me teeme",
+    "title": "Meie teenused",
+    "processLabel": "Protsess",
+    "processTitle": "Visioonist tegelikkuseni",
+    "cta": "Valmis oma projekti alustama?",
+    "ctaButton": "Taotle pakkumist"
+  },
+  "projects": {
+    "label": "Portfoolio",
+    "title": "Meie projektid",
+    "subtitle": "Hoolikalt valitud elamu- ja äriarhitektuuri, sisekujunduse ja renoveerimisprojektide valik."
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Võta ühendust",
+    "subtitle": "Tahaksime kuulda teie projektist. Võtke ühendust ja alustame vestlust.",
+    "emailLabel": "E-post",
+    "messageUsLabel": "Kirjuta meile",
+    "socialLabel": "Sotsiaalmeedia",
+    "formName": "Nimi",
+    "formNamePlaceholder": "Teie nimi",
+    "formEmail": "E-post",
+    "formEmailPlaceholder": "teie@epost.ee",
+    "formSubject": "Teema",
+    "formMessage": "Sõnum",
+    "formMessagePlaceholder": "Rääkige meile oma projektist...",
+    "formSubmit": "Saada sõnum",
+    "formSuccess": "Täname, et ühendust võtsite.",
+    "formSuccessDetail": "Vastame 24 tunni jooksul.",
+    "subjectArchitecture": "Arhitektuuriprojekt",
+    "subjectInterior": "Sisekujundus",
+    "subjectRenovation": "Renoveerimine",
+    "subjectConsultation": "Üldine konsultatsioon",
+    "subjectOther": "Muu"
+  },
+  "quote": {
+    "label": "Alusta",
+    "title": "Taotle pakkumist",
+    "subtitle": "Vastake mõnele küsimusele oma projekti kohta ja me koostame teile personaalse hinnapakkumise. Ilma kohustuseta."
+  },
+  "privacy": {
+    "title": "Privaatsuspoliitika"
+  },
+  "footer": {
+    "cta": "On projekt mõttes?",
+    "ctaSub": "Loome koos midagi erakordset.",
+    "ctaButton": "Taotle pakkumist",
+    "navigateLabel": "Navigeeri",
+    "contactLabel": "Kontakt",
+    "followLabel": "Jälgi",
+    "brandLine1": "Luksuslik arhitektuur ja sisekujundus.",
+    "brandLine2": "Projektid üle Euroopa.",
+    "copyright": "© {year} Gozu Studio. Kõik õigused kaitstud.",
+    "privacyLink": "Privaatsuspoliitika"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "projects": "Projekti",
+    "about": "O nas",
+    "services": "Storitve",
+    "contact": "Kontakt",
+    "getQuote": "Zaprosite ponudbo",
+    "requestQuote": "Zaprosite ponudbo"
+  },
+  "home": {
+    "aboutLabel": "O studiu",
+    "learnMore": "Več informacij",
+    "portfolioLabel": "Portfolio",
+    "selectedWorks": "Izbrana dela",
+    "viewAllProjects": "Oglejte si vse projekte",
+    "whatWeDo": "Kaj počnemo",
+    "ourServices": "Naše storitve",
+    "architectureTitle": "Arhitektura",
+    "architectureDesc": "Od zasnove do izvedbe — edinstvena stanovanjska in komercialna arhitektura, ki se odziva na kontekst, svetlobo in način življenja.",
+    "interiorTitle": "Oblikovanje interierjev",
+    "interiorDesc": "Skrbno zasnovani interierji, ki usklajujejo material, proporce in obrt. Vsaka podrobnost služi celoti.",
+    "renovationTitle": "Prenova",
+    "renovationDesc": "Premišljena preobrazba obstoječih prostorov — ohranjanje značaja ob uvajanju sodobne jasnosti.",
+    "exploreServices": "Raziščite storitve"
+  },
+  "about": {
+    "label": "O nas",
+    "title": "Studio",
+    "founderLabel": "Ustanovitelj",
+    "approachLabel": "Naš pristop",
+    "approachTitle": "Kako delamo",
+    "cta": "Ustvarimo nekaj skupaj.",
+    "ctaButton": "Stopite v stik"
+  },
+  "services": {
+    "label": "Kaj počnemo",
+    "title": "Naše storitve",
+    "processLabel": "Proces",
+    "processTitle": "Od vizije do resničnosti",
+    "cta": "Ste pripravljeni začeti svoj projekt?",
+    "ctaButton": "Zaprosite ponudbo"
+  },
+  "projects": {
+    "label": "Portfolio",
+    "title": "Naši projekti",
+    "subtitle": "Skrbno izbrana kolekcija projektov stanovanjske in komercialne arhitekture, oblikovanja interierjev in prenov."
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Stopite v stik",
+    "subtitle": "Z veseljem bi slišali o vašem projektu. Pišite nam in začnimo pogovor.",
+    "emailLabel": "E-pošta",
+    "messageUsLabel": "Pišite nam",
+    "socialLabel": "Družbena omrežja",
+    "formName": "Ime",
+    "formNamePlaceholder": "Vaše ime",
+    "formEmail": "E-pošta",
+    "formEmailPlaceholder": "vaš@email.com",
+    "formSubject": "Zadeva",
+    "formMessage": "Sporočilo",
+    "formMessagePlaceholder": "Povejte nam o svojem projektu...",
+    "formSubmit": "Pošljite sporočilo",
+    "formSuccess": "Hvala, da ste se oglasili.",
+    "formSuccessDetail": "Odgovorili vam bomo v 24 urah.",
+    "subjectArchitecture": "Arhitekturni projekt",
+    "subjectInterior": "Oblikovanje interierjev",
+    "subjectRenovation": "Prenova",
+    "subjectConsultation": "Splošno svetovanje",
+    "subjectOther": "Drugo"
+  },
+  "quote": {
+    "label": "Začnite",
+    "title": "Zaprosite ponudbo",
+    "subtitle": "Odgovorite na nekaj vprašanj o svojem projektu in pripravili vam bomo prilagojeno oceno. Brez obveznosti."
+  },
+  "privacy": {
+    "title": "Politika zasebnosti"
+  },
+  "footer": {
+    "cta": "Imate projekt v mislih?",
+    "ctaSub": "Ustvarimo nekaj izjemnega skupaj.",
+    "ctaButton": "Zaprosite ponudbo",
+    "navigateLabel": "Navigacija",
+    "contactLabel": "Kontakt",
+    "followLabel": "Sledite nam",
+    "brandLine1": "Luksuzna arhitektura in oblikovanje interierjev.",
+    "brandLine2": "Projekti po vsej Evropi.",
+    "copyright": "© {year} Gozu Studio. Vse pravice pridržane.",
+    "privacyLink": "Politika zasebnosti"
+  }
+}

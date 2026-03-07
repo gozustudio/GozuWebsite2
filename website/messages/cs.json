@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "projects": "Projekty",
+    "about": "O nás",
+    "services": "Služby",
+    "contact": "Kontakt",
+    "getQuote": "Získat nabídku",
+    "requestQuote": "Požádat o nabídku"
+  },
+  "home": {
+    "aboutLabel": "O studiu",
+    "learnMore": "Zjistit více",
+    "portfolioLabel": "Portfolio",
+    "selectedWorks": "Vybrané realizace",
+    "viewAllProjects": "Zobrazit všechny projekty",
+    "whatWeDo": "Čím se zabýváme",
+    "ourServices": "Naše služby",
+    "architectureTitle": "Architektura",
+    "architectureDesc": "Od konceptu po realizaci — individuální rezidenční a komerční architektura reagující na kontext, světlo a způsob života.",
+    "interiorTitle": "Interiérový design",
+    "interiorDesc": "Promyšlené interiéry, kde materiál, proporce a řemeslné zpracování tvoří harmonii. Každý detail slouží celku.",
+    "renovationTitle": "Rekonstrukce",
+    "renovationDesc": "Citlivá přeměna stávajících prostor — zachováváme charakter a vnášíme současnou jasnost.",
+    "exploreServices": "Prozkoumat služby"
+  },
+  "about": {
+    "label": "O nás",
+    "title": "Studio",
+    "founderLabel": "Zakladatelka",
+    "approachLabel": "Náš přístup",
+    "approachTitle": "Jak pracujeme",
+    "cta": "Pojďme společně vytvořit něco výjimečného.",
+    "ctaButton": "Kontaktujte nás"
+  },
+  "services": {
+    "label": "Čím se zabýváme",
+    "title": "Naše služby",
+    "processLabel": "Proces",
+    "processTitle": "Od vize k realitě",
+    "cta": "Připraveni zahájit svůj projekt?",
+    "ctaButton": "Požádat o nabídku"
+  },
+  "projects": {
+    "label": "Portfolio",
+    "title": "Naše projekty",
+    "subtitle": "Pečlivě vybraná kolekce projektů rezidenční a komerční architektury, interiérového designu a rekonstrukcí."
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Kontaktujte nás",
+    "subtitle": "Rádi se dozvíme o vašem projektu. Ozvěte se nám a zahájíme spolupráci.",
+    "emailLabel": "E-mail",
+    "messageUsLabel": "Napište nám",
+    "socialLabel": "Sociální sítě",
+    "formName": "Jméno",
+    "formNamePlaceholder": "Vaše jméno",
+    "formEmail": "E-mail",
+    "formEmailPlaceholder": "vas@email.cz",
+    "formSubject": "Předmět",
+    "formMessage": "Zpráva",
+    "formMessagePlaceholder": "Řekněte nám o svém projektu...",
+    "formSubmit": "Odeslat zprávu",
+    "formSuccess": "Děkujeme za vaši zprávu.",
+    "formSuccessDetail": "Ozveme se vám do 24 hodin.",
+    "subjectArchitecture": "Architektonický projekt",
+    "subjectInterior": "Interiérový design",
+    "subjectRenovation": "Rekonstrukce",
+    "subjectConsultation": "Obecná konzultace",
+    "subjectOther": "Jiné"
+  },
+  "quote": {
+    "label": "Začít",
+    "title": "Požádat o nabídku",
+    "subtitle": "Odpovězte na několik otázek o svém projektu a my vám připravíme individuální cenovou nabídku. Bez závazků."
+  },
+  "privacy": {
+    "title": "Zásady ochrany osobních údajů"
+  },
+  "footer": {
+    "cta": "Máte na mysli projekt?",
+    "ctaSub": "Pojďme společně vytvořit něco mimořádného.",
+    "ctaButton": "Požádat o nabídku",
+    "navigateLabel": "Navigace",
+    "contactLabel": "Kontakt",
+    "followLabel": "Sledujte nás",
+    "brandLine1": "Luxusní architektura a interiérový design.",
+    "brandLine2": "Projekty po celé Evropě.",
+    "copyright": "© {year} Gozu Studio. Všechna práva vyhrazena.",
+    "privacyLink": "Zásady ochrany osobních údajů"
+  }
+}

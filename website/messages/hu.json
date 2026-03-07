@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "projects": "Projektek",
+    "about": "Rólunk",
+    "services": "Szolgáltatások",
+    "contact": "Kapcsolat",
+    "getQuote": "Árajánlat kérése",
+    "requestQuote": "Árajánlat kérése"
+  },
+  "home": {
+    "aboutLabel": "A stúdióról",
+    "learnMore": "Tudjon meg többet",
+    "portfolioLabel": "Portfólió",
+    "selectedWorks": "Válogatott munkák",
+    "viewAllProjects": "Összes projekt megtekintése",
+    "whatWeDo": "Mivel foglalkozunk",
+    "ourServices": "Szolgáltatásaink",
+    "architectureTitle": "Építészet",
+    "architectureDesc": "A koncepciótól a megvalósításig — egyedi lakó- és kereskedelmi építészet, amely figyelembe veszi a környezetet, a fényt és az életmódot.",
+    "interiorTitle": "Belsőépítészet",
+    "interiorDesc": "Átgondolt belső terek, ahol az anyag, az arányok és a kézművesség harmóniában vannak. Minden részlet az egészet szolgálja.",
+    "renovationTitle": "Felújítás",
+    "renovationDesc": "Meglévő terek gondos átalakítása — megőrizve a karaktert, bevezetve a kortárs letisztultságot.",
+    "exploreServices": "Szolgáltatások felfedezése"
+  },
+  "about": {
+    "label": "Rólunk",
+    "title": "A Stúdió",
+    "founderLabel": "Alapító",
+    "approachLabel": "Megközelítésünk",
+    "approachTitle": "Hogyan dolgozunk",
+    "cta": "Alkossunk együtt valami különlegeset.",
+    "ctaButton": "Lépjen kapcsolatba velünk"
+  },
+  "services": {
+    "label": "Mivel foglalkozunk",
+    "title": "Szolgáltatásaink",
+    "processLabel": "Folyamat",
+    "processTitle": "A víziótól a valóságig",
+    "cta": "Készen áll projektje elindítására?",
+    "ctaButton": "Árajánlat kérése"
+  },
+  "projects": {
+    "label": "Portfólió",
+    "title": "Projektjeink",
+    "subtitle": "Gondosan válogatott lakó- és kereskedelmi építészeti, belsőépítészeti és felújítási projektek."
+  },
+  "contact": {
+    "label": "Kapcsolat",
+    "title": "Lépjen kapcsolatba velünk",
+    "subtitle": "Szívesen hallanánk projektjéről. Keressen minket, és kezdjünk egy beszélgetést.",
+    "emailLabel": "E-mail",
+    "messageUsLabel": "Írjon nekünk",
+    "socialLabel": "Közösségi média",
+    "formName": "Név",
+    "formNamePlaceholder": "Az Ön neve",
+    "formEmail": "E-mail",
+    "formEmailPlaceholder": "az.on@email.hu",
+    "formSubject": "Tárgy",
+    "formMessage": "Üzenet",
+    "formMessagePlaceholder": "Meséljen projektjéről...",
+    "formSubmit": "Üzenet küldése",
+    "formSuccess": "Köszönjük megkeresését.",
+    "formSuccessDetail": "24 órán belül felvesszük Önnel a kapcsolatot.",
+    "subjectArchitecture": "Építészeti projekt",
+    "subjectInterior": "Belsőépítészet",
+    "subjectRenovation": "Felújítás",
+    "subjectConsultation": "Általános konzultáció",
+    "subjectOther": "Egyéb"
+  },
+  "quote": {
+    "label": "Kezdés",
+    "title": "Árajánlat kérése",
+    "subtitle": "Válaszoljon néhány kérdésre projektjéről, és személyre szabott árajánlatot készítünk. Kötelezettségvállalás nélkül."
+  },
+  "privacy": {
+    "title": "Adatvédelmi irányelvek"
+  },
+  "footer": {
+    "cta": "Van egy projektötlete?",
+    "ctaSub": "Alkossunk együtt valami rendkívülit.",
+    "ctaButton": "Árajánlat kérése",
+    "navigateLabel": "Navigáció",
+    "contactLabel": "Kapcsolat",
+    "followLabel": "Kövessen",
+    "brandLine1": "Luxus építészet és belsőépítészet.",
+    "brandLine2": "Projektek szerte Európában.",
+    "copyright": "© {year} Gozu Studio. Minden jog fenntartva.",
+    "privacyLink": "Adatvédelmi irányelvek"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "projects": "Proiecte",
+    "about": "Despre noi",
+    "services": "Servicii",
+    "contact": "Contact",
+    "getQuote": "Solicită o ofertă",
+    "requestQuote": "Solicită o ofertă"
+  },
+  "home": {
+    "aboutLabel": "Despre studio",
+    "learnMore": "Află mai multe",
+    "portfolioLabel": "Portofoliu",
+    "selectedWorks": "Lucrări selectate",
+    "viewAllProjects": "Vezi toate proiectele",
+    "whatWeDo": "Ce facem",
+    "ourServices": "Serviciile noastre",
+    "architectureTitle": "Arhitectură",
+    "architectureDesc": "De la concept la realizare — arhitectură rezidențială și comercială personalizată, care răspunde contextului, luminii și modului de viață.",
+    "interiorTitle": "Design interior",
+    "interiorDesc": "Interioare atent concepute care armonizează materialele, proporțiile și meșteșugul. Fiecare detaliu servește întregului.",
+    "renovationTitle": "Renovare",
+    "renovationDesc": "Transformarea atentă a spațiilor existente — păstrând caracterul, introducând în același timp claritate contemporană.",
+    "exploreServices": "Descoperă serviciile"
+  },
+  "about": {
+    "label": "Despre noi",
+    "title": "Studioul",
+    "founderLabel": "Fondator",
+    "approachLabel": "Abordarea noastră",
+    "approachTitle": "Cum lucrăm",
+    "cta": "Hai să creăm ceva împreună.",
+    "ctaButton": "Contactează-ne"
+  },
+  "services": {
+    "label": "Ce facem",
+    "title": "Serviciile noastre",
+    "processLabel": "Proces",
+    "processTitle": "De la viziune la realitate",
+    "cta": "Ești pregătit să începi proiectul tău?",
+    "ctaButton": "Solicită o ofertă"
+  },
+  "projects": {
+    "label": "Portofoliu",
+    "title": "Proiectele noastre",
+    "subtitle": "O selecție curată de proiecte de arhitectură rezidențială și comercială, design interior și renovare."
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Contactează-ne",
+    "subtitle": "Ne-ar plăcea să aflăm despre proiectul tău. Scrie-ne și hai să începem o conversație.",
+    "emailLabel": "Email",
+    "messageUsLabel": "Scrie-ne",
+    "socialLabel": "Social",
+    "formName": "Nume",
+    "formNamePlaceholder": "Numele tău",
+    "formEmail": "Email",
+    "formEmailPlaceholder": "adresa@email.com",
+    "formSubject": "Subiect",
+    "formMessage": "Mesaj",
+    "formMessagePlaceholder": "Spune-ne despre proiectul tău...",
+    "formSubmit": "Trimite mesajul",
+    "formSuccess": "Mulțumim că ne-ai contactat.",
+    "formSuccessDetail": "Te vom contacta în termen de 24 de ore.",
+    "subjectArchitecture": "Proiect de arhitectură",
+    "subjectInterior": "Design interior",
+    "subjectRenovation": "Renovare",
+    "subjectConsultation": "Consultanță generală",
+    "subjectOther": "Altele"
+  },
+  "quote": {
+    "label": "Începe acum",
+    "title": "Solicită o ofertă",
+    "subtitle": "Răspunde la câteva întrebări despre proiectul tău și îți vom oferi o estimare personalizată. Fără nicio obligație."
+  },
+  "privacy": {
+    "title": "Politica de confidențialitate"
+  },
+  "footer": {
+    "cta": "Ai un proiect în minte?",
+    "ctaSub": "Hai să creăm ceva extraordinar împreună.",
+    "ctaButton": "Solicită o ofertă",
+    "navigateLabel": "Navigare",
+    "contactLabel": "Contact",
+    "followLabel": "Urmărește-ne",
+    "brandLine1": "Arhitectură și design interior de lux.",
+    "brandLine2": "Proiecte în toată Europa.",
+    "copyright": "© {year} Gozu Studio. Toate drepturile rezervate.",
+    "privacyLink": "Politica de confidențialitate"
+  }
+}

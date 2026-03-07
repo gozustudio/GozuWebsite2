@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "projects": "Projetos",
+    "about": "Sobre",
+    "services": "Serviços",
+    "contact": "Contacto",
+    "getQuote": "Pedir orçamento",
+    "requestQuote": "Solicitar orçamento"
+  },
+  "home": {
+    "aboutLabel": "Sobre o estúdio",
+    "learnMore": "Saber mais",
+    "portfolioLabel": "Portfólio",
+    "selectedWorks": "Obras selecionadas",
+    "viewAllProjects": "Ver todos os projetos",
+    "whatWeDo": "O que fazemos",
+    "ourServices": "Os nossos serviços",
+    "architectureTitle": "Arquitetura",
+    "architectureDesc": "Do conceito à conclusão — arquitetura residencial e comercial personalizada que responde ao contexto, à luz e ao modo de vida.",
+    "interiorTitle": "Design de interiores",
+    "interiorDesc": "Interiores cuidadosamente pensados onde material, proporção e artesanato estão em harmonia. Cada detalhe serve o todo.",
+    "renovationTitle": "Renovação",
+    "renovationDesc": "Transformação cuidada de espaços existentes — preservando o carácter e introduzindo clareza contemporânea.",
+    "exploreServices": "Explorar serviços"
+  },
+  "about": {
+    "label": "Sobre",
+    "title": "O Estúdio",
+    "founderLabel": "Fundadora",
+    "approachLabel": "A nossa abordagem",
+    "approachTitle": "Como trabalhamos",
+    "cta": "Vamos criar algo juntos.",
+    "ctaButton": "Entrar em contacto"
+  },
+  "services": {
+    "label": "O que fazemos",
+    "title": "Os nossos serviços",
+    "processLabel": "Processo",
+    "processTitle": "Da visão à realidade",
+    "cta": "Pronto para iniciar o seu projeto?",
+    "ctaButton": "Solicitar orçamento"
+  },
+  "projects": {
+    "label": "Portfólio",
+    "title": "Os nossos projetos",
+    "subtitle": "Uma seleção cuidada de projetos de arquitetura residencial e comercial, design de interiores e renovação."
+  },
+  "contact": {
+    "label": "Contacto",
+    "title": "Entre em contacto",
+    "subtitle": "Gostaríamos de saber mais sobre o seu projeto. Contacte-nos e vamos iniciar uma conversa.",
+    "emailLabel": "E-mail",
+    "messageUsLabel": "Envie-nos uma mensagem",
+    "socialLabel": "Redes sociais",
+    "formName": "Nome",
+    "formNamePlaceholder": "O seu nome",
+    "formEmail": "E-mail",
+    "formEmailPlaceholder": "seu@email.pt",
+    "formSubject": "Assunto",
+    "formMessage": "Mensagem",
+    "formMessagePlaceholder": "Fale-nos sobre o seu projeto...",
+    "formSubmit": "Enviar mensagem",
+    "formSuccess": "Obrigado pelo seu contacto.",
+    "formSuccessDetail": "Responderemos dentro de 24 horas.",
+    "subjectArchitecture": "Projeto de arquitetura",
+    "subjectInterior": "Design de interiores",
+    "subjectRenovation": "Renovação",
+    "subjectConsultation": "Consulta geral",
+    "subjectOther": "Outro"
+  },
+  "quote": {
+    "label": "Começar",
+    "title": "Solicitar orçamento",
+    "subtitle": "Responda a algumas perguntas sobre o seu projeto e prepararemos um orçamento personalizado. Sem compromisso."
+  },
+  "privacy": {
+    "title": "Política de privacidade"
+  },
+  "footer": {
+    "cta": "Tem um projeto em mente?",
+    "ctaSub": "Vamos criar algo extraordinário juntos.",
+    "ctaButton": "Solicitar orçamento",
+    "navigateLabel": "Navegar",
+    "contactLabel": "Contacto",
+    "followLabel": "Seguir",
+    "brandLine1": "Arquitetura e design de interiores de luxo.",
+    "brandLine2": "Projetos por toda a Europa.",
+    "copyright": "© {year} Gozu Studio. Todos os direitos reservados.",
+    "privacyLink": "Política de privacidade"
+  }
+}

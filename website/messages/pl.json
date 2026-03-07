@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "projects": "Projekty",
+    "about": "O nas",
+    "services": "Usługi",
+    "contact": "Kontakt",
+    "getQuote": "Uzyskaj wycenę",
+    "requestQuote": "Zapytaj o wycenę"
+  },
+  "home": {
+    "aboutLabel": "O studiu",
+    "learnMore": "Dowiedz się więcej",
+    "portfolioLabel": "Portfolio",
+    "selectedWorks": "Wybrane realizacje",
+    "viewAllProjects": "Zobacz wszystkie projekty",
+    "whatWeDo": "Czym się zajmujemy",
+    "ourServices": "Nasze usługi",
+    "architectureTitle": "Architektura",
+    "architectureDesc": "Od koncepcji do realizacji — indywidualna architektura mieszkaniowa i komercyjna, która odpowiada na kontekst, światło i styl życia.",
+    "interiorTitle": "Projektowanie wnętrz",
+    "interiorDesc": "Przemyślane wnętrza, w których materiał, proporcje i rzemiosło tworzą harmonię. Każdy detal służy całości.",
+    "renovationTitle": "Renowacja",
+    "renovationDesc": "Staranna transformacja istniejących przestrzeni — zachowując charakter, wprowadzając współczesną klarowność.",
+    "exploreServices": "Poznaj usługi"
+  },
+  "about": {
+    "label": "O nas",
+    "title": "Studio",
+    "founderLabel": "Założycielka",
+    "approachLabel": "Nasze podejście",
+    "approachTitle": "Jak pracujemy",
+    "cta": "Stwórzmy razem coś wyjątkowego.",
+    "ctaButton": "Skontaktuj się"
+  },
+  "services": {
+    "label": "Czym się zajmujemy",
+    "title": "Nasze usługi",
+    "processLabel": "Proces",
+    "processTitle": "Od wizji do rzeczywistości",
+    "cta": "Gotowi rozpocząć swój projekt?",
+    "ctaButton": "Zapytaj o wycenę"
+  },
+  "projects": {
+    "label": "Portfolio",
+    "title": "Nasze projekty",
+    "subtitle": "Starannie wyselekcjonowane projekty architektury mieszkaniowej i komercyjnej, projektowania wnętrz oraz renowacji."
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Skontaktuj się",
+    "subtitle": "Chętnie dowiemy się o Twoim projekcie. Napisz do nas i rozpocznijmy rozmowę.",
+    "emailLabel": "E-mail",
+    "messageUsLabel": "Napisz do nas",
+    "socialLabel": "Media społecznościowe",
+    "formName": "Imię",
+    "formNamePlaceholder": "Twoje imię",
+    "formEmail": "E-mail",
+    "formEmailPlaceholder": "twoj@email.pl",
+    "formSubject": "Temat",
+    "formMessage": "Wiadomość",
+    "formMessagePlaceholder": "Opowiedz nam o swoim projekcie...",
+    "formSubmit": "Wyślij wiadomość",
+    "formSuccess": "Dziękujemy za kontakt.",
+    "formSuccessDetail": "Odpowiemy w ciągu 24 godzin.",
+    "subjectArchitecture": "Projekt architektoniczny",
+    "subjectInterior": "Projektowanie wnętrz",
+    "subjectRenovation": "Renowacja",
+    "subjectConsultation": "Konsultacja ogólna",
+    "subjectOther": "Inne"
+  },
+  "quote": {
+    "label": "Rozpocznij",
+    "title": "Zapytaj o wycenę",
+    "subtitle": "Odpowiedz na kilka pytań dotyczących Twojego projektu, a my przygotujemy spersonalizowaną wycenę. Bez zobowiązań."
+  },
+  "privacy": {
+    "title": "Polityka prywatności"
+  },
+  "footer": {
+    "cta": "Masz projekt?",
+    "ctaSub": "Stwórzmy razem coś niezwykłego.",
+    "ctaButton": "Zapytaj o wycenę",
+    "navigateLabel": "Nawigacja",
+    "contactLabel": "Kontakt",
+    "followLabel": "Obserwuj",
+    "brandLine1": "Luksusowa architektura i projektowanie wnętrz.",
+    "brandLine2": "Projekty w całej Europie.",
+    "copyright": "© {year} Gozu Studio. Wszelkie prawa zastrzeżone.",
+    "privacyLink": "Polityka prywatności"
+  }
+}

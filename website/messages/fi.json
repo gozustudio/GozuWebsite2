@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "projects": "Projektit",
+    "about": "Meistä",
+    "services": "Palvelut",
+    "contact": "Yhteystiedot",
+    "getQuote": "Pyydä tarjous",
+    "requestQuote": "Pyydä tarjous"
+  },
+  "home": {
+    "aboutLabel": "Studiosta",
+    "learnMore": "Lue lisää",
+    "portfolioLabel": "Portfolio",
+    "selectedWorks": "Valikoituja töitä",
+    "viewAllProjects": "Katso kaikki projektit",
+    "whatWeDo": "Mitä teemme",
+    "ourServices": "Palvelumme",
+    "architectureTitle": "Arkkitehtuuri",
+    "architectureDesc": "Konseptista toteutukseen — yksilöllistä asuin- ja liikerakennusarkkitehtuuria, joka vastaa kontekstiin, valoon ja elämäntapaan.",
+    "interiorTitle": "Sisustussuunnittelu",
+    "interiorDesc": "Harkittuja sisätiloja, joissa materiaali, mittasuhteet ja käsityötaito ovat sopusoinnussa. Jokainen yksityiskohta palvelee kokonaisuutta.",
+    "renovationTitle": "Remontti",
+    "renovationDesc": "Harkittua olemassa olevien tilojen uudistamista — säilyttäen luonteen ja tuoden nykyaikaista selkeyttä.",
+    "exploreServices": "Tutustu palveluihin"
+  },
+  "about": {
+    "label": "Meistä",
+    "title": "Studio",
+    "founderLabel": "Perustaja",
+    "approachLabel": "Lähestymistapamme",
+    "approachTitle": "Näin työskentelemme",
+    "cta": "Luodaan yhdessä jotain ainutlaatuista.",
+    "ctaButton": "Ota yhteyttä"
+  },
+  "services": {
+    "label": "Mitä teemme",
+    "title": "Palvelumme",
+    "processLabel": "Prosessi",
+    "processTitle": "Visiosta todellisuudeksi",
+    "cta": "Valmiina aloittamaan projektisi?",
+    "ctaButton": "Pyydä tarjous"
+  },
+  "projects": {
+    "label": "Portfolio",
+    "title": "Projektimme",
+    "subtitle": "Huolella valikoitu kokoelma asuin- ja liikerakennusarkkitehtuurin, sisustussuunnittelun ja remonttiprojekteja."
+  },
+  "contact": {
+    "label": "Yhteystiedot",
+    "title": "Ota yhteyttä",
+    "subtitle": "Kuulisimme mielellämme projektistasi. Ota yhteyttä ja aloitetaan keskustelu.",
+    "emailLabel": "Sähköposti",
+    "messageUsLabel": "Lähetä viesti",
+    "socialLabel": "Sosiaalinen media",
+    "formName": "Nimi",
+    "formNamePlaceholder": "Nimesi",
+    "formEmail": "Sähköposti",
+    "formEmailPlaceholder": "sinun@sahkoposti.fi",
+    "formSubject": "Aihe",
+    "formMessage": "Viesti",
+    "formMessagePlaceholder": "Kerro meille projektistasi...",
+    "formSubmit": "Lähetä viesti",
+    "formSuccess": "Kiitos yhteydenotostasi.",
+    "formSuccessDetail": "Olemme yhteydessä 24 tunnin kuluessa.",
+    "subjectArchitecture": "Arkkitehtuuriprojekti",
+    "subjectInterior": "Sisustussuunnittelu",
+    "subjectRenovation": "Remontti",
+    "subjectConsultation": "Yleinen konsultaatio",
+    "subjectOther": "Muu"
+  },
+  "quote": {
+    "label": "Aloita",
+    "title": "Pyydä tarjous",
+    "subtitle": "Vastaa muutamaan kysymykseen projektistasi, niin laadimme sinulle henkilökohtaisen arvion. Ei sitoumuksia."
+  },
+  "privacy": {
+    "title": "Tietosuojakäytäntö"
+  },
+  "footer": {
+    "cta": "Onko mielessäsi projekti?",
+    "ctaSub": "Luodaan yhdessä jotain poikkeuksellista.",
+    "ctaButton": "Pyydä tarjous",
+    "navigateLabel": "Navigoi",
+    "contactLabel": "Yhteystiedot",
+    "followLabel": "Seuraa",
+    "brandLine1": "Luksusarkkitehtuuria ja sisustussuunnittelua.",
+    "brandLine2": "Projekteja ympäri Eurooppaa.",
+    "copyright": "© {year} Gozu Studio. Kaikki oikeudet pidätetään.",
+    "privacyLink": "Tietosuojakäytäntö"
+  }
+}

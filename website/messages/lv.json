@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "projects": "Projekti",
+    "about": "Par mums",
+    "services": "Pakalpojumi",
+    "contact": "Kontakti",
+    "getQuote": "Saņemt piedāvājumu",
+    "requestQuote": "Pieprasīt piedāvājumu"
+  },
+  "home": {
+    "aboutLabel": "Par studiju",
+    "learnMore": "Uzzināt vairāk",
+    "portfolioLabel": "Portfolio",
+    "selectedWorks": "Izlases darbi",
+    "viewAllProjects": "Skatīt visus projektus",
+    "whatWeDo": "Ko mēs darām",
+    "ourServices": "Mūsu pakalpojumi",
+    "architectureTitle": "Arhitektūra",
+    "architectureDesc": "No koncepcijas līdz realizācijai — individuāla dzīvojamā un komerciālā arhitektūra, kas reaģē uz kontekstu, gaismu un dzīvesveidu.",
+    "interiorTitle": "Interjera dizains",
+    "interiorDesc": "Pārdomāti interjeri, kuros saskan materiāli, proporcijas un amatniecība. Katra detaļa kalpo veselumam.",
+    "renovationTitle": "Renovācija",
+    "renovationDesc": "Pārdomāta esošo telpu pārveidošana — saglabājot raksturu un ieviešot mūsdienīgu skaidrību.",
+    "exploreServices": "Izpētīt pakalpojumus"
+  },
+  "about": {
+    "label": "Par mums",
+    "title": "Studija",
+    "founderLabel": "Dibinātāja",
+    "approachLabel": "Mūsu pieeja",
+    "approachTitle": "Kā mēs strādājam",
+    "cta": "Radīsim kaut ko kopā.",
+    "ctaButton": "Sazināties"
+  },
+  "services": {
+    "label": "Ko mēs darām",
+    "title": "Mūsu pakalpojumi",
+    "processLabel": "Process",
+    "processTitle": "No vīzijas līdz realitātei",
+    "cta": "Gatavi sākt savu projektu?",
+    "ctaButton": "Pieprasīt piedāvājumu"
+  },
+  "projects": {
+    "label": "Portfolio",
+    "title": "Mūsu projekti",
+    "subtitle": "Rūpīgi atlasīti dzīvojamās un komerciālās arhitektūras, interjera dizaina un renovācijas projekti."
+  },
+  "contact": {
+    "label": "Kontakti",
+    "title": "Sazināties",
+    "subtitle": "Mēs labprāt uzzinātu par jūsu projektu. Sazinieties ar mums un sāksim sarunu.",
+    "emailLabel": "E-pasts",
+    "messageUsLabel": "Rakstiet mums",
+    "socialLabel": "Sociālie tīkli",
+    "formName": "Vārds",
+    "formNamePlaceholder": "Jūsu vārds",
+    "formEmail": "E-pasts",
+    "formEmailPlaceholder": "jusu@epasts.lv",
+    "formSubject": "Tēma",
+    "formMessage": "Ziņojums",
+    "formMessagePlaceholder": "Pastāstiet mums par savu projektu...",
+    "formSubmit": "Nosūtīt ziņojumu",
+    "formSuccess": "Paldies, ka sazinājāties.",
+    "formSuccessDetail": "Mēs atbildēsim 24 stundu laikā.",
+    "subjectArchitecture": "Arhitektūras projekts",
+    "subjectInterior": "Interjera dizains",
+    "subjectRenovation": "Renovācija",
+    "subjectConsultation": "Vispārīga konsultācija",
+    "subjectOther": "Cits"
+  },
+  "quote": {
+    "label": "Sākt",
+    "title": "Pieprasīt piedāvājumu",
+    "subtitle": "Atbildiet uz dažiem jautājumiem par savu projektu, un mēs sagatavosim personalizētu tāmi. Bez saistībām."
+  },
+  "privacy": {
+    "title": "Privātuma politika"
+  },
+  "footer": {
+    "cta": "Ir projekts prātā?",
+    "ctaSub": "Radīsim kaut ko izcilu kopā.",
+    "ctaButton": "Pieprasīt piedāvājumu",
+    "navigateLabel": "Navigācija",
+    "contactLabel": "Kontakti",
+    "followLabel": "Sekot",
+    "brandLine1": "Luksusa arhitektūra un interjera dizains.",
+    "brandLine2": "Projekti visā Eiropā.",
+    "copyright": "© {year} Gozu Studio. Visas tiesības aizsargātas.",
+    "privacyLink": "Privātuma politika"
+  }
+}
