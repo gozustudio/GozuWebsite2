@@ -26,6 +26,23 @@ export default async function ServicesPage({
 
   return (
     <>
+      <script
+        type="application/json"
+        id="webmcp"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            tools: [
+              {
+                name: "get_gozu_studio_info",
+                type: "imperative",
+                description: "Get details about Gozu Studio's architecture and interior design services, process, and capabilities.",
+                readOnly: true,
+              },
+            ],
+          }),
+        }}
+      />
+
       {/* Hero */}
       <section className="px-6 pb-16 pt-32 lg:px-12 lg:pt-40">
         <div className="mx-auto max-w-[1400px]">

@@ -7,6 +7,7 @@ export interface Project {
   year: string;
   location: string;
   type: string[];
+  collaborations: string;
   shortDescription: string;
   images: string[];
   videos: string[];
@@ -48,6 +49,7 @@ export function loadProjects(locale?: string): Project[] {
       year: raw.year ?? "",
       location: raw.location ?? "",
       type: Array.isArray(raw.type) ? raw.type : [],
+      collaborations: raw.collaborations ?? "",
       shortDescription: raw.shortDescription ?? "",
       images: Array.isArray(raw.images) ? raw.images : [],
       videos: Array.isArray(raw.videos) ? raw.videos : [],

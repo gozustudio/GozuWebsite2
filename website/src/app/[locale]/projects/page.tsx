@@ -92,13 +92,17 @@ export default async function ProjectsPage({
                       <h2 className="font-serif text-xl text-[var(--color-body)] md:text-2xl">
                         {project.title}
                       </h2>
-                      <p className="mt-1 text-sm text-[var(--color-text-secondary)]">
-                        {project.location} &middot; {project.type.join(", ")}
-                      </p>
+                      {(project.location || project.type.length > 0) && (
+                        <p className="mt-1 text-sm text-[var(--color-text-secondary)]">
+                          {[project.location, project.type.join(", ")].filter(Boolean).join(" \u00b7 ")}
+                        </p>
+                      )}
                     </div>
-                    <span className="text-sm text-[var(--color-label)]">
-                      {project.year}
-                    </span>
+                    {project.year && (
+                      <span className="text-sm text-[var(--color-label)]">
+                        {project.year}
+                      </span>
+                    )}
                   </div>
                 </Link>
               </FadeIn>

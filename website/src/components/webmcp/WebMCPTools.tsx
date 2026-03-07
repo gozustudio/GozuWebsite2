@@ -31,11 +31,31 @@ export default function WebMCPTools() {
         },
       },
       annotations: { readOnlyHint: true },
-      execute: async () => {
-        // Fetch project data from our API or static data
+      execute: async (input: Record<string, unknown>) => {
         const response = await fetch("/api/projects");
-        const projects = await response.json();
-        return projects;
+        const allProjects = await response.json();
+        let results = allProjects;
+
+        const typeFilter = (input.type as string)?.toLowerCase();
+        if (typeFilter) {
+          results = results.filter((p: { type: string[] }) =>
+            p.type.some((t: string) => t.toLowerCase().includes(typeFilter))
+          );
+        }
+
+        const query = (input.query as string)?.toLowerCase();
+        if (query) {
+          results = results.filter(
+            (p: { title: string; location?: string; type?: string[]; shortDescription: string; collaborations?: string }) =>
+              p.title.toLowerCase().includes(query) ||
+              (p.location?.toLowerCase().includes(query)) ||
+              (p.type?.some((t: string) => t.toLowerCase().includes(query))) ||
+              p.shortDescription.toLowerCase().includes(query) ||
+              (p.collaborations?.toLowerCase().includes(query))
+          );
+        }
+
+        return { content: [{ type: "text", text: JSON.stringify(results) }] };
       },
     });
 
@@ -201,15 +221,28 @@ export default function WebMCPTools() {
             body: JSON.stringify({ ...input, partial: false, honeypot: "" }),
           });
           if (!res.ok) {
-            return { success: false, message: "Quote submission failed. Please try again or contact info@gozustudio.com." };
+            return {
+              content: [{
+                type: "text",
+                text: "Quote submission failed. Please try again or contact info@gozustudio.com.",
+              }],
+              isError: true,
+            };
           }
           return {
-            success: true,
-            message:
-              "Your quote request has been submitted successfully. Gozu Studio will review your project details and respond within 48 hours with a personalised estimate.",
+            content: [{
+              type: "text",
+              text: "Your quote request has been submitted successfully. Gozu Studio will review your project details and respond within 48 hours with a personalised estimate.",
+            }],
           };
         } catch {
-          return { success: false, message: "Network error. Please check your connection and try again, or contact info@gozustudio.com." };
+          return {
+            content: [{
+              type: "text",
+              text: "Network error. Please check your connection and try again, or contact info@gozustudio.com.",
+            }],
+            isError: true,
+          };
         }
       },
     });
@@ -226,23 +259,28 @@ export default function WebMCPTools() {
       annotations: { readOnlyHint: true },
       execute: async () => {
         return {
-          name: "Gozu Studio",
-          founder: "Goda Zukaite",
-          description:
-            "Luxury architecture and interior design studio. Creating refined residential and commercial spaces across Europe.",
-          services: [
-            "Residential Architecture",
-            "Interior Design",
-            "Renovation & Restoration",
-            "Commercial Interiors",
-          ],
-          contact: {
-            email: "info@gozustudio.com",
-            whatsapp: "https://wa.me/4407765577275",
-            telegram: "https://t.me/+4407765577275",
-            website: "https://www.gozustudio.com",
-            instagram: "https://www.instagram.com/gozustudio/",
-          },
+          content: [{
+            type: "text",
+            text: JSON.stringify({
+              name: "Gozu Studio",
+              founder: "Goda Zukaite",
+              description:
+                "Luxury architecture and interior design studio. Creating refined residential and commercial spaces across Europe.",
+              services: [
+                "Residential Architecture",
+                "Interior Design",
+                "Renovation & Restoration",
+                "Commercial Interiors",
+              ],
+              contact: {
+                email: "info@gozustudio.com",
+                whatsapp: "https://wa.me/4407765577275",
+                telegram: "https://t.me/+4407765577275",
+                website: "https://www.gozustudio.com",
+                instagram: "https://www.instagram.com/gozustudio/",
+              },
+            }),
+          }],
         };
       },
     });

@@ -28,9 +28,8 @@ export default async function QuotePage({
             tools: [
               {
                 name: "request_quote_gozu_studio",
-                type: "declarative",
-                description: "Submit a project quote request to Gozu Studio. 4-step wizard: Contact, Address, Project Details, Package.",
-                formSelector: "#quoteForm",
+                type: "imperative",
+                description: "Submit a project quote request to Gozu Studio. Collects contact details, project address, specifications, and service package selection.",
               },
             ],
           }),

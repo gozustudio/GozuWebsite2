@@ -51,16 +51,11 @@ export default async function ProjectPage({ params }: Props) {
   const currentIndex = allProjects.findIndex((p) => p.slug === slug);
   const nextProject = allProjects[(currentIndex + 1) % allProjects.length];
 
-  const jsonLd = {
+  const jsonLd: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
     name: project.title,
     description: project.shortDescription,
-    dateCreated: project.year,
-    locationCreated: {
-      "@type": "Place",
-      name: project.location,
-    },
     creator: {
       "@type": "Organization",
       name: "Gozu Studio",
@@ -69,6 +64,10 @@ export default async function ProjectPage({ params }: Props) {
       (img) => `https://www.gozustudio.com${img}`
     ),
   };
+  if (project.year) jsonLd.dateCreated = project.year;
+  if (project.location) {
+    jsonLd.locationCreated = { "@type": "Place", name: project.location };
+  }
 
   return (
     <>
@@ -113,14 +112,17 @@ export default async function ProjectPage({ params }: Props) {
                 { label: t("yearLabel"), value: project.year },
                 { label: t("locationLabel"), value: project.location },
                 { label: t("typeLabel"), value: project.type.join(", ") },
-              ].map((item) => (
-                <div key={item.label}>
-                  <p className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)]">
-                    {item.label}
-                  </p>
-                  <p className="mt-1 text-[var(--color-body)]">{item.value}</p>
-                </div>
-              ))}
+                { label: t("collaborationsLabel"), value: project.collaborations },
+              ]
+                .filter((item) => item.value)
+                .map((item) => (
+                  <div key={item.label}>
+                    <p className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)]">
+                      {item.label}
+                    </p>
+                    <p className="mt-1 text-[var(--color-body)]">{item.value}</p>
+                  </div>
+                ))}
             </div>
           </div>
         </FadeIn>
@@ -178,9 +180,11 @@ export default async function ProjectPage({ params }: Props) {
               <h2 className="mt-4 font-serif text-4xl text-[var(--color-body)] transition-colors duration-300 group-hover:text-[var(--color-main)] md:text-5xl">
                 {nextProject.title}
               </h2>
-              <p className="mt-2 text-sm text-[var(--color-text-secondary)]">
-                {nextProject.location} &middot; {nextProject.year}
-              </p>
+              {(nextProject.location || nextProject.year) && (
+                <p className="mt-2 text-sm text-[var(--color-text-secondary)]">
+                  {[nextProject.location, nextProject.year].filter(Boolean).join(" \u00b7 ")}
+                </p>
+              )}
             </div>
           </Link>
         </section>

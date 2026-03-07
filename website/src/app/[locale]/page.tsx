@@ -122,13 +122,17 @@ export default async function Home({
                     <h3 className="font-serif text-xl text-[var(--color-body)] md:text-2xl">
                       {project.title}
                     </h3>
-                    <p className="mt-1 text-sm text-[var(--color-text-secondary)]">
-                      {project.location}
-                    </p>
+                    {project.location && (
+                      <p className="mt-1 text-sm text-[var(--color-text-secondary)]">
+                        {project.location}
+                      </p>
+                    )}
                   </div>
-                  <span className="text-sm text-[var(--color-label)]">
-                    {project.year}
-                  </span>
+                  {project.year && (
+                    <span className="text-sm text-[var(--color-label)]">
+                      {project.year}
+                    </span>
+                  )}
                 </div>
               </Link>
             </FadeIn>

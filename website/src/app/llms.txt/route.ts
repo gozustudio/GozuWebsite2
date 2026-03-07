@@ -4,10 +4,16 @@ export async function GET() {
   const projects = loadProjects();
 
   const projectLinks = projects
-    .map(
-      (p) =>
-        `- [${p.title}](https://www.gozustudio.com/projects/${p.slug}): ${p.type} project in ${p.location} (${p.year})`
-    )
+    .map((p) => {
+      const details = [
+        p.type.length > 0 ? `${p.type.join(", ")} project` : null,
+        p.location ? `in ${p.location}` : null,
+        p.year ? `(${p.year})` : null,
+      ]
+        .filter(Boolean)
+        .join(" ");
+      return `- [${p.title}](https://www.gozustudio.com/projects/${p.slug})${details ? `: ${details}` : ""}`;
+    })
     .join("\n");
 
   const content = `# Gozu Studio

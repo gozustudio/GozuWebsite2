@@ -5,9 +5,10 @@ export async function GET() {
   const projects = loadProjects().map((p) => ({
     slug: p.slug,
     title: p.title,
-    year: p.year,
-    location: p.location,
-    type: p.type,
+    year: p.year || undefined,
+    location: p.location || undefined,
+    type: p.type.length > 0 ? p.type : undefined,
+    collaborations: p.collaborations || undefined,
     shortDescription: p.shortDescription,
     url: `https://www.gozustudio.com/projects/${p.slug}`,
     imageCount: p.images.length,

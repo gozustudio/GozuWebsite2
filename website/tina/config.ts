@@ -41,9 +41,16 @@ export default defineConfig({
           {
             name: "type",
             type: "string",
-            label: "Project Types",
+            label: "Project Type",
             list: true,
             ui: { component: "tags" },
+          },
+          {
+            name: "collaborations",
+            type: "string",
+            label: "Collaborations",
+            description: "Optional. Credits for collaborators, partners, or other studios involved.",
+            ui: { component: "textarea" },
           },
           {
             name: "shortDescription",

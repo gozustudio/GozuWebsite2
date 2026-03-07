@@ -30,6 +30,23 @@ export default async function AboutPage({
 
   return (
     <>
+      <script
+        type="application/json"
+        id="webmcp"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            tools: [
+              {
+                name: "get_gozu_studio_info",
+                type: "imperative",
+                description: "Get information about Gozu Studio including the founder, design approach, and services.",
+                readOnly: true,
+              },
+            ],
+          }),
+        }}
+      />
+
       {/* Hero */}
       <section className="px-6 pb-16 pt-32 lg:px-12 lg:pt-40">
         <div className="mx-auto max-w-[1400px]">
