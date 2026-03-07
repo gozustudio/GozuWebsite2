@@ -15,10 +15,6 @@
     "/uploads/projects/3/4.jpg",
     "/uploads/projects/3/5.jpg"
   ],
-  "videos": [
-    "/uploads/projects/3/Main.mp4",
-    "/uploads/projects/3/2.mp4"
-  ],
   "featured": true,
   "order": 3
 }
