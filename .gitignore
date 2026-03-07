@@ -55,3 +55,6 @@ ehthumbs.db
 # Tina CMS generated files
 website/tina/__generated__/
 website/public/admin/
+
+# Auto-generated translations (built during deploy)
+website/content/translated/

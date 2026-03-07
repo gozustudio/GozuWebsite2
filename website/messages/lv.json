@@ -43,7 +43,11 @@
   "projects": {
     "label": "Portfolio",
     "title": "Mūsu projekti",
-    "subtitle": "Rūpīgi atlasīti dzīvojamās un komerciālās arhitektūras, interjera dizaina un renovācijas projekti."
+    "subtitle": "Rūpīgi atlasīti dzīvojamās un komerciālās arhitektūras, interjera dizaina un renovācijas projekti.",
+    "yearLabel": "Gads",
+    "locationLabel": "Atrašanās vieta",
+    "typeLabel": "Tips",
+    "nextProject": "Nākamais projekts"
   },
   "contact": {
     "label": "Kontakti",

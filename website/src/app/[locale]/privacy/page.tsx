@@ -1,6 +1,5 @@
-import fs from "fs";
-import path from "path";
 import FadeIn from "@/components/ui/FadeIn";
+import { loadTranslatedContent } from "@/lib/content";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
@@ -18,14 +17,9 @@ export default async function PrivacyPage({
   setRequestLocale(locale);
   const t = await getTranslations("privacy");
 
-  const privacyPath = path.resolve(
-    process.cwd(),
-    "content/settings/privacy.json"
-  );
   let privacyContent = "Privacy policy content not available.";
-
   try {
-    const json = JSON.parse(fs.readFileSync(privacyPath, "utf-8"));
+    const json = loadTranslatedContent<{ content: string }>("settings/privacy.json", locale);
     privacyContent = json.content ?? privacyContent;
   } catch {
     // File not found — use fallback

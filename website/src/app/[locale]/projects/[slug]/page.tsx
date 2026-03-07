@@ -4,7 +4,7 @@ import { loadProjects, getProject, getProjectSlugs } from "@/lib/projects";
 import FadeIn from "@/components/ui/FadeIn";
 import type { Metadata } from "next";
 import { routing } from "@/i18n/routing";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
 interface Props {
   params: Promise<{ locale: string; slug: string }>;
@@ -18,8 +18,8 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
-  const project = getProject(slug);
+  const { locale, slug } = await params;
+  const project = getProject(slug, locale);
   if (!project) return { title: "Project Not Found" };
 
   return {
@@ -36,7 +36,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function ProjectPage({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
-  const project = getProject(slug);
+  const t = await getTranslations("projects");
+  const project = getProject(slug, locale);
 
   if (!project) {
     return (
@@ -46,7 +47,7 @@ export default async function ProjectPage({ params }: Props) {
     );
   }
 
-  const allProjects = loadProjects();
+  const allProjects = loadProjects(locale);
   const currentIndex = allProjects.findIndex((p) => p.slug === slug);
   const nextProject = allProjects[(currentIndex + 1) % allProjects.length];
 
@@ -109,9 +110,9 @@ export default async function ProjectPage({ params }: Props) {
             </div>
             <div className="space-y-6 border-t border-[var(--color-border)]/20 pt-6 lg:border-l lg:border-t-0 lg:pl-12 lg:pt-0">
               {[
-                { label: "Year", value: project.year },
-                { label: "Location", value: project.location },
-                { label: "Type", value: project.type.join(", ") },
+                { label: t("yearLabel"), value: project.year },
+                { label: t("locationLabel"), value: project.location },
+                { label: t("typeLabel"), value: project.type.join(", ") },
               ].map((item) => (
                 <div key={item.label}>
                   <p className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)]">
@@ -172,7 +173,7 @@ export default async function ProjectPage({ params }: Props) {
           >
             <div className="mx-auto max-w-[1400px] px-6 py-20 lg:px-12">
               <p className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)]">
-                Next Project
+                {t("nextProject")}
               </p>
               <h2 className="mt-4 font-serif text-4xl text-[var(--color-body)] transition-colors duration-300 group-hover:text-[var(--color-main)] md:text-5xl">
                 {nextProject.title}

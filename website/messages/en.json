@@ -43,7 +43,11 @@
   "projects": {
     "label": "Portfolio",
     "title": "Our Projects",
-    "subtitle": "A curated selection of residential and commercial architecture, interior design, and renovation projects."
+    "subtitle": "A curated selection of residential and commercial architecture, interior design, and renovation projects.",
+    "yearLabel": "Year",
+    "locationLabel": "Location",
+    "typeLabel": "Type",
+    "nextProject": "Next Project"
   },
   "contact": {
     "label": "Contact",

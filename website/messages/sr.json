@@ -43,7 +43,11 @@
   "projects": {
     "label": "Portfolio",
     "title": "Naši projekti",
-    "subtitle": "Pažljivo odabrani projekti stambene i komercijalne arhitekture, dizajna enterijera i renoviranja."
+    "subtitle": "Pažljivo odabrani projekti stambene i komercijalne arhitekture, dizajna enterijera i renoviranja.",
+    "yearLabel": "Година",
+    "locationLabel": "Локација",
+    "typeLabel": "Тип",
+    "nextProject": "Следећи пројекат"
   },
   "contact": {
     "label": "Kontakt",

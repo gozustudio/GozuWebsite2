@@ -43,7 +43,11 @@
   "projects": {
     "label": "Portfolio",
     "title": "Nasze projekty",
-    "subtitle": "Starannie wyselekcjonowane projekty architektury mieszkaniowej i komercyjnej, projektowania wnętrz oraz renowacji."
+    "subtitle": "Starannie wyselekcjonowane projekty architektury mieszkaniowej i komercyjnej, projektowania wnętrz oraz renowacji.",
+    "yearLabel": "Rok",
+    "locationLabel": "Lokalizacja",
+    "typeLabel": "Typ",
+    "nextProject": "Następny projekt"
   },
   "contact": {
     "label": "Kontakt",

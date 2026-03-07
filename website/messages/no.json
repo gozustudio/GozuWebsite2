@@ -43,7 +43,11 @@
   "projects": {
     "label": "Portefølje",
     "title": "Våre prosjekter",
-    "subtitle": "Et kuratert utvalg av bolig- og næringsarkitektur, interiørdesign og renoveringsprosjekter."
+    "subtitle": "Et kuratert utvalg av bolig- og næringsarkitektur, interiørdesign og renoveringsprosjekter.",
+    "yearLabel": "År",
+    "locationLabel": "Beliggenhet",
+    "typeLabel": "Type",
+    "nextProject": "Neste prosjekt"
   },
   "contact": {
     "label": "Kontakt",

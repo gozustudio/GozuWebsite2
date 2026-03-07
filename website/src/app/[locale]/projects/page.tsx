@@ -19,7 +19,7 @@ export default async function ProjectsPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("projects");
-  const projects = loadProjects();
+  const projects = loadProjects(locale);
 
   return (
     <>

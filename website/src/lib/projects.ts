@@ -14,9 +14,14 @@ export interface Project {
   order: number;
 }
 
-export function loadProjects(): Project[] {
+export function loadProjects(locale?: string): Project[] {
   const contentDir = path.resolve(process.cwd(), "content/projects");
   if (!fs.existsSync(contentDir)) return [];
+
+  const translatedDir =
+    locale && locale !== "en"
+      ? path.resolve(process.cwd(), `content/translated/${locale}/projects`)
+      : null;
 
   const files = fs
     .readdirSync(contentDir)
@@ -24,9 +29,19 @@ export function loadProjects(): Project[] {
 
   const projects = files.map((file) => {
     const slug = file.replace(".json", "");
-    const raw = JSON.parse(
-      fs.readFileSync(path.join(contentDir, file), "utf-8")
-    );
+
+    // Try translated version first
+    let raw;
+    if (translatedDir && fs.existsSync(path.join(translatedDir, file))) {
+      raw = JSON.parse(
+        fs.readFileSync(path.join(translatedDir, file), "utf-8")
+      );
+    } else {
+      raw = JSON.parse(
+        fs.readFileSync(path.join(contentDir, file), "utf-8")
+      );
+    }
+
     return {
       slug,
       title: raw.title ?? "Untitled",
@@ -44,8 +59,8 @@ export function loadProjects(): Project[] {
   return projects.sort((a, b) => a.order - b.order);
 }
 
-export function getProject(slug: string): Project | undefined {
-  return loadProjects().find((p) => p.slug === slug);
+export function getProject(slug: string, locale?: string): Project | undefined {
+  return loadProjects(locale).find((p) => p.slug === slug);
 }
 
 export function getProjectSlugs(): string[] {

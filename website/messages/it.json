@@ -43,7 +43,11 @@
   "projects": {
     "label": "Portfolio",
     "title": "I nostri progetti",
-    "subtitle": "Una selezione curata di progetti di architettura residenziale e commerciale, interior design e ristrutturazione."
+    "subtitle": "Una selezione curata di progetti di architettura residenziale e commerciale, interior design e ristrutturazione.",
+    "yearLabel": "Anno",
+    "locationLabel": "Posizione",
+    "typeLabel": "Tipo",
+    "nextProject": "Progetto successivo"
   },
   "contact": {
     "label": "Contatti",

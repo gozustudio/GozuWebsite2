@@ -1,8 +1,7 @@
-import fs from "fs";
-import path from "path";
 import { Link } from "@/i18n/navigation";
 import FadeIn from "@/components/ui/FadeIn";
 import { SITE } from "@/lib/constants";
+import { loadTranslatedContent } from "@/lib/content";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
@@ -12,18 +11,6 @@ export const metadata: Metadata = {
     "Gozu Studio is a luxury architecture and interior design practice founded by Goda Zukaite, creating refined spaces across Europe.",
 };
 
-function loadAboutPage() {
-  const file = path.resolve(process.cwd(), "content/pages/about.json");
-  return JSON.parse(fs.readFileSync(file, "utf-8")) as {
-    introParagraph1: string;
-    introParagraph2: string;
-    introParagraph3: string;
-    founderBio: string;
-    founderFacts: { label: string; value: string }[];
-    approachSteps: { step: string; title: string; desc: string }[];
-  };
-}
-
 export default async function AboutPage({
   params,
 }: {
@@ -32,7 +19,14 @@ export default async function AboutPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("about");
-  const about = loadAboutPage();
+  const about = loadTranslatedContent<{
+    introParagraph1: string;
+    introParagraph2: string;
+    introParagraph3: string;
+    founderBio: string;
+    founderFacts: { label: string; value: string }[];
+    approachSteps: { step: string; title: string; desc: string }[];
+  }>("pages/about.json", locale);
 
   return (
     <>

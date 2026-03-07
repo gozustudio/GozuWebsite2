@@ -43,7 +43,11 @@
   "projects": {
     "label": "Portfólió",
     "title": "Projektjeink",
-    "subtitle": "Gondosan válogatott lakó- és kereskedelmi építészeti, belsőépítészeti és felújítási projektek."
+    "subtitle": "Gondosan válogatott lakó- és kereskedelmi építészeti, belsőépítészeti és felújítási projektek.",
+    "yearLabel": "Év",
+    "locationLabel": "Helyszín",
+    "typeLabel": "Típus",
+    "nextProject": "Következő projekt"
   },
   "contact": {
     "label": "Kapcsolat",

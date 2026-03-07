@@ -43,7 +43,11 @@
   "projects": {
     "label": "Portofoliu",
     "title": "Proiectele noastre",
-    "subtitle": "O selecție curată de proiecte de arhitectură rezidențială și comercială, design interior și renovare."
+    "subtitle": "O selecție curată de proiecte de arhitectură rezidențială și comercială, design interior și renovare.",
+    "yearLabel": "An",
+    "locationLabel": "Locație",
+    "typeLabel": "Tip",
+    "nextProject": "Următorul proiect"
   },
   "contact": {
     "label": "Contact",

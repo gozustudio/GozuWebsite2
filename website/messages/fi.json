@@ -43,7 +43,11 @@
   "projects": {
     "label": "Portfolio",
     "title": "Projektimme",
-    "subtitle": "Huolella valikoitu kokoelma asuin- ja liikerakennusarkkitehtuurin, sisustussuunnittelun ja remonttiprojekteja."
+    "subtitle": "Huolella valikoitu kokoelma asuin- ja liikerakennusarkkitehtuurin, sisustussuunnittelun ja remonttiprojekteja.",
+    "yearLabel": "Vuosi",
+    "locationLabel": "Sijainti",
+    "typeLabel": "Tyyppi",
+    "nextProject": "Seuraava projekti"
   },
   "contact": {
     "label": "Yhteystiedot",

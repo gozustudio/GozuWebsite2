@@ -18,11 +18,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Styling**: Tailwind CSS 4 with `@theme inline` for custom properties
 - **Animations**: Framer Motion 12
 - **CMS**: Tina CMS (`tinacms` + `@tinacms/cli`) — admin UI at `/admin`, content in `website/content/`
-- **Internationalization**: next-intl 4.8 — 10 locales: EN (default, no prefix), LT, ES, SV, NO, DA, NL, DE, FR, IT
+- **Internationalization**: next-intl 4.8 — 26 locales: EN (default, no prefix), LT, ES, SV, NO, DA, NL, DE, FR, IT, LV, ET, RU, PL, FI, PT, CS, HU, RO, EL, HR, SR, BG, SK, SL, UK
+- **Content Translation**: Google Cloud Translation API v2 — auto-translates CMS content at build time
 - **Email**: Resend (`website@gozustudio.com` → `info@gozustudio.com`)
 - **Image processing**: Sharp 0.34
 - **Analytics**: GA4 (Measurement ID: `G-7BJ23T92B7`, Property: `526398179`)
-- **Hosting**: Vercel (deployment target), Squarespace Domains (DNS)
+- **Hosting**: Vercel (deployment target + DNS), domain registered at Squarespace Domains
 - **AI/Web Standards**: WebMCP (W3C draft), llms.txt, schema.org JSON-LD
 
 ## Build & Dev Commands
@@ -43,6 +44,12 @@ npx tinacms build --local --skip-cloud-checks && npx next build
 ```
 
 **Asset copy** (automated): `npm run copy-assets` copies brand assets from `Media/` to `website/public/`. Runs automatically before `npm run dev` via the `predev` hook. These copies are gitignored — the source of truth is always `Media/`.
+
+**Vercel build command** (set in Project Settings → Build and Deployment):
+```
+node scripts/copy-assets.js && node scripts/translate-content.js && npx tinacms build && npx next build
+```
+The copy-assets step is required because brand assets in `website/public/` are gitignored. Vercel Root Directory: `website`.
 
 **Project media** is committed directly to `website/public/uploads/projects/` — no copy step needed.
 
@@ -67,10 +74,11 @@ GozuWebsite2/
 │   │   └── config.ts               # Tina CMS schema definition
 │   ├── messages/                   # i18n translation files (en.json, lt.json, etc.)
 │   ├── scripts/
-│   │   └── copy-assets.js          # Copies Media/ → public/ (brand assets)
+│   │   ├── copy-assets.js          # Copies Media/ → public/ (brand assets)
+│   │   └── translate-content.js    # Auto-translates CMS content via Google Translate API
 │   ├── src/
 │   │   ├── i18n/                   # next-intl config (routing, request, navigation)
-│   │   ├── middleware.ts           # next-intl locale middleware
+│   │   ├── proxy.ts               # next-intl locale proxy (was middleware.ts, renamed for Next.js 16)
 │   │   ├── app/                    # App Router
 │   │   │   ├── layout.tsx          #   Minimal root layout (pass-through)
 │   │   │   ├── globals.css         #   CSS variables, base styles, Tailwind
@@ -98,7 +106,8 @@ GozuWebsite2/
 │   │   │   └── webmcp/             #   WebMCPTools (imperative tool registration)
 │   │   ├── lib/
 │   │   │   ├── colors.ts           #   Reads content/settings/colors.json → CSS vars
-│   │   │   ├── projects.ts         #   Reads content/projects/*.json → typed data
+│   │   │   ├── content.ts          #   loadTranslatedContent() — locale-aware content loader
+│   │   │   ├── projects.ts         #   Reads content/projects/*.json → typed data (locale-aware)
 │   │   │   └── constants.ts        #   Site info, nav links, social links
 │   │   └── types/
 │   │       └── webmcp.d.ts         #   TypeScript types for WebMCP APIs
@@ -143,23 +152,39 @@ Content files are the single source of truth. The website reads from them at bui
 }
 ```
 
+## Content Translation
+
+- **Script**: `website/scripts/translate-content.js` — reads CMS JSON, translates via Google Cloud Translation API v2, writes to `content/translated/{locale}/`
+- **Output**: `website/content/translated/{locale}/pages/*.json`, `content/translated/{locale}/projects/*.json`, `content/translated/{locale}/settings/privacy.json`
+- **Gitignored**: `content/translated/` is auto-generated during build — not committed
+- **Caching**: Uses SHA-256 hash of source content; skips translation if unchanged (`.cache-hash` file)
+- **Loader**: `src/lib/content.ts` exports `loadTranslatedContent<T>(relPath, locale)` — tries translated file, falls back to English
+- **Projects**: `loadProjects(locale?)` and `getProject(slug, locale?)` accept optional locale
+- **Fields skipped**: `images`, `videos`, `year`, `order`, `featured`, `step` — not translated
+- **Cost**: ~$0.004 per full build (~94 strings × 25 locales), negligible
+- **Auth**: Reuses existing `GOOGLE_SERVICE_ACCOUNT_EMAIL` + `GOOGLE_PRIVATE_KEY` env vars
+- **Workflow**: Goda edits content in Tina (English) → push → Vercel build runs translate script → all 26 locales deployed
+
 ## Tina CMS
 
-- **Admin UI**: `http://localhost:4001/admin` (dev) / `gozustudio.com/admin` (production)
+- **Admin UI**: `http://localhost:4001/admin` (dev) / `gozustudio.com/admin` (production — working)
 - **Local mode**: `npm run dev` starts Tina alongside Next.js — edits save directly to JSON files
 - **Production mode**: Tina Cloud connected — org "Gozu Studio's Organization", project "GozuWebsite2"
 - **Client ID**: `4c251340-2f48-4c3d-95a5-44a1100eb146`
 - **Env vars**: `NEXT_PUBLIC_TINA_CLIENT_ID` and `TINA_TOKEN` in Vercel
+- **Tina Cloud config**: "Path to Tina Config" = `website` (required — tina/ is inside website/ subdirectory)
+- **Site URLs**: `https://www.gozustudio.com` and `https://gozustudio.com` registered in Tina Cloud
+- **Branch indexing**: `main` branch indexed; default fallback in `tina/config.ts` is `main`
 - **Media uploads**: Tina media manager uploads to `website/public/uploads/` (committed to Git)
 - **Generated files**: `website/tina/__generated__/` and `website/public/admin/` are gitignored
 
 ## i18n (next-intl)
 
-- **Locales**: `en` (default, no URL prefix), `lt`, `es`, `sv`, `no`, `da`, `nl`, `de`, `fr`, `it`
-- **Message files**: `website/messages/{locale}.json` — UI strings only (nav, buttons, labels, headings)
-- **CMS content** (project descriptions, page copy) stays in English — not translated via i18n
-- **Config**: `src/i18n/routing.ts`, `src/i18n/request.ts`, `src/i18n/navigation.ts`
-- **Middleware**: `src/middleware.ts` — handles locale detection and routing
+- **Locales**: `en` (default, no URL prefix), `lt`, `es`, `sv`, `no`, `da`, `nl`, `de`, `fr`, `it`, `lv`, `et`, `ru`, `pl`, `fi`, `pt`, `cs`, `hu`, `ro`, `el`, `hr`, `sr`, `bg`, `sk`, `sl`, `uk`
+- **Message files**: `website/messages/{locale}.json` — UI strings (nav, buttons, labels, headings)
+- **CMS content translation**: `scripts/translate-content.js` auto-translates CMS JSON to `content/translated/{locale}/` via Google Cloud Translation API
+- **Config**: `src/i18n/routing.ts` (with `localePrefix: "as-needed"`), `src/i18n/request.ts`, `src/i18n/navigation.ts`
+- **Proxy**: `src/proxy.ts` — handles locale detection and routing (renamed from `middleware.ts` for Next.js 16)
 - **Navigation**: Use `Link` from `@/i18n/navigation` (not `next/link`) in components
 - **Server components**: Use `getTranslations()` + `setRequestLocale(locale)`
 - **Client components**: Use `useTranslations()`
@@ -258,9 +283,10 @@ WebMCP (W3C Community Group Draft, Chrome 146+) is a core requirement:
 
 ## Git Workflow
 
-- Default branch: `master` (not `main`)
+- **Working branch**: `master` — **Production branch**: `main` (Vercel auto-deploys from `main`)
+- After committing to `master`, always push to both: `git push origin master && git push origin master:main`
 - Commit messages: imperative mood, short summary
-- Do not force-push to `master`
+- Do not force-push to `master` or `main`
 - `website/public/` brand asset copies are gitignored (but `website/public/uploads/` is NOT gitignored)
 - Git identity: Francisco / fransanda@hotmail.com.ar (GitHub: `fransanda`, collaborator on `gozustudio` org)
 - Auth: PAT embedded in remote URL — `https://fransanda:TOKEN@github.com/gozustudio/GozuWebsite2.git`
@@ -306,8 +332,20 @@ WebMCP (W3C Community Group Draft, Chrome 146+) is a core requirement:
 - **Items**: Up to 15 items per package (columns BD–BR), sourced dynamically from spreadsheet
 - **Service account** needs Viewer access to both spreadsheets
 
+## Hosting & DNS
+
+- **Vercel project**: `gozu-website` under `info-19126180s` account
+- **Production branch**: `main` (Vercel auto-deploys from this branch)
+- **Domain**: `gozustudio.com` redirects (307) to `www.gozustudio.com` (www is primary)
+- **DNS**: Vercel nameservers (`ns1.vercel-dns.com`, `ns2.vercel-dns.com`) — set at Squarespace registrar 2026-03-06
+- **DNS records in Vercel**: MX (`smtp.google.com` priority 1), SPF (`v=spf1 include:_spf.google.com ~all`), DMARC, Resend DKIM (`resend._domainkey`), Resend MX+SPF on `send` subdomain
+- **SSL**: Auto-provisioned by Vercel
+- **Site status**: Live and verified working (2026-03-06)
+- **Tina Cloud**: Branch indexing working (`main` indexed). Build uses Tina Cloud. Admin UI at `gozustudio.com/admin` is functional.
+
 ## Pending Work
 
-- **Real project data**: Update `website/content/projects/*.json` with actual project info (currently all placeholder "KAZ House" data) — Goda can edit via Tina admin UI
+- **Real project data**: Update `website/content/projects/*.json` with actual project info (currently all placeholder "KAZ House" data) — Goda can edit via Tina admin UI at `gozustudio.com/admin`
+- **Tina media manager**: Needs to be enabled in Tina Cloud project settings (app.tina.io)
 - **Quote form post-launch**: Update `UpdateProspectsDatabase` GAS script to skip `Prospects="Partial"` rows (if needed — verify after first real submission)
 - **Translation refinement**: AI-generated translations in `website/messages/` may need native-speaker review

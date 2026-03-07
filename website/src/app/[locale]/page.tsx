@@ -1,19 +1,10 @@
-import fs from "fs";
-import path from "path";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { loadProjects } from "@/lib/projects";
+import { loadTranslatedContent } from "@/lib/content";
 import HeroVideo from "@/components/sections/HeroVideo";
 import FadeIn from "@/components/ui/FadeIn";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-
-function loadHomePage() {
-  const file = path.resolve(process.cwd(), "content/pages/home.json");
-  return JSON.parse(fs.readFileSync(file, "utf-8")) as {
-    heroTagline: string;
-    introText: string;
-  };
-}
 
 export default async function Home({
   params,
@@ -23,8 +14,8 @@ export default async function Home({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("home");
-  const homePage = loadHomePage();
-  const featured = loadProjects().filter((p) => p.featured);
+  const homePage = loadTranslatedContent<{ heroTagline: string; introText: string }>("pages/home.json", locale);
+  const featured = loadProjects(locale).filter((p) => p.featured);
 
   return (
     <>

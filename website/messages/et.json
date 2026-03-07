@@ -43,7 +43,11 @@
   "projects": {
     "label": "Portfoolio",
     "title": "Meie projektid",
-    "subtitle": "Hoolikalt valitud elamu- ja äriarhitektuuri, sisekujunduse ja renoveerimisprojektide valik."
+    "subtitle": "Hoolikalt valitud elamu- ja äriarhitektuuri, sisekujunduse ja renoveerimisprojektide valik.",
+    "yearLabel": "Aasta",
+    "locationLabel": "Asukoht",
+    "typeLabel": "Tüüp",
+    "nextProject": "Järgmine projekt"
   },
   "contact": {
     "label": "Kontakt",

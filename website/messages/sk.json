@@ -43,7 +43,11 @@
   "projects": {
     "label": "Portfólio",
     "title": "Naše projekty",
-    "subtitle": "Starostlivo vybraná kolekcia projektov rezidenčnej a komerčnej architektúry, interiérového dizajnu a rekonštrukcie."
+    "subtitle": "Starostlivo vybraná kolekcia projektov rezidenčnej a komerčnej architektúry, interiérového dizajnu a rekonštrukcie.",
+    "yearLabel": "Rok",
+    "locationLabel": "Lokalita",
+    "typeLabel": "Typ",
+    "nextProject": "Ďalší projekt"
   },
   "contact": {
     "label": "Kontakt",

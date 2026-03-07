@@ -43,7 +43,11 @@
   "projects": {
     "label": "Portfolio",
     "title": "Onze projecten",
-    "subtitle": "Een gecureerde selectie van woon- en commerciële architectuur, interieurontwerp en renovatieprojecten."
+    "subtitle": "Een gecureerde selectie van woon- en commerciële architectuur, interieurontwerp en renovatieprojecten.",
+    "yearLabel": "Jaar",
+    "locationLabel": "Locatie",
+    "typeLabel": "Type",
+    "nextProject": "Volgend project"
   },
   "contact": {
     "label": "Contact",

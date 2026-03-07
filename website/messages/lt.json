@@ -43,7 +43,11 @@
   "projects": {
     "label": "Portfelis",
     "title": "Mūsų projektai",
-    "subtitle": "Kuratorinė gyvenamosios ir komercinės architektūros, interjero dizaino ir renovacijos projektų atranka."
+    "subtitle": "Kuratorinė gyvenamosios ir komercinės architektūros, interjero dizaino ir renovacijos projektų atranka.",
+    "yearLabel": "Metai",
+    "locationLabel": "Vieta",
+    "typeLabel": "Tipas",
+    "nextProject": "Kitas projektas"
   },
   "contact": {
     "label": "Kontaktai",

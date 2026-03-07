@@ -43,7 +43,11 @@
   "projects": {
     "label": "Portfolio",
     "title": "Naše projekty",
-    "subtitle": "Pečlivě vybraná kolekce projektů rezidenční a komerční architektury, interiérového designu a rekonstrukcí."
+    "subtitle": "Pečlivě vybraná kolekce projektů rezidenční a komerční architektury, interiérového designu a rekonstrukcí.",
+    "yearLabel": "Rok",
+    "locationLabel": "Lokalita",
+    "typeLabel": "Typ",
+    "nextProject": "Další projekt"
   },
   "contact": {
     "label": "Kontakt",

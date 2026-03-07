@@ -43,7 +43,11 @@
   "projects": {
     "label": "Portfölj",
     "title": "Våra projekt",
-    "subtitle": "Ett kurerat urval av bostads- och kommersiell arkitektur, inredningsdesign och renoveringsprojekt."
+    "subtitle": "Ett kurerat urval av bostads- och kommersiell arkitektur, inredningsdesign och renoveringsprojekt.",
+    "yearLabel": "År",
+    "locationLabel": "Plats",
+    "typeLabel": "Typ",
+    "nextProject": "Nästa projekt"
   },
   "contact": {
     "label": "Kontakt",

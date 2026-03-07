@@ -43,7 +43,11 @@
   "projects": {
     "label": "Portfolio",
     "title": "Unsere Projekte",
-    "subtitle": "Eine kuratierte Auswahl an Wohn- und Gewerbearchitektur, Innenarchitektur und Renovierungsprojekten."
+    "subtitle": "Eine kuratierte Auswahl an Wohn- und Gewerbearchitektur, Innenarchitektur und Renovierungsprojekten.",
+    "yearLabel": "Jahr",
+    "locationLabel": "Standort",
+    "typeLabel": "Typ",
+    "nextProject": "Nächstes Projekt"
   },
   "contact": {
     "label": "Kontakt",

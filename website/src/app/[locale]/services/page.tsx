@@ -1,7 +1,6 @@
-import fs from "fs";
-import path from "path";
 import { Link } from "@/i18n/navigation";
 import FadeIn from "@/components/ui/FadeIn";
+import { loadTranslatedContent } from "@/lib/content";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
@@ -11,15 +10,6 @@ export const metadata: Metadata = {
     "Architecture, interior design, and renovation services by Gozu Studio. Luxury residential and commercial projects across Europe.",
 };
 
-function loadServicesPage() {
-  const file = path.resolve(process.cwd(), "content/pages/services.json");
-  return JSON.parse(fs.readFileSync(file, "utf-8")) as {
-    heroText: string;
-    services: { title: string; description: string; features: string[] }[];
-    processSteps: { step: string; title: string; desc: string }[];
-  };
-}
-
 export default async function ServicesPage({
   params,
 }: {
@@ -28,7 +18,11 @@ export default async function ServicesPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("services");
-  const page = loadServicesPage();
+  const page = loadTranslatedContent<{
+    heroText: string;
+    services: { title: string; description: string; features: string[] }[];
+    processSteps: { step: string; title: string; desc: string }[];
+  }>("pages/services.json", locale);
 
   return (
     <>
