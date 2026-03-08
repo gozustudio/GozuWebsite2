@@ -1,23 +1,23 @@
 {
-  "title": "KAZ House",
-  "year": "2029",
-  "location": "Stockholm, Sweeden",
+  "title": "KL House",
+  "year": "2023",
+  "location": "Vilnius, Lithuania",
   "type": [
-    "Exterior",
-    "Rennovations"
+    "Interior",
+    "Renovation"
   ],
-  "shortDescription": "The competition site, which includes existing buildings, is located in the historic Naujamiestis area of Vilnius. This area developed along Gedimino Avenue in the late 19th century and became one of the city's main streets. The area's character is defined by closed blocks of buildings that are mostly 4–5 storeys high, with some taller buildings up to 10 storeys, like on this site. While the buildings along Gedimino Avenue and A. Stulginskio Street fit well into the context, the inner courtyard feels incomplete. The current 4-storey building does not fully enclose the courtyard near A. Stulginskio Street 7. To fix this, a U-shaped building is planned. It connects to the building at Gedimino Avenue 24A with a shared wall, closing off the courtyard from the south. This new 6-storey building will be tallest at the southern edge and steps down toward the courtyard, creating a cozy, inviting space and its changing perspectives.",
+  "shortDescription": "A modern two-story home with a warm Scandinavian-minimalist aesthetic. The interior pairs natural oak wood with clean white surfaces throughout - from the U-shaped kitchen with brass accents and built-in appliances, to the open-plan living area featuring a low oak TV console with an integrated electric fireplace, a light bouclé sectional sofa, and a solid-base staircase with oak treads and vertical wooden slat railings.",
   "images": [
     "/uploads/projects/2/Main.jpg",
     "/uploads/projects/2/2.jpg",
     "/uploads/projects/2/3.jpg",
     "/uploads/projects/2/4.jpg",
     "/uploads/projects/2/5.jpg",
-    "",
-    "",
-    "",
-    "",
-    ""
+    "/uploads/6.jpg",
+    "/uploads/7.jpg",
+    "/uploads/8.jpg",
+    "/uploads/9.JPG",
+    "/uploads/10.jpg"
   ],
   "featured": true,
   "order": 2
