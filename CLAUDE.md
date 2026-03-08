@@ -173,7 +173,7 @@ Content files are the single source of truth. The website reads from them at bui
 - **Admin UI**: `http://localhost:4001/admin` (dev) / `gozustudio.com/admin` (production — working)
 - **Local mode**: `npm run dev` starts Tina alongside Next.js — edits save directly to JSON files
 - **Production mode**: Tina Cloud connected — org "Gozu Studio's Organization", project "GozuWebsite2"
-- **Client ID**: `4c251340-2f48-4c3d-95a5-44a1100eb146`
+- **Client ID**: `ae555ca3-160b-4ba2-9e68-ab502f57bf8a`
 - **Env vars**: `NEXT_PUBLIC_TINA_CLIENT_ID` and `TINA_TOKEN` in Vercel
 - **Tina Cloud config**: "Path to Tina Config" = `website` (required — tina/ is inside website/ subdirectory)
 - **Site URLs**: `https://www.gozustudio.com` and `https://gozustudio.com` registered in Tina Cloud
