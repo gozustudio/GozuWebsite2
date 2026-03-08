@@ -2,7 +2,10 @@
   "title": "KAZ House",
   "year": "2020",
   "location": "Stockholm, Sweeden",
-  "type": ["Exterior", "Rennovations"],
+  "type": [
+    "Exterior",
+    "Rennovations"
+  ],
   "shortDescription": "The competition site, which includes existing buildings, is located in the historic Naujamiestis area of Vilnius. This area developed along Gedimino Avenue in the late 19th century and became one of the city's main streets. The area's character is defined by closed blocks of buildings that are mostly 4–5 storeys high, with some taller buildings up to 10 storeys, like on this site. While the buildings along Gedimino Avenue and A. Stulginskio Street fit well into the context, the inner courtyard feels incomplete. The current 4-storey building does not fully enclose the courtyard near A. Stulginskio Street 7. To fix this, a U-shaped building is planned. It connects to the building at Gedimino Avenue 24A with a shared wall, closing off the courtyard from the south. This new 6-storey building will be tallest at the southern edge and steps down toward the courtyard, creating a cozy, inviting space and its changing perspectives.",
   "images": [
     "/uploads/projects/8/Main.jpg",
@@ -15,6 +18,6 @@
     "/uploads/projects/8/Main.mp4",
     "/uploads/projects/8/2.mp4"
   ],
-  "featured": true,
+  "featured": false,
   "order": 8
 }
