@@ -46,13 +46,6 @@ export default defineConfig({
             ui: { component: "tags" },
           },
           {
-            name: "collaborations",
-            type: "string",
-            label: "Collaborations",
-            description: "Optional. Credits for collaborators, partners, or other studios involved.",
-            ui: { component: "textarea" },
-          },
-          {
             name: "shortDescription",
             type: "string",
             label: "Short Description",
