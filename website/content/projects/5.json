@@ -1,19 +1,19 @@
 {
-  "title": "KAZ House",
-  "year": "2020",
-  "location": "Stockholm, Sweeden",
-  "type": ["Exterior", "Rennovations"],
-  "shortDescription": "The competition site, which includes existing buildings, is located in the historic Naujamiestis area of Vilnius. This area developed along Gedimino Avenue in the late 19th century and became one of the city's main streets. The area's character is defined by closed blocks of buildings that are mostly 4–5 storeys high, with some taller buildings up to 10 storeys, like on this site. While the buildings along Gedimino Avenue and A. Stulginskio Street fit well into the context, the inner courtyard feels incomplete. The current 4-storey building does not fully enclose the courtyard near A. Stulginskio Street 7. To fix this, a U-shaped building is planned. It connects to the building at Gedimino Avenue 24A with a shared wall, closing off the courtyard from the south. This new 6-storey building will be tallest at the southern edge and steps down toward the courtyard, creating a cozy, inviting space and its changing perspectives.",
+  "title": "AD Apartment",
+  "year": "2024",
+  "location": "London, United Kingdom",
+  "type": [
+    "Interior",
+    "Renovation"
+  ],
+  "shortDescription": "A compact apartment design rooted in natural materials and a calm, Nordic sensibility. Light oak woodwork runs throughout the space -from cabinetry to shelving to flooring - creating a seamless, warm backdrop. Deep green accents in textiles and tilework add depth without disrupting the quiet palette. The open living area merges cooking, dining, and lounging into one fluid zone, with built-in storage maximizing every surface. The entryway and bathrooms follow the same material logic - wood, stone, and glass in restrained, clean-lined compositions. The result is a space that feels larger than its footprint, with a consistent atmosphere of softness and order.",
   "images": [
     "/uploads/projects/5/Main.jpg",
     "/uploads/projects/5/2.jpg",
     "/uploads/projects/5/3.jpg",
     "/uploads/projects/5/4.jpg",
-    "/uploads/projects/5/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/5/Main.mp4",
-    "/uploads/projects/5/2.mp4"
+    "/uploads/projects/5/5.jpg",
+    "/uploads/projects/5/6.jpg"
   ],
   "featured": true,
   "order": 5
