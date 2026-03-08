@@ -1,0 +1,67 @@
+{
+  "heroText": "Dall'idea iniziale ai dettagli finali, forniamo servizi completi di architettura e progettazione, personalizzati per ogni cliente e progetto.",
+  "services": [
+    {
+      "title": "Architettura residenziale",
+      "description": "Case su misura progettate in base al tuo stile di vita. Dalle nuove costruzioni agli appartamenti di lusso, creiamo un'architettura residenziale che unisce raffinatezza estetica e intelligenza pratica. Ogni progetto è una risposta unica al sito, al cliente e al contesto.",
+      "features": [
+        "Progettazione residenziale di nuova costruzione",
+        "Regolamenti urbanistici e edilizi",
+        "Integrazione del design sostenibile",
+        "Gestione del progetto"
+      ]
+    },
+    {
+      "title": "Design d'interni",
+      "description": "Interni studiati che trasformano l'atmosfera degli spazi. Lavoriamo con materiali, luce e proporzioni per creare ambienti che siano allo stesso tempo belli e profondamente funzionali. Dall'ideazione alla realizzazione, ogni dettaglio è curato nei minimi dettagli.",
+      "features": [
+        "Servizio completo di progettazione d'interni",
+        "Selezione dei materiali e delle finiture",
+        "Progettazione di mobili su misura",
+        "Progettazione dell'illuminazione"
+      ]
+    },
+    {
+      "title": "Ristrutturazione e Restauro",
+      "description": "Trasformazione attenta di edifici esistenti. Siamo specializzati nel dare nuova vita a immobili d'epoca e strutture di interesse storico, preservandone il carattere e introducendo al contempo chiarezza e comfort contemporanei.",
+      "features": [
+        "Ristrutturazione di immobili d'epoca",
+        "Restauro di edifici storici",
+        "Progettazione dell'estensione",
+        "Modifiche strutturali"
+      ]
+    },
+    {
+      "title": "Interni commerciali",
+      "description": "Spazi di lavoro e ambienti commerciali che valorizzano i marchi. Progettiamo uffici, spazi commerciali e interni per l'ospitalità che allineano lo spazio fisico con l'identità e la cultura aziendale.",
+      "features": [
+        "Progettazione di uffici e spazi di lavoro",
+        "Interni di negozi",
+        "Progettazione dell'ospitalità",
+        "Ambienti allineati al marchio"
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Consultazione",
+      "desc": "Discutiamo la tua visione, le tue esigenze e il tuo budget."
+    },
+    {
+      "step": "02",
+      "title": "Concetto",
+      "desc": "Concetti di progettazione iniziali, mood board e pianificazione degli spazi."
+    },
+    {
+      "step": "03",
+      "title": "Sviluppo",
+      "desc": "Disegni dettagliati, selezione dei materiali e coordinamento degli appaltatori."
+    },
+    {
+      "step": "04",
+      "title": "Completamento",
+      "desc": "Supervisione in loco fino alla consegna e allo stile finale."
+    }
+  ]
+}

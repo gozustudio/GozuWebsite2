@@ -1,0 +1,67 @@
+{
+  "heroText": "Fra det indledende koncept til den endelige detalje leverer vi omfattende arkitektur- og designtjenester, der er skræddersyet til hver enkelt kunde og hvert projekt.",
+  "services": [
+    {
+      "title": "Boligarkitektur",
+      "description": "Skræddersyede boliger designet ud fra din livsstil. Fra nybyggede huse til luksuslejligheder skaber vi boligarkitektur, der kombinerer æstetisk raffinement med praktisk intelligens. Hvert projekt er et unikt svar på stedet, klienten og konteksten.",
+      "features": [
+        "Nybyggeri af boliger",
+        "Planlægning og bygningsreglementer",
+        "Bæredygtig designintegration",
+        "Projektledelse"
+      ]
+    },
+    {
+      "title": "Indretningsdesign",
+      "description": "Gennemtænkte interiører, der forvandler, hvordan rum føles. Vi arbejder med materialer, lys og proportioner for at skabe miljøer, der er både smukke og dybt funktionelle. Fra idé til færdiggørelse er hver eneste detalje bevidst.",
+      "features": [
+        "Fuld indretningsservice",
+        "Valg af materiale og finish",
+        "Skræddersyet møbeldesign",
+        "Lysdesign"
+      ]
+    },
+    {
+      "title": "Renovering og restaurering",
+      "description": "Gennemtænkt transformation af eksisterende bygninger. Vi specialiserer os i at give nyt liv til historiske ejendomme og historiske strukturer, bevare deres karakter og samtidig introducere moderne klarhed og komfort.",
+      "features": [
+        "Renovering af periodeejendom",
+        "Restaurering af kulturarvsbygninger",
+        "Udvidelsesdesign",
+        "Strukturelle ændringer"
+      ]
+    },
+    {
+      "title": "Kommercielle interiører",
+      "description": "Arbejdspladser og kommercielle miljøer, der løfter brands. Vi designer kontorer, butikslokaler og interiør til hotel- og restaurationsbranchen, der afstemmer det fysiske rum med virksomhedens identitet og kultur.",
+      "features": [
+        "Kontor- og arbejdspladsdesign",
+        "Butiksindretning",
+        "Design af gæstfrihed",
+        "Brandtilpassede miljøer"
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Konsultation",
+      "desc": "Vi drøfter jeres vision, behov og budget."
+    },
+    {
+      "step": "02",
+      "title": "Begreb",
+      "desc": "Indledende designkoncepter, moodboards og rumplanlægning."
+    },
+    {
+      "step": "03",
+      "title": "Udvikling",
+      "desc": "Detaljerede tegninger, materialevalg og entreprenørkoordinering."
+    },
+    {
+      "step": "04",
+      "title": "Færdiggørelse",
+      "desc": "Tilsyn på stedet helt frem til aflevering og endelig styling."
+    }
+  ]
+}

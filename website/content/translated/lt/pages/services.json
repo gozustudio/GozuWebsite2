@@ -1,0 +1,67 @@
+{
+  "heroText": "Nuo pradinės koncepcijos iki galutinės detalės teikiame išsamias architektūros ir projektavimo paslaugas, pritaikytas kiekvienam klientui ir projektui.",
+  "services": [
+    {
+      "title": "Gyvenamoji architektūra",
+      "description": "Individualūs namai, sukurti atsižvelgiant į jūsų gyvenimo būdą. Nuo naujos statybos namų iki prabangių butų – kuriame gyvenamąją architektūrą, kurioje derinamas estetinis rafinuotumas ir praktiškas sumanumas. Kiekvienas projektas yra unikalus atsakas į vietą, klientą ir kontekstą.",
+      "features": [
+        "Naujos statybos gyvenamųjų namų projektavimas",
+        "Planavimo ir statybos reglamentai",
+        "Tvaraus dizaino integracija",
+        "Projektų valdymas"
+      ]
+    },
+    {
+      "title": "Interjero dizainas",
+      "description": "Apgalvoti interjerai, kurie keičia erdvės pojūtį. Dirbame su medžiagomis, šviesa ir proporcijomis, kad sukurtume gražią ir kartu funkcionalią aplinką. Nuo koncepcijos iki įgyvendinimo kiekviena detalė yra apgalvota.",
+      "features": [
+        "Pilnas interjero dizaino aptarnavimas",
+        "Medžiagos ir apdailos pasirinkimas",
+        "Baldų dizainas pagal užsakymą",
+        "Apšvietimo dizainas"
+      ]
+    },
+    {
+      "title": "Renovacija ir restauravimas",
+      "description": "Apgalvotas esamų pastatų pertvarkymas. Specializuojamės suteikdami naują gyvybę senoviniams pastatams ir paveldo statiniams, išsaugant jų charakterį ir kartu suteikiant šiuolaikiško aiškumo bei komforto.",
+      "features": [
+        "Laikotarpio nekilnojamojo turto renovacija",
+        "Paveldo pastatų restauravimas",
+        "Pratęsimo dizainas",
+        "Struktūriniai pakeitimai"
+      ]
+    },
+    {
+      "title": "Komerciniai interjerai",
+      "description": "Darbo erdvės ir komercinė aplinka, kuri iškelia prekės ženklo įvaizdį į viršų. Projektuojame biurus, mažmeninės prekybos patalpas ir apgyvendinimo įstaigų interjerus, kurie suderina fizinę erdvę su verslo identitetu ir kultūra.",
+      "features": [
+        "Biuro ir darbo vietos dizainas",
+        "Mažmeninės prekybos interjerai",
+        "Svetingumo dizainas",
+        "Su prekės ženklu suderinta aplinka"
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Konsultacija",
+      "desc": "Aptariame Jūsų viziją, reikalavimus ir biudžetą."
+    },
+    {
+      "step": "02",
+      "title": "Koncepcija",
+      "desc": "Pradinės dizaino koncepcijos, nuotaikų lentos ir erdvinis planavimas."
+    },
+    {
+      "step": "03",
+      "title": "Vystymasis",
+      "desc": "Detalūs brėžiniai, medžiagų parinkimas ir rangovo koordinavimas."
+    },
+    {
+      "step": "04",
+      "title": "Užbaigimas",
+      "desc": "Priežiūra vietoje iki perdavimo ir galutinio dizaino kūrimo."
+    }
+  ]
+}

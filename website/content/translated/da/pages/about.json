@@ -1,0 +1,41 @@
+{
+  "introParagraph1": "Gozu Studio er en tværfaglig arkitektur- og indretningsvirksomhed, der skaber raffinerede og gennemtænkte rum for kræsne kunder i hele Europa. Grundlagt af Goda Zukaite, bygger vores arbejde bro mellem forskellige kulturelle traditioner og en særegen europæisk sensibilitet.",
+  "introParagraph2": "Vi mener, at arkitektur bør være en lyttende handling – til stedet, til klienten, til den måde, lyset bevæger sig gennem et rum. Vores projekter begynder med dyb forståelse og udvikler sig til rum, der føles både uundgåelige og overraskende.",
+  "introParagraph3": "Vi betjener kunder i hele Europa og arbejder både eksternt og på stedet for at realisere hvert projekt. Vores portefølje spænder over luksusboliger, erhvervsindretning og renoveringer af historiske bygninger.",
+  "founderBio": "Goda Zukaite grundlagde Gozu Studio med en vision om at skabe arkitektur, der balancerer sofistikering med varme. Med en baggrund, der spænder over både baltiske og britiske designtraditioner, bringer hun et unikt perspektiv til hvert projekt - et perspektiv, der værdsætter tilbageholdenhed, materialitet og den stille kraft i et tankevækkende rum.",
+  "founderFacts": [
+    {
+      "label": "Undervisning",
+      "value": "Arkitektur og design"
+    },
+    {
+      "label": "Praksis",
+      "value": "Gozu Studio"
+    },
+    {
+      "label": "Ekspertise",
+      "value": "Boliger, Indretningsdesign, Renovering"
+    },
+    {
+      "label": "Område",
+      "value": "Europa"
+    }
+  ],
+  "approachSteps": [
+    {
+      "step": "01",
+      "title": "Lytte",
+      "desc": "Ethvert projekt starter med en dybdegående samtale. Vi lærer, hvordan du lever, hvad du værdsætter, og hvad webstedet fortæller os."
+    },
+    {
+      "step": "02",
+      "title": "Design",
+      "desc": "Vi udvikler koncepter, der reagerer på kontekst, lys og proportioner – og itererer, indtil hver detalje tjener helheden."
+    },
+    {
+      "step": "03",
+      "title": "Levere",
+      "desc": "Fra byggetilladelser til den endelige finish guider vi projektet til færdiggørelse med præcision og omhu."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "heroText": "Od prvotního konceptu až po finální detail poskytujeme komplexní architektonické a designové služby šité na míru každému klientovi a projektu.",
+  "services": [
+    {
+      "title": "Rezidenční architektura",
+      "description": "Domy na míru navržené podle vašeho způsobu života. Od novostaveb až po luxusní byty vytváříme rezidenční architekturu, která kombinuje estetickou vytříbenost s praktickou inteligencí. Každý projekt je jedinečnou reakcí na lokalitu, klienta a kontext.",
+      "features": [
+        "Návrh novostavby rezidenčních domů",
+        "Plánovací a stavební předpisy",
+        "Integrace udržitelného designu",
+        "Řízení projektů"
+      ]
+    },
+    {
+      "title": "Design interiéru",
+      "description": "Uvažujeme o interiérech, které mění pocit z prostoru. Pracujeme s materiály, světlem a proporcemi, abychom vytvořili prostředí, která jsou krásná i zároveň hluboce funkční. Od konceptu až po dokončení je každý detail promyšlený.",
+      "features": [
+        "Kompletní služby interiérového designu",
+        "Výběr materiálu a povrchové úpravy",
+        "Návrh nábytku na míru",
+        "Návrh osvětlení"
+      ]
+    },
+    {
+      "title": "Renovace a restaurování",
+      "description": "Promyšlená transformace stávajících budov. Specializujeme se na vdechování nového života historickým nemovitostem a historickým stavbám, zachování jejich charakteru a zároveň na vnášení moderní čistoty a pohodlí.",
+      "features": [
+        "Rekonstrukce nemovitosti v historickém období",
+        "Restaurování památkově chráněných budov",
+        "Návrh rozšíření",
+        "Strukturální úpravy"
+      ]
+    },
+    {
+      "title": "Komerční interiéry",
+      "description": "Pracovní prostory a komerční prostředí, která pozvedají značky. Navrhujeme kanceláře, maloobchodní prostory a interiéry pohostinství, které sladí fyzický prostor s identitou a kulturou firmy.",
+      "features": [
+        "Návrh kanceláří a pracovních prostor",
+        "Interiéry maloobchodních prodejen",
+        "Design pohostinství",
+        "Prostředí zaměřená na značku"
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Konzultace",
+      "desc": "Probereme vaši vizi, požadavky a rozpočet."
+    },
+    {
+      "step": "02",
+      "title": "Pojem",
+      "desc": "Počáteční koncepty designu, nástěnky nálad a prostorové plánování."
+    },
+    {
+      "step": "03",
+      "title": "Rozvoj",
+      "desc": "Detailní výkresy, výběr materiálů a koordinace s dodavatelem."
+    },
+    {
+      "step": "04",
+      "title": "Dokončení",
+      "desc": "Dohled na místě až po předání a finální styling."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "introParagraph1": "Gozu Studio es un estudio multidisciplinar de arquitectura y diseño de interiores que crea espacios refinados y bien pensados para clientes exigentes de toda Europa. Fundado por Goda Zukaite, nuestro trabajo une diversas tradiciones culturales con una distintiva sensibilidad europea.",
+  "introParagraph2": "Creemos que la arquitectura debe ser un acto de escucha: al lugar, al cliente, a la forma en que la luz se mueve por una habitación. Nuestros proyectos parten de una profunda comprensión y evolucionan hacia espacios que se sienten inevitables y sorprendentes.",
+  "introParagraph3": "Atendemos a clientes de toda Europa, trabajando de forma remota y presencial para dar vida a cada proyecto. Nuestra cartera abarca residencias de lujo, interiores comerciales y renovaciones de patrimonio.",
+  "founderBio": "Goda Zukaite fundó Gozu Studio con la visión de crear una arquitectura que equilibre la sofisticación con la calidez. Con una trayectoria que abarca las tradiciones de diseño bálticas y británicas, aporta una perspectiva distintiva a cada proyecto: una que valora la sobriedad, la materialidad y la serena fuerza de un espacio bien pensado.",
+  "founderFacts": [
+    {
+      "label": "Educación",
+      "value": "Arquitectura y diseño"
+    },
+    {
+      "label": "Práctica",
+      "value": "Estudio Gozu"
+    },
+    {
+      "label": "Pericia",
+      "value": "Residencial, Diseño de Interiores, Renovación"
+    },
+    {
+      "label": "Región",
+      "value": "Europa"
+    }
+  ],
+  "approachSteps": [
+    {
+      "step": "01",
+      "title": "Escuchar",
+      "desc": "Cada proyecto comienza con una conversación profunda. Aprendemos cómo vives, qué valoras y qué nos dice el sitio."
+    },
+    {
+      "step": "02",
+      "title": "Diseño",
+      "desc": "Desarrollamos conceptos que responden al contexto, la luz y la proporción, iterando hasta que cada detalle sirva al todo."
+    },
+    {
+      "step": "03",
+      "title": "Entregar",
+      "desc": "Desde los permisos de planificación hasta los acabados finales, guiamos el proyecto hasta su finalización con precisión y cuidado."
+    }
+  ]
+}

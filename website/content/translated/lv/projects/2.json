@@ -1,0 +1,23 @@
+{
+  "title": "KAZ nams",
+  "year": "2020",
+  "location": "Stokholma, Zviedrija",
+  "type": [
+    "Ārpuse",
+    "Renovācijas"
+  ],
+  "shortDescription": "Konkursa vieta, kurā ietilpst esošās ēkas, atrodas vēsturiskajā Viļņas Naujamiestis rajonā. Šī teritorija izveidojās gar Gedimino prospektu 19. gadsimta beigās un kļuva par vienu no pilsētas galvenajām ielām. Rajona raksturu nosaka slēgti ēku kvartāli, kas pārsvarā ir 4–5 stāvus augsti, ar dažām augstākām ēkām līdz pat 10 stāviem, tāpat kā šajā vietā. Lai gan ēkas gar Gedimino prospektu un A. Stulginskio ielu labi iederas kontekstā, iekšējais pagalms šķiet nepabeigts. Esošā četrstāvu ēka pilnībā neaptver pagalmu pie A. Stulginskio ielas 7. Lai to labotu, ir plānota U veida ēka. Tā savienojas ar ēku Gedimino prospektā 24A ar kopīgu sienu, noslēdzot pagalmu no dienvidiem. Šī jaunā sešstāvu ēka būs augstākā dienvidu malā un pakāpsies lejup pret pagalmu, radot mājīgu, aicinošu telpu un tās mainīgās perspektīvas.",
+  "images": [
+    "/uploads/projects/2/Main.jpg",
+    "/uploads/projects/2/2.jpg",
+    "/uploads/projects/2/3.jpg",
+    "/uploads/projects/2/4.jpg",
+    "/uploads/projects/2/5.jpg"
+  ],
+  "videos": [
+    "/uploads/projects/2/Main.mp4",
+    "/uploads/projects/2/2.mp4"
+  ],
+  "featured": true,
+  "order": 2
+}

@@ -1,0 +1,140 @@
+name: Translate CMS Content
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'website/content/pages/**'
+      - 'website/content/projects/**'
+      - 'website/content/settings/privacy.json'
+  schedule:
+    # Daily at 06:00 UTC — catches changes throttled during the day
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    # Manual trigger — bypasses 24h throttle
+
+permissions:
+  contents: write
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: website
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Read last translation metadata
+        id: meta
+        run: |
+          META_FILE="content/translated/.last-translation"
+          if [ -f "$META_FILE" ]; then
+            TIMESTAMP=$(node -e "console.log(JSON.parse(require('fs').readFileSync('$META_FILE','utf-8')).timestamp)")
+            LAST_SHA=$(node -e "console.log(JSON.parse(require('fs').readFileSync('$META_FILE','utf-8')).commitSha)")
+            echo "timestamp=$TIMESTAMP" >> "$GITHUB_OUTPUT"
+            echo "last_sha=$LAST_SHA" >> "$GITHUB_OUTPUT"
+          else
+            echo "timestamp=" >> "$GITHUB_OUTPUT"
+            echo "last_sha=" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check 24h throttle
+        id: throttle
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "Manual trigger — bypassing throttle"
+            exit 0
+          fi
+
+          LAST="${{ steps.meta.outputs.timestamp }}"
+          if [ -z "$LAST" ]; then
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "No previous translation — will translate"
+            exit 0
+          fi
+
+          LAST_EPOCH=$(date -d "$LAST" +%s 2>/dev/null || echo 0)
+          NOW_EPOCH=$(date +%s)
+          DIFF=$((NOW_EPOCH - LAST_EPOCH))
+
+          if [ "$DIFF" -lt 86400 ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Last translation was $(($DIFF / 3600))h ago — throttled (< 24h)"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "Last translation was $(($DIFF / 3600))h ago — will translate"
+          fi
+
+      - name: Find changed content files
+        id: diff
+        if: steps.throttle.outputs.skip != 'true'
+        run: |
+          LAST_SHA="${{ steps.meta.outputs.last_sha }}"
+
+          if [ -z "$LAST_SHA" ] || ! git cat-file -e "$LAST_SHA" 2>/dev/null; then
+            echo "No valid last SHA — translating all files"
+            echo "only=" >> "$GITHUB_OUTPUT"
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          CHANGED=$(git diff --name-only "$LAST_SHA" HEAD -- \
+            content/pages/ content/projects/ content/settings/privacy.json \
+            | sed 's|^content/||' \
+            | tr '\n' ',' \
+            | sed 's/,$//')
+
+          if [ -z "$CHANGED" ]; then
+            echo "No content files changed since last translation"
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Changed files: $CHANGED"
+            echo "only=$CHANGED" >> "$GITHUB_OUTPUT"
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Run translation
+        if: steps.throttle.outputs.skip != 'true' && steps.diff.outputs.has_changes == 'true'
+        env:
+          GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+          GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
+        run: |
+          ONLY="${{ steps.diff.outputs.only }}"
+          if [ -n "$ONLY" ]; then
+            node scripts/translate-content.js "--only=$ONLY"
+          else
+            node scripts/translate-content.js
+          fi
+
+      - name: Update last-translation metadata
+        if: steps.throttle.outputs.skip != 'true' && steps.diff.outputs.has_changes == 'true'
+        run: |
+          SHA=$(git rev-parse HEAD)
+          NOW=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          echo "{\"timestamp\":\"$NOW\",\"commitSha\":\"$SHA\"}" > content/translated/.last-translation
+
+      - name: Commit and push translated files
+        if: steps.throttle.outputs.skip != 'true' && steps.diff.outputs.has_changes == 'true'
+        run: |
+          cd ..
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add website/content/translated/
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          git commit -m "chore: auto-translate CMS content
+
+          Triggered by: ${{ github.event_name }}
+          Files translated: ${{ steps.diff.outputs.only || 'all' }}"
+          git push

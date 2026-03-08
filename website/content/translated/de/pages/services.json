@@ -1,0 +1,67 @@
+{
+  "heroText": "Vom ersten Konzept bis zum letzten Detail bieten wir umfassende Architektur- und Designleistungen, die auf jeden Kunden und jedes Projekt individuell zugeschnitten sind.",
+  "services": [
+    {
+      "title": "Wohnarchitektur",
+      "description": "Maßgeschneiderte Häuser, die sich Ihren Bedürfnissen anpassen. Von Neubauhäusern bis hin zu luxuriösen Apartments – wir schaffen Wohnarchitektur, die ästhetische Raffinesse mit praktischer Intelligenz verbindet. Jedes Projekt ist eine einzigartige Antwort auf Standort, Bauherr und Kontext.",
+      "features": [
+        "Neubau-Wohnbauplanung",
+        "Planungs- und Bauvorschriften",
+        "Integration von nachhaltigem Design",
+        "Projektmanagement"
+      ]
+    },
+    {
+      "title": "Innenarchitektur",
+      "description": "Durchdachte Inneneinrichtungen, die die Atmosphäre von Räumen verändern. Wir arbeiten mit Material, Licht und Proportionen, um Umgebungen zu schaffen, die sowohl schön als auch hochfunktional sind. Vom Konzept bis zur Fertigstellung ist jedes Detail bewusst gewählt.",
+      "features": [
+        "Kompletter Innenarchitekturservice",
+        "Material- und Oberflächenauswahl",
+        "Maßgefertigtes Möbeldesign",
+        "Lichtdesign"
+      ]
+    },
+    {
+      "title": "Renovierung & Restaurierung",
+      "description": "Durchdachte Umgestaltung bestehender Gebäude. Wir sind darauf spezialisiert, historischen Gebäuden und denkmalgeschützten Bauwerken neues Leben einzuhauchen, ihren Charakter zu bewahren und gleichzeitig zeitgemäße Klarheit und Komfort zu schaffen.",
+      "features": [
+        "Renovierung eines historischen Gebäudes",
+        "Restaurierung denkmalgeschützter Gebäude",
+        "Erweiterungsdesign",
+        "Strukturelle Modifikationen"
+      ]
+    },
+    {
+      "title": "Gewerbeinnenausstattung",
+      "description": "Arbeitsräume und Geschäftsumgebungen, die Marken stärken. Wir gestalten Büros, Verkaufsflächen und Gastronomieeinrichtungen, die den physischen Raum mit der Unternehmensidentität und -kultur in Einklang bringen.",
+      "features": [
+        "Büro- und Arbeitsplatzgestaltung",
+        "Ladeneinrichtungen",
+        "Gastgewerbedesign",
+        "Markenkonforme Umgebungen"
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Beratung",
+      "desc": "Wir besprechen Ihre Vision, Ihre Anforderungen und Ihr Budget."
+    },
+    {
+      "step": "02",
+      "title": "Konzept",
+      "desc": "Erste Designkonzepte, Moodboards und Raumplanung."
+    },
+    {
+      "step": "03",
+      "title": "Entwicklung",
+      "desc": "Detaillierte Zeichnungen, Materialauswahl und Koordination der Auftragnehmer."
+    },
+    {
+      "step": "04",
+      "title": "Fertigstellung",
+      "desc": "Von der Vor-Ort-Betreuung bis zur Übergabe und dem finalen Styling."
+    }
+  ]
+}

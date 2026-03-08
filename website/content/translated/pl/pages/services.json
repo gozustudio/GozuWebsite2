@@ -1,0 +1,67 @@
+{
+  "heroText": "Od początkowej koncepcji po ostateczny szczegół, zapewniamy kompleksowe usługi architektoniczne i projektowe dostosowane do każdego klienta i projektu.",
+  "services": [
+    {
+      "title": "Architektura mieszkaniowa",
+      "description": "Domy na zamówienie, zaprojektowane z myślą o Twoim stylu życia. Od nowo wybudowanych domów po luksusowe apartamenty, tworzymy architekturę mieszkaniową, która łączy estetyczną elegancję z praktyczną inteligencją. Każdy projekt to unikalna odpowiedź na lokalizację, klienta i kontekst.",
+      "features": [
+        "Projekt nowego budownictwa mieszkaniowego",
+        "Przepisy dotyczące planowania i budowy",
+        "Zrównoważona integracja projektowania",
+        "Zarządzanie projektami"
+      ]
+    },
+    {
+      "title": "Architektura wnętrz",
+      "description": "Przemyślane wnętrza, które odmieniają charakter przestrzeni. Pracujemy z materiałami, światłem i proporcjami, aby tworzyć przestrzenie, które są zarówno piękne, jak i niezwykle funkcjonalne. Od koncepcji do realizacji, każdy detal jest przemyślany.",
+      "features": [
+        "Kompleksowa usługa projektowania wnętrz",
+        "Wybór materiałów i wykończenia",
+        "Projektowanie mebli na zamówienie",
+        "Projekt oświetlenia"
+      ]
+    },
+    {
+      "title": "Renowacja i restauracja",
+      "description": "Przemyślana transformacja istniejących budynków. Specjalizujemy się w nadawaniu nowego życia zabytkowym budynkom i obiektom z epoki, zachowując ich charakter, a jednocześnie wprowadzając współczesną przejrzystość i komfort.",
+      "features": [
+        "Renowacja nieruchomości z epoki",
+        "Renowacja budynków zabytkowych",
+        "Projekt rozszerzenia",
+        "Modyfikacje strukturalne"
+      ]
+    },
+    {
+      "title": "Wnętrza komercyjne",
+      "description": "Przestrzenie robocze i środowiska komercyjne, które podnoszą prestiż marek. Projektujemy biura, powierzchnie handlowe i wnętrza hoteli i restauracji, które dopasowują przestrzeń fizyczną do tożsamości i kultury firmy.",
+      "features": [
+        "Projektowanie biur i przestrzeni roboczych",
+        "Wnętrza handlowe",
+        "Projektowanie obiektów hotelarskich",
+        "Środowiska zgodne z marką"
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Konsultacja",
+      "desc": "Omawiamy Twoją wizję, wymagania i budżet."
+    },
+    {
+      "step": "02",
+      "title": "Pojęcie",
+      "desc": "Wstępne koncepcje projektowe, tablice inspiracji i planowanie przestrzenne."
+    },
+    {
+      "step": "03",
+      "title": "Rozwój",
+      "desc": "Szczegółowe rysunki, dobór materiałów i koordynacja wykonawców."
+    },
+    {
+      "step": "04",
+      "title": "Ukończenie",
+      "desc": "Nadzór na miejscu, aż do przekazania i ostatecznej stylizacji."
+    }
+  ]
+}

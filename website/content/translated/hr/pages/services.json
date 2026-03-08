@@ -1,0 +1,67 @@
+{
+  "heroText": "Od početne ideje do konačnih detalja, pružamo sveobuhvatne arhitektonske i dizajnerske usluge prilagođene svakom klijentu i projektu.",
+  "services": [
+    {
+      "title": "Stambena arhitektura",
+      "description": "Kuće po mjeri dizajnirane prema vašem načinu života. Od novoizgrađenih kuća do luksuznih stanova, stvaramo stambenu arhitekturu koja kombinira estetsku profinjenost s praktičnom inteligencijom. Svaki projekt jedinstven je odgovor na lokaciju, klijenta i kontekst.",
+      "features": [
+        "Dizajn novoizgrađenih stambenih objekata",
+        "Propisi o planiranju i gradnji",
+        "Integracija održivog dizajna",
+        "Upravljanje projektima"
+      ]
+    },
+    {
+      "title": "Dizajn interijera",
+      "description": "Razmatramo interijere koji mijenjaju osjećaj prostora. Radimo s materijalima, svjetlom i proporcijama kako bismo stvorili okruženja koja su istovremeno lijepa i duboko funkcionalna. Od koncepta do završetka, svaki detalj je namjeran.",
+      "features": [
+        "Potpuna usluga uređenja interijera",
+        "Izbor materijala i završne obrade",
+        "Dizajn namještaja po mjeri",
+        "Dizajn rasvjete"
+      ]
+    },
+    {
+      "title": "Renovacija i restauracija",
+      "description": "Promišljena transformacija postojećih zgrada. Specijalizirani smo za udahnuće novog života starim objektima i povijesnim građevinama, čuvajući njihov karakter uz uvođenje suvremene jasnoće i udobnosti.",
+      "features": [
+        "Obnova imovine iz tog razdoblja",
+        "Obnova zgrada kulturne baštine",
+        "Dizajn proširenja",
+        "Strukturne modifikacije"
+      ]
+    },
+    {
+      "title": "Poslovni interijeri",
+      "description": "Radni prostori i poslovna okruženja koja podižu brendove. Dizajniramo urede, maloprodajne prostore i interijere ugostiteljskih objekata koji usklađuju fizički prostor s poslovnim identitetom i kulturom.",
+      "features": [
+        "Dizajn ureda i radnog prostora",
+        "Interijeri maloprodajnih objekata",
+        "Dizajn ugostiteljstva",
+        "Okruženja usklađena s brendom"
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Konzultacija",
+      "desc": "Razgovaramo o vašoj viziji, zahtjevima i budžetu."
+    },
+    {
+      "step": "02",
+      "title": "Koncept",
+      "desc": "Početni koncepti dizajna, ploče raspoloženja i prostorno planiranje."
+    },
+    {
+      "step": "03",
+      "title": "Razvoj",
+      "desc": "Detaljni crteži, odabir materijala i koordinacija izvođača radova."
+    },
+    {
+      "step": "04",
+      "title": "Završetak",
+      "desc": "Nadzor na licu mjesta do primopredaje i konačnog stiliziranja."
+    }
+  ]
+}

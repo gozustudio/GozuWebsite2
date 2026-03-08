@@ -1,0 +1,41 @@
+{
+  "introParagraph1": "„Gozu Studio“ – tai daugiadisciplininė architektūros ir interjero dizaino įmonė, kurianti rafinuotas, apgalvotas erdves išrankiems klientams visoje Europoje. Įkurta Godos Zukaitės, mūsų darbai sujungia įvairias kultūrines tradicijas su savitu europietišku jautrumu.",
+  "introParagraph2": "Tikime, kad architektūra turėtų būti įsiklausymo į aplinką, klientą, šviesos judėjimo kambaryje būdą aktas. Mūsų projektai prasideda nuo gilaus supratimo ir išsivysto į erdves, kurios atrodo neišvengiamos ir kartu stebinančios.",
+  "introParagraph3": "Aptarnaujame klientus visoje Europoje, dirbdami nuotoliniu būdu ir vietoje, kad kiekvienas projektas būtų įgyvendintas. Mūsų portfelyje yra prabangių rezidencijų, komercinių patalpų interjero ir paveldo objektų renovacijos.",
+  "founderBio": "Goda Zukaitė įkūrė „Gozu Studio“ turėdama viziją kurti architektūrą, kurioje būtų subalansuotas rafinuotumas ir šiluma. Turėdama patirties, apimančios tiek Baltijos, tiek Didžiosios Britanijos dizaino tradicijas, ji kiekvienam projektui suteikia savitą požiūrį – vertina santūrumą, medžiagiškumą ir ramią apgalvotos erdvės galią.",
+  "founderFacts": [
+    {
+      "label": "Švietimas",
+      "value": "Architektūra ir dizainas"
+    },
+    {
+      "label": "Praktika",
+      "value": "Gozu studija"
+    },
+    {
+      "label": "Ekspertizė",
+      "value": "Gyvenamasis, interjero dizainas, renovacija"
+    },
+    {
+      "label": "Regionas",
+      "value": "Europa"
+    }
+  ],
+  "approachSteps": [
+    {
+      "step": "01",
+      "title": "Klausytis",
+      "desc": "Kiekvienas projektas prasideda nuo gilaus pokalbio. Mes sužinome, kaip jūs gyvenate, ką vertinate ir ką mums sako vieta."
+    },
+    {
+      "step": "02",
+      "title": "Dizainas",
+      "desc": "Kuriame koncepcijas, kurios reaguoja į kontekstą, šviesą ir proporcijas – kartojame tol, kol kiekviena detalė tarnauja visumai."
+    },
+    {
+      "step": "03",
+      "title": "Pristatyti",
+      "desc": "Nuo statybos leidimų iki galutinio užbaigimo, mes tiksliai ir kruopščiai vadovaujame projektui iki jo pabaigos."
+    }
+  ]
+}

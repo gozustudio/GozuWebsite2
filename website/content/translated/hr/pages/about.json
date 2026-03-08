@@ -1,0 +1,41 @@
+{
+  "introParagraph1": "Gozu Studio je multidisciplinarni studio za arhitekturu i dizajn interijera koji stvara profinjene i promišljene prostore za zahtjevne klijente diljem Europe. Osnovan od strane Gode Zukaite, naš rad premošćuje različite kulturne tradicije s prepoznatljivim europskim senzibilitetom.",
+  "introParagraph2": "Vjerujemo da arhitektura treba biti čin slušanja - mjesta, klijenta, načina na koji se svjetlost kreće kroz prostoriju. Naši projekti počinju s dubokim razumijevanjem i razvijaju se u prostore koji se čine i neizbježnima i iznenađujućima.",
+  "introParagraph3": "Poslujemo s klijentima diljem Europe, radeći na daljinu i na licu mjesta kako bismo svaki projekt oživjeli. Naš portfelj obuhvaća luksuzne rezidencije, poslovne interijere i obnove baštine.",
+  "founderBio": "Goda Zukaite osnovala je Gozu Studio s vizijom stvaranja arhitekture koja uravnotežuje sofisticiranost i toplinu. S iskustvom koje obuhvaća baltičke i britanske dizajnerske tradicije, u svaki projekt unosi prepoznatljivu perspektivu - onu koja cijeni suzdržanost, materijalnost i tihu moć promišljenog prostora.",
+  "founderFacts": [
+    {
+      "label": "Obrazovanje",
+      "value": "Arhitektura i dizajn"
+    },
+    {
+      "label": "Praksa",
+      "value": "Gozu Studio"
+    },
+    {
+      "label": "Stručnost",
+      "value": "Stambeni, Uređenje interijera, Renovacija"
+    },
+    {
+      "label": "Regija",
+      "value": "Europa"
+    }
+  ],
+  "approachSteps": [
+    {
+      "step": "01",
+      "title": "Slušati",
+      "desc": "Svaki projekt započinje dubokim razgovorom. Saznajemo kako živite, što cijenite i što nam stranica govori."
+    },
+    {
+      "step": "02",
+      "title": "Dizajn",
+      "desc": "Razvijamo koncepte koji odgovaraju kontekstu, svjetlu i proporciji — ponavljajući ih sve dok svaki detalj ne služi cjelini."
+    },
+    {
+      "step": "03",
+      "title": "Dostava",
+      "desc": "Od građevinskih dozvola do konačnih završnih obrada, vodimo projekt do završetka s preciznošću i pažnjom."
+    }
+  ]
+}

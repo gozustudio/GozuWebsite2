@@ -1,0 +1,23 @@
+{
+  "title": "Casa KAZ",
+  "year": "2020",
+  "location": "Estocolmo, Suécia",
+  "type": [
+    "Exterior",
+    "Renovações"
+  ],
+  "shortDescription": "O local do concurso, que inclui edifícios existentes, situa-se na histórica área de Naujamiestis, em Vilnius. Esta área desenvolveu-se ao longo da Avenida Gedimino no final do século XIX e tornou-se uma das principais ruas da cidade. O caráter da área é definido por quarteirões fechados de edifícios, na sua maioria com 4 a 5 andares, com alguns edifícios mais altos, até 10 andares, como neste local. Embora os edifícios ao longo da Avenida Gedimino e da Rua A. Stulginskio se integrem bem no contexto, o pátio interior parece incompleto. O atual edifício de 4 andares não fecha completamente o pátio perto do número 7 da Rua A. Stulginskio. Para resolver este problema, está previsto um edifício em forma de U. Este edifício liga-se ao edifício no número 24A da Avenida Gedimino por uma parede comum, fechando o pátio a partir do sul. Este novo edifício de 6 andares será mais alto na extremidade sul e desce em direção ao pátio, criando um espaço acolhedor e convidativo com diferentes perspetivas.",
+  "images": [
+    "/uploads/projects/3/Main.jpg",
+    "/uploads/projects/3/2.jpg",
+    "/uploads/projects/3/3.jpg",
+    "/uploads/projects/3/4.jpg",
+    "/uploads/projects/3/5.jpg"
+  ],
+  "videos": [
+    "/uploads/projects/3/Main.mp4",
+    "/uploads/projects/3/2.mp4"
+  ],
+  "featured": true,
+  "order": 3
+}

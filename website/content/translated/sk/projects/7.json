@@ -1,0 +1,23 @@
+{
+  "title": "Dom KAZ",
+  "year": "2020",
+  "location": "Štokholm, Švédsko",
+  "type": [
+    "Exteriér",
+    "Renovácie"
+  ],
+  "shortDescription": "Súťažné miesto, ktoré zahŕňa existujúce budovy, sa nachádza v historickej štvrti Naujamiestis vo Vilniuse. Táto oblasť sa vyvinula pozdĺž Gediminovej ulice koncom 19. storočia a stala sa jednou z hlavných ulíc mesta. Charakter oblasti je definovaný uzavretými blokmi budov, ktoré sú prevažne 4 – 5 poschodí vysoké, s niektorými vyššími budovami až do 10 poschodí, ako napríklad na tomto mieste. Zatiaľ čo budovy pozdĺž Gediminovej ulice a ulice A. Stulginskia dobre zapadajú do kontextu, vnútorné nádvorie pôsobí neúplne. Súčasná 4-poschodová budova úplne neuzatvára nádvorie v blízkosti ulice A. Stulginskia 7. Na nápravu tohto problému sa plánuje budova v tvare U. S budovou na Gediminovej ulici 24A sa prepojí spoločnou stenou, ktorá uzatvára nádvorie z juhu. Táto nová 6-poschodová budova bude najvyššia na južnom okraji a bude smerom k nádvoriu postupne klesať, čím vytvorí útulný a príjemný priestor s meniacimi sa perspektívami.",
+  "images": [
+    "/uploads/projects/7/Main.jpg",
+    "/uploads/projects/7/2.jpg",
+    "/uploads/projects/7/3.jpg",
+    "/uploads/projects/7/4.jpg",
+    "/uploads/projects/7/5.jpg"
+  ],
+  "videos": [
+    "/uploads/projects/7/Main.mp4",
+    "/uploads/projects/7/2.mp4"
+  ],
+  "featured": true,
+  "order": 7
+}

@@ -1,0 +1,41 @@
+{
+  "introParagraph1": "Gozu Studio je multidisciplinarni arhitekturni in notranji oblikovalski studio, ki ustvarja prefinjene in premišljene prostore za zahtevne stranke po vsej Evropi. Ustanovila ga je Goda Zukaite, naše delo pa premosti raznolike kulturne tradicije z značilno evropsko občutljivostjo.",
+  "introParagraph2": "Verjamemo, da bi morala biti arhitektura dejanje poslušanja – lokacije, naročnika, načina, kako se svetloba premika skozi prostor. Naši projekti se začnejo z globokim razumevanjem in se razvijejo v prostore, ki se zdijo hkrati neizogibni in presenetljivi.",
+  "introParagraph3": "Strankam po vsej Evropi nudimo storitve na daljavo in na lokaciji, da bi vsakemu projektu dali življenje. Naš portfelj zajema luksuzne rezidence, poslovne notranjosti in prenove dediščinskih objektov.",
+  "founderBio": "Goda Zukaite je ustanovila Gozu Studio z vizijo ustvarjanja arhitekture, ki uravnoteži prefinjenost s toplino. Z izkušnjami, ki segajo tako v baltske kot britanske oblikovalske tradicije, v vsak projekt vnese edinstveno perspektivo – takšno, ki ceni zadržanost, materialnost in tiho moč premišljenega prostora.",
+  "founderFacts": [
+    {
+      "label": "Izobraževanje",
+      "value": "Arhitektura in oblikovanje"
+    },
+    {
+      "label": "Vaja",
+      "value": "Studio Gozu"
+    },
+    {
+      "label": "Strokovno znanje",
+      "value": "Stanovanjsko, notranje oblikovanje, prenova"
+    },
+    {
+      "label": "Regija",
+      "value": "Evropa"
+    }
+  ],
+  "approachSteps": [
+    {
+      "step": "01",
+      "title": "Poslušaj",
+      "desc": "Vsak projekt se začne s poglobljenim pogovorom. Izvemo, kako živite, kaj cenite in kaj nam spletno mesto sporoča."
+    },
+    {
+      "step": "02",
+      "title": "Oblikovanje",
+      "desc": "Razvijamo koncepte, ki se odzivajo na kontekst, svetlobo in proporce – ponavljamo jih, dokler vsaka podrobnost ne služi celoti."
+    },
+    {
+      "step": "03",
+      "title": "Dostava",
+      "desc": "Od pridobitve gradbenih dovoljenj do končnih zaključkov projekt vodimo do zaključka natančno in skrbno."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "introParagraph1": "A Gozu Studio egy multidiszciplináris építészeti és belsőépítészeti cég, amely kifinomult, átgondolt tereket hoz létre igényes ügyfelek számára Európa-szerte. Goda Zukaite által alapított munkánk hidat képez a sokszínű kulturális hagyományok és a jellegzetes európai érzékenység között.",
+  "introParagraph2": "Úgy gondoljuk, hogy az építészetnek a meghallgatás aktusának kell lennie – a helyszínre, az ügyfélre, arra, ahogyan a fény áramlik a szobában. Projektjeink mély megértéssel kezdődnek, és olyan terekké fejlődnek, amelyek egyszerre elkerülhetetlenek és meglepőek.",
+  "introParagraph3": "Európa-szerte ügyfeleinket szolgáljuk ki, távolról és a helyszínen dolgozva, hogy minden projektet életre keltsünk. Portfóliónk luxuslakásokat, kereskedelmi belső tereket és műemléki felújításokat foglal magában.",
+  "founderBio": "Goda Zukaite azzal a céllal alapította a Gozu Studiot, hogy olyan építészetet alkosson, amely a kifinomultságot a melegséggel ötvözi. A balti és a brit formatervezési hagyományokat egyaránt felölelő háttérrel minden projektbe egyedi perspektívát hoz – olyat, amely nagyra értékeli a visszafogottságot, az anyagszerűséget és az átgondolt tér csendes erejét.",
+  "founderFacts": [
+    {
+      "label": "Oktatás",
+      "value": "Építészet és design"
+    },
+    {
+      "label": "Gyakorlat",
+      "value": "Gozu Stúdió"
+    },
+    {
+      "label": "Szakértelem",
+      "value": "Lakóingatlan, belsőépítészet, felújítás"
+    },
+    {
+      "label": "Régió",
+      "value": "Európa"
+    }
+  ],
+  "approachSteps": [
+    {
+      "step": "01",
+      "title": "Hallgat",
+      "desc": "Minden projekt mély beszélgetéssel kezdődik. Megtudjuk, hogyan élsz, mit értékelsz, és mit mond nekünk a helyszín."
+    },
+    {
+      "step": "02",
+      "title": "Tervezés",
+      "desc": "Olyan koncepciókat fejlesztünk, amelyek reagálnak a kontextusra, a fényre és az arányokra – addig ismételve, amíg minden részlet az egészet szolgálja."
+    },
+    {
+      "step": "03",
+      "title": "Szállít",
+      "desc": "Az építési engedélyektől a végső befejezésekig precízen és gondosan vezetjük végig a projektet a befejezésig."
+    }
+  ]
+}

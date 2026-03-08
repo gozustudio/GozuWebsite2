@@ -1,0 +1,41 @@
+{
+  "introParagraph1": "Gozu Studio er et tverrfaglig arkitektur- og interiørdesignfirma som skaper raffinerte og gjennomtenkte rom for kresne kunder over hele Europa. Arbeidet vårt ble grunnlagt av Goda Zukaite, og bygger bro mellom ulike kulturelle tradisjoner og en særegen europeisk sensibilitet.",
+  "introParagraph2": "Vi mener at arkitektur bør være en lyttehandling – til stedet, til klienten, til måten lyset beveger seg gjennom et rom. Prosjektene våre starter med dyp forståelse og utvikler seg til rom som føles både uunngåelige og overraskende.",
+  "introParagraph3": "Vi betjener kunder over hele Europa, og jobber eksternt og på stedet for å realisere hvert prosjekt. Porteføljen vår spenner over luksusboliger, kommersielle interiører og renoveringer av historiske bygninger.",
+  "founderBio": "Goda Zukaite grunnla Gozu Studio med en visjon om å skape arkitektur som balanserer raffinement med varme. Med en bakgrunn som spenner over både baltiske og britiske designtradisjoner, bringer hun et særegent perspektiv til hvert prosjekt – et perspektiv som verdsetter tilbakeholdenhet, materialitet og den stille kraften i gjennomtenkt rom.",
+  "founderFacts": [
+    {
+      "label": "Utdannelse",
+      "value": "Arkitektur og design"
+    },
+    {
+      "label": "Øvelse",
+      "value": "Gozu Studio"
+    },
+    {
+      "label": "Ekspertise",
+      "value": "Bolig, interiørdesign, renovering"
+    },
+    {
+      "label": "Region",
+      "value": "Europa"
+    }
+  ],
+  "approachSteps": [
+    {
+      "step": "01",
+      "title": "Lytte",
+      "desc": "Hvert prosjekt starter med en dyp samtale. Vi lærer hvordan du lever, hva du verdsetter og hva nettstedet forteller oss."
+    },
+    {
+      "step": "02",
+      "title": "Design",
+      "desc": "Vi utvikler konsepter som responderer på kontekst, lys og proporsjoner – og itererer til hver detalj tjener helheten."
+    },
+    {
+      "step": "03",
+      "title": "Levere",
+      "desc": "Fra byggetillatelser til endelig finish, veileder vi prosjektet til ferdigstillelse med presisjon og omhu."
+    }
+  ]
+}

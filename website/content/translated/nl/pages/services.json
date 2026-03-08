@@ -1,0 +1,67 @@
+{
+  "heroText": "Van het eerste concept tot het laatste detail bieden wij uitgebreide architectuur- en ontwerpdiensten op maat voor elke klant en elk project.",
+  "services": [
+    {
+      "title": "Woonarchitectuur",
+      "description": "Woningen op maat, ontworpen rondom uw leefstijl. Van nieuwbouwhuizen tot luxe appartementen, wij creëren residentiële architectuur die esthetische verfijning combineert met praktische intelligentie. Elk project is een unieke reactie op de locatie, de opdrachtgever en de context.",
+      "features": [
+        "Nieuwbouw woningontwerp",
+        "Planning- en bouwvoorschriften",
+        "Integratie van duurzaam ontwerp",
+        "Projectmanagement"
+      ]
+    },
+    {
+      "title": "Interieurontwerp",
+      "description": "Doordachte interieurs die de beleving van ruimtes transformeren. We werken met materiaal, licht en proportie om omgevingen te creëren die zowel mooi als uiterst functioneel zijn. Van concept tot realisatie is elk detail weloverwogen.",
+      "features": [
+        "Complete interieurontwerpservice",
+        "Materiaal- en afwerkingskeuze",
+        "Meubelontwerp op maat",
+        "Lichtontwerp"
+      ]
+    },
+    {
+      "title": "Renovatie en restauratie",
+      "description": "Doordachte transformatie van bestaande gebouwen. Wij zijn gespecialiseerd in het nieuw leven inblazen van historische panden en monumentale gebouwen, waarbij we hun karakter behouden en tegelijkertijd eigentijdse helderheid en comfort toevoegen.",
+      "features": [
+        "Renovatie van een historisch pand",
+        "restauratie van monumentale gebouwen",
+        "Uitbreidingsontwerp",
+        "Structurele aanpassingen"
+      ]
+    },
+    {
+      "title": "Commerciële interieurs",
+      "description": "Werkruimtes en commerciële omgevingen die merken versterken. Wij ontwerpen kantoren, winkelruimtes en horeca-interieurs waarbij de fysieke ruimte aansluit op de identiteit en cultuur van het bedrijf.",
+      "features": [
+        "Kantoor- en werkplekdesign",
+        "Winkelinterieurs",
+        "Ontwerp voor de horeca",
+        "Merkgerichte omgevingen"
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Overleg",
+      "desc": "We bespreken uw visie, wensen en budget."
+    },
+    {
+      "step": "02",
+      "title": "Concept",
+      "desc": "Eerste ontwerpconcepten, moodboards en ruimtelijke planning."
+    },
+    {
+      "step": "03",
+      "title": "Ontwikkeling",
+      "desc": "Gedetailleerde tekeningen, materiaalkeuze en coördinatie met aannemers."
+    },
+    {
+      "step": "04",
+      "title": "Voltooiing",
+      "desc": "Begeleiding ter plaatse tot en met de overdracht en de uiteindelijke styling."
+    }
+  ]
+}

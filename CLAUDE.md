@@ -19,7 +19,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Animations**: Framer Motion 12
 - **CMS**: Tina CMS (`tinacms` + `@tinacms/cli`) — admin UI at `/admin`, content in `website/content/`
 - **Internationalization**: next-intl 4.8 — 26 locales: EN (default, no prefix), LT, ES, SV, NO, DA, NL, DE, FR, IT, LV, ET, RU, PL, FI, PT, CS, HU, RO, EL, HR, SR, BG, SK, SL, UK
-- **Content Translation**: Google Cloud Translation API v2 — auto-translates CMS content at build time
+- **Content Translation**: Google Cloud Translation API v2 — auto-translates CMS content via GitHub Action (not at build time)
 - **Email**: Resend (`website@gozustudio.com` → `info@gozustudio.com`)
 - **Image processing**: Sharp 0.34
 - **Analytics**: GA4 (Measurement ID: `G-7BJ23T92B7`, Property: `526398179`)
@@ -47,9 +47,9 @@ npx tinacms build --local --skip-cloud-checks && npx next build
 
 **Vercel build command** (set in Project Settings → Build and Deployment):
 ```
-node scripts/copy-assets.js && node scripts/translate-content.js && npx tinacms build && npx next build
+node scripts/copy-assets.js && npx tinacms build && npx next build
 ```
-The copy-assets step is required because brand assets in `website/public/` are gitignored. Vercel Root Directory: `website`.
+The copy-assets step is required because brand assets in `website/public/` are gitignored. Translation is handled by GitHub Action (not during build). Vercel Root Directory: `website`.
 
 **Project media** is committed directly to `website/public/uploads/projects/` — no copy step needed.
 
@@ -155,15 +155,18 @@ Content files are the single source of truth. The website reads from them at bui
 ## Content Translation
 
 - **Script**: `website/scripts/translate-content.js` — reads CMS JSON, translates via Google Cloud Translation API v2, writes to `content/translated/{locale}/`
+- **Trigger**: GitHub Action (`.github/workflows/translate.yml`) — NOT during Vercel build
+- **Triggers on**: push to `main` changing content files, daily cron at 06:00 UTC, manual `workflow_dispatch`
+- **Throttle**: Max once per 24h (metadata in `content/translated/.last-translation`). Manual trigger bypasses throttle
+- **Selective**: Uses `git diff` to find changed files since last translation, translates only those (`--only` flag)
 - **Output**: `website/content/translated/{locale}/pages/*.json`, `content/translated/{locale}/projects/*.json`, `content/translated/{locale}/settings/privacy.json`
-- **Gitignored**: `content/translated/` is auto-generated during build — not committed
-- **Caching**: Uses SHA-256 hash of source content; skips translation if unchanged (`.cache-hash` file)
+- **Committed to Git**: `content/translated/` is committed (NOT gitignored) — Vercel builds use pre-translated files
 - **Loader**: `src/lib/content.ts` exports `loadTranslatedContent<T>(relPath, locale)` — tries translated file, falls back to English
 - **Projects**: `loadProjects(locale?)` and `getProject(slug, locale?)` accept optional locale
-- **Fields skipped**: `images`, `videos`, `year`, `order`, `featured`, `step` — not translated
-- **Cost**: ~$0.004 per full build (~94 strings × 25 locales), negligible
-- **Auth**: Reuses existing `GOOGLE_SERVICE_ACCOUNT_EMAIL` + `GOOGLE_PRIVATE_KEY` env vars
-- **Workflow**: Goda edits content in Tina (English) → push → Vercel build runs translate script → all 26 locales deployed
+- **Fields skipped**: `images`, `videos`, `year`, `order`, `featured`, `step`, `slug`, `collaborations` — not translated
+- **Cost protection**: GCP budget cap $1/month + daily character quota + 24h throttle
+- **Auth**: `GOOGLE_SERVICE_ACCOUNT_EMAIL` + `GOOGLE_PRIVATE_KEY` stored as GitHub repo secrets
+- **Workflow**: Goda edits content in Tina (English) → push to main → GitHub Action translates (if 24h passed) → commits translated files → Vercel builds with pre-translated content
 
 ## Tina CMS
 
@@ -348,4 +351,5 @@ WebMCP (W3C Community Group Draft, Chrome 146+) is a core requirement:
 - **Real project data**: Update `website/content/projects/*.json` with actual project info (currently all placeholder "KAZ House" data) — Goda can edit via Tina admin UI at `gozustudio.com/admin`
 - **Tina media manager**: Needs to be enabled in Tina Cloud project settings (app.tina.io)
 - **Quote form post-launch**: Update `UpdateProspectsDatabase` GAS script to skip `Prospects="Partial"` rows (if needed — verify after first real submission)
-- **Translation refinement**: AI-generated translations in `website/messages/` may need native-speaker review
+- **Translation refinement**: AI-generated translations in `website/messages/` and Google Translate output in `content/translated/` may need native-speaker review
+- **HeroVideo hardcoded text**: "Architecture · Interior Design" and "Scroll" in `HeroVideo.tsx` are not translated (client component, would need `useTranslations`)

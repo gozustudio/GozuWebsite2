@@ -1,0 +1,67 @@
+{
+  "heroText": "No sākotnējās koncepcijas līdz pat pēdējai detaļai mēs piedāvājam visaptverošus arhitektūras un dizaina pakalpojumus, kas pielāgoti katram klientam un projektam.",
+  "services": [
+    {
+      "title": "Dzīvojamā arhitektūra",
+      "description": "Mājas, kas tiek projektētas, ņemot vērā jūsu dzīvesveidu. No jaunbūvēm līdz luksusa dzīvokļiem — mēs veidojam dzīvojamo ēku arhitektūru, kas apvieno estētisku izsmalcinātību ar praktisku inteliģenci. Katrs projekts ir unikāla atbilde uz vietu, klientu un kontekstu.",
+      "features": [
+        "Jaunbūvju dzīvojamo māju projektēšana",
+        "Plānošanas un būvniecības noteikumi",
+        "Ilgtspējīga dizaina integrācija",
+        "Projektu vadība"
+      ]
+    },
+    {
+      "title": "Interjera dizains",
+      "description": "Pārdomāti interjeri, kas pārveido telpu sajūtu. Mēs strādājam ar materiāliem, gaismu un proporcijām, lai radītu vidi, kas ir gan skaista, gan dziļi funkcionāla. No koncepcijas līdz pabeigšanai katra detaļa ir apzināta.",
+      "features": [
+        "Pilns interjera dizaina pakalpojums",
+        "Materiāla un apdares izvēle",
+        "Mēbeļu dizains pēc pasūtījuma",
+        "Apgaismojuma dizains"
+      ]
+    },
+    {
+      "title": "Renovācija un restaurācija",
+      "description": "Esošo ēku pārdomāta pārveidošana. Mēs specializējamies perioda īpašumu un mantojuma celtņu jaunas dzīvības piešķiršanā, saglabājot to raksturu, vienlaikus ieviešot mūsdienīgu skaidrību un komfortu.",
+      "features": [
+        "Īpašuma renovācija periodā",
+        "Vēsturisko ēku restaurācija",
+        "Paplašinājuma dizains",
+        "Strukturālas modifikācijas"
+      ]
+    },
+    {
+      "title": "Komerciālie interjeri",
+      "description": "Darba telpas un komerciāla vide, kas ceļ zīmolus. Mēs projektējam birojus, mazumtirdzniecības telpas un viesmīlības iestāžu interjerus, kas saskaņo fizisko telpu ar uzņēmuma identitāti un kultūru.",
+      "features": [
+        "Biroja un darba vietas dizains",
+        "Mazumtirdzniecības interjers",
+        "Viesmīlības dizains",
+        "Ar zīmolu saskaņota vide"
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Konsultācija",
+      "desc": "Mēs pārrunājam jūsu vīziju, prasības un budžetu."
+    },
+    {
+      "step": "02",
+      "title": "Koncepcija",
+      "desc": "Sākotnējās dizaina koncepcijas, noskaņu dēļi un telpiskā plānošana."
+    },
+    {
+      "step": "03",
+      "title": "Attīstība",
+      "desc": "Detalizēti rasējumi, materiālu izvēle un darbuzņēmēja koordinācija."
+    },
+    {
+      "step": "04",
+      "title": "Pabeigšana",
+      "desc": "Uzraudzība uz vietas līdz pat nodošanai ekspluatācijā un galīgajai stila izstrādei."
+    }
+  ]
+}

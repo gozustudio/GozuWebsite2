@@ -1,0 +1,67 @@
+{
+  "heroText": "Fra første konsept til siste detalj tilbyr vi omfattende arkitektur- og designtjenester skreddersydd for hver kunde og hvert prosjekt.",
+  "services": [
+    {
+      "title": "Boligarkitektur",
+      "description": "Skreddersydde hjem designet rundt hvordan du bor. Fra nybygde hus til luksusleiligheter skaper vi boligarkitektur som kombinerer estetisk raffinement med praktisk intelligens. Hvert prosjekt er et unikt svar på sted, klient og kontekst.",
+      "features": [
+        "Nybygg boligdesign",
+        "Planlegging og byggeforskrifter",
+        "Bærekraftig designintegrasjon",
+        "Prosjektledelse"
+      ]
+    },
+    {
+      "title": "Interiørdesign",
+      "description": "Gjennomtenkte interiører som forvandler hvordan rom føles. Vi jobber med materialer, lys og proporsjoner for å skape miljøer som er både vakre og svært funksjonelle. Fra konsept til ferdigstillelse er hver detalj bevisst.",
+      "features": [
+        "Fullstendig interiørdesigntjeneste",
+        "Material- og finishvalg",
+        "Skreddersydd møbeldesign",
+        "Lysdesign"
+      ]
+    },
+    {
+      "title": "Renovering og restaurering",
+      "description": "Gjennomtenkt transformasjon av eksisterende bygninger. Vi spesialiserer oss på å gi nytt liv til periodeeiendommer og historiske strukturer, bevare deres karakter samtidig som vi introduserer moderne klarhet og komfort.",
+      "features": [
+        "Renovering av periodeeiendom",
+        "Restaurering av kulturminner",
+        "Utvidelsesdesign",
+        "Strukturelle modifikasjoner"
+      ]
+    },
+    {
+      "title": "Kommersielle interiører",
+      "description": "Arbeidsplasser og kommersielle miljøer som løfter merkevarer. Vi designer kontorer, butikklokaler og interiør for hotellbransjen som samsvarer med fysisk rom og bedriftsidentitet og -kultur.",
+      "features": [
+        "Kontor- og arbeidsplassdesign",
+        "Interiør i butikk",
+        "Gjestfrihetsdesign",
+        "Merkevaretilpassede miljøer"
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Konsultasjon",
+      "desc": "Vi diskuterer din visjon, dine behov og ditt budsjett."
+    },
+    {
+      "step": "02",
+      "title": "Konsept",
+      "desc": "Innledende designkonsepter, moodboards og romplanlegging."
+    },
+    {
+      "step": "03",
+      "title": "Utvikling",
+      "desc": "Detaljtegninger, materialvalg og entreprenørkoordinering."
+    },
+    {
+      "step": "04",
+      "title": "Fullføring",
+      "desc": "Tilsyn på stedet frem til overlevering og endelig styling."
+    }
+  ]
+}

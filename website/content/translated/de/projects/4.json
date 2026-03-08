@@ -1,0 +1,23 @@
+{
+  "title": "KAZ-Haus",
+  "year": "2020",
+  "location": "Stockholm, Schweden",
+  "type": [
+    "Außenbereich",
+    "Rennovations"
+  ],
+  "shortDescription": "Das Wettbewerbsgelände, das auch Bestandsgebäude umfasst, befindet sich im historischen Naujamiestis-Viertel von Vilnius. Dieses Viertel entstand Ende des 19. Jahrhunderts entlang der Gedimino-Allee und entwickelte sich zu einer der Hauptstraßen der Stadt. Geprägt wird das Viertel durch geschlossene Häuserblöcke mit meist vier bis fünf Stockwerken, wobei einige Gebäude, wie auch dieses auf dem Gelände, bis zu zehn Stockwerke hoch sind. Während sich die Gebäude entlang der Gedimino-Allee und der A.-Stulginskio-Straße gut in das Gesamtbild einfügen, wirkt der Innenhof unvollständig. Das bestehende viergeschossige Gebäude umschließt den Hof nahe der A.-Stulginskio-Straße 7 nicht vollständig. Um dies zu beheben, ist ein U-förmiges Gebäude geplant. Es ist mit einer gemeinsamen Wand an das Gebäude an der Gedimino-Allee 24A angeschlossen und verschließt den Hof im Süden. Dieses neue sechsgeschossige Gebäude wird an der Südseite am höchsten sein und sich zum Hof hin stufenförmig absenken, wodurch ein gemütlicher, einladender Raum mit wechselnden Perspektiven entsteht.",
+  "images": [
+    "/uploads/projects/4/Main.jpg",
+    "/uploads/projects/4/2.jpg",
+    "/uploads/projects/4/3.jpg",
+    "/uploads/projects/4/4.jpg",
+    "/uploads/projects/4/5.jpg"
+  ],
+  "videos": [
+    "/uploads/projects/4/Main.mp4",
+    "/uploads/projects/4/2.mp4"
+  ],
+  "featured": true,
+  "order": 4
+}

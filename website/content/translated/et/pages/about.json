@@ -1,0 +1,41 @@
+{
+  "introParagraph1": "Gozu Studio on multidistsiplinaarne arhitektuuri- ja sisekujundusbüroo, mis loob peeneid ja läbimõeldud ruume nõudlikele klientidele üle Euroopa. Goda Zukaite asutatud ettevõtte töö ühendab mitmekesiseid kultuuritraditsioone eristuva Euroopa tundlikkusega.",
+  "introParagraph2": "Usume, et arhitektuur peaks olema kuulamise akt – kuulates kohta, klienti, seda, kuidas valgus ruumis liigub. Meie projektid algavad sügavast mõistmisest ja arenevad ruumideks, mis tunduvad nii vältimatud kui ka üllatavad.",
+  "introParagraph3": "Teenindame kliente kogu Euroopas, töötades nii eemalt kui ka kohapeal, et iga projekt ellu viia. Meie portfoolio hõlmab luksuselamuid, ärihoonete interjööre ja pärandhoonete renoveerimist.",
+  "founderBio": "Goda Zukaite asutas Gozu Studio visiooniga luua arhitektuuri, mis tasakaalustab keerukust soojusega. Tal on taust, mis hõlmab nii Balti kui ka Briti disainitraditsioone, lisades igale projektile omanäolise vaatenurga – sellise, mis väärtustab vaoshoitust, materiaalsust ja läbimõeldud ruumi vaikset jõudu.",
+  "founderFacts": [
+    {
+      "label": "Haridus",
+      "value": "Arhitektuur ja disain"
+    },
+    {
+      "label": "Harjuta",
+      "value": "Gozu stuudio"
+    },
+    {
+      "label": "Ekspertiis",
+      "value": "Elamu, Sisekujundus, Renoveerimine"
+    },
+    {
+      "label": "Piirkond",
+      "value": "Euroopa"
+    }
+  ],
+  "approachSteps": [
+    {
+      "step": "01",
+      "title": "Kuula",
+      "desc": "Iga projekt algab sügava vestlusega. Me saame teada, kuidas te elate, mida te väärtustate ja mida see koht meile ütleb."
+    },
+    {
+      "step": "02",
+      "title": "Disain",
+      "desc": "Me töötame välja kontseptsioone, mis reageerivad kontekstile, valgusele ja proportsioonidele – korrates seni, kuni iga detail teenib tervikut."
+    },
+    {
+      "step": "03",
+      "title": "Kohaletoimetamine",
+      "desc": "Alates ehituslubade taotlemisest kuni lõppviimistluseni juhime projekti täpselt ja hoolikalt valmimiseni."
+    }
+  ]
+}

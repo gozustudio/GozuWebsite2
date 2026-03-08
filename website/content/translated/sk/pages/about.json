@@ -1,0 +1,41 @@
+{
+  "introParagraph1": "Gozu Studio je multidisciplinárna architektonická a interiérová dizajnérska kancelária, ktorá vytvára rafinované a premyslené priestory pre náročných klientov po celej Európe. Založila ju Goda Zukaite a naša práca premosťuje rozmanité kultúrne tradície s výrazným európskym cítením.",
+  "introParagraph2": "Veríme, že architektúra by mala byť aktom načúvania – miestu, klientovi, spôsobu, akým sa svetlo pohybuje miestnosťou. Naše projekty začínajú hlbokým pochopením a vyvíjajú sa do priestorov, ktoré sa zdajú byť nevyhnutné aj prekvapujúce.",
+  "introParagraph3": "Poskytujeme služby klientom po celej Európe, pracujeme na diaľku aj priamo na mieste, aby sme každý projekt zrealizovali. Naše portfólio zahŕňa luxusné rezidencie, komerčné interiéry a rekonštrukcie historických budov.",
+  "founderBio": "Goda Zukaite založila štúdio Gozu s víziou vytvárať architektúru, ktorá vyvažuje sofistikovanosť s teplom. S skúsenosťami s baltskými aj britskými dizajnérskymi tradíciami prináša do každého projektu osobitý pohľad – taký, ktorý si cení zdržanlivosť, materialitu a tichú silu premysleného priestoru.",
+  "founderFacts": [
+    {
+      "label": "Vzdelávanie",
+      "value": "Architektúra a dizajn"
+    },
+    {
+      "label": "Prax",
+      "value": "Štúdio Gozu"
+    },
+    {
+      "label": "Odbornosť",
+      "value": "Rezidenčný, interiérový dizajn, rekonštrukcia"
+    },
+    {
+      "label": "Región",
+      "value": "Európa"
+    }
+  ],
+  "approachSteps": [
+    {
+      "step": "01",
+      "title": "Počúvajte",
+      "desc": "Každý projekt začína hlbokým rozhovorom. Dozvieme sa, ako žijete, čo si ceníte a čo nám stránka hovorí."
+    },
+    {
+      "step": "02",
+      "title": "Dizajn",
+      "desc": "Vyvíjame koncepty, ktoré reagujú na kontext, svetlo a proporcie – iterujeme, kým každý detail neslúži celku."
+    },
+    {
+      "step": "03",
+      "title": "Doručiť",
+      "desc": "Od stavebných povolení až po konečné úpravy, projekt sprevádzame až do dokončenia s precíznosťou a starostlivosťou."
+    }
+  ]
+}

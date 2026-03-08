@@ -1,0 +1,23 @@
+{
+  "title": "Hiša KAZ",
+  "year": "2020",
+  "location": "Stockholm, Švedska",
+  "type": [
+    "Zunanjost",
+    "Prenove"
+  ],
+  "shortDescription": "Natečajno območje, ki vključuje obstoječe stavbe, se nahaja v zgodovinskem predelu Naujamiestis v Vilni. To območje se je razvilo ob aveniji Gedimino konec 19. stoletja in postalo ena glavnih mestnih ulic. Značaj območja zaznamujejo zaprti bloki stavb, ki so večinoma visoki 4–5 nadstropij, z nekaterimi višjimi stavbami, visokimi do 10 nadstropij, kot je na tem mestu. Medtem ko se stavbe ob aveniji Gedimino in ulici A. Stulginskio dobro ujemajo s kontekstom, se notranje dvorišče zdi nepopolno. Sedanja 4-nadstropna stavba ne obdaja v celoti dvorišča v bližini ulice A. Stulginskio 7. Da bi to odpravili, je načrtovana stavba v obliki črke U. S stavbo na aveniji Gedimino 24A se povezuje s skupnim zidom, ki zapira dvorišče z juga. Ta nova 6-nadstropna stavba bo najvišja na južnem robu in se bo stopničasto spuščala proti dvorišču, kar bo ustvarilo prijeten, vabljiv prostor in njegove spreminjajoče se perspektive.",
+  "images": [
+    "/uploads/projects/main/Main.jpg",
+    "/uploads/projects/main/2.jpg",
+    "/uploads/projects/main/3.jpg",
+    "/uploads/projects/main/4.jpg",
+    "/uploads/projects/main/5.jpg"
+  ],
+  "videos": [
+    "/uploads/projects/main/Main.mp4",
+    "/uploads/projects/main/2.mp4"
+  ],
+  "featured": true,
+  "order": 1
+}

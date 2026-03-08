@@ -1,0 +1,67 @@
+{
+  "heroText": "De l'idée initiale aux détails finaux, nous proposons des services complets d'architecture et de design adaptés à chaque client et à chaque projet.",
+  "services": [
+    {
+      "title": "Architecture résidentielle",
+      "description": "Des maisons sur mesure, conçues pour s'adapter à votre mode de vie. Des maisons neuves aux appartements de luxe, nous créons une architecture résidentielle qui allie raffinement esthétique et fonctionnalité. Chaque projet est une réponse unique au site, au client et à son contexte.",
+      "features": [
+        "Conception de logements neufs",
+        "réglementation en matière d'urbanisme et de construction",
+        "Intégration de la conception durable",
+        "Gestion de projet"
+      ]
+    },
+    {
+      "title": "Design d'intérieur",
+      "description": "Des intérieurs pensés pour métamorphoser l'atmosphère des espaces. Nous jouons avec les matériaux, la lumière et les proportions pour créer des environnements à la fois esthétiques et fonctionnels. De la conception à la réalisation, chaque détail est soigneusement étudié.",
+      "features": [
+        "Service complet de design d'intérieur",
+        "Sélection des matériaux et des finitions",
+        "Conception de meubles sur mesure",
+        "Conception d'éclairage"
+      ]
+    },
+    {
+      "title": "Rénovation et restauration",
+      "description": "Transformation réfléchie des bâtiments existants. Nous sommes spécialisés dans la rénovation de propriétés d'époque et de bâtiments patrimoniaux, en préservant leur caractère tout en y apportant clarté et confort contemporains.",
+      "features": [
+        "rénovation d'une propriété d'époque",
+        "restauration des bâtiments patrimoniaux",
+        "Conception d'extension",
+        "Modifications structurelles"
+      ]
+    },
+    {
+      "title": "Aménagements intérieurs commerciaux",
+      "description": "Des espaces de travail et des environnements commerciaux qui valorisent les marques. Nous concevons des bureaux, des espaces de vente et des intérieurs hôteliers qui harmonisent l'espace physique avec l'identité et la culture de l'entreprise.",
+      "features": [
+        "Conception de bureaux et d'espaces de travail",
+        "Aménagements intérieurs de commerces",
+        "Conception hôtelière",
+        "Environnements alignés sur la marque"
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Consultation",
+      "desc": "Nous discutons de votre vision, de vos besoins et de votre budget."
+    },
+    {
+      "step": "02",
+      "title": "Concept",
+      "desc": "Concepts initiaux, planches d'inspiration et planification spatiale."
+    },
+    {
+      "step": "03",
+      "title": "Développement",
+      "desc": "Plans détaillés, sélection des matériaux et coordination des entrepreneurs."
+    },
+    {
+      "step": "04",
+      "title": "Achèvement",
+      "desc": "Supervision sur site jusqu'à la livraison et la mise en scène finale."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "heroText": "Desde a concepção inicial até o detalhe final, oferecemos serviços completos de arquitetura e design, personalizados para cada cliente e projeto.",
+  "services": [
+    {
+      "title": "Arquitetura Residencial",
+      "description": "Casas personalizadas, projetadas para o seu estilo de vida. De casas novas a apartamentos de luxo, criamos arquitetura residencial que combina requinte estético com inteligência prática. Cada projeto é uma resposta única ao terreno, ao cliente e ao contexto.",
+      "features": [
+        "Projeto residencial de construção nova",
+        "Regulamentos de planejamento e construção",
+        "integração de design sustentável",
+        "Gerenciamento de projetos"
+      ]
+    },
+    {
+      "title": "Design de Interiores",
+      "description": "Projetos de interiores que transformam a sensação dos espaços. Trabalhamos com materiais, luz e proporção para criar ambientes que sejam ao mesmo tempo belos e profundamente funcionais. Do conceito à conclusão, cada detalhe é intencional.",
+      "features": [
+        "Serviço completo de design de interiores",
+        "Seleção de materiais e acabamentos",
+        "Design de móveis sob medida",
+        "Projeto de iluminação"
+      ]
+    },
+    {
+      "title": "Renovação e Restauração",
+      "description": "Transformação criteriosa de edifícios existentes. Somos especialistas em revitalizar propriedades de época e estruturas históricas, preservando seu caráter original e, ao mesmo tempo, introduzindo clareza e conforto contemporâneos.",
+      "features": [
+        "Reforma de imóvel de época",
+        "Restauração de edifícios históricos",
+        "Projeto de extensão",
+        "Modificações estruturais"
+      ]
+    },
+    {
+      "title": "Interiores comerciais",
+      "description": "Espaços de trabalho e ambientes comerciais que valorizam as marcas. Projetamos escritórios, espaços de varejo e interiores de estabelecimentos de hotelaria que alinham o espaço físico à identidade e cultura da empresa.",
+      "features": [
+        "Design de escritórios e espaços de trabalho",
+        "interiores de lojas",
+        "Design de hospitalidade",
+        "Ambientes alinhados à marca"
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Consulta",
+      "desc": "Discutimos sua visão, suas necessidades e seu orçamento."
+    },
+    {
+      "step": "02",
+      "title": "Conceito",
+      "desc": "Conceitos iniciais de design, painéis de inspiração e planejamento espacial."
+    },
+    {
+      "step": "03",
+      "title": "Desenvolvimento",
+      "desc": "Desenhos detalhados, seleção de materiais e coordenação com o empreiteiro."
+    },
+    {
+      "step": "04",
+      "title": "Conclusão",
+      "desc": "Acompanhamento no local, desde a supervisão até a entrega e o acabamento final."
+    }
+  ]
+}

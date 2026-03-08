@@ -1,0 +1,23 @@
+{
+  "title": "KAZi maja",
+  "year": "2020",
+  "location": "Stockholm, Rootsi",
+  "type": [
+    "Välispind",
+    "Renovatsioonid"
+  ],
+  "shortDescription": "Võistlusala, mis hõlmab ka olemasolevaid hooneid, asub Vilniuse ajaloolises Naujamiestise linnaosas. See piirkond arenes Gedimino puiestee äärde 19. sajandi lõpus ja sellest sai üks linna peatänavaid. Piirkonna iseloomu määravad suletud hoonete kvartalid, mis on enamasti 4–5-korruselised, mõned kõrgemad hooned ulatuvad kuni 10-korruselisteni, nagu siingi. Kuigi Gedimino puiestee ja A. Stulginskio tänava äärsed hooned sobivad konteksti hästi, tundub sisehoov poolik. Praegune neljakorruseline hoone ei sulge täielikult A. Stulginskio tn 7 lähedal asuvat sisehoovi. Selle parandamiseks on planeeritud U-kujuline hoone. See ühendub Gedimino puiestee 24A hoonega ühise müüriga, sulgedes sisehoovi lõunast. See uus kuuekorruseline hoone on lõunaservas kõrgeim ja astub sisehoovi poole, luues hubase ja kutsuva ruumi ning selle muutuvad perspektiivid.",
+  "images": [
+    "/uploads/projects/4/Main.jpg",
+    "/uploads/projects/4/2.jpg",
+    "/uploads/projects/4/3.jpg",
+    "/uploads/projects/4/4.jpg",
+    "/uploads/projects/4/5.jpg"
+  ],
+  "videos": [
+    "/uploads/projects/4/Main.mp4",
+    "/uploads/projects/4/2.mp4"
+  ],
+  "featured": true,
+  "order": 4
+}

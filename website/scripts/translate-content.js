@@ -198,6 +198,12 @@ function saveHashCache(hash) {
 async function main() {
   console.log("Translating CMS content...");
 
+  // Parse --only flag: node translate-content.js --only=pages/home.json,projects/main.json
+  const onlyArg = process.argv.find((a) => a.startsWith("--only="));
+  const onlyFiles = onlyArg
+    ? onlyArg.replace("--only=", "").split(",").map((f) => f.trim()).filter(Boolean)
+    : null;
+
   // Collect all content files
   const pageFiles = ["pages/home.json", "pages/about.json", "pages/services.json"];
 
@@ -215,6 +221,18 @@ async function main() {
     : [];
 
   const allFiles = [...pageFiles, ...projectFiles];
+
+  // Filter to only specified files if --only flag provided
+  if (onlyFiles) {
+    const filtered = allFiles.filter((f) => onlyFiles.includes(f));
+    if (filtered.length === 0) {
+      console.log("No matching files found for --only filter.");
+      return;
+    }
+    allFiles.length = 0;
+    allFiles.push(...filtered);
+    console.log(`Selective translation: ${allFiles.join(", ")}`);
+  }
 
   // Read all content and extract translatable strings
   const contentMap = {};

@@ -1,0 +1,41 @@
+{
+  "introParagraph1": "Gozu Studio är en tvärvetenskaplig arkitektur- och inredningsbyrå som skapar raffinerade och genomtänkta utrymmen för kräsna kunder över hela Europa. Grundat av Goda Zukaite, överbryggar vårt arbete olika kulturella traditioner med en distinkt europeisk känslighet.",
+  "introParagraph2": "Vi anser att arkitektur ska vara en handling av att lyssna – till platsen, till klienten, till hur ljuset rör sig genom ett rum. Våra projekt börjar med djup förståelse och utvecklas till utrymmen som känns både oundvikliga och överraskande.",
+  "introParagraph3": "Vi betjänar kunder över hela Europa och arbetar både på distans och på plats för att förverkliga varje projekt. Vår portfölj omfattar lyxbostäder, kommersiella interiörer och renoveringar av historiska byggnader.",
+  "founderBio": "Goda Zukaite grundade Gozu Studio med en vision att skapa arkitektur som balanserar sofistikering med värme. Med en bakgrund som spänner över både baltiska och brittiska designtraditioner, bidrar hon med ett distinkt perspektiv till varje projekt – ett som värdesätter återhållsamhet, materialitet och den tysta kraften i ett genomtänkt rum.",
+  "founderFacts": [
+    {
+      "label": "Utbildning",
+      "value": "Arkitektur och design"
+    },
+    {
+      "label": "Öva",
+      "value": "Gozu Studio"
+    },
+    {
+      "label": "Expertis",
+      "value": "Bostäder, Inredning, Renovering"
+    },
+    {
+      "label": "Område",
+      "value": "Europa"
+    }
+  ],
+  "approachSteps": [
+    {
+      "step": "01",
+      "title": "Lyssna",
+      "desc": "Varje projekt börjar med ett djupt samtal. Vi lär oss hur du lever, vad du värdesätter och vad webbplatsen berättar för oss."
+    },
+    {
+      "step": "02",
+      "title": "Design",
+      "desc": "Vi utvecklar koncept som svarar på kontext, ljus och proportioner – och itererar tills varje detalj tjänar helheten."
+    },
+    {
+      "step": "03",
+      "title": "Leverera",
+      "desc": "Från bygglov till slutgiltig ytbehandling leder vi projektet till färdigställande med precision och omsorg."
+    }
+  ]
+}

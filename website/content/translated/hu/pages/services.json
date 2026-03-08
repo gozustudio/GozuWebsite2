@@ -1,0 +1,67 @@
+{
+  "heroText": "A kezdeti koncepciótól a végső részletekig átfogó építészeti és tervezési szolgáltatásokat nyújtunk, amelyek minden ügyfélre és projektre szabottak.",
+  "services": [
+    {
+      "title": "Lakóépítészet",
+      "description": "Egyedi otthonok, amelyeket az Ön életstílusához terveztünk. Az új építésű házaktól a luxuslakásokig olyan lakóépületeket alkotunk, amelyek az esztétikai kifinomultságot ötvözik a gyakorlatias intelligenciával. Minden projekt egyedi válasz a helyszínre, az ügyfélre és a kontextusra.",
+      "features": [
+        "Új építésű lakóépületek tervezése",
+        "Tervezési és építési szabályok",
+        "Fenntartható tervezési integráció",
+        "Projektmenedzsment"
+      ]
+    },
+    {
+      "title": "Lakberendezés",
+      "description": "Átgondolt belső terek, amelyek átalakítják a terek hangulatát. Az anyagokkal, a fénnyel és az arányokkal dolgozunk, hogy olyan környezetet teremtsünk, amely egyszerre szép és mélyen funkcionális. A koncepciótól a megvalósításig minden részlet tudatos.",
+      "features": [
+        "Teljes körű belsőépítészeti szolgáltatás",
+        "Anyag- és felületválasztás",
+        "Egyedi bútortervezés",
+        "Világítástervezés"
+      ]
+    },
+    {
+      "title": "Felújítás és restaurálás",
+      "description": "Meglévő épületek átgondolt átalakítása. Szakterületünk a korabeli ingatlanok és műemlékek új életre keltése, karakterük megőrzése, miközben kortárs letisztultságot és kényelmet biztosítunk.",
+      "features": [
+        "Korabeli ingatlanfelújítás",
+        "Műemléképület-felújítás",
+        "Bővítési terv",
+        "Szerkezeti módosítások"
+      ]
+    },
+    {
+      "title": "Kereskedelmi belső terek",
+      "description": "Olyan munkaterületek és kereskedelmi környezetek, amelyek felemelik a márkákat. Irodákat, üzlethelyiségeket és vendéglátóipari belső tereket tervezünk, amelyek összehangolják a fizikai teret az üzleti identitással és kultúrával.",
+      "features": [
+        "Iroda- és munkaterület-tervezés",
+        "Kiskereskedelmi belső terek",
+        "Vendéglátóipari design",
+        "Márkaorientált környezetek"
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Konzultáció",
+      "desc": "Megbeszéljük az elképzelésedet, az igényeidet és a költségvetésedet."
+    },
+    {
+      "step": "02",
+      "title": "Koncepció",
+      "desc": "Kezdeti tervkoncepciók, hangulattáblák és térbeli tervezés."
+    },
+    {
+      "step": "03",
+      "title": "Fejlesztés",
+      "desc": "Részletes tervek készítése, anyagkiválasztás és kivitelező koordinációja."
+    },
+    {
+      "step": "04",
+      "title": "Befejezés",
+      "desc": "Helyszíni felügyelet az átadás-átvételig és a végső formatervezésig."
+    }
+  ]
+}

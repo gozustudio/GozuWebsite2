@@ -1,0 +1,67 @@
+{
+  "heroText": "De la conceptul inițial până la detaliile finale, oferim servicii complete de arhitectură și design, adaptate fiecărui client și proiectului.",
+  "services": [
+    {
+      "title": "Arhitectură rezidențială",
+      "description": "Case personalizate, proiectate în funcție de stilul dumneavoastră de viață. De la case noi la apartamente de lux, creăm o arhitectură rezidențială care combină rafinamentul estetic cu inteligența practică. Fiecare proiect este un răspuns unic la amplasament, client și context.",
+      "features": [
+        "Design rezidențial nou construit",
+        "Reglementări de planificare și construcții",
+        "Integrarea designului sustenabil",
+        "Management de proiect"
+      ]
+    },
+    {
+      "title": "Design interior",
+      "description": "Interioare concepute pentru a transforma senzația spațiilor. Lucrăm cu materiale, lumină și proporții pentru a crea medii frumoase și profund funcționale. De la concept până la finalizare, fiecare detaliu este conceput cu atenție.",
+      "features": [
+        "Servicii complete de design interior",
+        "Selectarea materialelor și a finisajelor",
+        "Design de mobilier la comandă",
+        "Design de iluminat"
+      ]
+    },
+    {
+      "title": "Renovare și restaurare",
+      "description": "Transformare atentă a clădirilor existente. Ne specializăm în a da o nouă viață proprietăților de epocă și structurilor de patrimoniu, păstrându-le caracterul, introducând în același timp claritate și confort contemporan.",
+      "features": [
+        "Renovarea proprietății de epocă",
+        "Restaurarea clădirilor de patrimoniu",
+        "Proiectarea extensiei",
+        "Modificări structurale"
+      ]
+    },
+    {
+      "title": "Interioare comerciale",
+      "description": "Spații de lucru și medii comerciale care ridică în valoare brandurile. Proiectăm birouri, spații de retail și interioare pentru hoteluri care aliniază spațiul fizic cu identitatea și cultura afacerii.",
+      "features": [
+        "Designul birourilor și al spațiului de lucru",
+        "Interioare comerciale",
+        "Designul ospitalității",
+        "Medii aliniate cu brandul"
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Consultare",
+      "desc": "Discutăm despre viziunea, cerințele și bugetul dumneavoastră."
+    },
+    {
+      "step": "02",
+      "title": "Concept",
+      "desc": "Concepte inițiale de design, mood board-uri și planificare spațială."
+    },
+    {
+      "step": "03",
+      "title": "Dezvoltare",
+      "desc": "Desene detaliate, selecția materialelor și coordonarea antreprenorului."
+    },
+    {
+      "step": "04",
+      "title": "Finalizare",
+      "desc": "Supraveghere la fața locului până la predare și stilizarea finală."
+    }
+  ]
+}

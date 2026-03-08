@@ -1,0 +1,67 @@
+{
+  "heroText": "Od začetne zasnove do končnih detajlov nudimo celovite arhitekturne in oblikovalske storitve, prilagojene vsakemu naročniku in projektu.",
+  "services": [
+    {
+      "title": "Stanovanjska arhitektura",
+      "description": "Hiše po meri, zasnovane glede na vaš življenjski slog. Od novogradenj do luksuznih stanovanj ustvarjamo stanovanjsko arhitekturo, ki združuje estetsko prefinjenost s praktično inteligenco. Vsak projekt je edinstven odziv na lokacijo, stranko in kontekst.",
+      "features": [
+        "Zasnova novogradnje stanovanj",
+        "Načrtovalni in gradbeni predpisi",
+        "Integracija trajnostnega oblikovanja",
+        "Vodenje projektov"
+      ]
+    },
+    {
+      "title": "Notranje oblikovanje",
+      "description": "Premišljeni interierji, ki spreminjajo občutek prostorov. Delamo z materiali, svetlobo in proporci, da ustvarimo okolja, ki so hkrati lepa in zelo funkcionalna. Od zasnove do zaključka je vsaka podrobnost premišljena.",
+      "features": [
+        "Celovita storitev notranjega oblikovanja",
+        "Izbira materiala in zaključka",
+        "Oblikovanje pohištva po meri",
+        "Oblikovanje razsvetljave"
+      ]
+    },
+    {
+      "title": "Obnova in restavriranje",
+      "description": "Premišljena preobrazba obstoječih stavb. Specializirani smo za vdahnitev novega življenja starim stavbam in dediščinskim objektom, pri čemer ohranjamo njihov značaj, hkrati pa vnašamo sodobno jasnost in udobje.",
+      "features": [
+        "Obnova nepremičnine v obdobju",
+        "Obnova stavb kulturne dediščine",
+        "Zasnova podaljška",
+        "Strukturne spremembe"
+      ]
+    },
+    {
+      "title": "Poslovni interierji",
+      "description": "Delovni prostori in poslovna okolja, ki dvigujejo blagovne znamke. Oblikujemo pisarne, prodajne prostore in notranjost gostinskih objektov, ki fizični prostor usklajujejo s poslovno identiteto in kulturo.",
+      "features": [
+        "Oblikovanje pisarn in delovnega prostora",
+        "Notranjost trgovin",
+        "Oblikovanje gostinstva",
+        "Okolja, usklajena z blagovno znamko"
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Posvetovanje",
+      "desc": "Pogovorimo se o vaši viziji, zahtevah in proračunu."
+    },
+    {
+      "step": "02",
+      "title": "Koncept",
+      "desc": "Začetni koncepti oblikovanja, table razpoloženja in prostorsko načrtovanje."
+    },
+    {
+      "step": "03",
+      "title": "Razvoj",
+      "desc": "Podrobne risbe, izbira materiala in koordinacija izvajalcev."
+    },
+    {
+      "step": "04",
+      "title": "Zaključek",
+      "desc": "Nadzor na kraju samem do primopredaje in končnega oblikovanja."
+    }
+  ]
+}

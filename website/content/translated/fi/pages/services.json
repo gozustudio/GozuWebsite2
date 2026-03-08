@@ -1,0 +1,67 @@
+{
+  "heroText": "Tarjoamme kattavia arkkitehtuuri- ja suunnittelupalveluita alustavasta konseptista viimeisiin yksityiskohtiin, räätälöitynä kullekin asiakkaalle ja projektille.",
+  "services": [
+    {
+      "title": "Asuinarkkitehtuuri",
+      "description": "Räätälöityjä koteja, jotka on suunniteltu elämäntyyliisi sopivaksi. Uudistaloista luksusasuntoihin, luomme asuinarkkitehtuuria, joka yhdistää esteettisen hienostuneisuuden käytännölliseen älykkyyteen. Jokainen projekti on ainutlaatuinen vastaus paikkaan, asiakkaaseen ja kontekstiin.",
+      "features": [
+        "Uudisrakennusten asuinrakennusten suunnittelu",
+        "Kaavoitus- ja rakennusmääräykset",
+        "Kestävän suunnittelun integrointi",
+        "Projektinhallinta"
+      ]
+    },
+    {
+      "title": "Sisustussuunnittelu",
+      "description": "Harkittuja sisustusratkaisuja, jotka muuttavat tilojen tunnelmaa. Työskentelemme materiaalien, valon ja mittasuhteiden kanssa luodaksemme ympäristöjä, jotka ovat sekä kauniita että erittäin toimivia. Ideasta toteutukseen jokainen yksityiskohta on harkittu.",
+      "features": [
+        "Täydellinen sisustussuunnittelupalvelu",
+        "Materiaali- ja viimeistelyvalinta",
+        "Mittatilaustyönä tehtyjen huonekalujen suunnittelu",
+        "Valaistussuunnittelu"
+      ]
+    },
+    {
+      "title": "Remontti ja entisöinti",
+      "description": "Olemassa olevien rakennusten harkittua muutosta. Olemme erikoistuneet aikakauden kiinteistöjen ja perintörakenteiden uuden elämän antamiseen säilyttäen niiden luonteen ja tuoden samalla nykyaikaista selkeyttä ja mukavuutta.",
+      "features": [
+        "Aikakauden kiinteistöremontti",
+        "Perintörakennusten restaurointi",
+        "Laajennussuunnittelu",
+        "Rakenteelliset muutokset"
+      ]
+    },
+    {
+      "title": "Kaupalliset sisätilat",
+      "description": "Työtilat ja kaupalliset ympäristöt, jotka nostavat brändiä esiin. Suunnittelemme toimistoja, vähittäismyyntitiloja ja hotelli- ja ravintola-alan sisätiloja, jotka yhdistävät fyysisen tilan yrityksen identiteettiin ja kulttuuriin.",
+      "features": [
+        "Toimisto- ja työtilasuunnittelu",
+        "Myymälän sisätilat",
+        "Majoitusalan suunnittelu",
+        "Brändiyhteensopivat ympäristöt"
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Konsultaatio",
+      "desc": "Käymme läpi visiosi, tarpeesi ja budjettisi."
+    },
+    {
+      "step": "02",
+      "title": "Käsite",
+      "desc": "Alustavat suunnittelukonseptit, tunnelmataulut ja tilasuunnittelu."
+    },
+    {
+      "step": "03",
+      "title": "Kehitys",
+      "desc": "Yksityiskohtaiset piirustukset, materiaalivalinnat ja urakoitsijan koordinointi."
+    },
+    {
+      "step": "04",
+      "title": "Valmistuminen",
+      "desc": "Valvontaa paikan päällä aina luovutukseen ja lopulliseen stailaukseen asti."
+    }
+  ]
+}

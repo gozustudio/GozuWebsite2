@@ -1,0 +1,41 @@
+{
+  "introParagraph1": "O Gozu Studio é um escritório multidisciplinar de arquitetura e design de interiores que cria espaços refinados e bem pensados para clientes exigentes em toda a Europa. Fundado por Goda Zukaite, nosso trabalho une diversas tradições culturais a uma sensibilidade europeia singular.",
+  "introParagraph2": "Acreditamos que a arquitetura deve ser um ato de escuta — do local, do cliente, da forma como a luz se move pelo ambiente. Nossos projetos começam com uma compreensão profunda e evoluem para espaços que parecem, ao mesmo tempo, inevitáveis e surpreendentes.",
+  "introParagraph3": "Atendemos clientes em toda a Europa, trabalhando remotamente e presencialmente para dar vida a cada projeto. Nosso portfólio abrange residências de luxo, interiores comerciais e restaurações de edifícios históricos.",
+  "founderBio": "Goda Zukaite fundou o Gozu Studio com a visão de criar uma arquitetura que equilibre sofisticação e aconchego. Com uma formação que abrange as tradições de design bálticas e britânicas, ela traz uma perspectiva singular para cada projeto — uma perspectiva que valoriza a sobriedade, a materialidade e o poder silencioso de um espaço bem pensado.",
+  "founderFacts": [
+    {
+      "label": "Educação",
+      "value": "Arquitetura e Design"
+    },
+    {
+      "label": "Prática",
+      "value": "Estúdio Gozu"
+    },
+    {
+      "label": "Especialização",
+      "value": "Residencial, Design de Interiores, Reforma"
+    },
+    {
+      "label": "Região",
+      "value": "Europa"
+    }
+  ],
+  "approachSteps": [
+    {
+      "step": "01",
+      "title": "Ouvir",
+      "desc": "Todo projeto começa com uma conversa profunda. Aprendemos como você vive, o que você valoriza e o que o local nos revela."
+    },
+    {
+      "step": "02",
+      "title": "Projeto",
+      "desc": "Desenvolvemos conceitos que respondem ao contexto, à luz e à proporção — iterando até que cada detalhe sirva ao todo."
+    },
+    {
+      "step": "03",
+      "title": "Entregar",
+      "desc": "Desde a obtenção das licenças de construção até os acabamentos finais, conduzimos o projeto à sua conclusão com precisão e cuidado."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "heroText": "Från första koncept till sista detalj erbjuder vi heltäckande arkitektur- och designtjänster skräddarsydda för varje kund och projekt.",
+  "services": [
+    {
+      "title": "Bostadsarkitektur",
+      "description": "Skräddarsydda hem utformade utifrån hur du lever. Från nybyggda hus till lyxlägenheter skapar vi bostadsarkitektur som kombinerar estetisk förfining med praktisk intelligens. Varje projekt är ett unikt svar på plats, kund och sammanhang.",
+      "features": [
+        "Nybyggnationsbostadsdesign",
+        "Planerings- och byggregler",
+        "Integrering av hållbar design",
+        "Projektledning"
+      ]
+    },
+    {
+      "title": "Inredningsdesign",
+      "description": "Genomtänkta interiörer som förändrar hur utrymmen känns. Vi arbetar med material, ljus och proportioner för att skapa miljöer som är både vackra och djupt funktionella. Från idé till färdigställande är varje detalj avsiktlig.",
+      "features": [
+        "Komplett inredningsservice",
+        "Material- och finishval",
+        "Skräddarsydd möbeldesign",
+        "Ljusdesign"
+      ]
+    },
+    {
+      "title": "Renovering och restaurering",
+      "description": "Genomtänkt omvandling av befintliga byggnader. Vi specialiserar oss på att ge nytt liv åt tidsenliga fastigheter och kulturarvsstrukturer, bevara deras karaktär samtidigt som vi introducerar modern klarhet och komfort.",
+      "features": [
+        "Renovering av tidstypisk fastighet",
+        "Restaurering av kulturminnesmärkta byggnader",
+        "Utbyggnadsdesign",
+        "Strukturella modifieringar"
+      ]
+    },
+    {
+      "title": "Kommersiella inredningar",
+      "description": "Arbetsplatser och kommersiella miljöer som lyfter varumärken. Vi designar kontor, butikslokaler och hotellinredningar som anpassar fysiska utrymmen till företagets identitet och kultur.",
+      "features": [
+        "Kontors- och arbetsplatsdesign",
+        "Butiksinredning",
+        "Design för hotell och restaurang",
+        "Varumärkesanpassade miljöer"
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Samråd",
+      "desc": "Vi diskuterar er vision, era behov och er budget."
+    },
+    {
+      "step": "02",
+      "title": "Begrepp",
+      "desc": "Initiala designkoncept, moodboards och rumslig planering."
+    },
+    {
+      "step": "03",
+      "title": "Utveckling",
+      "desc": "Detaljerade ritningar, materialval och entreprenörssamordning."
+    },
+    {
+      "step": "04",
+      "title": "Komplettering",
+      "desc": "Övervakning på plats fram till överlämning och slutlig styling."
+    }
+  ]
+}

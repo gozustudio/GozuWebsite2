@@ -1,0 +1,23 @@
+{
+  "title": "KAZ-talo",
+  "year": "2020",
+  "location": "Tukholma, Ruotsi",
+  "type": [
+    "Ulkopuoli",
+    "Remontit"
+  ],
+  "shortDescription": "Kilpailualue, joka sisältää olemassa olevia rakennuksia, sijaitsee Vilnan historiallisessa Naujamiestisin kaupunginosassa. Tämä alue kehittyi Gedimino prospektin varrelle 1800-luvun lopulla ja siitä tuli yksi kaupungin pääkaduista. Alueen luonnetta määrittelevät suljetut korttelit, jotka ovat enimmäkseen 4–5-kerroksisia, ja jotkut korkeammat rakennukset ovat jopa 10-kerroksisia, kuten tällä tontilla. Vaikka Gedimino prospektin ja A. Stulginskio -kadun varrella olevat rakennukset sopivat hyvin kontekstiin, sisäpiha tuntuu keskeneräiseltä. Nykyinen nelikerroksinen rakennus ei täysin sulje sisäpihaa A. Stulginskio -katu 7:n lähellä. Tämän korjaamiseksi on suunniteltu U-kirjaimen muotoinen rakennus. Se yhdistyy Gedimino prospekti 24A:ssa sijaitsevaan rakennukseen yhteisellä seinällä, joka sulkee sisäpihan etelästä. Tämä uusi kuusikerroksinen rakennus on korkein eteläreunastaan ja laskeutuu kohti sisäpihaa, luoden viihtyisän ja kutsuvan tilan ja sen muuttuvat näkökulmat.",
+  "images": [
+    "/uploads/projects/main/Main.jpg",
+    "/uploads/projects/main/2.jpg",
+    "/uploads/projects/main/3.jpg",
+    "/uploads/projects/main/4.jpg",
+    "/uploads/projects/main/5.jpg"
+  ],
+  "videos": [
+    "/uploads/projects/main/Main.mp4",
+    "/uploads/projects/main/2.mp4"
+  ],
+  "featured": true,
+  "order": 1
+}

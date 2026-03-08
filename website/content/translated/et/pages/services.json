@@ -1,0 +1,67 @@
+{
+  "heroText": "Alates esialgsest kontseptsioonist kuni lõpliku detailini pakume igale kliendile ja projektile kohandatud terviklikke arhitektuuri- ja disainiteenuseid.",
+  "services": [
+    {
+      "title": "Elamuarhitektuur",
+      "description": "Eritellimusel valmistatud kodud, mis on loodud teie elustiili järgi. Alates uusehitistest kuni luksuskorteriteni – loome elamuarhitektuuri, mis ühendab esteetilise viimistluse praktilise nutikusega. Iga projekt on ainulaadne vastus asukohale, kliendile ja kontekstile.",
+      "features": [
+        "Uusehitiste elamute projekteerimine",
+        "Planeerimis- ja ehituseeskirjad",
+        "Jätkusuutliku disaini integreerimine",
+        "Projektijuhtimine"
+      ]
+    },
+    {
+      "title": "Sisekujundus",
+      "description": "Läbimõeldud interjöörid, mis muudavad ruumide tunnetust. Töötame materjalide, valguse ja proportsioonidega, et luua keskkondi, mis on nii kaunid kui ka sügavalt funktsionaalsed. Ideest teostuseni on iga detail tahtlik.",
+      "features": [
+        "Täielik sisekujundusteenus",
+        "Materjali ja viimistluse valik",
+        "Eritellimusel mööbli disain",
+        "Valgustusdisain"
+      ]
+    },
+    {
+      "title": "Renoveerimine ja restaureerimine",
+      "description": "Olemasolevate hoonete läbimõeldud ümberkujundamine. Oleme spetsialiseerunud ajastutruudele hoonetele ja muinsuskaitsealustele ehitistele uue elu andmisele, säilitades nende iseloomu ning pakkudes samal ajal kaasaegset selgust ja mugavust.",
+      "features": [
+        "Perioodiline kinnisvara renoveerimine",
+        "Muinsushoonete restaureerimine",
+        "Laienduse kujundus",
+        "Struktuurilised modifikatsioonid"
+      ]
+    },
+    {
+      "title": "Äripinnad",
+      "description": "Tööruumid ja ärikeskkonnad, mis tõstavad brändide taset. Projekteerime kontoreid, jaemüügipindu ja majutusruumide interjööre, mis seovad füüsilise ruumi ettevõtte identiteedi ja kultuuriga.",
+      "features": [
+        "Kontori ja tööruumi kujundus",
+        "Jaekaubanduse interjöörid",
+        "Külalislahkuse disain",
+        "Brändiga kooskõlas olevad keskkonnad"
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Konsultatsioon",
+      "desc": "Arutame läbi teie visiooni, vajadused ja eelarve."
+    },
+    {
+      "step": "02",
+      "title": "Kontseptsioon",
+      "desc": "Esialgsed disainikontseptsioonid, meeleolutahvlid ja ruumiplaneering."
+    },
+    {
+      "step": "03",
+      "title": "Areng",
+      "desc": "Detailsed joonised, materjalide valik ja töövõtja koordineerimine."
+    },
+    {
+      "step": "04",
+      "title": "Lõpetamine",
+      "desc": "Kohapealne järelevalve kuni üleandmise ja lõpliku stiliseerimiseni."
+    }
+  ]
+}

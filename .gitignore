@@ -56,5 +56,5 @@ ehthumbs.db
 website/tina/__generated__/
 website/public/admin/
 
-# Auto-generated translations (built during deploy)
-website/content/translated/
+# Auto-generated translations (committed by GitHub Action)
+# website/content/translated/  ← no longer gitignored

@@ -1,0 +1,23 @@
+{
+  "title": "Dom KAZ",
+  "year": "2020",
+  "location": "Sztokholm, Szwecja",
+  "type": [
+    "Zewnętrzny",
+    "Renowacje"
+  ],
+  "shortDescription": "Teren konkursu, obejmujący istniejące budynki, znajduje się w historycznej dzielnicy Nowe Miasto w Wilnie. Obszar ten rozwinął się wzdłuż Alei Giedymina pod koniec XIX wieku i stał się jedną z głównych ulic miasta. Charakter tego obszaru określają zamknięte bloki zabudowy, w większości o wysokości 4–5 pięter, z kilkoma wyższymi budynkami, sięgającymi nawet 10 pięter, jak na tym terenie. Podczas gdy budynki wzdłuż Alei Giedymina i ulicy A. Stulgińskiego dobrze wpisują się w kontekst, wewnętrzny dziedziniec wydaje się niekompletny. Obecny 4-piętrowy budynek nie zamyka w pełni dziedzińca w pobliżu ulicy A. Stulgińskiego 7. Aby to naprawić, planowany jest budynek w kształcie litery U. Łączy się on z budynkiem przy Alei Giedymina 24A wspólną ścianą, zamykając dziedziniec od strony południowej. Ten nowy 6-piętrowy budynek będzie najwyższy na południowym krańcu i będzie schodził w kierunku dziedzińca, tworząc przytulną, zachęcającą przestrzeń i oferując zmieniające się perspektywy.",
+  "images": [
+    "/uploads/projects/8/Main.jpg",
+    "/uploads/projects/8/2.jpg",
+    "/uploads/projects/8/3.jpg",
+    "/uploads/projects/8/4.jpg",
+    "/uploads/projects/8/5.jpg"
+  ],
+  "videos": [
+    "/uploads/projects/8/Main.mp4",
+    "/uploads/projects/8/2.mp4"
+  ],
+  "featured": true,
+  "order": 8
+}
