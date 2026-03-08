@@ -20,52 +20,57 @@ const SKIP_FIELDS = new Set([
 // --- Google Cloud Translation API auth ---
 
 async function getAccessToken() {
-  const email = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
-  const key = process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n");
-
-  if (!email || !key) {
-    console.log("Missing GOOGLE_SERVICE_ACCOUNT_EMAIL or GOOGLE_PRIVATE_KEY");
-    return null;
-  }
-
-  const now = Math.floor(Date.now() / 1000);
-  const header = Buffer.from(
-    JSON.stringify({ alg: "RS256", typ: "JWT" })
-  ).toString("base64url");
-  const payload = Buffer.from(
-    JSON.stringify({
-      iss: email,
-      scope: "https://www.googleapis.com/auth/cloud-translation",
-      aud: "https://oauth2.googleapis.com/token",
-      iat: now,
-      exp: now + 3600,
-    })
-  ).toString("base64url");
-
-  const sign = crypto.createSign("RSA-SHA256");
-  sign.update(`${header}.${payload}`);
-  const signature = sign.sign(key, "base64url");
-  const jwt = `${header}.${payload}.${signature}`;
-
-  const res = await fetch("https://oauth2.googleapis.com/token", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: `grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=${jwt}`,
-  });
-
-  const text = await res.text();
-  let data;
   try {
-    data = JSON.parse(text);
-  } catch {
-    console.error("Auth response not JSON:", text.substring(0, 200));
+    const email = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
+    const key = process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n");
+
+    if (!email || !key) {
+      console.log("Missing GOOGLE_SERVICE_ACCOUNT_EMAIL or GOOGLE_PRIVATE_KEY");
+      return null;
+    }
+
+    const now = Math.floor(Date.now() / 1000);
+    const header = Buffer.from(
+      JSON.stringify({ alg: "RS256", typ: "JWT" })
+    ).toString("base64url");
+    const payload = Buffer.from(
+      JSON.stringify({
+        iss: email,
+        scope: "https://www.googleapis.com/auth/cloud-translation",
+        aud: "https://oauth2.googleapis.com/token",
+        iat: now,
+        exp: now + 3600,
+      })
+    ).toString("base64url");
+
+    const sign = crypto.createSign("RSA-SHA256");
+    sign.update(`${header}.${payload}`);
+    const signature = sign.sign(key, "base64url");
+    const jwt = `${header}.${payload}.${signature}`;
+
+    const res = await fetch("https://oauth2.googleapis.com/token", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: `grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer&assertion=${jwt}`,
+    });
+
+    const text = await res.text();
+    let data;
+    try {
+      data = JSON.parse(text);
+    } catch {
+      console.error("Auth response not JSON:", text.substring(0, 200));
+      return null;
+    }
+    if (!data.access_token) {
+      console.error("Failed to get access token:", data);
+      return null;
+    }
+    return data.access_token;
+  } catch (err) {
+    console.error("Auth error:", err.message || err);
     return null;
   }
-  if (!data.access_token) {
-    console.error("Failed to get access token:", data);
-    return null;
-  }
-  return data.access_token;
 }
 
 // --- Text extraction ---
@@ -289,8 +294,9 @@ async function main() {
   );
 }
 
-main().catch((err) => {
-  console.error("Translation failed:", err);
-  // Don't exit with error — build should continue with English fallback
-  console.log("Build will continue with English content as fallback.");
-});
+main()
+  .catch((err) => {
+    console.error("Translation failed:", err.message || err);
+    console.log("Build will continue with English content as fallback.");
+  })
+  .then(() => process.exit(0));
