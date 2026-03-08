@@ -1,19 +1,18 @@
 {
-  "title": "KAZ House",
-  "year": "2020",
-  "location": "Stockholm, Sweeden",
-  "type": ["Exterior", "Rennovations"],
-  "shortDescription": "The competition site, which includes existing buildings, is located in the historic Naujamiestis area of Vilnius. This area developed along Gedimino Avenue in the late 19th century and became one of the city's main streets. The area's character is defined by closed blocks of buildings that are mostly 4–5 storeys high, with some taller buildings up to 10 storeys, like on this site. While the buildings along Gedimino Avenue and A. Stulginskio Street fit well into the context, the inner courtyard feels incomplete. The current 4-storey building does not fully enclose the courtyard near A. Stulginskio Street 7. To fix this, a U-shaped building is planned. It connects to the building at Gedimino Avenue 24A with a shared wall, closing off the courtyard from the south. This new 6-storey building will be tallest at the southern edge and steps down toward the courtyard, creating a cozy, inviting space and its changing perspectives.",
+  "title": "OZ Apartment",
+  "year": "2025",
+  "location": "London, United Kingdom",
+  "type": [
+    "Interior",
+    "Renovation"
+  ],
+  "shortDescription": "The project is shaped by a sense of quiet restraint. The spaces feel unhurried - warm oak tones and soft plaster surfaces run continuously through every room, creating a seamless flow rather than a collection of separate areas.\nThe layout plays with volume: pitched ceilings and curved architectural elements give the interiors a sculptural quality, letting light move across surfaces in unexpected ways. A tall arched window anchors the living-dining zone, drawing the landscape inward and blurring the boundary between inside and out. Material-wise, the palette is deliberately narrow - matte wood grain, veined marble, ribbed ceramic tile, and linen-toned plaster. Nothing competes. The textures are tactile but subdued, meant to be felt more than noticed. Dark accents in metal and upholstery ground the warmth without breaking the calm. The overall atmosphere is one of deliberate simplicity - a space that breathes, where natural light and honest materials do most of the work.",
   "images": [
     "/uploads/projects/6/Main.jpg",
     "/uploads/projects/6/2.jpg",
     "/uploads/projects/6/3.jpg",
     "/uploads/projects/6/4.jpg",
     "/uploads/projects/6/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/6/Main.mp4",
-    "/uploads/projects/6/2.mp4"
   ],
   "featured": true,
   "order": 6
