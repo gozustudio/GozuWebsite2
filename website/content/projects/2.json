@@ -6,18 +6,21 @@
     "Interior",
     "Renovation"
   ],
-  "shortDescription": "A modern two-story home with a warm Scandinavian-minimalist aesthetic. The interior pairs natural oak wood with clean white surfaces throughout - from the U-shaped kitchen with brass accents and built-in appliances, to the open-plan living area featuring a low oak TV console with an integrated electric fireplace, a light bouclé sectional sofa, and a solid-base staircase with oak treads and vertical wooden slat railings.",
+  "shortDescription": "A modern two-story home with a warm Scandinavian-minimalist aesthetic. The interior pairs natural oak wood with clean white surfaces throughout - from the U-shaped kitchen with brass accents and built-in appliances, to the open-plan living area featuring a low oak TV console with an integrated electric fireplace, a light bouclé sectional sofa, and a solid-base staircase with oak treads and vertical wooden slat railings. ",
   "images": [
     "/uploads/projects/2/Main.jpg",
     "/uploads/projects/2/2.jpg",
     "/uploads/projects/2/3.jpg",
     "/uploads/projects/2/4.jpg",
     "/uploads/projects/2/5.jpg",
-    "/uploads/6.jpg",
-    "/uploads/7.jpg",
-    "/uploads/8.jpg",
-    "/uploads/9.JPG",
-    "/uploads/10.jpg"
+    "/uploads/projects/2/6.jpg",
+    "/uploads/projects/2/7.jpg",
+    "/uploads/projects/2/8.jpg",
+    "/uploads/projects/2/9.JPG",
+    "/uploads/projects/2/10.jpg"
+  ],
+  "videos": [
+    ""
   ],
   "featured": true,
   "order": 2
