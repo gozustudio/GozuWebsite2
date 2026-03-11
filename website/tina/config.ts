@@ -93,6 +93,18 @@ export default defineConfig({
         ui: { allowedActions: { create: false, delete: false } },
         fields: [
           {
+            name: "heroVideo",
+            type: "image",
+            label: "Hero Video",
+            description: "Landing page background video. Upload via media manager (compress to under 80MB with HandBrake).",
+          },
+          {
+            name: "heroPoster",
+            type: "image",
+            label: "Hero Poster Image",
+            description: "Still image shown while the video loads.",
+          },
+          {
             name: "heroTagline",
             type: "string",
             label: "Hero Tagline",

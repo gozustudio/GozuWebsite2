@@ -2,7 +2,13 @@
 
 import { motion } from "framer-motion";
 
-export default function HeroVideo() {
+export default function HeroVideo({
+  videoSrc = "/videos/LandingVideo.mp4",
+  posterSrc = "/images/LandingImage.jpg",
+}: {
+  videoSrc?: string;
+  posterSrc?: string;
+}) {
   return (
     <section className="relative h-screen w-full overflow-hidden">
       {/* Video Background */}
@@ -12,9 +18,9 @@ export default function HeroVideo() {
         loop
         playsInline
         className="absolute inset-0 h-full w-full object-cover"
-        poster="/images/LandingImage.jpg"
+        poster={posterSrc}
       >
-        <source src="/videos/LandingVideo.mp4" type="video/mp4" />
+        <source src={videoSrc} type="video/mp4" />
       </video>
 
       {/* Overlay */}

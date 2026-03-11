@@ -15,6 +15,7 @@ const LOCALES = [
 // Fields that should NOT be translated (by key name)
 const SKIP_FIELDS = new Set([
   "images", "videos", "year", "order", "featured", "step", "slug", "collaborations", "code",
+  "heroVideo", "heroPoster",
 ]);
 
 // --- Google Cloud Translation API auth ---

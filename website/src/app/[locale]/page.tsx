@@ -14,7 +14,7 @@ export default async function Home({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("home");
-  const homePage = loadTranslatedContent<{ heroTagline: string; introText: string }>("pages/home.json", locale);
+  const homePage = loadTranslatedContent<{ heroVideo?: string; heroPoster?: string; heroTagline: string; introText: string }>("pages/home.json", locale);
   const featured = loadProjects(locale).filter((p) => p.featured);
 
   return (
@@ -43,7 +43,10 @@ export default async function Home({
       />
 
       {/* Cinematic Hero */}
-      <HeroVideo />
+      <HeroVideo
+        videoSrc={homePage.heroVideo || "/videos/LandingVideo.mp4"}
+        posterSrc={homePage.heroPoster || "/images/LandingImage.jpg"}
+      />
 
       {/* Studio Intro */}
       <section className="mx-auto max-w-[1400px] px-6 py-24 lg:px-12 lg:py-32">
