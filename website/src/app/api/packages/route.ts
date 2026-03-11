@@ -1,16 +1,6 @@
-import { NextResponse } from "next/server";
-import { google } from "googleapis";
-
-const SPREADSHEET_ID = process.env.GOOGLE_INPUT_FIELDS_SPREADSHEET_ID!;
-
-function getSheets() {
-  const auth = new google.auth.JWT({
-    email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-    key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n"),
-    scopes: ["https://www.googleapis.com/auth/spreadsheets.readonly"],
-  });
-  return google.sheets({ version: "v4", auth });
-}
+import { NextRequest, NextResponse } from "next/server";
+import fs from "fs";
+import path from "path";
 
 export type PackageData = {
   code: number;
@@ -19,27 +9,35 @@ export type PackageData = {
   items: string[];
 };
 
-export async function GET() {
+export async function GET(request: NextRequest) {
   try {
-    const sheets = getSheets();
-    const res = await sheets.spreadsheets.values.get({
-      spreadsheetId: SPREADSHEET_ID,
-      range: "BA2:BR6", // Skip header row, 5 packages, columns BA through BR
-    });
+    const locale = request.nextUrl.searchParams.get("locale") || "en";
+    const cwd = process.cwd();
 
-    const rows = res.data.values ?? [];
+    // Try translated version first
+    let filePath = "";
+    if (locale && locale !== "en") {
+      const translatedPath = path.resolve(cwd, `content/translated/${locale}/settings/packages.json`);
+      if (fs.existsSync(translatedPath)) {
+        filePath = translatedPath;
+      }
+    }
 
-    const packages: PackageData[] = rows.map((row) => ({
-      code: Number(row[0]),
-      name: String(row[1] ?? ""),
-      tagline: String(row[2] ?? ""),
-      items: row.slice(3).filter((v: unknown) => v !== "" && v != null).map(String),
-    }));
+    // Fall back to English source
+    if (!filePath) {
+      filePath = path.resolve(cwd, "content/settings/packages.json");
+    }
+
+    if (!fs.existsSync(filePath)) {
+      return NextResponse.json([], {
+        headers: { "Cache-Control": "public, s-maxage=60, stale-while-revalidate=120" },
+      });
+    }
+
+    const packages: PackageData[] = JSON.parse(fs.readFileSync(filePath, "utf-8"));
 
     return NextResponse.json(packages, {
-      headers: {
-        "Cache-Control": "public, s-maxage=300, stale-while-revalidate=600",
-      },
+      headers: { "Cache-Control": "public, s-maxage=300, stale-while-revalidate=600" },
     });
   } catch (err) {
     console.error("[/api/packages]", err);
