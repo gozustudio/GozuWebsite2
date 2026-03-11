@@ -1,0 +1,66 @@
+[
+  {
+    "code": 1,
+    "name": "Standard",
+    "tagline": "Svi osnovni tehnički planovi koji su vam potrebni za vaš projekt",
+    "items": [
+      "Koncept interijera",
+      "Plan particije",
+      "Plan namještaja",
+      "Plan rasvjete",
+      "Plan električnih utičnica",
+      "Plan električnih prekidača",
+      "Plan vodovodnih instalacija",
+      "Plan stropa",
+      "Tlocrt"
+    ]
+  },
+  {
+    "code": 2,
+    "name": "Napredak",
+    "tagline": "Naprednije rješenje uz savjete naših stručnjaka za estetiku",
+    "items": [
+      "Paket tehničkog crtanja",
+      "3D model",
+      "Skice kuhinje",
+      "Skice namještaja",
+      "Odabir materijala",
+      "Odabir rasvjete",
+      "Konzultacije na daljinu"
+    ]
+  },
+  {
+    "code": 3,
+    "name": "Premija",
+    "tagline": "Kompletan paket s realističnim vizualizacijama za bolje rezultate",
+    "items": [
+      "Izbor naručenog namještaja",
+      "Odabir detalja interijera",
+      "5 fotorealističnih vizualizacija"
+    ]
+  },
+  {
+    "code": 4,
+    "name": "Standard",
+    "tagline": "Svi osnovni tehnički planovi koji su vam potrebni za vaš projekt",
+    "items": [
+      "Vanjski koncept",
+      "Plan rasvjete",
+      "Plan električnih utičnica",
+      "Plan električnih prekidača",
+      "Plan vodovodnih instalacija"
+    ]
+  },
+  {
+    "code": 5,
+    "name": "Napredak",
+    "tagline": "Naprednije rješenje uz savjete naših stručnjaka za estetiku",
+    "items": [
+      "Paket tehničkog crtanja",
+      "3D model",
+      "Odabir materijala",
+      "Odabir rasvjete",
+      "Konzultacije na daljinu"
+    ]
+  }
+]

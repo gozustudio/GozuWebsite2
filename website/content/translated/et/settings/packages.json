@@ -1,0 +1,66 @@
+[
+  {
+    "code": 1,
+    "name": "Standardne",
+    "tagline": "Kõik teie projekti jaoks vajalikud põhilised tehnilised plaanid",
+    "items": [
+      "Sisekujunduskontseptsioon",
+      "Jaotuse plaan",
+      "Mööbli plaan",
+      "Valgustusplaan",
+      "Elektripistiku plaan",
+      "Elektrilüliti plaan",
+      "Torustiku plaan",
+      "Laeplaan",
+      "Põrandaplaan"
+    ]
+  },
+  {
+    "code": 2,
+    "name": "Edasijõudmine",
+    "tagline": "Täiustatud lahendus meie esteetikute nõuannetega",
+    "items": [
+      "Tehniliste jooniste pakett",
+      "3D-mudel",
+      "Köögi visandid",
+      "Mööbli visandid",
+      "Materjali valik",
+      "Valgustuse valik",
+      "Kaugkonsultatsioonid"
+    ]
+  },
+  {
+    "code": 3,
+    "name": "Premium",
+    "tagline": "Täielik pakett koos realistlike visualiseeringutega paremate tulemuste saavutamiseks",
+    "items": [
+      "Tellitud mööbli valik",
+      "Sisedetailide valik",
+      "5 fotorealistlikku visualiseeringut"
+    ]
+  },
+  {
+    "code": 4,
+    "name": "Standardne",
+    "tagline": "Kõik teie projekti jaoks vajalikud põhilised tehnilised plaanid",
+    "items": [
+      "Väliskontseptsioon",
+      "Valgustusplaan",
+      "Elektripistiku plaan",
+      "Elektrilüliti plaan",
+      "Torustiku plaan"
+    ]
+  },
+  {
+    "code": 5,
+    "name": "Edasijõudmine",
+    "tagline": "Täiustatud lahendus meie esteetikute nõuannetega",
+    "items": [
+      "Tehniliste jooniste pakett",
+      "3D-mudel",
+      "Materjali valik",
+      "Valgustuse valik",
+      "Kaugkonsultatsioonid"
+    ]
+  }
+]

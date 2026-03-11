@@ -1,0 +1,66 @@
+[
+  {
+    "code": 1,
+    "name": "Standarta",
+    "tagline": "Visi pamata tehniskie plāni, kas nepieciešami jūsu projektam",
+    "items": [
+      "Interjera koncepcija",
+      "Sadalījuma plāns",
+      "Mēbeļu plāns",
+      "Apgaismojuma plāns",
+      "Elektrības kontaktligzdas plāns",
+      "Elektrisko slēdžu plāns",
+      "Santehnikas plāns",
+      "Griestu plāns",
+      "Stāvu plāns"
+    ]
+  },
+  {
+    "code": 2,
+    "name": "Iepriekš",
+    "tagline": "Progresīvāks risinājums ar mūsu estētikas speciālista konsultācijām",
+    "items": [
+      "Tehnisko rasējumu pakete",
+      "3D modelis",
+      "Virtuves skices",
+      "Mēbeļu skices",
+      "Materiālu izvēle",
+      "Apgaismojuma izvēle",
+      "Attālinātās konsultācijas"
+    ]
+  },
+  {
+    "code": 3,
+    "name": "Premium",
+    "tagline": "Pilns komplekts ar reālistiskām vizualizācijām labākiem rezultātiem",
+    "items": [
+      "Pasūtītu mēbeļu izvēle",
+      "Interjera detaļu izvēle",
+      "5 fotoreālistiskas vizualizācijas"
+    ]
+  },
+  {
+    "code": 4,
+    "name": "Standarta",
+    "tagline": "Visi pamata tehniskie plāni, kas nepieciešami jūsu projektam",
+    "items": [
+      "Ārējais koncepts",
+      "Apgaismojuma plāns",
+      "Elektrības kontaktligzdas plāns",
+      "Elektrisko slēdžu plāns",
+      "Santehnikas plāns"
+    ]
+  },
+  {
+    "code": 5,
+    "name": "Iepriekš",
+    "tagline": "Progresīvāks risinājums ar mūsu estētikas speciālista konsultācijām",
+    "items": [
+      "Tehnisko rasējumu pakete",
+      "3D modelis",
+      "Materiālu izvēle",
+      "Apgaismojuma izvēle",
+      "Attālinātās konsultācijas"
+    ]
+  }
+]

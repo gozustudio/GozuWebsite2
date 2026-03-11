@@ -1,0 +1,66 @@
+[
+  {
+    "code": 1,
+    "name": "Standard",
+    "tagline": "Tous les plans techniques de base dont vous avez besoin pour votre projet",
+    "items": [
+      "Concept intérieur",
+      "Plan de partition",
+      "Plan d'ameublement",
+      "Plan d'éclairage",
+      "Plan de prise électrique",
+      "Plan de commutation électrique",
+      "Plan de plomberie",
+      "Plan de plafond",
+      "Plan d'étage"
+    ]
+  },
+  {
+    "code": 2,
+    "name": "Avance",
+    "tagline": "Une solution plus avancée avec les conseils de notre spécialiste en esthétique",
+    "items": [
+      "Ensemble de dessins techniques",
+      "Modèle 3D",
+      "Croquis de cuisine",
+      "Croquis de meubles",
+      "Sélection des matériaux",
+      "Sélection de l'éclairage",
+      "Consultations à distance"
+    ]
+  },
+  {
+    "code": 3,
+    "name": "Prime",
+    "tagline": "Un ensemble complet incluant des visualisations réalistes pour de meilleurs résultats",
+    "items": [
+      "Sélection de meubles commandés",
+      "Sélection des détails intérieurs",
+      "5 visualisations photoréalistes"
+    ]
+  },
+  {
+    "code": 4,
+    "name": "Standard",
+    "tagline": "Tous les plans techniques de base dont vous avez besoin pour votre projet",
+    "items": [
+      "Concept extérieur",
+      "Plan d'éclairage",
+      "Plan de prise électrique",
+      "Plan de commutation électrique",
+      "Plan de plomberie"
+    ]
+  },
+  {
+    "code": 5,
+    "name": "Avance",
+    "tagline": "Une solution plus avancée avec les conseils de notre spécialiste en esthétique",
+    "items": [
+      "Ensemble de dessins techniques",
+      "Modèle 3D",
+      "Sélection des matériaux",
+      "Sélection de l'éclairage",
+      "Consultations à distance"
+    ]
+  }
+]

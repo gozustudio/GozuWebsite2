@@ -1,0 +1,66 @@
+[
+  {
+    "code": 1,
+    "name": "Štandard",
+    "tagline": "Všetky základné technické plány, ktoré potrebujete pre svoj projekt",
+    "items": [
+      "Koncept interiéru",
+      "Plán rozdelenia",
+      "Plán nábytku",
+      "Plán osvetlenia",
+      "Plán elektrických zásuviek",
+      "Plán elektrického spínača",
+      "Plán inštalatérskych prác",
+      "Plán stropu",
+      "Pôdorys"
+    ]
+  },
+  {
+    "code": 2,
+    "name": "Záloha",
+    "tagline": "Pokročilejšie riešenie s poradenstvom našich špecialistov na estetiku",
+    "items": [
+      "Balík technických výkresov",
+      "3D model",
+      "Kuchynské náčrty",
+      "Náčrty nábytku",
+      "Výber materiálu",
+      "Výber osvetlenia",
+      "Konzultácie na diaľku"
+    ]
+  },
+  {
+    "code": 3,
+    "name": "Prémiové",
+    "tagline": "Kompletný balík s realistickými vizualizáciami pre lepšie výsledky",
+    "items": [
+      "Výber objednaného nábytku",
+      "Výber detailov interiéru",
+      "5 fotorealistických vizualizácií"
+    ]
+  },
+  {
+    "code": 4,
+    "name": "Štandard",
+    "tagline": "Všetky základné technické plány, ktoré potrebujete pre svoj projekt",
+    "items": [
+      "Koncept exteriéru",
+      "Plán osvetlenia",
+      "Plán elektrických zásuviek",
+      "Plán elektrického spínača",
+      "Plán inštalatérskych prác"
+    ]
+  },
+  {
+    "code": 5,
+    "name": "Záloha",
+    "tagline": "Pokročilejšie riešenie s poradenstvom našich špecialistov na estetiku",
+    "items": [
+      "Balík technických výkresov",
+      "3D model",
+      "Výber materiálu",
+      "Výber osvetlenia",
+      "Konzultácie na diaľku"
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "code": 1,
+    "name": "Standard",
+    "tagline": "Tutti i piani tecnici di base di cui hai bisogno per il tuo progetto",
+    "items": [
+      "Concetto di interni",
+      "Piano di partizione",
+      "Progetto di arredamento",
+      "Piano di illuminazione",
+      "Piano di presa elettrica",
+      "Piano di commutazione elettrica",
+      "Piano idraulico",
+      "Pianta del soffitto",
+      "Planimetria"
+    ]
+  },
+  {
+    "code": 2,
+    "name": "Anticipo",
+    "tagline": "Una soluzione più avanzata con la consulenza specialistica dei nostri specialisti in estetica",
+    "items": [
+      "Pacchetto di disegno tecnico",
+      "Modello 3D",
+      "Schizzi di cucina",
+      "Schizzi di mobili",
+      "Selezione dei materiali",
+      "Selezione dell'illuminazione",
+      "Consulenze a distanza"
+    ]
+  },
+  {
+    "code": 3,
+    "name": "Premio",
+    "tagline": "Un pacchetto completo con visualizzazioni realistiche incluse per risultati migliori",
+    "items": [
+      "Selezione di mobili ordinati",
+      "Selezione dei dettagli degli interni",
+      "5 Visualizzazioni fotorealistiche"
+    ]
+  },
+  {
+    "code": 4,
+    "name": "Standard",
+    "tagline": "Tutti i piani tecnici di base di cui hai bisogno per il tuo progetto",
+    "items": [
+      "Concetto esterno",
+      "Piano di illuminazione",
+      "Piano di presa elettrica",
+      "Piano di commutazione elettrica",
+      "Piano idraulico"
+    ]
+  },
+  {
+    "code": 5,
+    "name": "Anticipo",
+    "tagline": "Una soluzione più avanzata con la consulenza specialistica dei nostri specialisti in estetica",
+    "items": [
+      "Pacchetto di disegno tecnico",
+      "Modello 3D",
+      "Selezione dei materiali",
+      "Selezione dell'illuminazione",
+      "Consulenze a distanza"
+    ]
+  }
+]

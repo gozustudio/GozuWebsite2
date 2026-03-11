@@ -1,0 +1,66 @@
+[
+  {
+    "code": 1,
+    "name": "Norma",
+    "tagline": "Všechny základní technické plány, které potřebujete pro svůj projekt",
+    "items": [
+      "Koncept interiéru",
+      "Plán rozdělení",
+      "Plán nábytku",
+      "Plán osvětlení",
+      "Plán elektrických zásuvek",
+      "Plán elektrických vypínačů",
+      "Instalatérský plán",
+      "Plán stropu",
+      "Půdorys"
+    ]
+  },
+  {
+    "code": 2,
+    "name": "Záloha",
+    "tagline": "Pokročilejší řešení s poradenstvím našich specialistů na estetiku",
+    "items": [
+      "Balíček technických výkresů",
+      "3D model",
+      "Kuchyňské skici",
+      "Náčrty nábytku",
+      "Výběr materiálu",
+      "Výběr osvětlení",
+      "Konzultace na dálku"
+    ]
+  },
+  {
+    "code": 3,
+    "name": "Pojistné",
+    "tagline": "Kompletní balíček s realistickými vizualizacemi pro lepší výsledky",
+    "items": [
+      "Výběr objednaného nábytku",
+      "Výběr detailů interiéru",
+      "5 fotorealistických vizualizací"
+    ]
+  },
+  {
+    "code": 4,
+    "name": "Norma",
+    "tagline": "Všechny základní technické plány, které potřebujete pro svůj projekt",
+    "items": [
+      "Koncept exteriéru",
+      "Plán osvětlení",
+      "Plán elektrických zásuvek",
+      "Plán elektrických vypínačů",
+      "Instalatérský plán"
+    ]
+  },
+  {
+    "code": 5,
+    "name": "Záloha",
+    "tagline": "Pokročilejší řešení s poradenstvím našich specialistů na estetiku",
+    "items": [
+      "Balíček technických výkresů",
+      "3D model",
+      "Výběr materiálu",
+      "Výběr osvětlení",
+      "Konzultace na dálku"
+    ]
+  }
+]

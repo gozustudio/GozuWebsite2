@@ -1,0 +1,66 @@
+[
+  {
+    "code": 1,
+    "name": "Estándar",
+    "tagline": "Todos los planos técnicos básicos que necesitas para tu proyecto",
+    "items": [
+      "Concepto de interior",
+      "Plano de partición",
+      "Plano de muebles",
+      "Plan de iluminación",
+      "Plano de tomacorrientes eléctricos",
+      "Plano de interruptor eléctrico",
+      "Plano de plomería",
+      "Plano de techo",
+      "Plano de planta"
+    ]
+  },
+  {
+    "code": 2,
+    "name": "Avance",
+    "tagline": "Una solución más avanzada con el asesoramiento de nuestro especialista en estética.",
+    "items": [
+      "Paquete de dibujo técnico",
+      "Modelo 3D",
+      "Bocetos de cocina",
+      "Bocetos de muebles",
+      "Selección de materiales",
+      "Selección de iluminación",
+      "Consultas remotas"
+    ]
+  },
+  {
+    "code": 3,
+    "name": "De primera calidad",
+    "tagline": "Un paquete completo con visualizaciones realistas incluidas para obtener mejores resultados.",
+    "items": [
+      "Selección de muebles ordenados",
+      "Selección de detalles interiores",
+      "5 visualizaciones fotorrealistas"
+    ]
+  },
+  {
+    "code": 4,
+    "name": "Estándar",
+    "tagline": "Todos los planos técnicos básicos que necesitas para tu proyecto",
+    "items": [
+      "Concepto exterior",
+      "Plan de iluminación",
+      "Plano de tomacorrientes eléctricos",
+      "Plano de interruptor eléctrico",
+      "Plano de plomería"
+    ]
+  },
+  {
+    "code": 5,
+    "name": "Avance",
+    "tagline": "Una solución más avanzada con el asesoramiento de nuestro especialista en estética.",
+    "items": [
+      "Paquete de dibujo técnico",
+      "Modelo 3D",
+      "Selección de materiales",
+      "Selección de iluminación",
+      "Consultas remotas"
+    ]
+  }
+]

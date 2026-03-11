@@ -1,0 +1,66 @@
+[
+  {
+    "code": 1,
+    "name": "Standardi",
+    "tagline": "Kaikki projektiisi tarvitsemasi tekniset perussuunnitelmat",
+    "items": [
+      "Sisustuskonsepti",
+      "Osiointisuunnitelma",
+      "Huonekalusuunnitelma",
+      "Valaistussuunnitelma",
+      "Sähköpistorasiasuunnitelma",
+      "Sähkökytkentäsuunnitelma",
+      "LVI-suunnitelma",
+      "Kattosuunnitelma",
+      "Pohjapiirros"
+    ]
+  },
+  {
+    "code": 2,
+    "name": "Ennakko",
+    "tagline": "Edistyksellisempi ratkaisu esteettisen asiantuntijan neuvontamme avulla",
+    "items": [
+      "Tekninen piirustuspaketti",
+      "3D-malli",
+      "Keittiöluonnokset",
+      "Huonekalupiirrokset",
+      "Materiaalivalinta",
+      "Valaistuksen valinta",
+      "Etäkonsultaatiot"
+    ]
+  },
+  {
+    "code": 3,
+    "name": "Premium",
+    "tagline": "Täydellinen paketti realistisine visualisointeineen parempien tulosten saavuttamiseksi",
+    "items": [
+      "Tilattujen huonekalujen valikoima",
+      "Sisätilojen yksityiskohtien valinta",
+      "5 fotorealistista visualisointia"
+    ]
+  },
+  {
+    "code": 4,
+    "name": "Standardi",
+    "tagline": "Kaikki projektiisi tarvitsemasi tekniset perussuunnitelmat",
+    "items": [
+      "Ulkoasu",
+      "Valaistussuunnitelma",
+      "Sähköpistorasiasuunnitelma",
+      "Sähkökytkentäsuunnitelma",
+      "LVI-suunnitelma"
+    ]
+  },
+  {
+    "code": 5,
+    "name": "Ennakko",
+    "tagline": "Edistyksellisempi ratkaisu esteettisen asiantuntijan neuvontamme avulla",
+    "items": [
+      "Tekninen piirustuspaketti",
+      "3D-malli",
+      "Materiaalivalinta",
+      "Valaistuksen valinta",
+      "Etäkonsultaatiot"
+    ]
+  }
+]

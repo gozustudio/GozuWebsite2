@@ -1,0 +1,66 @@
+[
+  {
+    "code": 1,
+    "name": "Standaard",
+    "tagline": "Alle essentiële technische tekeningen die u nodig heeft voor uw project.",
+    "items": [
+      "Interieurconcept",
+      "Indelingsplan",
+      "Meubelplan",
+      "Verlichtingsplan",
+      "Elektrisch stopcontactplan",
+      "Elektrisch schakelplan",
+      "Loodgietersplan",
+      "Plafondplan",
+      "Plattegrond"
+    ]
+  },
+  {
+    "code": 2,
+    "name": "Voorschot",
+    "tagline": "Een geavanceerdere oplossing met het advies van onze esthetisch specialist.",
+    "items": [
+      "Technisch tekeningenpakket",
+      "3D-model",
+      "Keukenschetsen",
+      "Meubelschetsen",
+      "Materiaalselectie",
+      "Verlichtingsselectie",
+      "Consultaties op afstand"
+    ]
+  },
+  {
+    "code": 3,
+    "name": "Premie",
+    "tagline": "Een compleet pakket met realistische visualisaties voor betere resultaten.",
+    "items": [
+      "Bestelde meubelselectie",
+      "Selectie van interieurdetails",
+      "5 fotorealistische visualisaties"
+    ]
+  },
+  {
+    "code": 4,
+    "name": "Standaard",
+    "tagline": "Alle essentiële technische tekeningen die u nodig heeft voor uw project.",
+    "items": [
+      "Exterieurconcept",
+      "Verlichtingsplan",
+      "Elektrisch stopcontactplan",
+      "Elektrisch schakelplan",
+      "Loodgietersplan"
+    ]
+  },
+  {
+    "code": 5,
+    "name": "Voorschot",
+    "tagline": "Een geavanceerdere oplossing met het advies van onze esthetisch specialist.",
+    "items": [
+      "Technisch tekeningenpakket",
+      "3D-model",
+      "Materiaalselectie",
+      "Verlichtingsselectie",
+      "Consultaties op afstand"
+    ]
+  }
+]

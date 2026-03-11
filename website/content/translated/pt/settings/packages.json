@@ -1,0 +1,66 @@
+[
+  {
+    "code": 1,
+    "name": "Padrão",
+    "tagline": "Todos os planos técnicos básicos que você precisa para o seu projeto.",
+    "items": [
+      "Conceito de Interiores",
+      "Plano de Partição",
+      "Plano de Mobiliário",
+      "Plano de iluminação",
+      "Plano de Tomadas Elétricas",
+      "Plano de interruptor elétrico",
+      "Plano de encanamento",
+      "Planta do teto",
+      "Planta baixa"
+    ]
+  },
+  {
+    "code": 2,
+    "name": "Avançar",
+    "tagline": "Uma solução mais avançada com a consultoria de nossos especialistas em estética.",
+    "items": [
+      "Pacote de Desenhos Técnicos",
+      "Modelo 3D",
+      "Esboços de Cozinha",
+      "Esboços de Mobiliário",
+      "Seleção de Materiais",
+      "Seleção de Iluminação",
+      "Consultas remotas"
+    ]
+  },
+  {
+    "code": 3,
+    "name": "Premium",
+    "tagline": "Um pacote completo com visualizações realistas incluídas para melhores resultados.",
+    "items": [
+      "Seleção de móveis encomendados",
+      "Seleção de detalhes interiores",
+      "5 visualizações fotorrealistas"
+    ]
+  },
+  {
+    "code": 4,
+    "name": "Padrão",
+    "tagline": "Todos os planos técnicos básicos que você precisa para o seu projeto.",
+    "items": [
+      "Conceito Exterior",
+      "Plano de iluminação",
+      "Plano de Tomadas Elétricas",
+      "Plano de interruptor elétrico",
+      "Plano de encanamento"
+    ]
+  },
+  {
+    "code": 5,
+    "name": "Avançar",
+    "tagline": "Uma solução mais avançada com a consultoria de nossos especialistas em estética.",
+    "items": [
+      "Pacote de Desenhos Técnicos",
+      "Modelo 3D",
+      "Seleção de Materiais",
+      "Seleção de Iluminação",
+      "Consultas remotas"
+    ]
+  }
+]

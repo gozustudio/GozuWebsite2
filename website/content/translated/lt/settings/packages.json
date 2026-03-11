@@ -1,0 +1,66 @@
+[
+  {
+    "code": 1,
+    "name": "Standartinis",
+    "tagline": "Visi pagrindiniai techniniai planai, reikalingi jūsų projektui",
+    "items": [
+      "Interjero koncepcija",
+      "Padalijimo planas",
+      "Baldų planas",
+      "Apšvietimo planas",
+      "Elektros lizdo planas",
+      "Elektros jungiklio planas",
+      "Santechnikos planas",
+      "Lubų planas",
+      "Aukšto planas"
+    ]
+  },
+  {
+    "code": 2,
+    "name": "Išankstinis",
+    "tagline": "Pažangesnis sprendimas su mūsų estetikos specialistų konsultacijomis",
+    "items": [
+      "Techninių brėžinių paketas",
+      "3D modelis",
+      "Virtuvės eskizai",
+      "Baldų eskizai",
+      "Medžiagų pasirinkimas",
+      "Apšvietimo pasirinkimas",
+      "Nuotolinės konsultacijos"
+    ]
+  },
+  {
+    "code": 3,
+    "name": "Premium",
+    "tagline": "Pilnas paketas su realistiškomis vizualizacijomis geresniems rezultatams pasiekti",
+    "items": [
+      "Užsakytų baldų pasirinkimas",
+      "Interjero detalių pasirinkimas",
+      "5 fotorealistinės vizualizacijos"
+    ]
+  },
+  {
+    "code": 4,
+    "name": "Standartinis",
+    "tagline": "Visi pagrindiniai techniniai planai, kurių jums reikia jūsų projektui",
+    "items": [
+      "Išorės koncepcija",
+      "Apšvietimo planas",
+      "Elektros lizdo planas",
+      "Elektros jungiklio planas",
+      "Santechnikos planas"
+    ]
+  },
+  {
+    "code": 5,
+    "name": "Išankstinis",
+    "tagline": "Pažangesnis sprendimas su mūsų estetikos specialistų konsultacijomis",
+    "items": [
+      "Techninių brėžinių paketas",
+      "3D modelis",
+      "Medžiagų pasirinkimas",
+      "Apšvietimo pasirinkimas",
+      "Nuotolinės konsultacijos"
+    ]
+  }
+]

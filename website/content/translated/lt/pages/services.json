@@ -3,11 +3,11 @@
   "services": [
     {
       "title": "Gyvenamoji architektūra",
-      "description": "Individualūs namai, sukurti atsižvelgiant į jūsų gyvenimo būdą. Nuo naujos statybos namų iki prabangių butų – kuriame gyvenamąją architektūrą, kurioje derinamas estetinis rafinuotumas ir praktiškas sumanumas. Kiekvienas projektas yra unikalus atsakas į vietą, klientą ir kontekstą.",
+      "description": "Individualūs namai, pritaikyti jūsų gyvenimo būdui. Nuo naujos statybos namų iki prabangių butų – kuriame gyvenamąją architektūrą, kurioje derinamas estetinis rafinuotumas ir praktiškas sumanumas. Kiekvienas projektas yra unikalus atsakas į vietą, klientą ir kontekstą.",
       "features": [
         "Naujos statybos gyvenamųjų namų projektavimas",
         "Planavimo ir statybos reglamentai",
-        "Tvaraus dizaino integracija",
+        "Tvaraus dizaino integravimas",
         "Projektų valdymas"
       ]
     },
@@ -23,7 +23,7 @@
     },
     {
       "title": "Renovacija ir restauravimas",
-      "description": "Apgalvotas esamų pastatų pertvarkymas. Specializuojamės suteikdami naują gyvybę senoviniams pastatams ir paveldo statiniams, išsaugant jų charakterį ir kartu suteikiant šiuolaikiško aiškumo bei komforto.",
+      "description": "Apgalvotas esamų pastatų pertvarkymas. Specializuojamės suteikdami naują gyvybę senoviniams pastatams ir paveldo statiniams, išsaugant jų charakterį ir kartu suteikiant šiuolaikišką aiškumą bei komfortą.",
       "features": [
         "Laikotarpio nekilnojamojo turto renovacija",
         "Paveldo pastatų restauravimas",

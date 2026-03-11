@@ -1,0 +1,66 @@
+[
+  {
+    "code": 1,
+    "name": "Standard",
+    "tagline": "Alla grundläggande tekniska planer du behöver för ditt projekt",
+    "items": [
+      "Inredningskoncept",
+      "Partitionsplan",
+      "Möbelplan",
+      "Belysningsplan",
+      "Eluttagsplan",
+      "Elektrisk brytarplan",
+      "VVS-plan",
+      "Takplan",
+      "Planritning"
+    ]
+  },
+  {
+    "code": 2,
+    "name": "Förskott",
+    "tagline": "En mer avancerad lösning med våra estetikspecialisters rådgivning",
+    "items": [
+      "Tekniskt ritningspaket",
+      "3D-modell",
+      "Köksskisser",
+      "Möbelskisser",
+      "Materialval",
+      "Belysningsval",
+      "Distanskonsultationer"
+    ]
+  },
+  {
+    "code": 3,
+    "name": "Premie",
+    "tagline": "Ett komplett paket med realistiska visualiseringar för bättre resultat",
+    "items": [
+      "Beställda möbelval",
+      "Urval av interiördetaljer",
+      "5 fotorealistiska visualiseringar"
+    ]
+  },
+  {
+    "code": 4,
+    "name": "Standard",
+    "tagline": "Alla grundläggande tekniska planer du behöver för ditt projekt",
+    "items": [
+      "Exteriört koncept",
+      "Belysningsplan",
+      "Eluttagsplan",
+      "Elektrisk brytarplan",
+      "VVS-plan"
+    ]
+  },
+  {
+    "code": 5,
+    "name": "Förskott",
+    "tagline": "En mer avancerad lösning med våra estetikspecialisters rådgivning",
+    "items": [
+      "Tekniskt ritningspaket",
+      "3D-modell",
+      "Materialval",
+      "Belysningsval",
+      "Distanskonsultationer"
+    ]
+  }
+]

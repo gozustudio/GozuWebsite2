@@ -1,0 +1,66 @@
+[
+  {
+    "code": 1,
+    "name": "Standard",
+    "tagline": "Toate planurile tehnice de bază de care aveți nevoie pentru proiectul dumneavoastră",
+    "items": [
+      "Conceptul interior",
+      "Plan de partiție",
+      "Plan de mobilier",
+      "Plan de iluminat",
+      "Planul prizei electrice",
+      "Planul întrerupătorului electric",
+      "Plan de instalații sanitare",
+      "Planul tavanului",
+      "Planul etajului"
+    ]
+  },
+  {
+    "code": 2,
+    "name": "Avans",
+    "tagline": "O soluție mai avansată cu sfaturile noastre de specialitate în estetică",
+    "items": [
+      "Pachet de desen tehnic",
+      "Model 3D",
+      "Schițe de bucătărie",
+      "Schițe de mobilier",
+      "Selecția materialelor",
+      "Selecția iluminatului",
+      "Consultații la distanță"
+    ]
+  },
+  {
+    "code": 3,
+    "name": "Premium",
+    "tagline": "Un pachet complet cu vizualizări realiste incluse pentru rezultate mai bune",
+    "items": [
+      "Selecție de mobilier comandat",
+      "Selecție Detalii Interioare",
+      "5 Vizualizări fotorealiste"
+    ]
+  },
+  {
+    "code": 4,
+    "name": "Standard",
+    "tagline": "Toate planurile tehnice de bază de care aveți nevoie pentru proiectul dumneavoastră",
+    "items": [
+      "Concept exterior",
+      "Plan de iluminat",
+      "Planul prizei electrice",
+      "Planul întrerupătorului electric",
+      "Plan de instalații sanitare"
+    ]
+  },
+  {
+    "code": 5,
+    "name": "Avans",
+    "tagline": "O soluție mai avansată cu sfaturile noastre de specialitate în estetică",
+    "items": [
+      "Pachet de desen tehnic",
+      "Model 3D",
+      "Selecția materialelor",
+      "Selecția iluminatului",
+      "Consultații la distanță"
+    ]
+  }
+]

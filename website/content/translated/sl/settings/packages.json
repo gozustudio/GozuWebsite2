@@ -1,0 +1,66 @@
+[
+  {
+    "code": 1,
+    "name": "Standardno",
+    "tagline": "Vsi osnovni tehnični načrti, ki jih potrebujete za svoj projekt",
+    "items": [
+      "Notranji koncept",
+      "Načrt particije",
+      "Načrt pohištva",
+      "Načrt razsvetljave",
+      "Načrt električnih vtičnic",
+      "Načrt električnih stikal",
+      "Vodovodni načrt",
+      "Načrt stropa",
+      "Tloris"
+    ]
+  },
+  {
+    "code": 2,
+    "name": "Napredek",
+    "tagline": "Naprednejša rešitev z nasveti naših strokovnjakov za estetiko",
+    "items": [
+      "Paket za tehnično risanje",
+      "3D-model",
+      "Kuhinjske skice",
+      "Skice pohištva",
+      "Izbira materiala",
+      "Izbira osvetlitve",
+      "Posvetovanja na daljavo"
+    ]
+  },
+  {
+    "code": 3,
+    "name": "Premium",
+    "tagline": "Celoten paket z realističnimi vizualizacijami za boljše rezultate",
+    "items": [
+      "Izbor naročenega pohištva",
+      "Izbira notranjih podrobnosti",
+      "5 fotorealističnih vizualizacij"
+    ]
+  },
+  {
+    "code": 4,
+    "name": "Standardno",
+    "tagline": "Vsi osnovni tehnični načrti, ki jih potrebujete za svoj projekt",
+    "items": [
+      "Zunanji koncept",
+      "Načrt razsvetljave",
+      "Načrt električnih vtičnic",
+      "Načrt električnih stikal",
+      "Vodovodni načrt"
+    ]
+  },
+  {
+    "code": 5,
+    "name": "Napredek",
+    "tagline": "Naprednejša rešitev z nasveti naših strokovnjakov za estetiko",
+    "items": [
+      "Paket za tehnično risanje",
+      "3D-model",
+      "Izbira materiala",
+      "Izbira osvetlitve",
+      "Posvetovanja na daljavo"
+    ]
+  }
+]

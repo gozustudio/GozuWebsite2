@@ -1,0 +1,66 @@
+[
+  {
+    "code": 1,
+    "name": "Standard",
+    "tagline": "Alle de grundlæggende tekniske planer, du har brug for til dit projekt",
+    "items": [
+      "Interiørkoncept",
+      "Opdelingsplan",
+      "Møbelplan",
+      "Belysningsplan",
+      "Plan for stikkontakt",
+      "Elektrisk afbryderplan",
+      "VVS-plan",
+      "Loftplan",
+      "Plantegning"
+    ]
+  },
+  {
+    "code": 2,
+    "name": "Fremgang",
+    "tagline": "En mere avanceret løsning med vores æstetikspecialistrådgivning",
+    "items": [
+      "Teknisk tegningspakke",
+      "3D-model",
+      "Køkkenskitser",
+      "Møbelskitser",
+      "Materialevalg",
+      "Valg af belysning",
+      "Fjernkonsultationer"
+    ]
+  },
+  {
+    "code": 3,
+    "name": "Præmie",
+    "tagline": "En komplet pakke med realistiske visualiseringer inkluderet for bedre resultater",
+    "items": [
+      "Bestilt møbelvalg",
+      "Valg af indvendige detaljer",
+      "5 fotorealistiske visualiseringer"
+    ]
+  },
+  {
+    "code": 4,
+    "name": "Standard",
+    "tagline": "Alle de grundlæggende tekniske planer, du har brug for til dit projekt",
+    "items": [
+      "Udvendigt koncept",
+      "Belysningsplan",
+      "Plan for stikkontakt",
+      "Elektrisk afbryderplan",
+      "VVS-plan"
+    ]
+  },
+  {
+    "code": 5,
+    "name": "Fremgang",
+    "tagline": "En mere avanceret løsning med vores æstetikspecialistrådgivning",
+    "items": [
+      "Teknisk tegningspakke",
+      "3D-model",
+      "Materialevalg",
+      "Valg af belysning",
+      "Fjernkonsultationer"
+    ]
+  }
+]

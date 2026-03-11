@@ -1,0 +1,66 @@
+[
+  {
+    "code": 1,
+    "name": "Standard",
+    "tagline": "Wszystkie podstawowe plany techniczne potrzebne do Twojego projektu",
+    "items": [
+      "Koncepcja wnętrza",
+      "Plan partycji",
+      "Plan mebli",
+      "Plan oświetlenia",
+      "Plan gniazdek elektrycznych",
+      "Plan przełączników elektrycznych",
+      "Plan hydrauliczny",
+      "Plan sufitu",
+      "Plan piętra"
+    ]
+  },
+  {
+    "code": 2,
+    "name": "Osiągnięcie",
+    "tagline": "Bardziej zaawansowane rozwiązanie z poradą naszego specjalisty od estetyki",
+    "items": [
+      "Pakiet rysunków technicznych",
+      "Model 3D",
+      "Szkice kuchenne",
+      "Szkice mebli",
+      "Wybór materiałów",
+      "Wybór oświetlenia",
+      "Konsultacje zdalne"
+    ]
+  },
+  {
+    "code": 3,
+    "name": "Premia",
+    "tagline": "Kompletny pakiet z realistycznymi wizualizacjami zapewniającymi lepsze rezultaty",
+    "items": [
+      "Wybór zamówionych mebli",
+      "Wybór szczegółów wnętrza",
+      "5 fotorealistycznych wizualizacji"
+    ]
+  },
+  {
+    "code": 4,
+    "name": "Standard",
+    "tagline": "Wszystkie podstawowe plany techniczne potrzebne do Twojego projektu",
+    "items": [
+      "Koncepcja zewnętrzna",
+      "Plan oświetlenia",
+      "Plan gniazdek elektrycznych",
+      "Plan przełączników elektrycznych",
+      "Plan hydrauliczny"
+    ]
+  },
+  {
+    "code": 5,
+    "name": "Osiągnięcie",
+    "tagline": "Bardziej zaawansowane rozwiązanie z poradą naszego specjalisty od estetyki",
+    "items": [
+      "Pakiet rysunków technicznych",
+      "Model 3D",
+      "Wybór materiałów",
+      "Wybór oświetlenia",
+      "Konsultacje zdalne"
+    ]
+  }
+]

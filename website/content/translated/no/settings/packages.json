@@ -1,0 +1,66 @@
+[
+  {
+    "code": 1,
+    "name": "Standard",
+    "tagline": "Alle de grunnleggende tekniske planene du trenger for prosjektet ditt",
+    "items": [
+      "Interiørkonsept",
+      "Delingsplan",
+      "Møbelplan",
+      "Belysningsplan",
+      "Plan for stikkontakt",
+      "Plan for elektrisk bryter",
+      "Rørleggerplan",
+      "Takplan",
+      "Plantegning"
+    ]
+  },
+  {
+    "code": 2,
+    "name": "Avansere",
+    "tagline": "En mer avansert løsning med våre estetikkspesialisters rådgivning",
+    "items": [
+      "Teknisk tegningspakke",
+      "3D-modell",
+      "Kjøkkenskisser",
+      "Møbelskisser",
+      "Materialvalg",
+      "Valg av belysning",
+      "Fjernkonsultasjoner"
+    ]
+  },
+  {
+    "code": 3,
+    "name": "Premium",
+    "tagline": "En komplett pakke med realistiske visualiseringer inkludert for bedre resultater",
+    "items": [
+      "Bestilt møbelvalg",
+      "Utvalg av interiørdetaljer",
+      "5 fotorealistiske visualiseringer"
+    ]
+  },
+  {
+    "code": 4,
+    "name": "Standard",
+    "tagline": "Alle de grunnleggende tekniske planene du trenger for prosjektet ditt",
+    "items": [
+      "Eksteriørkonsept",
+      "Belysningsplan",
+      "Plan for stikkontakt",
+      "Plan for elektrisk bryter",
+      "Rørleggerplan"
+    ]
+  },
+  {
+    "code": 5,
+    "name": "Avansere",
+    "tagline": "En mer avansert løsning med våre estetikkspesialisters rådgivning",
+    "items": [
+      "Teknisk tegningspakke",
+      "3D-modell",
+      "Materialvalg",
+      "Valg av belysning",
+      "Fjernkonsultasjoner"
+    ]
+  }
+]

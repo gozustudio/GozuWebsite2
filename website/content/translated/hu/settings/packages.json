@@ -1,0 +1,66 @@
+[
+  {
+    "code": 1,
+    "name": "Standard",
+    "tagline": "Minden alapvető műszaki terv, amire szüksége van a projektjéhez",
+    "items": [
+      "Belső koncepció",
+      "Partíciós terv",
+      "Bútorterv",
+      "Világítási terv",
+      "Elektromos aljzat terv",
+      "Elektromos kapcsolóterv",
+      "Vízvezeték-szerelési terv",
+      "Mennyezeti terv",
+      "Alaprajz"
+    ]
+  },
+  {
+    "code": 2,
+    "name": "Előleg",
+    "tagline": "Korszerűbb megoldás esztétikai szakértői tanácsadással",
+    "items": [
+      "Műszaki Rajz Csomag",
+      "3D modell",
+      "Konyhai vázlatok",
+      "Bútorvázlatok",
+      "Anyagválasztás",
+      "Világításválasztás",
+      "Távoli konzultációk"
+    ]
+  },
+  {
+    "code": 3,
+    "name": "Prémium",
+    "tagline": "Teljes csomag realisztikus vizualizációkkal a jobb eredmények érdekében",
+    "items": [
+      "Rendezett bútorok választéka",
+      "Belső részletek kiválasztása",
+      "5 fotorealisztikus vizualizáció"
+    ]
+  },
+  {
+    "code": 4,
+    "name": "Standard",
+    "tagline": "Minden alapvető műszaki terv, amire szüksége van a projektjéhez",
+    "items": [
+      "Külső koncepció",
+      "Világítási terv",
+      "Elektromos aljzat terv",
+      "Elektromos kapcsolóterv",
+      "Vízvezeték-szerelési terv"
+    ]
+  },
+  {
+    "code": 5,
+    "name": "Előleg",
+    "tagline": "Korszerűbb megoldás esztétikai szakértői tanácsadással",
+    "items": [
+      "Műszaki Rajz Csomag",
+      "3D modell",
+      "Anyagválasztás",
+      "Világításválasztás",
+      "Távoli konzultációk"
+    ]
+  }
+]

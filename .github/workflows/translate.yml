@@ -40,6 +40,13 @@ jobs:
         with:
           node-version: 20
 
+      - name: Sync packages from spreadsheet
+        env:
+          GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+          GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
+          GOOGLE_INPUT_FIELDS_SPREADSHEET_ID: ${{ secrets.GOOGLE_INPUT_FIELDS_SPREADSHEET_ID }}
+        run: node scripts/sync-packages.js
+
       - name: Read last translation metadata
         id: meta
         run: |
@@ -136,7 +143,7 @@ jobs:
           cd ..
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add website/content/translated/
+          git add website/content/settings/packages.json website/content/translated/
           git diff --cached --quiet && echo "No changes to commit" && exit 0
           git commit -m "chore: auto-translate CMS content
 

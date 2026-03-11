@@ -14,7 +14,7 @@ const LOCALES = [
 
 // Fields that should NOT be translated (by key name)
 const SKIP_FIELDS = new Set([
-  "images", "videos", "year", "order", "featured", "step", "slug", "collaborations",
+  "images", "videos", "year", "order", "featured", "step", "slug", "collaborations", "code",
 ]);
 
 // --- Google Cloud Translation API auth ---
@@ -210,6 +210,11 @@ async function main() {
   // Add privacy if it exists
   if (fs.existsSync(path.join(CONTENT_DIR, "settings/privacy.json"))) {
     pageFiles.push("settings/privacy.json");
+  }
+
+  // Add packages if it exists
+  if (fs.existsSync(path.join(CONTENT_DIR, "settings/packages.json"))) {
+    pageFiles.push("settings/packages.json");
   }
 
   // Project files

@@ -1,0 +1,66 @@
+[
+  {
+    "code": 1,
+    "name": "Standard",
+    "tagline": "Alle grundlegenden technischen Pläne, die Sie für Ihr Projekt benötigen",
+    "items": [
+      "Innenraumkonzept",
+      "Partitionsplan",
+      "Möbelplan",
+      "Beleuchtungsplan",
+      "Steckdosenplan",
+      "Schaltplan",
+      "Sanitärplan",
+      "Deckenplan",
+      "Grundriss"
+    ]
+  },
+  {
+    "code": 2,
+    "name": "Vorauszahlung",
+    "tagline": "Eine fortschrittlichere Lösung mit der Beratung unserer Ästhetikspezialisten.",
+    "items": [
+      "Technisches Zeichnungspaket",
+      "3D-Modell",
+      "Küchenskizzen",
+      "Möbelskizzen",
+      "Materialauswahl",
+      "Beleuchtungsauswahl",
+      "Fernkonsultationen"
+    ]
+  },
+  {
+    "code": 3,
+    "name": "Prämie",
+    "tagline": "Ein Komplettpaket inklusive realistischer Visualisierungen für bessere Ergebnisse",
+    "items": [
+      "Auswahl der bestellten Möbel",
+      "Auswahl der Innenausstattung",
+      "5 fotorealistische Visualisierungen"
+    ]
+  },
+  {
+    "code": 4,
+    "name": "Standard",
+    "tagline": "Alle grundlegenden technischen Pläne, die Sie für Ihr Projekt benötigen",
+    "items": [
+      "Außenkonzept",
+      "Beleuchtungsplan",
+      "Steckdosenplan",
+      "Schaltplan",
+      "Sanitärplan"
+    ]
+  },
+  {
+    "code": 5,
+    "name": "Vorauszahlung",
+    "tagline": "Eine fortschrittlichere Lösung mit der Beratung unserer Ästhetikspezialisten.",
+    "items": [
+      "Technisches Zeichnungspaket",
+      "3D-Modell",
+      "Materialauswahl",
+      "Beleuchtungsauswahl",
+      "Fernkonsultationen"
+    ]
+  }
+]
