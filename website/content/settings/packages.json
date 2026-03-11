@@ -1,0 +1,66 @@
+[
+  {
+    "code": 1,
+    "name": "Standard",
+    "tagline": "All the basic technical plans you need for your project",
+    "items": [
+      "Interior Concept",
+      "Partition Plan",
+      "Furniture Plan",
+      "Lighting Plan",
+      "Electrical Outlet Plan",
+      "Electrical Switch Plan",
+      "Plumbing Plan",
+      "Ceiling Plan",
+      "Floor Plan"
+    ]
+  },
+  {
+    "code": 2,
+    "name": "Advance",
+    "tagline": "A more advance solution with our aesthtetics specialist advice",
+    "items": [
+      "Technical Drawing Package",
+      "3D Model",
+      "Kitchen Sketches",
+      "Furniture Sketches",
+      "Material Selection",
+      "Lighting Selection",
+      "Remote Consultations"
+    ]
+  },
+  {
+    "code": 3,
+    "name": "Premium",
+    "tagline": "A complete package with realistic visulizations included for better results",
+    "items": [
+      "Ordered Furniture Selection",
+      "Interior Details Selection",
+      "5 Photorealistic Visualizations"
+    ]
+  },
+  {
+    "code": 4,
+    "name": "Standard",
+    "tagline": "All the basic technical plans you need for your project",
+    "items": [
+      "Exterior Concept",
+      "Lighting Plan",
+      "Electrical Outlet Plan",
+      "Electrical Switch Plan",
+      "Plumbing Plan"
+    ]
+  },
+  {
+    "code": 5,
+    "name": "Advance",
+    "tagline": "A more advance solution with our aesthtetics specialist advice",
+    "items": [
+      "Technical Drawing Package",
+      "3D Model",
+      "Material Selection",
+      "Lighting Selection",
+      "Remote Consultations"
+    ]
+  }
+]
