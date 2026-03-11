@@ -1,22 +1,19 @@
 {
-  "title": "Maison KAZ",
-  "year": "2020",
-  "location": "Stockholm, Suède",
+  "title": "Maison MM",
+  "year": "2024",
+  "location": "Kaunas, Lituanie",
   "type": [
     "Extérieur",
-    "Rénovations"
+    "Construction neuve",
+    "Résidentiel"
   ],
-  "shortDescription": "Le site du concours, qui comprend des bâtiments existants, se situe dans le quartier historique de Naujamiestis à Vilnius. Ce quartier s'est développé le long de l'avenue Gedimino à la fin du XIXe siècle et est devenu l'une des artères principales de la ville. Il se caractérise par des îlots denses d'immeubles de quatre à cinq étages, certains atteignant dix étages, comme sur ce site. Si les bâtiments de l'avenue Gedimino et de la rue A. Stulginskio s'intègrent harmonieusement au contexte, la cour intérieure semble inachevée. L'immeuble actuel de quatre étages ne ferme pas entièrement la cour près du numéro 7 de la rue A. Stulginskio. Pour remédier à cela, un bâtiment en forme de U est prévu. Relié au bâtiment situé au numéro 24A de l'avenue Gedimino par un mur mitoyen, il fermera la cour au sud. Ce nouvel immeuble de six étages sera le plus haut au sud et descendra en gradins vers la cour, créant ainsi un espace convivial et accueillant, avec des perspectives variées.",
+  "shortDescription": "Une résidence de deux étages où la rigueur géométrique rencontre la nature. Le bâtiment se compose de deux volumes distincts : un cube supérieur sombre et monumental et un rez-de-chaussée plus clair, revêtu de bois, qui semble se fondre dans le paysage. L’idée centrale du projet est un portail circulaire en façade, faisant office de seuil symbolique entre les espaces public et privé. Ce motif apporte une touche de fantaisie et de poésie à un bâtiment par ailleurs austère.",
   "images": [
     "/uploads/projects/3/Main.jpg",
     "/uploads/projects/3/2.jpg",
     "/uploads/projects/3/3.jpg",
     "/uploads/projects/3/4.jpg",
     "/uploads/projects/3/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/3/Main.mp4",
-    "/uploads/projects/3/2.mp4"
   ],
   "featured": true,
   "order": 3

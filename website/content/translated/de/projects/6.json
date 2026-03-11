@@ -1,22 +1,18 @@
 {
-  "title": "KAZ-Haus",
-  "year": "2020",
-  "location": "Stockholm, Schweden",
+  "title": "OZ Apartment",
+  "year": "2025",
+  "location": "London, Vereinigtes Königreich",
   "type": [
-    "Außenbereich",
-    "Rennovations"
+    "Innere",
+    "Renovierung"
   ],
-  "shortDescription": "Das Wettbewerbsgelände, das auch Bestandsgebäude umfasst, befindet sich im historischen Naujamiestis-Viertel von Vilnius. Dieses Viertel entstand Ende des 19. Jahrhunderts entlang der Gedimino-Allee und entwickelte sich zu einer der Hauptstraßen der Stadt. Geprägt wird das Viertel durch geschlossene Häuserblöcke mit meist vier bis fünf Stockwerken, wobei einige Gebäude, wie auch dieses auf dem Gelände, bis zu zehn Stockwerke hoch sind. Während sich die Gebäude entlang der Gedimino-Allee und der A.-Stulginskio-Straße gut in das Gesamtbild einfügen, wirkt der Innenhof unvollständig. Das bestehende viergeschossige Gebäude umschließt den Hof nahe der A.-Stulginskio-Straße 7 nicht vollständig. Um dies zu beheben, ist ein U-förmiges Gebäude geplant. Es ist mit einer gemeinsamen Wand an das Gebäude an der Gedimino-Allee 24A angeschlossen und verschließt den Hof im Süden. Dieses neue sechsgeschossige Gebäude wird an der Südseite am höchsten sein und sich zum Hof hin stufenförmig absenken, wodurch ein gemütlicher, einladender Raum mit wechselnden Perspektiven entsteht.",
+  "shortDescription": "Das Projekt ist von einer ruhigen Zurückhaltung geprägt. Die Räume wirken entspannt – warme Eichentöne und sanfte Putzoberflächen ziehen sich durch alle Zimmer und schaffen einen fließenden Übergang anstelle einer Ansammlung separater Bereiche.\nDie Raumaufteilung spielt mit dem Raumvolumen: Schräge Decken und geschwungene Architekturelemente verleihen den Innenräumen eine skulpturale Qualität und lassen das Licht auf unerwartete Weise über die Oberflächen wandern. Ein hohes Bogenfenster verankert den Wohn-Essbereich, holt die Landschaft ins Innere und verwischt die Grenze zwischen Innen und Außen. Die Materialpalette ist bewusst reduziert – mattes Holz, geäderter Marmor, geriffelte Keramikfliesen und leinenfarbener Putz. Nichts konkurriert miteinander. Die Texturen sind fühlbar, aber dezent, sie sollen eher gefühlt als wahrgenommen werden. Dunkle Akzente aus Metall und Polsterstoffen erden die Wärme, ohne die Ruhe zu stören. Die Gesamtatmosphäre ist von bewusster Schlichtheit geprägt – ein Raum, der atmet, in dem natürliches Licht und authentische Materialien die Hauptrolle spielen.",
   "images": [
     "/uploads/projects/6/Main.jpg",
     "/uploads/projects/6/2.jpg",
     "/uploads/projects/6/3.jpg",
     "/uploads/projects/6/4.jpg",
     "/uploads/projects/6/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/6/Main.mp4",
-    "/uploads/projects/6/2.mp4"
   ],
   "featured": true,
   "order": 6

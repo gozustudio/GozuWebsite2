@@ -1,22 +1,18 @@
 {
-  "title": "KAZ namas",
-  "year": "2020",
-  "location": "Stokholmas, Švedija",
+  "title": "Denticijos klinika",
+  "year": "2022",
+  "location": "Vilnius, Lietuva",
   "type": [
-    "Išorė",
-    "Renovacijos"
+    "Interjeras",
+    "Renovacija"
   ],
-  "shortDescription": "Konkurso vieta, kurioje yra ir esami pastatai, yra istoriniame Naujamiesčio rajone, Vilniuje. Ši teritorija susiformavo palei Gedimino prospektą XIX a. pabaigoje ir tapo viena pagrindinių miesto gatvių. Rajono charakterį apibrėžia uždari pastatų kvartalai, kurie dažniausiai yra 4–5 aukštų, o kai kurie aukštesni pastatai, kaip ir šioje vietoje, siekia iki 10 aukštų. Nors pastatai palei Gedimino prospektą ir A. Stulginskio gatvę gerai dera prie konteksto, vidinis kiemas atrodo neužbaigtas. Dabartinis 4 aukštų pastatas nevisiškai uždengia kiemo šalia A. Stulginskio gatvės 7. Siekiant tai ištaisyti, planuojamas U formos pastatas. Jis bendra siena jungiasi su pastatu Gedimino prospekte 24A, uždarydamas kiemą iš pietų. Šis naujas 6 aukštų pastatas bus aukščiausias pietiniame krašte ir nusileis žemyn link kiemo, sukurdamas jaukią, svetingą erdvę ir besikeičiančias jos perspektyvas.",
+  "shortDescription": "Aiški, užtikrinta forma su stiklo plokštumomis, atveriančiomis vidų į miestą. Fasadas kviečia – skaidrus, šiuolaikiškas, užtikrintas. Žaluma prie įėjimo sušvelnina geometriją ir įkvepia gyvybės. Viduje vyrauja ąžuolas, šviesa ir tyla. Medžiagiškumas apima nuo pat pirmo žingsnio – šiltos sienos, matinis stiklas, švelnūs šešėliai. Erdvė sukurta ne efektui, o pojūčiui. Šiluma ir ramybė ten, kur jos svarbiausios. Medis apgaubia, šviesos kreipiančios ir minimalistinė forma leidžia kvėpuoti. Klinika, kuri nejaučiasi kaip klinika – veikiau vieta, kurioje norisi būti. Kur viskas tyliai sako: viskas bus gerai.",
   "images": [
     "/uploads/projects/4/Main.jpg",
-    "/uploads/projects/4/2.jpg",
+    "/uploads/projects/4/2.jpeg",
     "/uploads/projects/4/3.jpg",
-    "/uploads/projects/4/4.jpg",
+    "/uploads/projects/4/4.JPG",
     "/uploads/projects/4/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/4/Main.mp4",
-    "/uploads/projects/4/2.mp4"
   ],
   "featured": true,
   "order": 4

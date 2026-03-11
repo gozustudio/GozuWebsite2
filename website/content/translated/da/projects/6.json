@@ -1,22 +1,18 @@
 {
-  "title": "KAZ-huset",
-  "year": "2020",
-  "location": "Stockholm, Sverige",
+  "title": "OZ-lejlighed",
+  "year": "2025",
+  "location": "London, Storbritannien",
   "type": [
-    "Ydre",
-    "Renoveringer"
+    "Indre",
+    "Renovation"
   ],
-  "shortDescription": "Konkurrenceområdet, som omfatter eksisterende bygninger, ligger i det historiske Naujamiestis-område i Vilnius. Dette område udviklede sig langs Gedimino Avenue i slutningen af det 19. århundrede og blev en af byens hovedgader. Områdets karakter er defineret af lukkede bygningsblokke, der for det meste er 4-5 etager høje, med nogle højere bygninger på op til 10 etager, som på dette sted. Mens bygningerne langs Gedimino Avenue og A. Stulginskio Street passer godt ind i konteksten, føles den indre gårdhave ufuldstændig. Den nuværende 4-etagers bygning omslutter ikke helt gårdhaven nær A. Stulginskio Street 7. For at afhjælpe dette er der planlagt en U-formet bygning. Den forbinder bygningen på Gedimino Avenue 24A med en fælles mur, der lukker gårdhaven af mod syd. Denne nye 6-etagers bygning vil være højest ved den sydlige kant og trækker ned mod gårdhaven, hvilket skaber et hyggeligt, indbydende rum og dets skiftende perspektiver.",
+  "shortDescription": "Projektet er formet af en følelse af stille tilbageholdenhed. Rummene føles afslappede - varme egetræstoner og bløde pudsoverflader løber kontinuerligt gennem hvert rum og skaber et problemfrit flow snarere end en samling af separate områder.\n\nLayoutet leger med volumen: skrå lofter og buede arkitektoniske elementer giver interiøret en skulpturel kvalitet, der lader lyset bevæge sig hen over overfladerne på uventede måder. Et højt buet vindue forankrer opholds- og spiseområdet, trækker landskabet indad og slører grænsen mellem inde og ude. Materialemæssigt er paletten bevidst smal - mat træåring, ådret marmor, ribbede keramiske fliser og linnedtonet puds. Intet konkurrerer. Teksturerne er taktile, men afdæmpede, beregnet til at blive mærket mere end bemærket. Mørke accenter i metal og polstring forener varmen uden at bryde roen. Den overordnede atmosfære er præget af bevidst enkelhed - et rum, der ånder, hvor naturligt lys og ærlige materialer gør det meste af arbejdet.",
   "images": [
     "/uploads/projects/6/Main.jpg",
     "/uploads/projects/6/2.jpg",
     "/uploads/projects/6/3.jpg",
     "/uploads/projects/6/4.jpg",
     "/uploads/projects/6/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/6/Main.mp4",
-    "/uploads/projects/6/2.mp4"
   ],
   "featured": true,
   "order": 6

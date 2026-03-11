@@ -1,22 +1,18 @@
 {
-  "title": "Dom KAZ",
-  "year": "2020",
-  "location": "Štokholm, Švédsko",
+  "title": "Apartmán AD",
+  "year": "2024",
+  "location": "Londýn, Spojené kráľovstvo",
   "type": [
-    "Exteriér",
-    "Renovácie"
+    "Interiér",
+    "Rekonštrukcia"
   ],
-  "shortDescription": "Súťažné miesto, ktoré zahŕňa existujúce budovy, sa nachádza v historickej štvrti Naujamiestis vo Vilniuse. Táto oblasť sa vyvinula pozdĺž Gediminovej ulice koncom 19. storočia a stala sa jednou z hlavných ulíc mesta. Charakter oblasti je definovaný uzavretými blokmi budov, ktoré sú prevažne 4 – 5 poschodí vysoké, s niektorými vyššími budovami až do 10 poschodí, ako napríklad na tomto mieste. Zatiaľ čo budovy pozdĺž Gediminovej ulice a ulice A. Stulginskia dobre zapadajú do kontextu, vnútorné nádvorie pôsobí neúplne. Súčasná 4-poschodová budova úplne neuzatvára nádvorie v blízkosti ulice A. Stulginskia 7. Na nápravu tohto problému sa plánuje budova v tvare U. S budovou na Gediminovej ulici 24A sa prepojí spoločnou stenou, ktorá uzatvára nádvorie z juhu. Táto nová 6-poschodová budova bude najvyššia na južnom okraji a bude smerom k nádvoriu postupne klesať, čím vytvorí útulný a príjemný priestor s meniacimi sa perspektívami.",
+  "shortDescription": "Kompaktný dizajn bytu je zakorenený v prírodných materiáloch a pokojnom severskom cítení. Svetlé dubové drevené prvky sa tiahnu celým priestorom – od skriniek cez police až po podlahu – a vytvárajú tak plynulú, teplú kulisu. Tmavozelené akcenty v textíliách a obkladoch dodávajú hĺbku bez toho, aby narušili tichú paletu farieb. Otvorený obývací priestor spája varenie, stolovanie a oddych do jednej fluidnej zóny so vstavaným úložným priestorom, ktorý maximalizuje využitie každého povrchu. Vstup a kúpeľne sa riadia rovnakou materiálovou logikou – drevo, kameň a sklo v decentných kompozíciách s čistými líniami. Výsledkom je priestor, ktorý pôsobí väčším dojmom, ako zaberá, s konzistentnou atmosférou jemnosti a poriadku.",
   "images": [
     "/uploads/projects/5/Main.jpg",
     "/uploads/projects/5/2.jpg",
     "/uploads/projects/5/3.jpg",
     "/uploads/projects/5/4.jpg",
     "/uploads/projects/5/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/5/Main.mp4",
-    "/uploads/projects/5/2.mp4"
   ],
   "featured": true,
   "order": 5

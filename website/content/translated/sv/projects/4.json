@@ -1,22 +1,18 @@
 {
-  "title": "KAZ-huset",
-  "year": "2020",
-  "location": "Stockholm, Sverige",
+  "title": "Tandklinik",
+  "year": "2022",
+  "location": "Vilnius, Litauen",
   "type": [
-    "Exteriör",
-    "Renoveringar"
+    "Interiör",
+    "Renovering"
   ],
-  "shortDescription": "Tävlingsområdet, som inkluderar befintliga byggnader, ligger i det historiska Naujamiestis-området i Vilnius. Detta område utvecklades längs Gedimino-gatan i slutet av 1800-talet och blev en av stadens huvudgator. Områdets karaktär definieras av slutna byggnadsblock som mestadels är 4–5 våningar höga, med några högre byggnader upp till 10 våningar, som på denna plats. Medan byggnaderna längs Gedimino-gatan och A. Stulginskiogatan passar väl in i sammanhanget, känns innergården ofullständig. Den nuvarande 4-våningsbyggnaden omsluter inte helt gården nära A. Stulginskiogatan 7. För att åtgärda detta planeras en U-formad byggnad. Den ansluter till byggnaden på Gedimino-gatan 24A med en gemensam vägg, vilket stänger av gården från söder. Denna nya 6-våningsbyggnad kommer att vara högst vid den södra kanten och trappar ner mot gården, vilket skapar ett mysigt, inbjudande utrymme och dess skiftande perspektiv.",
+  "shortDescription": "En tydlig, självsäker form med glasplan som öppnar interiören mot staden. Fasaden inbjuder – transparent, modern, självsäker. Grönska vid entrén mjukar upp geometrin och ger liv. Inuti tar ek, ljus och tystnad över. Materialiteten omfamnar från första steget – varma väggar, frostat glas, mjuka skuggor. Utrymmet är utformat inte för effekt, utan för känsla. Värme och lugn där de betyder mest. Trähöljen, ljusledare och minimalistisk form låter dig andas. En klinik som inte känns som en klinik – snarare en plats där du vill vara. Där allt tyst säger: det kommer att bli bra.",
   "images": [
     "/uploads/projects/4/Main.jpg",
-    "/uploads/projects/4/2.jpg",
+    "/uploads/projects/4/2.jpeg",
     "/uploads/projects/4/3.jpg",
-    "/uploads/projects/4/4.jpg",
+    "/uploads/projects/4/4.JPG",
     "/uploads/projects/4/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/4/Main.mp4",
-    "/uploads/projects/4/2.mp4"
   ],
   "featured": true,
   "order": 4

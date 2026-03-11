@@ -1,22 +1,19 @@
 {
-  "title": "Casa KAZ",
-  "year": "2020",
-  "location": "Estocolmo, Suécia",
+  "title": "Casa MM",
+  "year": "2024",
+  "location": "Kaunas, Lituânia",
   "type": [
     "Exterior",
-    "Renovações"
+    "Nova construção",
+    "residencial"
   ],
-  "shortDescription": "O local do concurso, que inclui edifícios existentes, situa-se na histórica área de Naujamiestis, em Vilnius. Esta área desenvolveu-se ao longo da Avenida Gedimino no final do século XIX e tornou-se uma das principais ruas da cidade. O caráter da área é definido por quarteirões fechados de edifícios, na sua maioria com 4 a 5 andares, com alguns edifícios mais altos, até 10 andares, como neste local. Embora os edifícios ao longo da Avenida Gedimino e da Rua A. Stulginskio se integrem bem no contexto, o pátio interior parece incompleto. O atual edifício de 4 andares não fecha completamente o pátio perto do número 7 da Rua A. Stulginskio. Para resolver este problema, está previsto um edifício em forma de U. Este edifício liga-se ao edifício no número 24A da Avenida Gedimino por uma parede comum, fechando o pátio a partir do sul. Este novo edifício de 6 andares será mais alto na extremidade sul e desce em direção ao pátio, criando um espaço acolhedor e convidativo com diferentes perspetivas.",
+  "shortDescription": "Uma residência de dois andares onde a forma geométrica rigorosa encontra a natureza. A composição do edifício consiste em dois volumes claramente distintos: um cubo superior escuro e monumental e um térreo mais leve, revestido de madeira, que parece se dissolver na paisagem. A ideia central do projeto é um portal circular na fachada, que serve como um limiar simbólico entre os espaços público e privado. Esse motivo traz um toque lúdico e poético a um edifício que, de outra forma, seria ascético.",
   "images": [
     "/uploads/projects/3/Main.jpg",
     "/uploads/projects/3/2.jpg",
     "/uploads/projects/3/3.jpg",
     "/uploads/projects/3/4.jpg",
     "/uploads/projects/3/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/3/Main.mp4",
-    "/uploads/projects/3/2.mp4"
   ],
   "featured": true,
   "order": 3

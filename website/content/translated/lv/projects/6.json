@@ -1,22 +1,18 @@
 {
-  "title": "KAZ nams",
-  "year": "2020",
-  "location": "Stokholma, Zviedrija",
+  "title": "OZ dzīvoklis",
+  "year": "2025",
+  "location": "Londona, Apvienotā Karaliste",
   "type": [
-    "Ārpuse",
-    "Renovācijas"
+    "Interjers",
+    "Renovācija"
   ],
-  "shortDescription": "Konkursa vieta, kurā ietilpst esošās ēkas, atrodas vēsturiskajā Viļņas Naujamiestis rajonā. Šī teritorija izveidojās gar Gedimino prospektu 19. gadsimta beigās un kļuva par vienu no pilsētas galvenajām ielām. Rajona raksturu nosaka slēgti ēku kvartāli, kas pārsvarā ir 4–5 stāvus augsti, ar dažām augstākām ēkām līdz pat 10 stāviem, tāpat kā šajā vietā. Lai gan ēkas gar Gedimino prospektu un A. Stulginskio ielu labi iederas kontekstā, iekšējais pagalms šķiet nepabeigts. Esošā četrstāvu ēka pilnībā neaptver pagalmu pie A. Stulginskio ielas 7. Lai to labotu, ir plānota U veida ēka. Tā savienojas ar ēku Gedimino prospektā 24A ar kopīgu sienu, noslēdzot pagalmu no dienvidiem. Šī jaunā sešstāvu ēka būs augstākā dienvidu malā un pakāpsies lejup pret pagalmu, radot mājīgu, aicinošu telpu un tās mainīgās perspektīvas.",
+  "shortDescription": "Projektu veido klusas atturības sajūta. Telpas šķiet nesteidzīgas – siltie ozolkoka toņi un mīkstas apmetuma virsmas nepārtraukti plūst cauri katrai telpai, radot vienmērīgu plūsmu, nevis atsevišķu zonu kopumu.\nPlānojums spēlējas ar apjomu: slīpie griesti un izliekti arhitektūras elementi piešķir interjeram skulpturālu kvalitāti, ļaujot gaismai negaidīti pārvietoties pa virsmām. Augsts arkveida logs nostiprina dzīvojamo-ēdamistabas zonu, ievelkot ainavu uz iekšpusi un sapludinot robežu starp iekšpusi un āra telpu. Materiālu ziņā palete ir apzināti šaura – matēta koka tekstūra, dzīslains marmors, rievotas keramikas flīzes un lina toņa apmetums. Nekas nekonkurē ar citiem. Tekstūras ir taustāmas, bet klusinātas, domātas, lai tās vairāk justu, nevis pamanītu. Tumši metāla un polsterējuma akcenti nostiprina siltumu, neizjaucot mieru. Kopējā atmosfēra ir apzināti vienkārša – telpa, kas elpo, kur dabiskā gaisma un godīgi materiāli veic lielāko daļu darba.",
   "images": [
     "/uploads/projects/6/Main.jpg",
     "/uploads/projects/6/2.jpg",
     "/uploads/projects/6/3.jpg",
     "/uploads/projects/6/4.jpg",
     "/uploads/projects/6/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/6/Main.mp4",
-    "/uploads/projects/6/2.mp4"
   ],
   "featured": true,
   "order": 6

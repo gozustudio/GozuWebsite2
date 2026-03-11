@@ -1,22 +1,18 @@
 {
-  "title": "Casa KAZ",
-  "year": "2020",
-  "location": "Estocolmo, Suécia",
+  "title": "Apartamento OZ",
+  "year": "2025",
+  "location": "Londres, Reino Unido",
   "type": [
-    "Exterior",
-    "Renovações"
+    "Interior",
+    "Renovação"
   ],
-  "shortDescription": "O local do concurso, que inclui edifícios existentes, situa-se na histórica área de Naujamiestis, em Vilnius. Esta área desenvolveu-se ao longo da Avenida Gedimino no final do século XIX e tornou-se uma das principais ruas da cidade. O caráter da área é definido por quarteirões fechados de edifícios, na sua maioria com 4 a 5 andares, com alguns edifícios mais altos, até 10 andares, como neste local. Embora os edifícios ao longo da Avenida Gedimino e da Rua A. Stulginskio se integrem bem no contexto, o pátio interior parece incompleto. O atual edifício de 4 andares não fecha completamente o pátio perto do número 7 da Rua A. Stulginskio. Para resolver este problema, está previsto um edifício em forma de U. Este edifício liga-se ao edifício no número 24A da Avenida Gedimino por uma parede comum, fechando o pátio a partir do sul. Este novo edifício de 6 andares será mais alto na extremidade sul e desce em direção ao pátio, criando um espaço acolhedor e convidativo com diferentes perspetivas.",
+  "shortDescription": "O projeto é moldado por uma sensação de contenção tranquila. Os espaços transmitem uma sensação de calma - tons quentes de carvalho e superfícies de gesso suave percorrem continuamente todos os cômodos, criando um fluxo contínuo em vez de uma coleção de áreas separadas.\nO layout brinca com o volume: tetos inclinados e elementos arquitetônicos curvos conferem aos interiores uma qualidade escultural, permitindo que a luz se mova pelas superfícies de maneiras inesperadas. Uma alta janela em arco ancora a área de estar e jantar, trazendo a paisagem para dentro e borrando a fronteira entre o interior e o exterior. Em termos de materiais, a paleta é deliberadamente restrita - grãos de madeira foscos, mármore com veios, azulejo cerâmico canelado e gesso em tom de linho. Nada compete. As texturas são táteis, mas suaves, feitas para serem sentidas mais do que notadas. Detalhes escuros em metal e estofados ancoram o calor sem quebrar a calma. A atmosfera geral é de simplicidade deliberada - um espaço que respira, onde a luz natural e os materiais autênticos fazem a maior parte do trabalho.",
   "images": [
     "/uploads/projects/6/Main.jpg",
     "/uploads/projects/6/2.jpg",
     "/uploads/projects/6/3.jpg",
     "/uploads/projects/6/4.jpg",
     "/uploads/projects/6/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/6/Main.mp4",
-    "/uploads/projects/6/2.mp4"
   ],
   "featured": true,
   "order": 6

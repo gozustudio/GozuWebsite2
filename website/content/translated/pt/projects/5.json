@@ -1,22 +1,18 @@
 {
-  "title": "Casa KAZ",
-  "year": "2020",
-  "location": "Estocolmo, Suécia",
+  "title": "Apartamento AD",
+  "year": "2024",
+  "location": "Londres, Reino Unido",
   "type": [
-    "Exterior",
-    "Renovações"
+    "Interior",
+    "Renovação"
   ],
-  "shortDescription": "O local do concurso, que inclui edifícios existentes, situa-se na histórica área de Naujamiestis, em Vilnius. Esta área desenvolveu-se ao longo da Avenida Gedimino no final do século XIX e tornou-se uma das principais ruas da cidade. O caráter da área é definido por quarteirões fechados de edifícios, na sua maioria com 4 a 5 andares, com alguns edifícios mais altos, até 10 andares, como neste local. Embora os edifícios ao longo da Avenida Gedimino e da Rua A. Stulginskio se integrem bem no contexto, o pátio interior parece incompleto. O atual edifício de 4 andares não fecha completamente o pátio perto do número 7 da Rua A. Stulginskio. Para resolver este problema, está previsto um edifício em forma de U. Este edifício liga-se ao edifício no número 24A da Avenida Gedimino por uma parede comum, fechando o pátio a partir do sul. Este novo edifício de 6 andares será mais alto na extremidade sul e desce em direção ao pátio, criando um espaço acolhedor e convidativo com diferentes perspetivas.",
+  "shortDescription": "Um projeto de apartamento compacto, baseado em materiais naturais e uma sensibilidade nórdica tranquila. A madeira de carvalho claro percorre todo o espaço — dos armários às prateleiras e ao piso — criando um pano de fundo acolhedor e harmonioso. Detalhes em verde escuro nos tecidos e azulejos adicionam profundidade sem quebrar a paleta de cores suaves. A área social integrada combina cozinha, sala de jantar e sala de estar em um único espaço fluido, com armários embutidos que maximizam o aproveitamento de cada superfície. A entrada e os banheiros seguem a mesma lógica de materiais — madeira, pedra e vidro em composições discretas e de linhas retas. O resultado é um espaço que parece maior do que realmente é, com uma atmosfera consistente de suavidade e organização.",
   "images": [
     "/uploads/projects/5/Main.jpg",
     "/uploads/projects/5/2.jpg",
     "/uploads/projects/5/3.jpg",
     "/uploads/projects/5/4.jpg",
     "/uploads/projects/5/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/5/Main.mp4",
-    "/uploads/projects/5/2.mp4"
   ],
   "featured": true,
   "order": 5

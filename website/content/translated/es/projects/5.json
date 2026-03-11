@@ -1,22 +1,18 @@
 {
-  "title": "Casa KAZ",
-  "year": "2020",
-  "location": "Estocolmo, Suecia",
+  "title": "Apartamento AD",
+  "year": "2024",
+  "location": "Londres, Reino Unido",
   "type": [
-    "Exterior",
-    "Renovaciones"
+    "Interior",
+    "Renovación"
   ],
-  "shortDescription": "El recinto del concurso, que incluye edificios existentes, se ubica en la histórica zona de Naujamiestis de Vilna. Esta zona se desarrolló a lo largo de la avenida Gedimino a finales del siglo XIX y se convirtió en una de las principales calles de la ciudad. El carácter de la zona se define por manzanas cerradas de edificios, en su mayoría de 4 o 5 plantas, con algunos edificios más altos de hasta 10 plantas, como en este solar. Si bien los edificios a lo largo de la avenida Gedimino y la calle A. Stulginskio se integran bien en el contexto, el patio interior parece incompleto. El edificio actual de 4 plantas no cierra completamente el patio cerca de la calle A. Stulginskio 7. Para solucionar esto, se proyecta un edificio en forma de U. Este se conecta con el edificio de la avenida Gedimino 24A mediante un muro compartido, cerrando el patio desde el sur. Este nuevo edificio de 6 plantas alcanzará su punto más alto en el extremo sur y descenderá escalonadamente hacia el patio, creando un espacio acogedor y atractivo con perspectivas cambiantes.",
+  "shortDescription": "Un diseño de apartamento compacto con raíces en materiales naturales y una serena sensibilidad nórdica. La carpintería de roble claro se extiende por todo el espacio, desde los armarios hasta las estanterías y el suelo, creando un ambiente cálido y uniforme. Los acentos en verde intenso en textiles y azulejos añaden profundidad sin perturbar la serena paleta de colores. La sala de estar abierta fusiona cocina, comedor y sala de estar en una zona fluida, con almacenamiento integrado que optimiza cada superficie. La entrada y los baños siguen la misma lógica de materiales: madera, piedra y vidrio en composiciones sobrias y de líneas limpias. El resultado es un espacio que se siente más grande de lo que es, con una atmósfera uniforme de suavidad y orden.",
   "images": [
     "/uploads/projects/5/Main.jpg",
     "/uploads/projects/5/2.jpg",
     "/uploads/projects/5/3.jpg",
     "/uploads/projects/5/4.jpg",
     "/uploads/projects/5/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/5/Main.mp4",
-    "/uploads/projects/5/2.mp4"
   ],
   "featured": true,
   "order": 5

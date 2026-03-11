@@ -1,22 +1,23 @@
 {
-  "title": "KAZi maja",
-  "year": "2020",
-  "location": "Stockholm, Rootsi",
+  "title": "KL House",
+  "year": "2023",
+  "location": "Vilnius, Leedu",
   "type": [
-    "Välispind",
-    "Renovatsioonid"
+    "Interjöör",
+    "Renoveerimine"
   ],
-  "shortDescription": "Võistlusala, mis hõlmab ka olemasolevaid hooneid, asub Vilniuse ajaloolises Naujamiestise linnaosas. See piirkond arenes Gedimino puiestee äärde 19. sajandi lõpus ja sellest sai üks linna peatänavaid. Piirkonna iseloomu määravad suletud hoonete kvartalid, mis on enamasti 4–5-korruselised, mõned kõrgemad hooned ulatuvad kuni 10-korruselisteni, nagu siingi. Kuigi Gedimino puiestee ja A. Stulginskio tänava äärsed hooned sobivad konteksti hästi, tundub sisehoov poolik. Praegune neljakorruseline hoone ei sulge täielikult A. Stulginskio tn 7 lähedal asuvat sisehoovi. Selle parandamiseks on planeeritud U-kujuline hoone. See ühendub Gedimino puiestee 24A hoonega ühise müüriga, sulgedes sisehoovi lõunast. See uus kuuekorruseline hoone on lõunaservas kõrgeim ja astub sisehoovi poole, luues hubase ja kutsuva ruumi ning selle muutuvad perspektiivid.",
+  "shortDescription": "Moodne kahekorruseline kodu sooja skandinaavialiku minimalistliku esteetikaga. Interjöör ühendab naturaalse tammepuidu puhaste valgete pindadega – alates U-kujulisest köögist messingdetailide ja sisseehitatud tehnikaga kuni avatud planeeringuga elutoani, kus on madal tammepuidust televiisorikonsool integreeritud elektrikaminaga, hele buklee-diivan ja tugeva alusega trepp tammepuidust astmete ja vertikaalsete puidust liistudest käsipuudega.",
   "images": [
     "/uploads/projects/2/Main.jpg",
     "/uploads/projects/2/2.jpg",
     "/uploads/projects/2/3.jpg",
     "/uploads/projects/2/4.jpg",
-    "/uploads/projects/2/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/2/Main.mp4",
-    "/uploads/projects/2/2.mp4"
+    "/uploads/projects/2/5.jpg",
+    "/uploads/projects/2/6.jpg",
+    "/uploads/projects/2/7.jpg",
+    "/uploads/projects/2/8.jpg",
+    "/uploads/projects/2/9.JPG",
+    "/uploads/projects/2/10.jpg"
   ],
   "featured": true,
   "order": 2

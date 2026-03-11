@@ -1,22 +1,23 @@
 {
-  "title": "KAZ namas",
-  "year": "2020",
-  "location": "Stokholmas, Švedija",
+  "title": "KL namas",
+  "year": "2023",
+  "location": "Vilnius, Lietuva",
   "type": [
-    "Išorė",
-    "Renovacijos"
+    "Interjeras",
+    "Renovacija"
   ],
-  "shortDescription": "Konkurso vieta, kurioje yra ir esami pastatai, yra istoriniame Naujamiesčio rajone, Vilniuje. Ši teritorija susiformavo palei Gedimino prospektą XIX a. pabaigoje ir tapo viena pagrindinių miesto gatvių. Rajono charakterį apibrėžia uždari pastatų kvartalai, kurie dažniausiai yra 4–5 aukštų, o kai kurie aukštesni pastatai, kaip ir šioje vietoje, siekia iki 10 aukštų. Nors pastatai palei Gedimino prospektą ir A. Stulginskio gatvę gerai dera prie konteksto, vidinis kiemas atrodo neužbaigtas. Dabartinis 4 aukštų pastatas nevisiškai uždengia kiemo šalia A. Stulginskio gatvės 7. Siekiant tai ištaisyti, planuojamas U formos pastatas. Jis bendra siena jungiasi su pastatu Gedimino prospekte 24A, uždarydamas kiemą iš pietų. Šis naujas 6 aukštų pastatas bus aukščiausias pietiniame krašte ir nusileis žemyn link kiemo, sukurdamas jaukią, svetingą erdvę ir besikeičiančias jos perspektyvas.",
+  "shortDescription": "Modernus dviejų aukštų namas su šilta skandinaviško minimalistinio estetika. Interjere natūrali ąžuolo mediena derinama su švariais baltais paviršiais – nuo U formos virtuvės su žalvario akcentais ir įmontuojamais prietaisais iki atviro plano svetainės su žema ąžuolo televizoriaus konsole su integruotu elektriniu židiniu, šviesia buklė sofa-lova ir tvirto pagrindo laiptais su ąžuolinėmis pakopomis ir vertikaliais mediniais turėklais.",
   "images": [
     "/uploads/projects/2/Main.jpg",
     "/uploads/projects/2/2.jpg",
     "/uploads/projects/2/3.jpg",
     "/uploads/projects/2/4.jpg",
-    "/uploads/projects/2/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/2/Main.mp4",
-    "/uploads/projects/2/2.mp4"
+    "/uploads/projects/2/5.jpg",
+    "/uploads/projects/2/6.jpg",
+    "/uploads/projects/2/7.jpg",
+    "/uploads/projects/2/8.jpg",
+    "/uploads/projects/2/9.JPG",
+    "/uploads/projects/2/10.jpg"
   ],
   "featured": true,
   "order": 2

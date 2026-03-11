@@ -1,22 +1,19 @@
 {
-  "title": "KAZ-Haus",
-  "year": "2020",
-  "location": "Stockholm, Schweden",
+  "title": "EV-Haus",
+  "year": "2024",
+  "location": "Kaunas, Litauen",
   "type": [
     "Außenbereich",
-    "Rennovations"
+    "Neubau",
+    "Wohnen "
   ],
-  "shortDescription": "Das Wettbewerbsgelände, das auch Bestandsgebäude umfasst, befindet sich im historischen Naujamiestis-Viertel von Vilnius. Dieses Viertel entstand Ende des 19. Jahrhunderts entlang der Gedimino-Allee und entwickelte sich zu einer der Hauptstraßen der Stadt. Geprägt wird das Viertel durch geschlossene Häuserblöcke mit meist vier bis fünf Stockwerken, wobei einige Gebäude, wie auch dieses auf dem Gelände, bis zu zehn Stockwerke hoch sind. Während sich die Gebäude entlang der Gedimino-Allee und der A.-Stulginskio-Straße gut in das Gesamtbild einfügen, wirkt der Innenhof unvollständig. Das bestehende viergeschossige Gebäude umschließt den Hof nahe der A.-Stulginskio-Straße 7 nicht vollständig. Um dies zu beheben, ist ein U-förmiges Gebäude geplant. Es ist mit einer gemeinsamen Wand an das Gebäude an der Gedimino-Allee 24A angeschlossen und verschließt den Hof im Süden. Dieses neue sechsgeschossige Gebäude wird an der Südseite am höchsten sein und sich zum Hof hin stufenförmig absenken, wodurch ein gemütlicher, einladender Raum mit wechselnden Perspektiven entsteht.",
+  "shortDescription": "Die Fassaden dieses eingeschossigen Wohnhauses zeichnen sich durch klare, moderne Minimalismus aus. Das vorherrschende Baumaterial ist helles (nahezu weißes) Klinkermauerwerk, das dem Gebäude eine strukturierte und dennoch zurückhaltende Oberfläche verleiht. In Akzentbereichen – rund um den Eingang und an ausgewählten Fassadenabschnitten – kommt dunkleres, gräuliches Klinkermauerwerk zum Einsatz, das einen subtilen Kontrast erzeugt. Der obere Teil der Fassade ist mit glattem, weißem Putz versehen, der das Gebäude optisch umhüllt und eine markante horizontale Linie schafft. Die straßenseitige Fassade wird von schmalen, vertikalen Öffnungen dominiert, die für Privatsphäre sorgen, während die Gartenfassade durch große, raumhohe Glaswände den Innenraum zur grünen Umgebung hin öffnet.",
   "images": [
     "/uploads/projects/main/Main.jpg",
     "/uploads/projects/main/2.jpg",
     "/uploads/projects/main/3.jpg",
-    "/uploads/projects/main/4.jpg",
-    "/uploads/projects/main/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/main/Main.mp4",
-    "/uploads/projects/main/2.mp4"
+    "/uploads/projects/main/4.JPG",
+    "/uploads/projects/main/5.png"
   ],
   "featured": true,
   "order": 1

@@ -1,22 +1,23 @@
 {
-  "title": "Dom KAZ",
-  "year": "2020",
-  "location": "Štokholm, Švédsko",
+  "title": "Dom KL",
+  "year": "2023",
+  "location": "Vilnius, Litva",
   "type": [
-    "Exteriér",
-    "Renovácie"
+    "Interiér",
+    "Rekonštrukcia"
   ],
-  "shortDescription": "Súťažné miesto, ktoré zahŕňa existujúce budovy, sa nachádza v historickej štvrti Naujamiestis vo Vilniuse. Táto oblasť sa vyvinula pozdĺž Gediminovej ulice koncom 19. storočia a stala sa jednou z hlavných ulíc mesta. Charakter oblasti je definovaný uzavretými blokmi budov, ktoré sú prevažne 4 – 5 poschodí vysoké, s niektorými vyššími budovami až do 10 poschodí, ako napríklad na tomto mieste. Zatiaľ čo budovy pozdĺž Gediminovej ulice a ulice A. Stulginskia dobre zapadajú do kontextu, vnútorné nádvorie pôsobí neúplne. Súčasná 4-poschodová budova úplne neuzatvára nádvorie v blízkosti ulice A. Stulginskia 7. Na nápravu tohto problému sa plánuje budova v tvare U. S budovou na Gediminovej ulici 24A sa prepojí spoločnou stenou, ktorá uzatvára nádvorie z juhu. Táto nová 6-poschodová budova bude najvyššia na južnom okraji a bude smerom k nádvoriu postupne klesať, čím vytvorí útulný a príjemný priestor s meniacimi sa perspektívami.",
+  "shortDescription": "Moderný dvojposchodový dom s teplou škandinávsko-minimalistickou estetikou. Interiér kombinuje prírodné dubové drevo s čistými bielymi povrchmi v celom dome - od kuchyne v tvare U s mosadznými akcentmi a vstavanými spotrebičmi až po otvorenú obývaciu izbu s nízkym dubovým televíznym stolíkom so zabudovaným elektrickým krbom, svetlou buklé sedacou súpravou a schodiskom s masívnym základom, dubovými nášľapmi a zvislým dreveným lamelovým zábradlím.",
   "images": [
     "/uploads/projects/2/Main.jpg",
     "/uploads/projects/2/2.jpg",
     "/uploads/projects/2/3.jpg",
     "/uploads/projects/2/4.jpg",
-    "/uploads/projects/2/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/2/Main.mp4",
-    "/uploads/projects/2/2.mp4"
+    "/uploads/projects/2/5.jpg",
+    "/uploads/projects/2/6.jpg",
+    "/uploads/projects/2/7.jpg",
+    "/uploads/projects/2/8.jpg",
+    "/uploads/projects/2/9.JPG",
+    "/uploads/projects/2/10.jpg"
   ],
   "featured": true,
   "order": 2

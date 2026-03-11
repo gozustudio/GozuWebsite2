@@ -1,22 +1,18 @@
 {
-  "title": "KAZ Ház",
-  "year": "2020",
-  "location": "Stockholm, Svédország",
+  "title": "OZ Apartman",
+  "year": "2025",
+  "location": "London, Egyesült Királyság",
   "type": [
-    "Külső",
-    "Felújítások"
+    "Belső",
+    "Felújítás"
   ],
-  "shortDescription": "A verseny helyszíne, amely meglévő épületeket is magában foglal, Vilnius történelmi Naujamiestis negyedében található. Ez a terület a 19. század végén alakult ki a Gedimino sugárút mentén, és a város egyik főutcájává vált. A terület jellegét zárt épülettömbök határozzák meg, amelyek többnyire 4-5 emeletesek, néhány magasabb épülettel, akár 10 emeletesek is, mint ezen a helyszínen. Míg a Gedimino sugárút és az A. Stulginskio utca mentén található épületek jól illeszkednek a kontextusba, a belső udvar befejezetlennek tűnik. A jelenlegi 4 emeletes épület nem zárja le teljesen az A. Stulginskio utca 7. szám alatti udvart. Ennek megoldására egy U alakú épületet terveznek. Ez egy közös fallal csatlakozik a Gedimino sugárút 24A szám alatti épülethez, délről lezárva az udvart. Ez az új 6 emeletes épület a déli szélén lesz a legmagasabb, és az udvar felé lépcsőzetesen ereszkedik le, egy hangulatos, hívogató teret és annak változó perspektíváit teremtve.",
+  "shortDescription": "A projektet a csendes visszafogottság jellemzi. A terek nyugodt hangulatot árasztanak – a meleg tölgyfa tónusok és a puha vakolatfelületek folyamatosan futnak minden helyiségben, zökkenőmentes áramlást hozva létre, ahelyett, hogy különálló területek gyűjteményét alkotnák.\n\nAz elrendezés a térfogattal játszik: a ferde mennyezetek és az ívelt építészeti elemek szoborszerű jelleget kölcsönöznek a belső tereknek, lehetővé téve, hogy a fény váratlan módon áramoljon a felületeken. Egy magas, íves ablak tartja a nappali-étkező zónát, befelé vonva a tájat, és elmosva a határt a kint és bent között. Az anyagok tekintetében a paletta szándékosan szűk – matt faerezet, erezett márvány, bordázott kerámialap és vászonszínű vakolat. Semmi sem versenyez ezzel. A textúrák tapinthatóak, de visszafogottak, inkább érezni, mint észrevenni kell őket. A fém és kárpit sötét díszítései megalapozzák a melegséget anélkül, hogy megtörnék a nyugalmat. Az összhatás szándékosan egyszerű – egy lélegző tér, ahol a természetes fény és az őszinte anyagok végzik a munka nagy részét.",
   "images": [
     "/uploads/projects/6/Main.jpg",
     "/uploads/projects/6/2.jpg",
     "/uploads/projects/6/3.jpg",
     "/uploads/projects/6/4.jpg",
     "/uploads/projects/6/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/6/Main.mp4",
-    "/uploads/projects/6/2.mp4"
   ],
   "featured": true,
   "order": 6

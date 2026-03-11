@@ -1,22 +1,19 @@
 {
-  "title": "Casa KAZ",
-  "year": "2020",
-  "location": "Estocolmo, Suecia",
+  "title": "Casa EV",
+  "year": "2024",
+  "location": "Kaunas, Lituania",
   "type": [
     "Exterior",
-    "Renovaciones"
+    "Nueva construcción",
+    "Residencial "
   ],
-  "shortDescription": "El recinto del concurso, que incluye edificios existentes, se ubica en la histórica zona de Naujamiestis de Vilna. Esta zona se desarrolló a lo largo de la avenida Gedimino a finales del siglo XIX y se convirtió en una de las principales calles de la ciudad. El carácter de la zona se define por manzanas cerradas de edificios, en su mayoría de 4 o 5 plantas, con algunos edificios más altos de hasta 10 plantas, como en este solar. Si bien los edificios a lo largo de la avenida Gedimino y la calle A. Stulginskio se integran bien en el contexto, el patio interior parece incompleto. El edificio actual de 4 plantas no cierra completamente el patio cerca de la calle A. Stulginskio 7. Para solucionar esto, se proyecta un edificio en forma de U. Este se conecta con el edificio de la avenida Gedimino 24A mediante un muro compartido, cerrando el patio desde el sur. Este nuevo edificio de 6 plantas alcanzará su punto más alto en el extremo sur y descenderá escalonadamente hacia el patio, creando un espacio acogedor y atractivo con perspectivas cambiantes.",
+  "shortDescription": "Las fachadas de esta casa residencial de una sola planta se definen por un minimalismo limpio y moderno. El material principal de acabado es mampostería de ladrillo clinker claro (casi blanco), que confiere al edificio una superficie texturizada pero sobria. En las zonas de acento, alrededor de la entrada y en algunos segmentos de la fachada, se utiliza un ladrillo clinker grisáceo más oscuro, creando un sutil contraste. La parte superior de la fachada está revestida con un revoco blanco liso, que envuelve visualmente el edificio y establece un marcado ritmo horizontal. La fachada que da a la calle está dominada por estrechas aberturas verticales que garantizan la privacidad, mientras que la fachada del jardín cuenta con grandes mamparas de cristal de suelo a techo que abren el interior al verde entorno.",
   "images": [
     "/uploads/projects/main/Main.jpg",
     "/uploads/projects/main/2.jpg",
     "/uploads/projects/main/3.jpg",
-    "/uploads/projects/main/4.jpg",
-    "/uploads/projects/main/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/main/Main.mp4",
-    "/uploads/projects/main/2.mp4"
+    "/uploads/projects/main/4.JPG",
+    "/uploads/projects/main/5.png"
   ],
   "featured": true,
   "order": 1

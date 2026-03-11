@@ -1,22 +1,18 @@
 {
-  "title": "Dom KAZ",
-  "year": "2020",
-  "location": "Štokholm, Švédsko",
+  "title": "Apartmán OZ",
+  "year": "2025",
+  "location": "Londýn, Spojené kráľovstvo",
   "type": [
-    "Exteriér",
-    "Renovácie"
+    "Interiér",
+    "Rekonštrukcia"
   ],
-  "shortDescription": "Súťažné miesto, ktoré zahŕňa existujúce budovy, sa nachádza v historickej štvrti Naujamiestis vo Vilniuse. Táto oblasť sa vyvinula pozdĺž Gediminovej ulice koncom 19. storočia a stala sa jednou z hlavných ulíc mesta. Charakter oblasti je definovaný uzavretými blokmi budov, ktoré sú prevažne 4 – 5 poschodí vysoké, s niektorými vyššími budovami až do 10 poschodí, ako napríklad na tomto mieste. Zatiaľ čo budovy pozdĺž Gediminovej ulice a ulice A. Stulginskia dobre zapadajú do kontextu, vnútorné nádvorie pôsobí neúplne. Súčasná 4-poschodová budova úplne neuzatvára nádvorie v blízkosti ulice A. Stulginskia 7. Na nápravu tohto problému sa plánuje budova v tvare U. S budovou na Gediminovej ulici 24A sa prepojí spoločnou stenou, ktorá uzatvára nádvorie z juhu. Táto nová 6-poschodová budova bude najvyššia na južnom okraji a bude smerom k nádvoriu postupne klesať, čím vytvorí útulný a príjemný priestor s meniacimi sa perspektívami.",
+  "shortDescription": "Projekt je formovaný pocitom tichej zdržanlivosti. Priestory pôsobia neuponáhľane – teplé dubové tóny a mäkké omietkové povrchy sa tiahnu nepretržite každou miestnosťou a vytvárajú skôr plynulý tok než súbor samostatných oblastí.\nDispozícia sa hrá s objemom: šikmé stropy a zakrivené architektonické prvky dodávajú interiérom sochársky charakter a umožňujú svetlu pohybovať sa po povrchoch neočakávanými spôsobmi. Vysoké klenuté okno ukotvuje obývaciu s jedálňou zónu, vťahuje krajinu dovnútra a stiera hranicu medzi vnútrom a vonkajšom. Z materiálového hľadiska je paleta zámerne úzka – matná drevená štruktúra, žilkovaný mramor, rebrované keramické dlaždice a ľanová omietka. Nič nekonkuruje. Textúry sú hmatateľné, ale tlmené, určené skôr na to, aby sa cítili ako si všímali. Tmavé akcenty v kove a čalúnení uzemňujú teplo bez toho, aby narušili pokoj. Celková atmosféra je zámerne jednoduchá – priestor, ktorý dýcha, kde prirodzené svetlo a poctivé materiály robia väčšinu práce.",
   "images": [
     "/uploads/projects/6/Main.jpg",
     "/uploads/projects/6/2.jpg",
     "/uploads/projects/6/3.jpg",
     "/uploads/projects/6/4.jpg",
     "/uploads/projects/6/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/6/Main.mp4",
-    "/uploads/projects/6/2.mp4"
   ],
   "featured": true,
   "order": 6

@@ -1,22 +1,18 @@
 {
-  "title": "KAZ nams",
-  "year": "2020",
-  "location": "Stokholma, Zviedrija",
+  "title": "Denticijas klīnika",
+  "year": "2022",
+  "location": "Viļņa, Lietuva",
   "type": [
-    "Ārpuse",
-    "Renovācijas"
+    "Interjers",
+    "Renovācija"
   ],
-  "shortDescription": "Konkursa vieta, kurā ietilpst esošās ēkas, atrodas vēsturiskajā Viļņas Naujamiestis rajonā. Šī teritorija izveidojās gar Gedimino prospektu 19. gadsimta beigās un kļuva par vienu no pilsētas galvenajām ielām. Rajona raksturu nosaka slēgti ēku kvartāli, kas pārsvarā ir 4–5 stāvus augsti, ar dažām augstākām ēkām līdz pat 10 stāviem, tāpat kā šajā vietā. Lai gan ēkas gar Gedimino prospektu un A. Stulginskio ielu labi iederas kontekstā, iekšējais pagalms šķiet nepabeigts. Esošā četrstāvu ēka pilnībā neaptver pagalmu pie A. Stulginskio ielas 7. Lai to labotu, ir plānota U veida ēka. Tā savienojas ar ēku Gedimino prospektā 24A ar kopīgu sienu, noslēdzot pagalmu no dienvidiem. Šī jaunā sešstāvu ēka būs augstākā dienvidu malā un pakāpsies lejup pret pagalmu, radot mājīgu, aicinošu telpu un tās mainīgās perspektīvas.",
+  "shortDescription": "Skaidra, pārliecināta forma ar stikla plaknēm, kas paver iekšpusi pilsētai. Fasāde aicina – caurspīdīga, mūsdienīga, pārliecināta. Apstādījumi pie ieejas mīkstina ģeometriju un ienes dzīvību. Iekšpusē valda ozols, gaisma un klusums. Jau no pirmā soļa valda materialitāte – siltas sienas, matēts stikls, maigas ēnas. Telpa ir veidota nevis efekta, bet gan sajūtu radīšanai. Siltums un miers tur, kur tie ir vissvarīgākie. Koka ietvari, gaismas vadotnes un minimālistiska forma ļauj elpot. Klīnika, kas nešķiet kā klīnika – drīzāk vieta, kur vēlaties atrasties. Kur viss klusi saka: viss būs kārtībā.",
   "images": [
     "/uploads/projects/4/Main.jpg",
-    "/uploads/projects/4/2.jpg",
+    "/uploads/projects/4/2.jpeg",
     "/uploads/projects/4/3.jpg",
-    "/uploads/projects/4/4.jpg",
+    "/uploads/projects/4/4.JPG",
     "/uploads/projects/4/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/4/Main.mp4",
-    "/uploads/projects/4/2.mp4"
   ],
   "featured": true,
   "order": 4

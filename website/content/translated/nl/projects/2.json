@@ -1,22 +1,23 @@
 {
-  "title": "KAZ Huis",
-  "year": "2020",
-  "location": "Stockholm, Zweden",
+  "title": "KL House",
+  "year": "2023",
+  "location": "Vilnius, Litouwen",
   "type": [
-    "Buitenkant",
-    "Renovaties"
+    "Interieur",
+    "Vernieuwing"
   ],
-  "shortDescription": "Het wedstrijdterrein, dat bestaande gebouwen omvat, bevindt zich in de historische wijk Naujamiestis in Vilnius. Deze wijk ontwikkelde zich eind 19e eeuw langs de Gediminolaan en groeide uit tot een van de belangrijkste straten van de stad. Het karakter van de wijk wordt bepaald door de gesloten blokken gebouwen, meestal vier tot vijf verdiepingen hoog, met enkele hogere gebouwen tot wel tien verdiepingen, zoals op deze locatie. Hoewel de gebouwen langs de Gediminolaan en de A. Stulginskiostraat goed in de context passen, voelt de binnenplaats onvolledig aan. Het huidige gebouw van vier verdiepingen omsluit de binnenplaats bij de A. Stulginskiostraat 7 niet volledig. Om dit op te lossen is een U-vormig gebouw gepland. Dit gebouw sluit aan op het gebouw aan de Gediminolaan 24A met een gedeelde muur, waardoor de binnenplaats aan de zuidkant wordt afgesloten. Dit nieuwe gebouw van zes verdiepingen zal het hoogst zijn aan de zuidkant en trapsgewijs aflopen naar de binnenplaats, waardoor een gezellige, uitnodigende ruimte met wisselende perspectieven ontstaat.",
+  "shortDescription": "Een moderne woning met twee verdiepingen en een warme, Scandinavisch-minimalistische uitstraling. Het interieur combineert natuurlijk eikenhout met strakke witte oppervlakken – van de U-vormige keuken met messing accenten en ingebouwde apparatuur tot de open woonkamer met een laag eikenhouten tv-meubel met geïntegreerde elektrische haard, een lichte bouclé hoekbank en een massieve trap met eikenhouten treden en verticale houten latten als leuning.",
   "images": [
     "/uploads/projects/2/Main.jpg",
     "/uploads/projects/2/2.jpg",
     "/uploads/projects/2/3.jpg",
     "/uploads/projects/2/4.jpg",
-    "/uploads/projects/2/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/2/Main.mp4",
-    "/uploads/projects/2/2.mp4"
+    "/uploads/projects/2/5.jpg",
+    "/uploads/projects/2/6.jpg",
+    "/uploads/projects/2/7.jpg",
+    "/uploads/projects/2/8.jpg",
+    "/uploads/projects/2/9.JPG",
+    "/uploads/projects/2/10.jpg"
   ],
   "featured": true,
   "order": 2

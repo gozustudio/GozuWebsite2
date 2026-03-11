@@ -1,22 +1,18 @@
 {
-  "title": "Casa KAZ",
-  "year": "2020",
-  "location": "Stockholm, Suedia",
+  "title": "Apartamentul OZ",
+  "year": "2025",
+  "location": "Londra, Regatul Unit",
   "type": [
-    "Exterior",
-    "Renovări"
+    "Interior",
+    "Renovare"
   ],
-  "shortDescription": "Amplasamentul concursului, care include clădiri existente, este situat în zona istorică Naujamiestis din Vilnius. Această zonă s-a dezvoltat de-a lungul bulevardului Gedimino la sfârșitul secolului al XIX-lea și a devenit una dintre străzile principale ale orașului. Caracterul zonei este definit de blocuri închise de clădiri, care au în mare parte 4-5 etaje, cu unele clădiri mai înalte de până la 10 etaje, precum pe acest amplasament. Deși clădirile de-a lungul bulevardului Gedimino și al străzii A. Stulginskio se încadrează bine în context, curtea interioară pare incompletă. Clădirea actuală cu 4 etaje nu închide complet curtea din apropierea străzii A. Stulginskio nr. 7. Pentru a remedia acest lucru, este planificată o clădire în formă de U. Aceasta se conectează la clădirea de pe bulevardului Gedimino nr. 24A printr-un perete comun, închizând curtea dinspre sud. Această nouă clădire cu 6 etaje va fi cea mai înaltă la marginea sudică și coboară spre curte, creând un spațiu confortabil și primitor, cu perspectivele sale schimbătoare.",
+  "shortDescription": "Proiectul este modelat de un sentiment de liniște și reținere. Spațiile par relaxante - tonuri calde de stejar și suprafețe moi de tencuială se desfășoară continuu prin fiecare cameră, creând un flux uniform, mai degrabă decât o colecție de zone separate.\n\nDispunerea se joacă cu volumul: tavanele înclinate și elementele arhitecturale curbate conferă interioarelor o calitate sculpturală, permițând luminii să se miște pe suprafețe în moduri neașteptate. O fereastră înaltă și arcuită ancorează zona de living-sufragerie, atrăgând peisajul spre interior și estompând granița dintre interior și exterior. Din punct de vedere al materialelor, paleta de culori este deliberat îngustă - texturi mate ale lemnului, marmură cu venă, plăci ceramice cu nervuri și tencuială în nuanțe de in. Nimic nu concurează. Texturile sunt tactile, dar subtile, menite să fie simțite mai mult decât observate. Accentele întunecate din metal și tapițerie mărginesc căldura fără a perturba calmul. Atmosfera generală este una de simplitate deliberată - un spațiu care respiră, unde lumina naturală și materialele oneste fac cea mai mare parte a lucrării.",
   "images": [
     "/uploads/projects/6/Main.jpg",
     "/uploads/projects/6/2.jpg",
     "/uploads/projects/6/3.jpg",
     "/uploads/projects/6/4.jpg",
     "/uploads/projects/6/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/6/Main.mp4",
-    "/uploads/projects/6/2.mp4"
   ],
   "featured": true,
   "order": 6

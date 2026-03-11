@@ -1,22 +1,18 @@
 {
-  "title": "Casa KAZ",
-  "year": "2020",
-  "location": "Stoccolma, Svezia",
+  "title": "Clinica Denticija",
+  "year": "2022",
+  "location": "Vilnius, Lituania",
   "type": [
-    "Esterno",
-    "Ristrutturazioni"
+    "Interno",
+    "Ristrutturazione"
   ],
-  "shortDescription": "Il sito del concorso, che comprende edifici esistenti, si trova nello storico quartiere Naujamiestis di Vilnius. Quest'area si è sviluppata lungo il viale Gedimino alla fine del XIX secolo, diventando una delle strade principali della città. Il carattere dell'area è definito da isolati chiusi di edifici, per lo più alti 4-5 piani, con alcuni edifici più alti che raggiungono i 10 piani, come in questo sito. Mentre gli edifici lungo il viale Gedimino e la via A. Stulginskio si inseriscono bene nel contesto, il cortile interno appare incompleto. L'attuale edificio di 4 piani non racchiude completamente il cortile vicino al numero 7 di via A. Stulginskio. Per risolvere questo problema, è previsto un edificio a forma di U. Si collega all'edificio al numero 24A del viale Gedimino con un muro comune, chiudendo il cortile da sud. Questo nuovo edificio di 6 piani sarà più alto sul lato meridionale e si svilupperà verso il cortile, creando uno spazio accogliente e invitante con prospettive mutevoli.",
+  "shortDescription": "Una forma chiara e sicura, con piani in vetro che aprono l'interno alla città. La facciata invita: trasparente, contemporanea, sicura. Il verde all'ingresso ammorbidisce la geometria e infonde vita. All'interno, rovere, luce e silenzio prendono il sopravvento. La materialità avvolge fin dal primo passo: pareti calde, vetro smerigliato, ombre morbide. Lo spazio è progettato non per l'effetto, ma per le sensazioni. Calore e calma dove più contano. Il legno avvolge, le guide luminose e la forma minimalista lasciano respirare. Una clinica che non sembra una clinica, ma piuttosto un luogo in cui si desidera essere. Dove tutto dice silenziosamente: andrà tutto bene.",
   "images": [
     "/uploads/projects/4/Main.jpg",
-    "/uploads/projects/4/2.jpg",
+    "/uploads/projects/4/2.jpeg",
     "/uploads/projects/4/3.jpg",
-    "/uploads/projects/4/4.jpg",
+    "/uploads/projects/4/4.JPG",
     "/uploads/projects/4/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/4/Main.mp4",
-    "/uploads/projects/4/2.mp4"
   ],
   "featured": true,
   "order": 4

@@ -1,22 +1,18 @@
 {
-  "title": "Dom KAZ",
-  "year": "2020",
-  "location": "Sztokholm, Szwecja",
+  "title": "Apartament AD",
+  "year": "2024",
+  "location": "Londyn, Wielka Brytania",
   "type": [
-    "Zewnętrzny",
-    "Renowacje"
+    "Wnętrze",
+    "Renowacja"
   ],
-  "shortDescription": "Teren konkursu, obejmujący istniejące budynki, znajduje się w historycznej dzielnicy Nowe Miasto w Wilnie. Obszar ten rozwinął się wzdłuż Alei Giedymina pod koniec XIX wieku i stał się jedną z głównych ulic miasta. Charakter tego obszaru określają zamknięte bloki zabudowy, w większości o wysokości 4–5 pięter, z kilkoma wyższymi budynkami, sięgającymi nawet 10 pięter, jak na tym terenie. Podczas gdy budynki wzdłuż Alei Giedymina i ulicy A. Stulgińskiego dobrze wpisują się w kontekst, wewnętrzny dziedziniec wydaje się niekompletny. Obecny 4-piętrowy budynek nie zamyka w pełni dziedzińca w pobliżu ulicy A. Stulgińskiego 7. Aby to naprawić, planowany jest budynek w kształcie litery U. Łączy się on z budynkiem przy Alei Giedymina 24A wspólną ścianą, zamykając dziedziniec od strony południowej. Ten nowy 6-piętrowy budynek będzie najwyższy na południowym krańcu i będzie schodził w kierunku dziedzińca, tworząc przytulną, zachęcającą przestrzeń i oferując zmieniające się perspektywy.",
+  "shortDescription": "Kompaktowy projekt apartamentu, zakorzeniony w naturalnych materiałach i spokojnej, nordyckiej wrażliwości. Jasna dębowa stolarka wypełnia całą przestrzeń – od szafek, przez regały, po podłogę – tworząc płynne, ciepłe tło. Głębokie zielone akcenty w tekstyliach i płytkach dodają głębi, nie zakłócając spokojnej palety barw. Otwarta strefa dzienna łączy gotowanie, jadalnię i relaks w jedną płynną strefę, a wbudowane schowki maksymalizują każdą przestrzeń. W przedpokoju i łazienkach zastosowano tę samą logikę materiałową – drewno, kamień i szkło w stonowanych, czystych liniach. W rezultacie powstała przestrzeń, która wydaje się większa niż jej powierzchnia, z spójną atmosferą miękkości i porządku.",
   "images": [
     "/uploads/projects/5/Main.jpg",
     "/uploads/projects/5/2.jpg",
     "/uploads/projects/5/3.jpg",
     "/uploads/projects/5/4.jpg",
     "/uploads/projects/5/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/5/Main.mp4",
-    "/uploads/projects/5/2.mp4"
   ],
   "featured": true,
   "order": 5

@@ -1,22 +1,19 @@
 {
-  "title": "Casa KAZ",
-  "year": "2020",
-  "location": "Stoccolma, Svezia",
+  "title": "Casa elettrica",
+  "year": "2024",
+  "location": "Kaunas, Lituania",
   "type": [
     "Esterno",
-    "Ristrutturazioni"
+    "Nuova costruzione",
+    "Residenziale "
   ],
-  "shortDescription": "Il sito del concorso, che comprende edifici esistenti, si trova nello storico quartiere Naujamiestis di Vilnius. Quest'area si è sviluppata lungo il viale Gedimino alla fine del XIX secolo, diventando una delle strade principali della città. Il carattere dell'area è definito da isolati chiusi di edifici, per lo più alti 4-5 piani, con alcuni edifici più alti che raggiungono i 10 piani, come in questo sito. Mentre gli edifici lungo il viale Gedimino e la via A. Stulginskio si inseriscono bene nel contesto, il cortile interno appare incompleto. L'attuale edificio di 4 piani non racchiude completamente il cortile vicino al numero 7 di via A. Stulginskio. Per risolvere questo problema, è previsto un edificio a forma di U. Si collega all'edificio al numero 24A del viale Gedimino con un muro comune, chiudendo il cortile da sud. Questo nuovo edificio di 6 piani sarà più alto sul lato meridionale e si svilupperà verso il cortile, creando uno spazio accogliente e invitante con prospettive mutevoli.",
+  "shortDescription": "Le facciate di questa casa residenziale a un piano sono definite da un minimalismo pulito e moderno. Il materiale di finitura principale è una muratura in mattoni di clinker chiari (quasi bianchi), che conferisce all'edificio una superficie strutturata ma sobria. Nelle zone di accento - intorno all'ingresso e in alcuni segmenti della facciata - viene utilizzato un mattone di clinker più scuro e grigiastro, creando un sottile contrasto. La parte superiore della facciata è rifinita con un intonaco bianco liscio, che \"avvolge\" visivamente l'edificio e stabilisce un forte ritmo orizzontale. Il prospetto rivolto verso la strada è dominato da strette aperture verticali che garantiscono la privacy, mentre la facciata sul giardino presenta ampie vetrate a tutta altezza che aprono l'interno al verde circostante.",
   "images": [
     "/uploads/projects/main/Main.jpg",
     "/uploads/projects/main/2.jpg",
     "/uploads/projects/main/3.jpg",
-    "/uploads/projects/main/4.jpg",
-    "/uploads/projects/main/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/main/Main.mp4",
-    "/uploads/projects/main/2.mp4"
+    "/uploads/projects/main/4.JPG",
+    "/uploads/projects/main/5.png"
   ],
   "featured": true,
   "order": 1

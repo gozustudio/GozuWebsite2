@@ -1,22 +1,19 @@
 {
-  "title": "Dom KAZ",
-  "year": "2020",
-  "location": "Štokholm, Švédsko",
+  "title": "Dom MM",
+  "year": "2024",
+  "location": "Kaunas, Litva",
   "type": [
     "Exteriér",
-    "Renovácie"
+    "Novostavba",
+    "Obytné"
   ],
-  "shortDescription": "Súťažné miesto, ktoré zahŕňa existujúce budovy, sa nachádza v historickej štvrti Naujamiestis vo Vilniuse. Táto oblasť sa vyvinula pozdĺž Gediminovej ulice koncom 19. storočia a stala sa jednou z hlavných ulíc mesta. Charakter oblasti je definovaný uzavretými blokmi budov, ktoré sú prevažne 4 – 5 poschodí vysoké, s niektorými vyššími budovami až do 10 poschodí, ako napríklad na tomto mieste. Zatiaľ čo budovy pozdĺž Gediminovej ulice a ulice A. Stulginskia dobre zapadajú do kontextu, vnútorné nádvorie pôsobí neúplne. Súčasná 4-poschodová budova úplne neuzatvára nádvorie v blízkosti ulice A. Stulginskia 7. Na nápravu tohto problému sa plánuje budova v tvare U. S budovou na Gediminovej ulici 24A sa prepojí spoločnou stenou, ktorá uzatvára nádvorie z juhu. Táto nová 6-poschodová budova bude najvyššia na južnom okraji a bude smerom k nádvoriu postupne klesať, čím vytvorí útulný a príjemný priestor s meniacimi sa perspektívami.",
+  "shortDescription": "Dvojposchodová rezidencia, kde sa prísna geometrická forma stretáva s prírodným prostredím. Kompozícia budovy pozostáva z dvoch jasne odlišných objemov - tmavej, monumentálnej hornej kocky a svetlejšieho, drevom obloženého prízemia, ktoré sa zdanlivo rozplýva v krajine. Ústrednou myšlienkou projektu je kruhový portál vo fasáde, ktorý slúži ako symbolický prah medzi verejnou a súkromnou sférou. Tento motív vnáša do inak asketickej budovy pocit hravosti a poézie.",
   "images": [
     "/uploads/projects/3/Main.jpg",
     "/uploads/projects/3/2.jpg",
     "/uploads/projects/3/3.jpg",
     "/uploads/projects/3/4.jpg",
     "/uploads/projects/3/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/3/Main.mp4",
-    "/uploads/projects/3/2.mp4"
   ],
   "featured": true,
   "order": 3

@@ -1,22 +1,18 @@
 {
-  "title": "Kuća KAZ",
-  "year": "2020",
-  "location": "Stockholm, Švedska",
+  "title": "klinika Denticija",
+  "year": "2022",
+  "location": "Vilnius, Litva",
   "type": [
-    "Vanjski",
-    "Renovacije"
+    "Unutrašnjost",
+    "Renovacija"
   ],
-  "shortDescription": "Natječajno mjesto, koje uključuje postojeće zgrade, nalazi se u povijesnom području Naujamiestis u Vilniusu. Ovo se područje razvilo uz aveniju Gedimino krajem 19. stoljeća i postalo je jedna od glavnih gradskih ulica. Karakter područja definiran je zatvorenim blokovima zgrada koje su uglavnom visoke 4-5 katova, s nekim višim zgradama do 10 katova, poput ove lokacije. Dok se zgrade uz aveniju Gedimino i ulicu A. Stulginskio dobro uklapaju u kontekst, unutarnje dvorište djeluje nedovršeno. Trenutna četverokatnica ne zatvara u potpunosti dvorište u blizini ulice A. Stulginskio 7. Kako bi se to riješilo, planirana je zgrada u obliku slova U. Spaja se sa zgradom na adresi Gedimino avenija 24A zajedničkim zidom, zatvarajući dvorište s juga. Ova nova šesterokatnica bit će najviša na južnom rubu i spuštat će se prema dvorištu, stvarajući ugodan, privlačan prostor i njegove promjenjive perspektive.",
+  "shortDescription": "Jasan, samouvjeren oblik sa staklenim ravnima koje otvaraju unutrašnjost prema gradu. Fasada poziva - prozirna, suvremena, samouvjerena. Zelenilo na ulazu omekšava geometriju i unosi život. Unutra, hrast, svjetlost i tišina preuzimaju. Materijalnost obuhvaća od prvog koraka - topli zidovi, matirano staklo, meke sjene. Prostor je dizajniran ne za efekt, već za osjećaj. Toplina i mir tamo gdje su najvažniji. Drvo obavija, svjetlosni vodiči i minimalistički oblik omogućuju vam disanje. Klinika koja se ne osjeća kao klinika - već mjesto gdje želite biti. Gdje sve tiho govori: bit će sve u redu.",
   "images": [
     "/uploads/projects/4/Main.jpg",
-    "/uploads/projects/4/2.jpg",
+    "/uploads/projects/4/2.jpeg",
     "/uploads/projects/4/3.jpg",
-    "/uploads/projects/4/4.jpg",
+    "/uploads/projects/4/4.JPG",
     "/uploads/projects/4/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/4/Main.mp4",
-    "/uploads/projects/4/2.mp4"
   ],
   "featured": true,
   "order": 4

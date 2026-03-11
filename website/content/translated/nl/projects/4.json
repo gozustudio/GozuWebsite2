@@ -1,22 +1,18 @@
 {
-  "title": "KAZ Huis",
-  "year": "2020",
-  "location": "Stockholm, Zweden",
+  "title": "Tandheelkundige kliniek",
+  "year": "2022",
+  "location": "Vilnius, Litouwen",
   "type": [
-    "Buitenkant",
-    "Renovaties"
+    "Interieur",
+    "Vernieuwing"
   ],
-  "shortDescription": "Het wedstrijdterrein, dat bestaande gebouwen omvat, bevindt zich in de historische wijk Naujamiestis in Vilnius. Deze wijk ontwikkelde zich eind 19e eeuw langs de Gediminolaan en groeide uit tot een van de belangrijkste straten van de stad. Het karakter van de wijk wordt bepaald door de gesloten blokken gebouwen, meestal vier tot vijf verdiepingen hoog, met enkele hogere gebouwen tot wel tien verdiepingen, zoals op deze locatie. Hoewel de gebouwen langs de Gediminolaan en de A. Stulginskiostraat goed in de context passen, voelt de binnenplaats onvolledig aan. Het huidige gebouw van vier verdiepingen omsluit de binnenplaats bij de A. Stulginskiostraat 7 niet volledig. Om dit op te lossen is een U-vormig gebouw gepland. Dit gebouw sluit aan op het gebouw aan de Gediminolaan 24A met een gedeelde muur, waardoor de binnenplaats aan de zuidkant wordt afgesloten. Dit nieuwe gebouw van zes verdiepingen zal het hoogst zijn aan de zuidkant en trapsgewijs aflopen naar de binnenplaats, waardoor een gezellige, uitnodigende ruimte met wisselende perspectieven ontstaat.",
+  "shortDescription": "Een heldere, zelfverzekerde vorm met glazen vlakken die het interieur openen naar de stad. De gevel nodigt uit – transparant, eigentijds, zelfverzekerd. Groen bij de ingang verzacht de geometrie en brengt leven. Binnen nemen eikenhout, licht en stilte de overhand. Materialiteit omarmt vanaf de eerste stap – warme muren, mat glas, zachte schaduwen. De ruimte is niet ontworpen voor het effect, maar voor het gevoel. Warmte en rust waar ze het meest nodig zijn. Hout omhult, geleidt het licht en minimalistische vormen laten je ademen. Een kliniek die niet aanvoelt als een kliniek – maar als een plek waar je wilt zijn. Waar alles stilletjes zegt: het komt allemaal goed.",
   "images": [
     "/uploads/projects/4/Main.jpg",
-    "/uploads/projects/4/2.jpg",
+    "/uploads/projects/4/2.jpeg",
     "/uploads/projects/4/3.jpg",
-    "/uploads/projects/4/4.jpg",
+    "/uploads/projects/4/4.JPG",
     "/uploads/projects/4/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/4/Main.mp4",
-    "/uploads/projects/4/2.mp4"
   ],
   "featured": true,
   "order": 4

@@ -1,22 +1,18 @@
 {
-  "title": "Hiša KAZ",
-  "year": "2020",
-  "location": "Stockholm, Švedska",
+  "title": "Apartma OZ",
+  "year": "2025",
+  "location": "London, Združeno kraljestvo",
   "type": [
-    "Zunanjost",
-    "Prenove"
+    "Notranjost",
+    "Prenova"
   ],
-  "shortDescription": "Natečajno območje, ki vključuje obstoječe stavbe, se nahaja v zgodovinskem predelu Naujamiestis v Vilni. To območje se je razvilo ob aveniji Gedimino konec 19. stoletja in postalo ena glavnih mestnih ulic. Značaj območja zaznamujejo zaprti bloki stavb, ki so večinoma visoki 4–5 nadstropij, z nekaterimi višjimi stavbami, visokimi do 10 nadstropij, kot je na tem mestu. Medtem ko se stavbe ob aveniji Gedimino in ulici A. Stulginskio dobro ujemajo s kontekstom, se notranje dvorišče zdi nepopolno. Sedanja 4-nadstropna stavba ne obdaja v celoti dvorišča v bližini ulice A. Stulginskio 7. Da bi to odpravili, je načrtovana stavba v obliki črke U. S stavbo na aveniji Gedimino 24A se povezuje s skupnim zidom, ki zapira dvorišče z juga. Ta nova 6-nadstropna stavba bo najvišja na južnem robu in se bo stopničasto spuščala proti dvorišču, kar bo ustvarilo prijeten, vabljiv prostor in njegove spreminjajoče se perspektive.",
+  "shortDescription": "Projekt je oblikovan z občutkom mirne zadržanosti. Prostori delujejo sproščeno – topli hrastovi toni in mehke ometne površine se neprekinjeno raztezajo skozi vsako sobo in ustvarjajo brezhiben pretok, namesto da bi bili le skupek ločenih območij.\nPostavitev se poigrava z volumnom: poševni stropi in ukrivljeni arhitekturni elementi dajejo notranjosti kiparski videz, saj omogočajo, da se svetloba premika po površinah na nepričakovane načine. Visoko obokano okno zasidra dnevno-jedilni prostor, ki potegne pokrajino navznoter in zabriše mejo med notranjostjo in zunanjostjo. Kar zadeva materiale, je paleta namerno ozka – mat lesni vzorec, žilnat marmor, rebraste keramične ploščice in omet v platnenem tonu. Nič se ne kosa. Teksture so otipne, a umirjene, namenjene temu, da jih bolj občutimo kot opazimo. Temni poudarki v kovini in oblazinjenju umirjajo toplino, ne da bi pri tem motili mir. Celotno vzdušje je namerno preprosto – prostor, ki diha, kjer naravna svetloba in pristni materiali opravijo večino dela.",
   "images": [
     "/uploads/projects/6/Main.jpg",
     "/uploads/projects/6/2.jpg",
     "/uploads/projects/6/3.jpg",
     "/uploads/projects/6/4.jpg",
     "/uploads/projects/6/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/6/Main.mp4",
-    "/uploads/projects/6/2.mp4"
   ],
   "featured": true,
   "order": 6

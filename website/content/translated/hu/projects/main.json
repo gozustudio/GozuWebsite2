@@ -1,22 +1,19 @@
 {
-  "title": "KAZ Ház",
-  "year": "2020",
-  "location": "Stockholm, Svédország",
+  "title": "EV Ház",
+  "year": "2024",
+  "location": "Kaunas, Litvánia",
   "type": [
     "Külső",
-    "Felújítások"
+    "Új építés",
+    "Lakóingatlanok"
   ],
-  "shortDescription": "A verseny helyszíne, amely meglévő épületeket is magában foglal, Vilnius történelmi Naujamiestis negyedében található. Ez a terület a 19. század végén alakult ki a Gedimino sugárút mentén, és a város egyik főutcájává vált. A terület jellegét zárt épülettömbök határozzák meg, amelyek többnyire 4-5 emeletesek, néhány magasabb épülettel, akár 10 emeletesek is, mint ezen a helyszínen. Míg a Gedimino sugárút és az A. Stulginskio utca mentén található épületek jól illeszkednek a kontextusba, a belső udvar befejezetlennek tűnik. A jelenlegi 4 emeletes épület nem zárja le teljesen az A. Stulginskio utca 7. szám alatti udvart. Ennek megoldására egy U alakú épületet terveznek. Ez egy közös fallal csatlakozik a Gedimino sugárút 24A szám alatti épülethez, délről lezárva az udvart. Ez az új 6 emeletes épület a déli szélén lesz a legmagasabb, és az udvar felé lépcsőzetesen ereszkedik le, egy hangulatos, hívogató teret és annak változó perspektíváit teremtve.",
+  "shortDescription": "Az egyszintes lakóház homlokzatait a letisztult, modern minimalizmus határozza meg. Az elsődleges burkolóanyag világos (közel fehér) klinkertégla falazat, amely texturált, mégis visszafogott felületet kölcsönöz az épületnek. A hangsúlyos zónákban – a bejárat körül és a kiválasztott homlokzati szegmensekben – sötétebb, szürkés klinkertéglát használnak, finom kontrasztot teremtve. A homlokzat felső részét sima fehér vakolat borítja, amely vizuálisan „beburkolja” az épületet, és erős vízszintes ritmust teremt. Az utcára néző homlokzatot keskeny függőleges nyílások uralják, amelyek biztosítják a magánéletet, míg a kerti homlokzaton nagyméretű, padlótól mennyezetig érő üvegválaszfalak találhatók, amelyek a belső teret a zöld környezetre nyitják.",
   "images": [
     "/uploads/projects/main/Main.jpg",
     "/uploads/projects/main/2.jpg",
     "/uploads/projects/main/3.jpg",
-    "/uploads/projects/main/4.jpg",
-    "/uploads/projects/main/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/main/Main.mp4",
-    "/uploads/projects/main/2.mp4"
+    "/uploads/projects/main/4.JPG",
+    "/uploads/projects/main/5.png"
   ],
   "featured": true,
   "order": 1

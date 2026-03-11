@@ -1,22 +1,19 @@
 {
-  "title": "Dom KAZ",
-  "year": "2020",
-  "location": "Štokholm, Švédsko",
+  "title": "Dom elektromobilov",
+  "year": "2024",
+  "location": "Kaunas, Litva",
   "type": [
     "Exteriér",
-    "Renovácie"
+    "Novostavba",
+    "Obytné"
   ],
-  "shortDescription": "Súťažné miesto, ktoré zahŕňa existujúce budovy, sa nachádza v historickej štvrti Naujamiestis vo Vilniuse. Táto oblasť sa vyvinula pozdĺž Gediminovej ulice koncom 19. storočia a stala sa jednou z hlavných ulíc mesta. Charakter oblasti je definovaný uzavretými blokmi budov, ktoré sú prevažne 4 – 5 poschodí vysoké, s niektorými vyššími budovami až do 10 poschodí, ako napríklad na tomto mieste. Zatiaľ čo budovy pozdĺž Gediminovej ulice a ulice A. Stulginskia dobre zapadajú do kontextu, vnútorné nádvorie pôsobí neúplne. Súčasná 4-poschodová budova úplne neuzatvára nádvorie v blízkosti ulice A. Stulginskia 7. Na nápravu tohto problému sa plánuje budova v tvare U. S budovou na Gediminovej ulici 24A sa prepojí spoločnou stenou, ktorá uzatvára nádvorie z juhu. Táto nová 6-poschodová budova bude najvyššia na južnom okraji a bude smerom k nádvoriu postupne klesať, čím vytvorí útulný a príjemný priestor s meniacimi sa perspektívami.",
+  "shortDescription": "Fasády tohto jednoposchodového obytného domu sú definované čistým, moderným minimalizmom. Hlavným povrchovým materiálom je svetlé (takmer biele) murivo z klinkerových tehál, ktoré budove dodáva textúrovaný, no zároveň decentný povrch. V akcentových zónach – okolo vchodu a vybraných segmentov fasády – sa používa tmavšia, sivastá klinkerová tehla, ktorá vytvára jemný kontrast. Horná časť fasády je upravená hladkou bielou omietkou, ktorá vizuálne „obaľuje“ budovu a vytvára silný horizontálny rytmus. Fasáde orientovanej do ulice dominujú úzke vertikálne otvory, ktoré zaisťujú súkromie, zatiaľ čo záhradná fasáda sa vyznačuje veľkými sklenenými priečkami od podlahy až po strop, ktoré otvárajú interiér do zeleného okolia.",
   "images": [
     "/uploads/projects/main/Main.jpg",
     "/uploads/projects/main/2.jpg",
     "/uploads/projects/main/3.jpg",
-    "/uploads/projects/main/4.jpg",
-    "/uploads/projects/main/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/main/Main.mp4",
-    "/uploads/projects/main/2.mp4"
+    "/uploads/projects/main/4.JPG",
+    "/uploads/projects/main/5.png"
   ],
   "featured": true,
   "order": 1

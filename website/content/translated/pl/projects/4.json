@@ -1,22 +1,18 @@
 {
-  "title": "Dom KAZ",
-  "year": "2020",
-  "location": "Sztokholm, Szwecja",
+  "title": "Klinika Denticija",
+  "year": "2022",
+  "location": "Wilno, Litwa",
   "type": [
-    "Zewnętrzny",
-    "Renowacje"
+    "Wnętrze",
+    "Renowacja"
   ],
-  "shortDescription": "Teren konkursu, obejmujący istniejące budynki, znajduje się w historycznej dzielnicy Nowe Miasto w Wilnie. Obszar ten rozwinął się wzdłuż Alei Giedymina pod koniec XIX wieku i stał się jedną z głównych ulic miasta. Charakter tego obszaru określają zamknięte bloki zabudowy, w większości o wysokości 4–5 pięter, z kilkoma wyższymi budynkami, sięgającymi nawet 10 pięter, jak na tym terenie. Podczas gdy budynki wzdłuż Alei Giedymina i ulicy A. Stulgińskiego dobrze wpisują się w kontekst, wewnętrzny dziedziniec wydaje się niekompletny. Obecny 4-piętrowy budynek nie zamyka w pełni dziedzińca w pobliżu ulicy A. Stulgińskiego 7. Aby to naprawić, planowany jest budynek w kształcie litery U. Łączy się on z budynkiem przy Alei Giedymina 24A wspólną ścianą, zamykając dziedziniec od strony południowej. Ten nowy 6-piętrowy budynek będzie najwyższy na południowym krańcu i będzie schodził w kierunku dziedzińca, tworząc przytulną, zachęcającą przestrzeń i oferując zmieniające się perspektywy.",
+  "shortDescription": "Przejrzysta, pewna siebie forma ze szklanymi płaszczyznami, które otwierają wnętrze na miasto. Fasada zaprasza – transparentna, nowoczesna, pewna siebie. Zieleń przy wejściu łagodzi geometrię i ożywia. Wewnątrz królują dąb, światło i cisza. Materialność emanuje od samego początku – ciepłe ściany, matowe szkło, miękkie cienie. Przestrzeń została zaprojektowana nie dla efektu, ale dla uczucia. Ciepło i spokój tam, gdzie są najważniejsze. Drewniana otulina, światłowody i minimalistyczna forma pozwalają oddychać. Klinika, która nie sprawia wrażenia kliniki – to raczej miejsce, w którym chce się być. Gdzie wszystko cicho mówi: wszystko będzie dobrze.",
   "images": [
     "/uploads/projects/4/Main.jpg",
-    "/uploads/projects/4/2.jpg",
+    "/uploads/projects/4/2.jpeg",
     "/uploads/projects/4/3.jpg",
-    "/uploads/projects/4/4.jpg",
+    "/uploads/projects/4/4.JPG",
     "/uploads/projects/4/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/4/Main.mp4",
-    "/uploads/projects/4/2.mp4"
   ],
   "featured": true,
   "order": 4

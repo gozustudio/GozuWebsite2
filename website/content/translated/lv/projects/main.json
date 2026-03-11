@@ -1,22 +1,19 @@
 {
-  "title": "KAZ nams",
-  "year": "2020",
-  "location": "Stokholma, Zviedrija",
+  "title": "EV māja",
+  "year": "2024",
+  "location": "Kauņa, Lietuva",
   "type": [
     "Ārpuse",
-    "Renovācijas"
+    "Jaunbūve",
+    "Dzīvojamais"
   ],
-  "shortDescription": "Konkursa vieta, kurā ietilpst esošās ēkas, atrodas vēsturiskajā Viļņas Naujamiestis rajonā. Šī teritorija izveidojās gar Gedimino prospektu 19. gadsimta beigās un kļuva par vienu no pilsētas galvenajām ielām. Rajona raksturu nosaka slēgti ēku kvartāli, kas pārsvarā ir 4–5 stāvus augsti, ar dažām augstākām ēkām līdz pat 10 stāviem, tāpat kā šajā vietā. Lai gan ēkas gar Gedimino prospektu un A. Stulginskio ielu labi iederas kontekstā, iekšējais pagalms šķiet nepabeigts. Esošā četrstāvu ēka pilnībā neaptver pagalmu pie A. Stulginskio ielas 7. Lai to labotu, ir plānota U veida ēka. Tā savienojas ar ēku Gedimino prospektā 24A ar kopīgu sienu, noslēdzot pagalmu no dienvidiem. Šī jaunā sešstāvu ēka būs augstākā dienvidu malā un pakāpsies lejup pret pagalmu, radot mājīgu, aicinošu telpu un tās mainīgās perspektīvas.",
+  "shortDescription": "Šīs vienstāva dzīvojamās mājas fasādes raksturo tīrs, moderns minimālisms. Galvenais apdares materiāls ir gaišs (gandrīz balts) klinkera ķieģeļu mūris, kas ēkai piešķir teksturētu, bet atturīgu virsmu. Akcentu zonās – ap ieeju un atsevišķos fasādes segmentos – izmantots tumšāks, pelēcīgs klinkera ķieģelis, radot smalku kontrastu. Fasādes augšējā daļa ir pabeigta ar gludu baltu apmetumu, kas vizuāli \"ietver\" ēku un rada spēcīgu horizontālu ritmu. Uz ielu vērstajā fasādē dominē šauras vertikālas atveres, kas nodrošina privātumu, savukārt dārza fasādē ir lielas stikla starpsienas no grīdas līdz griestiem, kas paver iekštelpas uz zaļo apkārtni.",
   "images": [
     "/uploads/projects/main/Main.jpg",
     "/uploads/projects/main/2.jpg",
     "/uploads/projects/main/3.jpg",
-    "/uploads/projects/main/4.jpg",
-    "/uploads/projects/main/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/main/Main.mp4",
-    "/uploads/projects/main/2.mp4"
+    "/uploads/projects/main/4.JPG",
+    "/uploads/projects/main/5.png"
   ],
   "featured": true,
   "order": 1

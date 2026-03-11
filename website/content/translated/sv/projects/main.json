@@ -1,22 +1,19 @@
 {
-  "title": "KAZ-huset",
-  "year": "2020",
-  "location": "Stockholm, Sverige",
+  "title": "EV-huset",
+  "year": "2024",
+  "location": "Kaunas, Litauen",
   "type": [
     "Exteriör",
-    "Renoveringar"
+    "Nybyggnation",
+    "Bostäder"
   ],
-  "shortDescription": "Tävlingsområdet, som inkluderar befintliga byggnader, ligger i det historiska Naujamiestis-området i Vilnius. Detta område utvecklades längs Gedimino-gatan i slutet av 1800-talet och blev en av stadens huvudgator. Områdets karaktär definieras av slutna byggnadsblock som mestadels är 4–5 våningar höga, med några högre byggnader upp till 10 våningar, som på denna plats. Medan byggnaderna längs Gedimino-gatan och A. Stulginskiogatan passar väl in i sammanhanget, känns innergården ofullständig. Den nuvarande 4-våningsbyggnaden omsluter inte helt gården nära A. Stulginskiogatan 7. För att åtgärda detta planeras en U-formad byggnad. Den ansluter till byggnaden på Gedimino-gatan 24A med en gemensam vägg, vilket stänger av gården från söder. Denna nya 6-våningsbyggnad kommer att vara högst vid den södra kanten och trappar ner mot gården, vilket skapar ett mysigt, inbjudande utrymme och dess skiftande perspektiv.",
+  "shortDescription": "Fasaderna på detta enplanshus kännetecknas av ren, modern minimalism. Det primära ytbehandlingsmaterialet är ljust (nästan vitt) klinkermurverk, vilket ger byggnaden en texturerad men ändå återhållsam yta. I accentzoner – runt entrén och utvalda fasadsegment – används ett mörkare, gråaktigt klinkertegel, vilket skapar en subtil kontrast. Den övre delen av fasaden är avslutad med slät vit puts, som visuellt \"omsluter\" byggnaden och skapar en stark horisontell rytm. Gatufasaden domineras av smala vertikala öppningar som säkerställer avskildhet, medan trädgårdsfasaden har stora glasväggar från golv till tak som öppnar interiören mot den gröna omgivningen.",
   "images": [
     "/uploads/projects/main/Main.jpg",
     "/uploads/projects/main/2.jpg",
     "/uploads/projects/main/3.jpg",
-    "/uploads/projects/main/4.jpg",
-    "/uploads/projects/main/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/main/Main.mp4",
-    "/uploads/projects/main/2.mp4"
+    "/uploads/projects/main/4.JPG",
+    "/uploads/projects/main/5.png"
   ],
   "featured": true,
   "order": 1

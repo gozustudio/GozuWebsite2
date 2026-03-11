@@ -1,22 +1,18 @@
 {
-  "title": "KAZ-huset",
-  "year": "2020",
-  "location": "Stockholm, Sverige",
+  "title": "OZ-leilighet",
+  "year": "2025",
+  "location": "London, Storbritannia",
   "type": [
-    "Ytre",
-    "Renoveringer"
+    "Interiør",
+    "Renovering"
   ],
-  "shortDescription": "Konkurranseområdet, som inkluderer eksisterende bygninger, ligger i det historiske Naujamiestis-området i Vilnius. Dette området utviklet seg langs Gedimino-avenyen på slutten av 1800-tallet og ble en av byens hovedgater. Områdets karakter er definert av lukkede bygningsblokker som for det meste er 4–5 etasjer høye, med noen høyere bygninger på opptil 10 etasjer, som på dette stedet. Mens bygningene langs Gedimino-avenyen og A. Stulginskio-gaten passer godt inn i konteksten, føles den indre gårdsplassen ufullstendig. Den nåværende 4-etasjers bygningen omslutter ikke gårdsplassen nær A. Stulginskio-gaten 7 fullstendig. For å fikse dette er det planlagt en U-formet bygning. Den er forbundet med bygningen på Gedimino-avenyen 24A med en felles vegg, som stenger av gårdsplassen fra sør. Denne nye 6-etasjers bygningen vil være høyest på den sørlige kanten og trapper ned mot gårdsplassen, noe som skaper et koselig, innbydende rom og dens skiftende perspektiver.",
+  "shortDescription": "Prosjektet er formet av en følelse av stille tilbakeholdenhet. Rommene føles rolige – varme eiketoner og myke gipsoverflater går kontinuerlig gjennom hvert rom, og skaper en sømløs flyt snarere enn en samling av separate områder.\n\nPlaneringen leker med volum: skråtak og buede arkitektoniske elementer gir interiøret en skulpturell kvalitet, og lar lyset bevege seg over overflater på uventede måter. Et høyt buet vindu forankrer stue-spisesonen, trekker landskapet innover og visker ut grensen mellom inne og ute. Materialmessig er paletten bevisst smal – matt trestruktur, året marmor, ribbede keramiske fliser og lintonet gips. Ingenting konkurrerer. Teksturene er taktile, men dempede, ment å føles mer enn lagt merke til. Mørke aksenter i metall og møbeltrekk danner varmen uten å bryte roen. Den overordnede atmosfæren er preget av bevisst enkelhet – et rom som puster, hvor naturlig lys og ærlige materialer gjør mesteparten av arbeidet.",
   "images": [
     "/uploads/projects/6/Main.jpg",
     "/uploads/projects/6/2.jpg",
     "/uploads/projects/6/3.jpg",
     "/uploads/projects/6/4.jpg",
     "/uploads/projects/6/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/6/Main.mp4",
-    "/uploads/projects/6/2.mp4"
   ],
   "featured": true,
   "order": 6

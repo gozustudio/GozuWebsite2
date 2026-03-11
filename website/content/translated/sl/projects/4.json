@@ -1,22 +1,18 @@
 {
-  "title": "Hiša KAZ",
-  "year": "2020",
-  "location": "Stockholm, Švedska",
+  "title": "Klinika Denticija",
+  "year": "2022",
+  "location": "Vilna, Litva",
   "type": [
-    "Zunanjost",
-    "Prenove"
+    "Notranjost",
+    "Prenova"
   ],
-  "shortDescription": "Natečajno območje, ki vključuje obstoječe stavbe, se nahaja v zgodovinskem predelu Naujamiestis v Vilni. To območje se je razvilo ob aveniji Gedimino konec 19. stoletja in postalo ena glavnih mestnih ulic. Značaj območja zaznamujejo zaprti bloki stavb, ki so večinoma visoki 4–5 nadstropij, z nekaterimi višjimi stavbami, visokimi do 10 nadstropij, kot je na tem mestu. Medtem ko se stavbe ob aveniji Gedimino in ulici A. Stulginskio dobro ujemajo s kontekstom, se notranje dvorišče zdi nepopolno. Sedanja 4-nadstropna stavba ne obdaja v celoti dvorišča v bližini ulice A. Stulginskio 7. Da bi to odpravili, je načrtovana stavba v obliki črke U. S stavbo na aveniji Gedimino 24A se povezuje s skupnim zidom, ki zapira dvorišče z juga. Ta nova 6-nadstropna stavba bo najvišja na južnem robu in se bo stopničasto spuščala proti dvorišču, kar bo ustvarilo prijeten, vabljiv prostor in njegove spreminjajoče se perspektive.",
+  "shortDescription": "Jasna, samozavestna oblika s steklenimi ravninami, ki odpirajo notranjost mestu. Fasada vabi – prozorna, sodobna, samozavestna. Zelenje ob vhodu mehča geometrijo in prinaša življenje. V notranjosti prevladajo hrast, svetloba in tišina. Materialnost objema že od prvega koraka – tople stene, matirano steklo, mehke sence. Prostor ni zasnovan za učinek, temveč za občutek. Toplota in mir tam, kjer sta najpomembnejša. Les obdaja, svetlobni vodniki in minimalistična oblika vam omogočajo, da dihate. Klinika, ki se ne počuti kot klinika – temveč kot kraj, kjer želite biti. Kjer vse tiho pravi: vse bo v redu.",
   "images": [
     "/uploads/projects/4/Main.jpg",
-    "/uploads/projects/4/2.jpg",
+    "/uploads/projects/4/2.jpeg",
     "/uploads/projects/4/3.jpg",
-    "/uploads/projects/4/4.jpg",
+    "/uploads/projects/4/4.JPG",
     "/uploads/projects/4/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/4/Main.mp4",
-    "/uploads/projects/4/2.mp4"
   ],
   "featured": true,
   "order": 4

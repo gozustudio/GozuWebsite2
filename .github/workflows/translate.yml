@@ -16,6 +16,11 @@ on:
 permissions:
   contents: write
 
+# Cancel in-flight runs on new push — ensures only the latest content gets translated
+concurrency:
+  group: translate-content
+  cancel-in-progress: true
+
 jobs:
   translate:
     runs-on: ubuntu-latest

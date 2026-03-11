@@ -1,22 +1,18 @@
 {
-  "title": "Casa KAZ",
-  "year": "2020",
-  "location": "Stockholm, Suedia",
+  "title": "Apartament AD",
+  "year": "2024",
+  "location": "Londra, Regatul Unit",
   "type": [
-    "Exterior",
-    "Renovări"
+    "Interior",
+    "Renovare"
   ],
-  "shortDescription": "Amplasamentul concursului, care include clădiri existente, este situat în zona istorică Naujamiestis din Vilnius. Această zonă s-a dezvoltat de-a lungul bulevardului Gedimino la sfârșitul secolului al XIX-lea și a devenit una dintre străzile principale ale orașului. Caracterul zonei este definit de blocuri închise de clădiri, care au în mare parte 4-5 etaje, cu unele clădiri mai înalte de până la 10 etaje, precum pe acest amplasament. Deși clădirile de-a lungul bulevardului Gedimino și al străzii A. Stulginskio se încadrează bine în context, curtea interioară pare incompletă. Clădirea actuală cu 4 etaje nu închide complet curtea din apropierea străzii A. Stulginskio nr. 7. Pentru a remedia acest lucru, este planificată o clădire în formă de U. Aceasta se conectează la clădirea de pe bulevardului Gedimino nr. 24A printr-un perete comun, închizând curtea dinspre sud. Această nouă clădire cu 6 etaje va fi cea mai înaltă la marginea sudică și coboară spre curte, creând un spațiu confortabil și primitor, cu perspectivele sale schimbătoare.",
+  "shortDescription": "Un design compact de apartament, bazat pe materiale naturale și o sensibilitate nordică calmă. Lemnăria de stejar deschis la culoare se întinde pe tot spațiul - de la dulapuri la rafturi și podele - creând un fundal cald și uniform. Accentele de verde intens din textile și gresie adaugă profunzime fără a perturba paleta liniștită. Zona de living deschisă îmbină gătitul, sufrageria și relaxarea într-o singură zonă fluidă, cu spațiu de depozitare încorporat care maximizează fiecare suprafață. Intrarea și băile urmează aceeași logică materială - lemn, piatră și sticlă în compoziții discrete, cu linii curate. Rezultatul este un spațiu care pare mai mare decât amprenta sa, cu o atmosferă constantă de delicatețe și ordine.",
   "images": [
     "/uploads/projects/5/Main.jpg",
     "/uploads/projects/5/2.jpg",
     "/uploads/projects/5/3.jpg",
     "/uploads/projects/5/4.jpg",
     "/uploads/projects/5/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/5/Main.mp4",
-    "/uploads/projects/5/2.mp4"
   ],
   "featured": true,
   "order": 5

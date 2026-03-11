@@ -31,16 +31,27 @@ export function loadProjects(locale?: string): Project[] {
   const projects = files.map((file) => {
     const slug = file.replace(".json", "");
 
-    // Try translated version first
-    let raw;
+    // Always read English source (authoritative for non-translatable fields)
+    const englishRaw = JSON.parse(
+      fs.readFileSync(path.join(contentDir, file), "utf-8")
+    );
+
+    // Merge translated text fields with English non-translatable fields
+    let raw = englishRaw;
     if (translatedDir && fs.existsSync(path.join(translatedDir, file))) {
-      raw = JSON.parse(
+      const translatedRaw = JSON.parse(
         fs.readFileSync(path.join(translatedDir, file), "utf-8")
       );
-    } else {
-      raw = JSON.parse(
-        fs.readFileSync(path.join(contentDir, file), "utf-8")
-      );
+      raw = {
+        ...translatedRaw,
+        // Always use English source for non-translatable fields
+        images: englishRaw.images,
+        videos: englishRaw.videos,
+        year: englishRaw.year,
+        order: englishRaw.order,
+        featured: englishRaw.featured,
+        collaborations: englishRaw.collaborations,
+      };
     }
 
     return {

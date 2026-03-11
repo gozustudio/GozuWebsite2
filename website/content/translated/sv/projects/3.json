@@ -1,22 +1,19 @@
 {
-  "title": "KAZ-huset",
-  "year": "2020",
-  "location": "Stockholm, Sverige",
+  "title": "MM-huset",
+  "year": "2024",
+  "location": "Kaunas, Litauen",
   "type": [
     "Exteriör",
-    "Renoveringar"
+    "Nybyggnation",
+    "Bostads"
   ],
-  "shortDescription": "Tävlingsområdet, som inkluderar befintliga byggnader, ligger i det historiska Naujamiestis-området i Vilnius. Detta område utvecklades längs Gedimino-gatan i slutet av 1800-talet och blev en av stadens huvudgator. Områdets karaktär definieras av slutna byggnadsblock som mestadels är 4–5 våningar höga, med några högre byggnader upp till 10 våningar, som på denna plats. Medan byggnaderna längs Gedimino-gatan och A. Stulginskiogatan passar väl in i sammanhanget, känns innergården ofullständig. Den nuvarande 4-våningsbyggnaden omsluter inte helt gården nära A. Stulginskiogatan 7. För att åtgärda detta planeras en U-formad byggnad. Den ansluter till byggnaden på Gedimino-gatan 24A med en gemensam vägg, vilket stänger av gården från söder. Denna nya 6-våningsbyggnad kommer att vara högst vid den södra kanten och trappar ner mot gården, vilket skapar ett mysigt, inbjudande utrymme och dess skiftande perspektiv.",
+  "shortDescription": "En tvåvåningsbostad där strikt geometrisk form möter en naturlig miljö. Byggnadens komposition består av två tydligt distinkta volymer - en mörk, monumental övre kub och en ljusare, träbeklädd bottenvåning som till synes smälter samman med landskapet. Projektets centrala idé är en cirkulär portal i fasaden, som fungerar som en symbolisk tröskel mellan det offentliga och privata. Detta motiv ger en känsla av lekfullhet och poesi till en annars asketisk byggnad.",
   "images": [
     "/uploads/projects/3/Main.jpg",
     "/uploads/projects/3/2.jpg",
     "/uploads/projects/3/3.jpg",
     "/uploads/projects/3/4.jpg",
     "/uploads/projects/3/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/3/Main.mp4",
-    "/uploads/projects/3/2.mp4"
   ],
   "featured": true,
   "order": 3

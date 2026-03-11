@@ -1,22 +1,19 @@
 {
-  "title": "KAZ-huset",
-  "year": "2020",
-  "location": "Stockholm, Sverige",
+  "title": "Elbilshus",
+  "year": "2024",
+  "location": "Kaunas, Litauen",
   "type": [
     "Ydre",
-    "Renoveringer"
+    "Nybyggeri",
+    "Bolig"
   ],
-  "shortDescription": "Konkurrenceområdet, som omfatter eksisterende bygninger, ligger i det historiske Naujamiestis-område i Vilnius. Dette område udviklede sig langs Gedimino Avenue i slutningen af det 19. århundrede og blev en af byens hovedgader. Områdets karakter er defineret af lukkede bygningsblokke, der for det meste er 4-5 etager høje, med nogle højere bygninger på op til 10 etager, som på dette sted. Mens bygningerne langs Gedimino Avenue og A. Stulginskio Street passer godt ind i konteksten, føles den indre gårdhave ufuldstændig. Den nuværende 4-etagers bygning omslutter ikke helt gårdhaven nær A. Stulginskio Street 7. For at afhjælpe dette er der planlagt en U-formet bygning. Den forbinder bygningen på Gedimino Avenue 24A med en fælles mur, der lukker gårdhaven af mod syd. Denne nye 6-etagers bygning vil være højest ved den sydlige kant og trækker ned mod gårdhaven, hvilket skaber et hyggeligt, indbydende rum og dets skiftende perspektiver.",
+  "shortDescription": "Facaderne på dette etplanshus er defineret af ren, moderne minimalisme. Det primære finishmateriale er lyst (næsten hvidt) klinkermurværk, hvilket giver bygningen en struktureret, men afdæmpet overflade. I accentzoner - omkring indgangen og udvalgte facadesegmenter - er der anvendt en mørkere, grålig klinker, hvilket skaber en diskret kontrast. Den øverste del af facaden er afsluttet med glat hvid puds, der visuelt \"indhyller\" bygningen og etablerer en stærk horisontal rytme. Gadefacaden er domineret af smalle lodrette åbninger, der sikrer privatliv, mens havefacaden har store glaspartier fra gulv til loft, der åbner interiøret mod de grønne omgivelser.",
   "images": [
     "/uploads/projects/main/Main.jpg",
     "/uploads/projects/main/2.jpg",
     "/uploads/projects/main/3.jpg",
-    "/uploads/projects/main/4.jpg",
-    "/uploads/projects/main/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/main/Main.mp4",
-    "/uploads/projects/main/2.mp4"
+    "/uploads/projects/main/4.JPG",
+    "/uploads/projects/main/5.png"
   ],
   "featured": true,
   "order": 1

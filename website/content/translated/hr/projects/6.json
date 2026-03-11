@@ -1,22 +1,18 @@
 {
-  "title": "Kuća KAZ",
-  "year": "2020",
-  "location": "Stockholm, Švedska",
+  "title": "Apartman OZ",
+  "year": "2025",
+  "location": "London, Ujedinjeno Kraljevstvo",
   "type": [
-    "Vanjski",
-    "Renovacije"
+    "Unutrašnjost",
+    "Renovacija"
   ],
-  "shortDescription": "Natječajno mjesto, koje uključuje postojeće zgrade, nalazi se u povijesnom području Naujamiestis u Vilniusu. Ovo se područje razvilo uz aveniju Gedimino krajem 19. stoljeća i postalo je jedna od glavnih gradskih ulica. Karakter područja definiran je zatvorenim blokovima zgrada koje su uglavnom visoke 4-5 katova, s nekim višim zgradama do 10 katova, poput ove lokacije. Dok se zgrade uz aveniju Gedimino i ulicu A. Stulginskio dobro uklapaju u kontekst, unutarnje dvorište djeluje nedovršeno. Trenutna četverokatnica ne zatvara u potpunosti dvorište u blizini ulice A. Stulginskio 7. Kako bi se to riješilo, planirana je zgrada u obliku slova U. Spaja se sa zgradom na adresi Gedimino avenija 24A zajedničkim zidom, zatvarajući dvorište s juga. Ova nova šesterokatnica bit će najviša na južnom rubu i spuštat će se prema dvorištu, stvarajući ugodan, privlačan prostor i njegove promjenjive perspektive.",
+  "shortDescription": "Projekt je oblikovan osjećajem tihe suzdržanosti. Prostori djeluju lagano - topli tonovi hrasta i mekane žbukane površine kontinuirano se protežu kroz svaku sobu, stvarajući besprijekoran tok, a ne skup odvojenih područja.\nRaspored se igra volumenom: kosi stropovi i zakrivljeni arhitektonski elementi daju interijerima skulpturalnu kvalitetu, dopuštajući svjetlu da se kreće po površinama na neočekivane načine. Visoki lučni prozor usidrava prostor dnevnog boravka i blagovaonice, uvlačeći krajolik prema unutra i zamagljujući granicu između unutrašnjosti i vanjštine. Što se tiče materijala, paleta je namjerno uska - mat drveni godovi, žilnati mramor, rebraste keramičke pločice i žbuka u boji lana. Ništa se ne natječe. Teksture su taktilne, ali prigušene, namijenjene da se više osjete nego primjećuju. Tamni akcenti u metalu i presvlakama uzemljuju toplinu bez narušavanja smirenosti. Opća atmosfera je namjerne jednostavnosti - prostora koji diše, gdje prirodno svjetlo i pošteni materijali obavljaju većinu posla.",
   "images": [
     "/uploads/projects/6/Main.jpg",
     "/uploads/projects/6/2.jpg",
     "/uploads/projects/6/3.jpg",
     "/uploads/projects/6/4.jpg",
     "/uploads/projects/6/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/6/Main.mp4",
-    "/uploads/projects/6/2.mp4"
   ],
   "featured": true,
   "order": 6

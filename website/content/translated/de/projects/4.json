@@ -1,22 +1,18 @@
 {
-  "title": "KAZ-Haus",
-  "year": "2020",
-  "location": "Stockholm, Schweden",
+  "title": "Denticija Klinik",
+  "year": "2022",
+  "location": "Vilnius, Litauen",
   "type": [
-    "Außenbereich",
-    "Rennovations"
+    "Innere",
+    "Renovierung"
   ],
-  "shortDescription": "Das Wettbewerbsgelände, das auch Bestandsgebäude umfasst, befindet sich im historischen Naujamiestis-Viertel von Vilnius. Dieses Viertel entstand Ende des 19. Jahrhunderts entlang der Gedimino-Allee und entwickelte sich zu einer der Hauptstraßen der Stadt. Geprägt wird das Viertel durch geschlossene Häuserblöcke mit meist vier bis fünf Stockwerken, wobei einige Gebäude, wie auch dieses auf dem Gelände, bis zu zehn Stockwerke hoch sind. Während sich die Gebäude entlang der Gedimino-Allee und der A.-Stulginskio-Straße gut in das Gesamtbild einfügen, wirkt der Innenhof unvollständig. Das bestehende viergeschossige Gebäude umschließt den Hof nahe der A.-Stulginskio-Straße 7 nicht vollständig. Um dies zu beheben, ist ein U-förmiges Gebäude geplant. Es ist mit einer gemeinsamen Wand an das Gebäude an der Gedimino-Allee 24A angeschlossen und verschließt den Hof im Süden. Dieses neue sechsgeschossige Gebäude wird an der Südseite am höchsten sein und sich zum Hof hin stufenförmig absenken, wodurch ein gemütlicher, einladender Raum mit wechselnden Perspektiven entsteht.",
+  "shortDescription": "Eine klare, selbstbewusste Form mit Glasflächen, die den Innenraum zur Stadt hin öffnen. Die Fassade lädt ein – transparent, modern, selbstbewusst. Grünpflanzen am Eingang mildern die geometrischen Formen und bringen Leben hinein. Im Inneren dominieren Eiche, Licht und Stille. Die Materialien umhüllen vom ersten Moment an – warme Wände, Milchglas, sanfte Schatten. Der Raum ist nicht auf Effekt, sondern auf Wohlbefinden ausgelegt. Wärme und Ruhe dort, wo sie am meisten zählen. Holz umhüllt, Licht lenkt, und minimalistische Formen lassen einen aufatmen. Eine Klinik, die sich nicht wie eine Klinik anfühlt – sondern ein Ort, an dem man sich wohlfühlt. Wo alles leise sagt: Es wird alles gut.",
   "images": [
     "/uploads/projects/4/Main.jpg",
-    "/uploads/projects/4/2.jpg",
+    "/uploads/projects/4/2.jpeg",
     "/uploads/projects/4/3.jpg",
-    "/uploads/projects/4/4.jpg",
+    "/uploads/projects/4/4.JPG",
     "/uploads/projects/4/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/4/Main.mp4",
-    "/uploads/projects/4/2.mp4"
   ],
   "featured": true,
   "order": 4

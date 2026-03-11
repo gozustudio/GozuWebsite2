@@ -222,6 +222,19 @@ async function main() {
 
   const allFiles = [...pageFiles, ...projectFiles];
 
+  // Clean up orphaned translated project files (deleted from English source)
+  const validProjectNames = new Set(projectFiles.map((f) => f.replace("projects/", "")));
+  for (const locale of LOCALES) {
+    const translatedProjectsDir = path.join(TRANSLATED_DIR, locale, "projects");
+    if (!fs.existsSync(translatedProjectsDir)) continue;
+    for (const file of fs.readdirSync(translatedProjectsDir)) {
+      if (file.endsWith(".json") && !validProjectNames.has(file)) {
+        fs.unlinkSync(path.join(translatedProjectsDir, file));
+        console.log(`  Removed orphaned ${locale}/projects/${file}`);
+      }
+    }
+  }
+
   // Filter to only specified files if --only flag provided
   if (onlyFiles) {
     const filtered = allFiles.filter((f) => onlyFiles.includes(f));

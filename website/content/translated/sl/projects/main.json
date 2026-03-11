@@ -1,22 +1,19 @@
 {
-  "title": "Hiša KAZ",
-  "year": "2020",
-  "location": "Stockholm, Švedska",
+  "title": "Hiša električnih vozil",
+  "year": "2024",
+  "location": "Kaunas, Litva",
   "type": [
     "Zunanjost",
-    "Prenove"
+    "Novogradnja",
+    "Stanovanjski"
   ],
-  "shortDescription": "Natečajno območje, ki vključuje obstoječe stavbe, se nahaja v zgodovinskem predelu Naujamiestis v Vilni. To območje se je razvilo ob aveniji Gedimino konec 19. stoletja in postalo ena glavnih mestnih ulic. Značaj območja zaznamujejo zaprti bloki stavb, ki so večinoma visoki 4–5 nadstropij, z nekaterimi višjimi stavbami, visokimi do 10 nadstropij, kot je na tem mestu. Medtem ko se stavbe ob aveniji Gedimino in ulici A. Stulginskio dobro ujemajo s kontekstom, se notranje dvorišče zdi nepopolno. Sedanja 4-nadstropna stavba ne obdaja v celoti dvorišča v bližini ulice A. Stulginskio 7. Da bi to odpravili, je načrtovana stavba v obliki črke U. S stavbo na aveniji Gedimino 24A se povezuje s skupnim zidom, ki zapira dvorišče z juga. Ta nova 6-nadstropna stavba bo najvišja na južnem robu in se bo stopničasto spuščala proti dvorišču, kar bo ustvarilo prijeten, vabljiv prostor in njegove spreminjajoče se perspektive.",
+  "shortDescription": "Fasade te enonadstropne stanovanjske hiše zaznamuje čist, sodoben minimalizem. Glavni zaključni material je svetla (skoraj bela) klinker opeka, ki stavbi daje teksturirano, a zadržano površino. V poudarjenih conah – okoli vhoda in izbranih segmentov fasade – je uporabljena temnejša, sivkasta klinker opeka, ki ustvarja subtilen kontrast. Zgornji del fasade je zaključen z gladkim belim ometom, ki vizualno \"ovija\" stavbo in vzpostavlja močan horizontalni ritem. Na ulično fasado prevladujejo ozke navpične odprtine, ki zagotavljajo zasebnost, vrtna fasada pa ima velike steklene predelne stene od tal do stropa, ki odpirajo notranjost v zeleno okolico.",
   "images": [
     "/uploads/projects/main/Main.jpg",
     "/uploads/projects/main/2.jpg",
     "/uploads/projects/main/3.jpg",
-    "/uploads/projects/main/4.jpg",
-    "/uploads/projects/main/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/main/Main.mp4",
-    "/uploads/projects/main/2.mp4"
+    "/uploads/projects/main/4.JPG",
+    "/uploads/projects/main/5.png"
   ],
   "featured": true,
   "order": 1

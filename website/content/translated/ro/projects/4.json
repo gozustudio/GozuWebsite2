@@ -1,22 +1,18 @@
 {
-  "title": "Casa KAZ",
-  "year": "2020",
-  "location": "Stockholm, Suedia",
+  "title": "Clinica Denticija",
+  "year": "2022",
+  "location": "Vilnius, Lituania",
   "type": [
-    "Exterior",
-    "Renovări"
+    "Interior",
+    "Renovare"
   ],
-  "shortDescription": "Amplasamentul concursului, care include clădiri existente, este situat în zona istorică Naujamiestis din Vilnius. Această zonă s-a dezvoltat de-a lungul bulevardului Gedimino la sfârșitul secolului al XIX-lea și a devenit una dintre străzile principale ale orașului. Caracterul zonei este definit de blocuri închise de clădiri, care au în mare parte 4-5 etaje, cu unele clădiri mai înalte de până la 10 etaje, precum pe acest amplasament. Deși clădirile de-a lungul bulevardului Gedimino și al străzii A. Stulginskio se încadrează bine în context, curtea interioară pare incompletă. Clădirea actuală cu 4 etaje nu închide complet curtea din apropierea străzii A. Stulginskio nr. 7. Pentru a remedia acest lucru, este planificată o clădire în formă de U. Aceasta se conectează la clădirea de pe bulevardului Gedimino nr. 24A printr-un perete comun, închizând curtea dinspre sud. Această nouă clădire cu 6 etaje va fi cea mai înaltă la marginea sudică și coboară spre curte, creând un spațiu confortabil și primitor, cu perspectivele sale schimbătoare.",
+  "shortDescription": "O formă clară, încrezătoare, cu planuri de sticlă care deschid interiorul către oraș. Fațada invită — transparentă, contemporană, încrezătoare. Verdeața de la intrare înmoaie geometria și aduce viață. În interior, stejarul, lumina și liniștea preiau controlul. Materialitatea îmbrățișează încă de la primul pas — pereți calzi, sticlă mată, umbre delicate. Spațiul este conceput nu pentru efect, ci pentru senzație. Căldură și calm acolo unde contează cel mai mult. Lemnul învăluie, ghidajele de lumină și forma minimalistă te lasă să respiri. O clinică care nu se simte ca o clinică — ci mai degrabă ca un loc unde vrei să fii. Unde totul spune în liniște: va fi bine.",
   "images": [
     "/uploads/projects/4/Main.jpg",
-    "/uploads/projects/4/2.jpg",
+    "/uploads/projects/4/2.jpeg",
     "/uploads/projects/4/3.jpg",
-    "/uploads/projects/4/4.jpg",
+    "/uploads/projects/4/4.JPG",
     "/uploads/projects/4/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/4/Main.mp4",
-    "/uploads/projects/4/2.mp4"
   ],
   "featured": true,
   "order": 4

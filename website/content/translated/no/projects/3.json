@@ -1,22 +1,19 @@
 {
-  "title": "KAZ-huset",
-  "year": "2020",
-  "location": "Stockholm, Sverige",
+  "title": "MM-huset",
+  "year": "2024",
+  "location": "Kaunas, Litauen",
   "type": [
     "Ytre",
-    "Renoveringer"
+    "Nybygg",
+    "Bolig"
   ],
-  "shortDescription": "Konkurranseområdet, som inkluderer eksisterende bygninger, ligger i det historiske Naujamiestis-området i Vilnius. Dette området utviklet seg langs Gedimino-avenyen på slutten av 1800-tallet og ble en av byens hovedgater. Områdets karakter er definert av lukkede bygningsblokker som for det meste er 4–5 etasjer høye, med noen høyere bygninger på opptil 10 etasjer, som på dette stedet. Mens bygningene langs Gedimino-avenyen og A. Stulginskio-gaten passer godt inn i konteksten, føles den indre gårdsplassen ufullstendig. Den nåværende 4-etasjers bygningen omslutter ikke gårdsplassen nær A. Stulginskio-gaten 7 fullstendig. For å fikse dette er det planlagt en U-formet bygning. Den er forbundet med bygningen på Gedimino-avenyen 24A med en felles vegg, som stenger av gårdsplassen fra sør. Denne nye 6-etasjers bygningen vil være høyest på den sørlige kanten og trapper ned mot gårdsplassen, noe som skaper et koselig, innbydende rom og dens skiftende perspektiver.",
+  "shortDescription": "En toetasjes bolig hvor streng geometrisk form møter en naturlig setting. Bygningens komposisjon består av to tydelig distinkte volumer – en mørk, monumental øvre kube og en lysere, trekledd førsteetasje som tilsynelatende går i oppløsning i landskapet. Hovedideen i prosjektet er en sirkulær portal i fasaden, som fungerer som en symbolsk terskel mellom det offentlige og private. Dette motivet bringer en følelse av lekenhet og poesi til en ellers asketisk bygning.",
   "images": [
     "/uploads/projects/3/Main.jpg",
     "/uploads/projects/3/2.jpg",
     "/uploads/projects/3/3.jpg",
     "/uploads/projects/3/4.jpg",
     "/uploads/projects/3/5.jpg"
-  ],
-  "videos": [
-    "/uploads/projects/3/Main.mp4",
-    "/uploads/projects/3/2.mp4"
   ],
   "featured": true,
   "order": 3
