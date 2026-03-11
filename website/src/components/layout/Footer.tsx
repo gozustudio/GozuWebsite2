@@ -10,7 +10,7 @@ export default async function Footer() {
   return (
     <footer className="border-t border-[var(--color-border)]/20 bg-[var(--color-body)]">
       {/* Pre-footer CTA */}
-      <div className="mx-auto max-w-[1400px] px-6 py-20 text-center lg:px-12">
+      <div className="mx-auto max-w-[1400px] px-6 py-12 text-center lg:px-12">
         <h2 className="font-serif text-3xl text-white/90 md:text-5xl">
           {t("cta")}
         </h2>
