@@ -14,12 +14,12 @@ export default async function Footer() {
         <h2 className="font-serif text-3xl text-white/90 md:text-5xl">
           {t("cta")}
         </h2>
-        <p className="mt-4 text-sm tracking-wide text-white/50">
+        <p className="mt-3 text-sm tracking-wide text-white/50">
           {t("ctaSub")}
         </p>
         <Link
           href="/quote"
-          className="mt-8 inline-block border border-[var(--color-main)] px-10 py-3 text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-main)] transition-all duration-300 hover:bg-[var(--color-main)] hover:text-white"
+          className="mt-6 inline-block border border-[var(--color-main)] px-10 py-3 text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-main)] transition-all duration-300 hover:bg-[var(--color-main)] hover:text-white"
         >
           {t("ctaButton")}
         </Link>
@@ -27,15 +27,16 @@ export default async function Footer() {
 
       {/* Footer Content */}
       <div className="border-t border-white/10">
-        <div className="mx-auto grid max-w-[1400px] gap-12 px-6 py-16 lg:grid-cols-4 lg:px-12">
+        <div className="mx-auto grid max-w-[1400px] items-start gap-12 px-6 py-16 lg:grid-cols-4 lg:px-12">
           {/* Brand */}
           <div>
-            <svg
-              className="h-8 w-auto text-white"
-              viewBox="0 0 77.65 51.23"
-              fill="none"
-              aria-label="Gozu Studio"
-            >
+            <div className="mb-4 flex h-8 items-center">
+              <svg
+                className="h-8 w-auto text-white"
+                viewBox="0 0 77.65 51.23"
+                fill="none"
+                aria-label="Gozu Studio"
+              >
               <path fill="currentColor" d="M33.55,8.05c3.37,0,6.16,1.22,8.37,3.66,2.01,2.22,3.02,4.85,3.02,7.9s-1.06,5.72-3.19,8.01c-2.13,2.28-4.86,3.43-8.2,3.43s-6.1-1.14-8.22-3.43c-2.13-2.28-3.19-4.95-3.19-8.01s1.01-5.65,3.02-7.88c2.21-2.45,5.01-3.68,8.39-3.68ZM33.54,10.8c-2.34,0-4.35.86-6.03,2.59-1.68,1.73-2.52,3.82-2.52,6.27,0,1.58.38,3.05,1.15,4.42.77,1.37,1.8,2.42,3.1,3.16s2.74,1.11,4.29,1.11,2.99-.37,4.29-1.11,2.34-1.8,3.11-3.16c.77-1.37,1.15-2.84,1.15-4.42,0-2.45-.84-4.54-2.53-6.27-1.69-1.73-3.69-2.59-6.02-2.59Z"/>
               <path fill="currentColor" d="M19.97,9.12h2.81v17.42c0,3.07-.27,5.31-.8,6.73-.74,2.01-2.02,3.56-3.84,4.64-1.82,1.08-4.01,1.63-6.57,1.63-1.87,0-3.56-.27-5.05-.8-1.49-.53-2.71-1.24-3.65-2.14-.94-.89-1.8-2.2-2.59-3.92h3.05c.83,1.45,1.9,2.52,3.22,3.21,1.31.7,2.94,1.04,4.89,1.04s3.54-.36,4.86-1.07c1.32-.71,2.26-1.61,2.83-2.69.56-1.08.84-2.83.84-5.24v-1.13c-1.06,1.34-2.35,2.37-3.88,3.08-1.53.72-3.15,1.07-4.87,1.07-2.01,0-3.9-.5-5.67-1.5-1.77-1-3.14-2.34-4.1-4.03-.96-1.69-1.45-3.54-1.45-5.56s.5-3.91,1.51-5.66c1.01-1.75,2.4-3.13,4.17-4.15,1.78-1.02,3.65-1.53,5.62-1.53,1.64,0,3.16.34,4.57,1.01,1.41.68,2.78,1.79,4.09,3.35v-3.8ZM11.67,11.27c-1.59,0-3.07.39-4.44,1.16-1.37.77-2.44,1.83-3.21,3.19-.78,1.36-1.17,2.83-1.17,4.41,0,2.4.8,4.38,2.41,5.95s3.69,2.35,6.25,2.35,4.66-.78,6.24-2.33c1.57-1.55,2.36-3.6,2.36-6.13,0-1.65-.36-3.12-1.08-4.41-.72-1.29-1.75-2.31-3.07-3.06-1.33-.75-2.75-1.13-4.28-1.13Z"/>
               <path fill="currentColor" d="M44.72,9.36l16.05.18-12.59,19.23,11.97.13-.03,2.49-16.81-.19,12.58-19.25-11.2-.12.03-2.47Z"/>
@@ -47,17 +48,20 @@ export default async function Footer() {
               <path fill="currentColor" d="M64.76,40.57v10.46h-.96v-1.3c-.41.5-.86.87-1.37,1.12-.51.25-1.06.37-1.66.37-1.07,0-1.98-.39-2.74-1.16-.76-.77-1.13-1.72-1.13-2.83s.38-2.02,1.15-2.79c.76-.77,1.68-1.16,2.75-1.16.62,0,1.18.13,1.68.4.5.26.94.66,1.32,1.19v-4.3h.96ZM60.87,44.23c-.54,0-1.04.13-1.5.4-.46.27-.82.64-1.09,1.12-.27.48-.41.99-.41,1.52s.14,1.04.41,1.52c.27.49.64.86,1.1,1.13.46.27.95.41,1.48.41s1.04-.13,1.51-.4c.48-.27.84-.63,1.1-1.09.26-.46.38-.97.38-1.55,0-.87-.29-1.6-.86-2.19-.58-.59-1.28-.88-2.12-.88Z"/>
               <path fill="currentColor" d="M67.29,40.37c.22,0,.41.08.57.24.16.16.24.35.24.57s-.08.4-.24.56-.35.24-.57.24-.4-.08-.56-.24-.24-.34-.24-.56.08-.41.24-.57c.16-.16.34-.24.56-.24ZM66.81,43.48h.97v7.55h-.97v-7.55Z"/>
               <path fill="currentColor" d="M73.37,43.29c1.16,0,2.13.42,2.89,1.26.7.77,1.04,1.68,1.04,2.73s-.37,1.98-1.1,2.77c-.73.79-1.68,1.18-2.83,1.18s-2.11-.39-2.84-1.18c-.73-.79-1.1-1.71-1.1-2.77s.35-1.95,1.04-2.72c.76-.85,1.73-1.27,2.9-1.27ZM73.37,44.24c-.81,0-1.5.3-2.08.9-.58.6-.87,1.32-.87,2.16,0,.55.13,1.05.4,1.53.27.47.62.84,1.07,1.09.45.26.94.39,1.48.39s1.03-.13,1.48-.39c.45-.26.81-.62,1.07-1.09.26-.47.4-.98.4-1.53,0-.85-.29-1.57-.87-2.16s-1.28-.9-2.08-.9Z"/>
-            </svg>
-            <p className="mt-4 text-sm leading-relaxed text-white/40">
+              </svg>
+            </div>
+            <p className="text-sm leading-relaxed text-white/40">
               {t("brandLine1")}
             </p>
           </div>
 
           {/* Navigation */}
           <div>
-            <h3 className="mb-4 text-[11px] font-medium uppercase tracking-[3px] text-white/60">
-              {t("navigateLabel")}
-            </h3>
+            <div className="mb-4 flex h-8 items-end">
+              <h3 className="text-[11px] font-medium uppercase tracking-[3px] text-white/60">
+                {t("navigateLabel")}
+              </h3>
+            </div>
             <ul className="space-y-3">
               {NAV_LINKS.map((link) => (
                 <li key={link.href}>
@@ -82,9 +86,11 @@ export default async function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="mb-4 text-[11px] font-medium uppercase tracking-[3px] text-white/60">
-              {t("contactLabel")}
-            </h3>
+            <div className="mb-4 flex h-8 items-end">
+              <h3 className="text-[11px] font-medium uppercase tracking-[3px] text-white/60">
+                {t("contactLabel")}
+              </h3>
+            </div>
             <ul className="space-y-3 text-sm text-white/40">
               <li>
                 <a
@@ -99,9 +105,11 @@ export default async function Footer() {
 
           {/* Social */}
           <div>
-            <h3 className="mb-4 text-[11px] font-medium uppercase tracking-[3px] text-white/60">
-              {t("followLabel")}
-            </h3>
+            <div className="mb-4 flex h-8 items-end">
+              <h3 className="text-[11px] font-medium uppercase tracking-[3px] text-white/60">
+                {t("followLabel")}
+              </h3>
+            </div>
             <div className="flex gap-4">
               {SOCIAL_LINKS.filter((s) => s.href !== "#").map((social) => (
                 <a
