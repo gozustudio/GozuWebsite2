@@ -57,7 +57,7 @@ export default async function QuotePage({
       <section className="px-6 pb-24 lg:px-12 lg:pb-32">
         <div className="mx-auto max-w-[800px]">
           <FadeIn>
-            <QuoteForm />
+            <QuoteForm locale={locale} />
           </FadeIn>
         </div>
       </section>

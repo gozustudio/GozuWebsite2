@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { COUNTRIES } from "@/lib/countries";
+import { useTranslations } from "next-intl";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -36,8 +37,8 @@ type QuoteFormData = {
   package: string;
 };
 
-// Fix 10: STEP_LABELS moved to module scope (was inside render).
-const STEP_LABELS = ["Contact", "Address", "Project", "Package"];
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type TFunc = any;
 
 const INITIAL: QuoteFormData = {
   email: "", firstName: "", lastName: "",
@@ -134,10 +135,11 @@ function OptionCard({
 
 // Fix 5: Added keyboard navigation, activeIndex state, and ARIA attributes.
 function CountryCombobox({
-  value, countryName, onChange,
+  value, countryName, onChange, t,
 }: {
   value: string; countryName: string;
   onChange: (code: string, name: string) => void;
+  t: TFunc;
 }) {
   const [query, setQuery] = useState(countryName);
   const [open, setOpen] = useState(false);
@@ -208,7 +210,7 @@ function CountryCombobox({
         }}
         onFocus={() => setOpen(true)}
         onKeyDown={handleKeyDown}
-        placeholder="Search country…"
+        placeholder={t("searchCountry")}
         className="w-full border-b border-[var(--color-border)]/20 bg-transparent py-3 text-[var(--color-body)] outline-none transition-colors placeholder:text-[var(--color-label)]/50 focus:border-[var(--color-main)]"
       />
       {open && filtered.length > 0 && (
@@ -268,37 +270,38 @@ function isStepValid(step: number, d: QuoteFormData): boolean {
 // ─── Step components ──────────────────────────────────────────────────────────
 
 function Step1({
-  data, update,
+  data, update, t,
 }: {
   data: QuoteFormData;
   update: (p: Partial<QuoteFormData>) => void;
+  t: TFunc;
 }) {
   return (
     <div className="space-y-8">
       <div>
         {/* Fix 4: htmlFor added to Label call sites where there is a single associated input. */}
-        <Label htmlFor="email">Email *</Label>
+        <Label htmlFor="email">{t("email")} {t("required")}</Label>
         <TextInput
           id="email" name="email" type="email" value={data.email}
           onChange={(v) => update({ email: v })}
-          placeholder="your@email.com" required
+          placeholder={t("emailPlaceholder")} required
         />
       </div>
       <div className="grid gap-6 md:grid-cols-2">
         <div>
-          <Label htmlFor="firstName">First Name *</Label>
+          <Label htmlFor="firstName">{t("firstName")} {t("required")}</Label>
           <TextInput
             id="firstName" name="firstName" value={data.firstName}
             onChange={(v) => update({ firstName: v })}
-            placeholder="First name" required
+            placeholder={t("firstNamePlaceholder")} required
           />
         </div>
         <div>
-          <Label htmlFor="lastName">Last Name *</Label>
+          <Label htmlFor="lastName">{t("lastName")} {t("required")}</Label>
           <TextInput
             id="lastName" name="lastName" value={data.lastName}
             onChange={(v) => update({ lastName: v })}
-            placeholder="Last name" required
+            placeholder={t("lastNamePlaceholder")} required
           />
         </div>
       </div>
@@ -307,67 +310,69 @@ function Step1({
 }
 
 function Step2({
-  data, update,
+  data, update, t,
 }: {
   data: QuoteFormData;
   update: (p: Partial<QuoteFormData>) => void;
+  t: TFunc;
 }) {
   return (
     <div className="space-y-8">
       <div>
         {/* Country uses a combobox, no single id to associate — htmlFor omitted. */}
-        <Label>Country *</Label>
+        <Label>{t("country")} {t("required")}</Label>
         <CountryCombobox
           value={data.countryCode}
           countryName={data.countryName}
           onChange={(code, name) => update({ countryCode: code, countryName: name })}
+          t={t}
         />
       </div>
       <div className="grid gap-6 md:grid-cols-2">
         <div>
-          <Label htmlFor="state">State / County</Label>
+          <Label htmlFor="state">{t("stateCounty")}</Label>
           <TextInput
             id="state" name="state" value={data.state}
-            onChange={(v) => update({ state: v })} placeholder="State or county"
+            onChange={(v) => update({ state: v })} placeholder={t("statePlaceholder")}
           />
         </div>
         <div>
-          <Label htmlFor="city">City *</Label>
+          <Label htmlFor="city">{t("city")} {t("required")}</Label>
           <TextInput
             id="city" name="city" value={data.city}
-            onChange={(v) => update({ city: v })} placeholder="City" required
+            onChange={(v) => update({ city: v })} placeholder={t("cityPlaceholder")} required
           />
         </div>
       </div>
       <div className="grid gap-6 md:grid-cols-2">
         <div>
-          <Label htmlFor="postcode">Postcode</Label>
+          <Label htmlFor="postcode">{t("postcode")}</Label>
           <TextInput
             id="postcode" name="postcode" value={data.postcode}
-            onChange={(v) => update({ postcode: v })} placeholder="Postcode"
+            onChange={(v) => update({ postcode: v })} placeholder={t("postcodePlaceholder")}
           />
         </div>
         <div>
-          <Label htmlFor="streetName">Street Name</Label>
+          <Label htmlFor="streetName">{t("streetName")}</Label>
           <TextInput
             id="streetName" name="streetName" value={data.streetName}
-            onChange={(v) => update({ streetName: v })} placeholder="Street name"
+            onChange={(v) => update({ streetName: v })} placeholder={t("streetNamePlaceholder")}
           />
         </div>
       </div>
       <div className="grid gap-6 md:grid-cols-2">
         <div>
-          <Label htmlFor="streetNumber">Street Number</Label>
+          <Label htmlFor="streetNumber">{t("streetNumber")}</Label>
           <TextInput
             id="streetNumber" name="streetNumber" value={data.streetNumber}
-            onChange={(v) => update({ streetNumber: v })} placeholder="No."
+            onChange={(v) => update({ streetNumber: v })} placeholder={t("streetNumberPlaceholder")}
           />
         </div>
         <div>
-          <Label htmlFor="apartment">Apartment / Unit</Label>
+          <Label htmlFor="apartment">{t("apartment")}</Label>
           <TextInput
             id="apartment" name="apartment" value={data.apartment}
-            onChange={(v) => update({ apartment: v })} placeholder="Apt / unit"
+            onChange={(v) => update({ apartment: v })} placeholder={t("apartmentPlaceholder")}
           />
         </div>
       </div>
@@ -376,19 +381,20 @@ function Step2({
 }
 
 function Step3({
-  data, update,
+  data, update, t,
 }: {
   data: QuoteFormData;
   update: (p: Partial<QuoteFormData>) => void;
+  t: TFunc;
 }) {
   return (
     <div className="space-y-10">
       <div>
         {/* Option card groups have no single associated input — htmlFor omitted. */}
-        <Label>Property Type * (select all that apply)</Label>
+        <Label>{t("propertyType")} {t("required")} ({t("selectAll")})</Label>
         <div className="mt-3 flex flex-wrap gap-3">
           <OptionCard
-            label="Residential" selected={data.residential}
+            label={t("residential")} selected={data.residential}
             onClick={() =>
               update({
                 residential: !data.residential,
@@ -399,11 +405,11 @@ function Step3({
             }
           />
           <OptionCard
-            label="Offices" selected={data.offices}
+            label={t("offices")} selected={data.offices}
             onClick={() => update({ offices: !data.offices })}
           />
           <OptionCard
-            label="Commercial" selected={data.commercial}
+            label={t("commercial")} selected={data.commercial}
             onClick={() => update({ commercial: !data.commercial })}
           />
         </div>
@@ -415,15 +421,15 @@ function Step3({
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.2 }}
         >
-          <Label>Residential Property Type *</Label>
+          <Label>{t("residentialType")} {t("required")}</Label>
           <div className="mt-3 flex flex-wrap gap-3">
             <OptionCard
-              label="Single Family Property"
+              label={t("singleFamily")}
               selected={data.residentialSubtype === "Single Family Property"}
               onClick={() => update({ residentialSubtype: "Single Family Property" })}
             />
             <OptionCard
-              label="Multiple Family Property"
+              label={t("multipleFamily")}
               selected={data.residentialSubtype === "Multiple Family Property"}
               onClick={() => update({ residentialSubtype: "Multiple Family Property" })}
             />
@@ -432,33 +438,33 @@ function Step3({
       )}
 
       <div>
-        <Label>Project Scope * (select all that apply)</Label>
+        <Label>{t("projectScope")} {t("required")} ({t("selectAll")})</Label>
         <div className="mt-3 flex flex-wrap gap-3">
           <OptionCard
-            label="Interior" selected={data.interior}
+            label={t("interior")} selected={data.interior}
             onClick={() => update({ interior: !data.interior })}
           />
           <OptionCard
-            label="Exterior" selected={data.exterior}
+            label={t("exterior")} selected={data.exterior}
             onClick={() => update({ exterior: !data.exterior })}
           />
           <OptionCard
-            label="Landscape" selected={data.landscape}
+            label={t("landscape")} selected={data.landscape}
             onClick={() => update({ landscape: !data.landscape })}
           />
         </div>
       </div>
 
       <div>
-        <Label>Construction Type *</Label>
+        <Label>{t("constructionType")} {t("required")}</Label>
         <div className="mt-3 flex flex-wrap gap-3">
           <OptionCard
-            label="Renovation"
+            label={t("renovation")}
             selected={data.constructionType === "Renovation"}
             onClick={() => update({ constructionType: "Renovation" })}
           />
           <OptionCard
-            label="Construction from zero"
+            label={t("constructionFromZero")}
             selected={data.constructionType === "Construction from zero"}
             onClick={() => update({ constructionType: "Construction from zero" })}
           />
@@ -466,14 +472,14 @@ function Step3({
       </div>
 
       <div>
-        <Label>Demolition Required? *</Label>
+        <Label>{t("demolition")} {t("required")}</Label>
         <div className="mt-3 flex flex-wrap gap-3">
           <OptionCard
-            label="Yes" selected={data.demolition === "Yes"}
+            label={t("yes")} selected={data.demolition === "Yes"}
             onClick={() => update({ demolition: "Yes" })}
           />
           <OptionCard
-            label="No" selected={data.demolition === "No"}
+            label={t("no")} selected={data.demolition === "No"}
             onClick={() => update({ demolition: "No" })}
           />
         </div>
@@ -481,22 +487,22 @@ function Step3({
 
       <div>
         {/* Fix 4 + Fix 8: htmlFor links label to input; min="1" enforces positive value. */}
-        <Label htmlFor="area">Project Area *</Label>
+        <Label htmlFor="area">{t("projectArea")} {t("required")}</Label>
         <div className="mt-3 flex items-end gap-4">
           <div className="flex-1">
             <TextInput
               id="area" name="area" type="number" value={data.area}
-              onChange={(v) => update({ area: v })} placeholder="e.g. 120"
+              onChange={(v) => update({ area: v })} placeholder={t("areaPlaceholder")}
               min="1"
             />
           </div>
           <div className="flex gap-2 pb-3">
             <OptionCard
-              label="m²" selected={data.unit === "Square Metres"}
+              label={t("sqm")} selected={data.unit === "Square Metres"}
               onClick={() => update({ unit: "Square Metres" })}
             />
             <OptionCard
-              label="ft²" selected={data.unit === "Square Feet"}
+              label={t("sqft")} selected={data.unit === "Square Feet"}
               onClick={() => update({ unit: "Square Feet" })}
             />
           </div>
@@ -504,40 +510,40 @@ function Step3({
       </div>
 
       <div>
-        <Label>Project Site *</Label>
+        <Label>{t("projectSite")} {t("required")}</Label>
         <div className="mt-3 flex flex-wrap gap-3">
           <OptionCard
-            label="On-site" selected={data.projectSite === "On-site"}
+            label={t("onSite")} selected={data.projectSite === "On-site"}
             onClick={() => update({ projectSite: "On-site" })}
           />
           <OptionCard
-            label="Remote" selected={data.projectSite === "Remote"}
+            label={t("remote")} selected={data.projectSite === "Remote"}
             onClick={() => update({ projectSite: "Remote" })}
           />
         </div>
         {data.projectSite === "Remote" && (
           <p className="mt-2 text-xs text-[var(--color-label)]">
-            Remote projects require accurate existing plans.
+            {t("remoteNote")}
           </p>
         )}
       </div>
 
       <div>
-        <Label>Preferred Completion *</Label>
+        <Label>{t("completion")} {t("required")}</Label>
         <div className="mt-3 flex flex-wrap gap-3">
           {/* Fix 9: Stored values now use en-dashes matching display labels. */}
           <OptionCard
-            label="As soon as possible"
+            label={t("asap")}
             selected={data.completion === "As soon as possible"}
             onClick={() => update({ completion: "As soon as possible" })}
           />
           <OptionCard
-            label="5–6 months"
+            label={t("months5to6")}
             selected={data.completion === "5–6 months"}
             onClick={() => update({ completion: "5–6 months" })}
           />
           <OptionCard
-            label="6–12 months"
+            label={t("months6to12")}
             selected={data.completion === "6–12 months"}
             onClick={() => update({ completion: "6–12 months" })}
           />
@@ -555,11 +561,12 @@ type PackageData = {
 };
 
 function Step4({
-  data, update, packages,
+  data, update, packages, t,
 }: {
   data: QuoteFormData;
   update: (p: Partial<QuoteFormData>) => void;
   packages: PackageData[];
+  t: TFunc;
 }) {
   // Interior selected → packages 1,2,3; otherwise → packages 4,5
   const available = data.interior
@@ -570,7 +577,7 @@ function Step4({
     <div className="space-y-4">
       {available.length === 0 && (
         <p className="text-sm text-[var(--color-text-secondary)]">
-          Loading packages…
+          {t("loadingPackages")}
         </p>
       )}
       {available.map((pkg) => (
@@ -587,7 +594,7 @@ function Step4({
           <div className="flex items-start justify-between gap-4">
             <div>
               <p className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)]">
-                Package {pkg.code}
+                {t("packageLabel", { code: pkg.code })}
               </p>
               <p className="mt-1 font-serif text-xl text-[var(--color-body)]">
                 {pkg.name}
@@ -622,7 +629,12 @@ function Step4({
 
 // ─── Main component ───────────────────────────────────────────────────────────
 
-export default function QuoteForm() {
+export default function QuoteForm({ locale }: { locale: string }) {
+  const t = useTranslations("quote");
+
+  // Fix 10: STEP_LABELS inside component (needs `t`).
+  const STEP_LABELS = [t("stepContact"), t("stepAddress"), t("stepProject"), t("stepPackage")];
+
   const [step, setStep] = useState(0);
   const [direction, setDirection] = useState(1);
   const [data, setData] = useState<QuoteFormData>(INITIAL);
@@ -646,11 +658,11 @@ export default function QuoteForm() {
   }, []);
 
   useEffect(() => {
-    fetch("/api/packages")
+    fetch(`/api/packages?locale=${locale}`)
       .then((r) => r.json())
       .then((pkgs: PackageData[]) => setPackages(pkgs))
       .catch(() => {});
-  }, []);
+  }, [locale]);
 
   useEffect(() => {
     if (submitted) return;
@@ -718,7 +730,7 @@ export default function QuoteForm() {
       localStorage.removeItem(LS_KEY);
       setSubmitted(true);
     } catch {
-      setError("Something went wrong. Please try again.");
+      setError(t("errorGeneric"));
     } finally {
       setSubmitting(false);
     }
@@ -735,11 +747,10 @@ export default function QuoteForm() {
       <div className="flex min-h-[400px] items-center justify-center rounded-sm bg-[var(--color-container)] p-12">
         <div className="text-center">
           <p className="font-serif text-2xl text-[var(--color-body)]">
-            Thank you for your request.
+            {t("successTitle")}
           </p>
           <p className="mt-3 text-sm leading-relaxed text-[var(--color-text-secondary)]">
-            We&apos;ll review your project details and respond within 48 hours
-            with a personalised estimate.
+            {t("successDetail")}
           </p>
         </div>
       </div>
@@ -751,7 +762,7 @@ export default function QuoteForm() {
       <StepIndicator current={step} />
 
       <p className="mb-8 text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)]">
-        Step {step + 1} of {TOTAL_STEPS} — {STEP_LABELS[step]}
+        {t("stepOf", { step: step + 1, total: TOTAL_STEPS, label: STEP_LABELS[step] })}
       </p>
 
       {/* Fix 3: Hidden honeypot field. Real users never see or fill this. */}
@@ -775,10 +786,10 @@ export default function QuoteForm() {
           exit="exit"
           transition={{ duration: 0.25, ease: [0.25, 0.1, 0.25, 1] }}
         >
-          {step === 0 && <Step1 data={data} update={update} />}
-          {step === 1 && <Step2 data={data} update={update} />}
-          {step === 2 && <Step3 data={data} update={update} />}
-          {step === 3 && <Step4 data={data} update={update} packages={packages} />}
+          {step === 0 && <Step1 data={data} update={update} t={t} />}
+          {step === 1 && <Step2 data={data} update={update} t={t} />}
+          {step === 2 && <Step3 data={data} update={update} t={t} />}
+          {step === 3 && <Step4 data={data} update={update} packages={packages} t={t} />}
         </motion.div>
       </AnimatePresence>
 
@@ -795,7 +806,7 @@ export default function QuoteForm() {
             onClick={handleBack}
             className="text-[11px] font-medium uppercase tracking-[3px] text-[var(--color-label)] transition-colors hover:text-[var(--color-body)]"
           >
-            ← Back
+            &larr; {t("back")}
           </button>
         )}
         {step < TOTAL_STEPS - 1 ? (
@@ -805,7 +816,7 @@ export default function QuoteForm() {
             disabled={!isStepValid(step, data)}
             className="border border-[var(--color-main)] bg-[var(--color-main)] px-10 py-3 text-[11px] font-medium uppercase tracking-[3px] text-white transition-all duration-300 hover:bg-transparent hover:text-[var(--color-body)] disabled:cursor-not-allowed disabled:opacity-40"
           >
-            Next
+            {t("next")}
           </button>
         ) : (
           <button
@@ -814,13 +825,13 @@ export default function QuoteForm() {
             disabled={submitting || !isStepValid(step, data)}
             className="border border-[var(--color-main)] bg-[var(--color-main)] px-10 py-3 text-[11px] font-medium uppercase tracking-[3px] text-white transition-all duration-300 hover:bg-transparent hover:text-[var(--color-body)] disabled:cursor-not-allowed disabled:opacity-40"
           >
-            {submitting ? "Sending…" : "Submit Request"}
+            {submitting ? t("sending") : t("submitRequest")}
           </button>
         )}
       </div>
 
       <p className="mt-4 text-center text-xs text-[var(--color-label)]">
-        No commitment required. We typically respond within 48 hours.
+        {t("noCommitment")}
       </p>
     </div>
   );
