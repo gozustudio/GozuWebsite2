@@ -47,9 +47,9 @@ npx tinacms build --local --skip-cloud-checks && npx next build
 
 **Vercel build command** (set in Project Settings → Build and Deployment):
 ```
-node scripts/copy-assets.js && npx tinacms build && npx next build
+node scripts/copy-assets.js && npx tinacms build --skip-cloud-checks && npx next build
 ```
-The copy-assets step is required because brand assets in `website/public/` are gitignored. Translation is handled by GitHub Action (not during build). Vercel Root Directory: `website`.
+The `--skip-cloud-checks` flag is required due to a Tina Cloud schema indexing bug (see Tina CMS section). The copy-assets step is required because brand assets in `website/public/` are gitignored. Translation is handled by GitHub Action (not during build). Vercel Root Directory: `website`.
 
 **Project media** is committed directly to `website/public/uploads/projects/` — no copy step needed.
 
@@ -174,12 +174,14 @@ Content files are the single source of truth. The website reads from them at bui
 - **Local mode**: `npm run dev` starts Tina alongside Next.js — edits save directly to JSON files
 - **Production mode**: Tina Cloud connected — org "Gozu Studio's Organization", project "GozuWebsite2"
 - **Client ID**: `ae555ca3-160b-4ba2-9e68-ab502f57bf8a`
-- **Env vars**: `NEXT_PUBLIC_TINA_CLIENT_ID` and `TINA_TOKEN` in Vercel
-- **Tina Cloud config**: "Path to Tina Config" = `website` (required — tina/ is inside website/ subdirectory)
+- **Env vars**: `NEXT_PUBLIC_TINA_CLIENT_ID`, `TINA_TOKEN`, `NEXT_PUBLIC_TINA_BRANCH=main` in Vercel
+- **Tina Cloud config**: "Path to Tina Config" = `website` (no leading slash — `/website` is wrong)
 - **Site URLs**: `https://www.gozustudio.com` and `https://gozustudio.com` registered in Tina Cloud
 - **Branch indexing**: `main` branch indexed; default fallback in `tina/config.ts` is `main`
-- **Media uploads**: Tina media manager uploads to `website/public/uploads/` (committed to Git)
+- **Media uploads**: Tina media manager enabled and synced; uploads to `website/public/uploads/` (committed to Git)
 - **Generated files**: `website/tina/__generated__/` and `website/public/admin/` are gitignored
+- **Lock file**: `website/tina/tina-lock.json` — committed to Git, Tina Cloud reads this for schema. Must be updated when schema changes.
+- **Schema indexing bug**: Tina Cloud's indexer does NOT pick up the `collaborations` field despite correct config. Build uses `--skip-cloud-checks` as workaround. The `collaborations` field cannot be saved from the admin UI — edit directly in JSON files instead. Periodically test removing `--skip-cloud-checks` to see if fixed.
 
 ## i18n (next-intl)
 
@@ -344,12 +346,12 @@ WebMCP (W3C Community Group Draft, Chrome 146+) is a core requirement:
 - **DNS records in Vercel**: MX (`smtp.google.com` priority 1), SPF (`v=spf1 include:_spf.google.com ~all`), DMARC, Resend DKIM (`resend._domainkey`), Resend MX+SPF on `send` subdomain
 - **SSL**: Auto-provisioned by Vercel
 - **Site status**: Live and verified working (2026-03-06)
-- **Tina Cloud**: Branch indexing working (`main` indexed). Build uses Tina Cloud. Admin UI at `gozustudio.com/admin` is functional.
+- **Tina Cloud**: Build uses `--skip-cloud-checks` due to schema indexing bug. Admin UI at `gozustudio.com/admin` is functional (except `collaborations` field — see Tina CMS section).
 
 ## Pending Work
 
 - **Real project data**: Update `website/content/projects/*.json` with actual project info (currently all placeholder "KAZ House" data) — Goda can edit via Tina admin UI at `gozustudio.com/admin`
-- **Tina media manager**: Needs to be enabled in Tina Cloud project settings (app.tina.io)
+- **Tina Cloud schema bug**: `collaborations` field not indexed — file issue at github.com/tinacms/tinacms if persists
 - **Quote form post-launch**: Update `UpdateProspectsDatabase` GAS script to skip `Prospects="Partial"` rows (if needed — verify after first real submission)
 - **Translation refinement**: AI-generated translations in `website/messages/` and Google Translate output in `content/translated/` may need native-speaker review
 - **HeroVideo hardcoded text**: "Architecture · Interior Design" and "Scroll" in `HeroVideo.tsx` are not translated (client component, would need `useTranslations`)
